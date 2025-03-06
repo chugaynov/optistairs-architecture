@@ -1,0 +1,62 @@
+asyncapi: '2.6.0'
+info:
+  title: WebHookListener AsyncAPI
+  version: '1.0.0'
+  description: Спецификация для Сервиса WebHookListener системы "Кластер проектных расчетов".
+
+servers:
+  production:
+    url: wss://node-1.kalk.pro/socket.io/
+    protocol: wss
+  stage:
+    url: wss://node-2.kalk.pro/socket.io/
+    protocol: wss
+  development:
+    url: wss://node-2.kalk.pro/socket.io/
+    protocol: wss
+
+channels:
+  webhook:
+    description: Канал для обмена сообщениями между "кластером" и WebHook Listener-ом
+    publish:
+      operationId: rest-webhook
+      summary: Отправить в "кластер" сообщение полученное от REST-сервера
+      message:
+        $ref: '#/components/messages/Message'
+
+components:
+  messages:
+    Message:
+      contentType: application/json
+      payload:
+        type: object
+        properties:
+          userId:
+            type: string
+            description: Уникальный идентификатор пользователя, который сделал запрос на расчет
+            example: "user@email.ru"
+          rest:
+            type: object
+            properties:
+              url:
+                type: string
+                description: Endpoint сервере куда будет отправлен запрос
+                example: "https://domain.com/api"
+              method:
+                type: string
+                enum:
+                  - GET
+                  - POST
+                  - PUT
+                  - PATCH
+                  - DELETE
+                  - HEAD
+                  - OPTIONS
+                  - CONNECT
+                  - TRACE
+              headers:
+                type: object
+                description: Может быть пустым в контексте отправки сообщений. Требования к содержимому определены спецификациями RFC 7230 - «Message Syntax and Routing», RFC 7231 - «Semantics and Content», RFC 2616.
+              body:
+                type: object
+                description: Требования к содержимому определены спецификациями RFC 7230 - «Message Syntax and Routing», RFC 7231 - «Semantics and Content», RFC 2616.

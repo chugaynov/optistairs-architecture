@@ -1,0 +1,1582 @@
+{
+  "id" : 1,
+  "name" : "system-landscape",
+  "description" : "Ландшафт Онлайн-сервиса",
+  "lastModifiedDate" : "2025-01-20T18:06:25Z",
+  "lastModifiedAgent" : "structurizr-javascript",
+  "properties" : {
+    "structurizr.dsl" : "d29ya3NwYWNlIGV4dGVuZHMgLi4vc3lzdGVtLWxhbmRzY2FwZS5kc2wgewogICAgbW9kZWwgewogICAgICAgICFyZWYgc3lzdGVtX3dlYl9zaXRlIHsKICAgICAgICAgICAgZGJfa2Fsa3BybyA9IGNvbnRhaW5lciAi0JHQlCBkYl9rYWxrcHJvIiB7CiAgICAgICAgICAgICAgICBkZXNjcmlwdGlvbiAi0JHQsNC30LAg0LTQsNC90L3Ri9GFINGB0LDQudGC0LAiCiAgICAgICAgICAgICAgICB0ZWNobm9sb2d5ICJNeVNRTCIKICAgICAgICAgICAgICAgIHRhZ3MgInN0b3JhZ2UiCiAgICAgICAgICAgIH0KCiAgICAgICAgICAgIGZzX3N0YXRpYyA9IGNvbnRhaW5lciAi0KHRgtCw0YLQuNGH0LXRgdC60LjQtSDRhNCw0LnQu9GLINC00LvRjyDRgdCw0LnRgtCwIiB7CiAgICAgICAgICAgICAgICBkZXNjcmlwdGlvbiAi0KTQsNC50LvRiyDQutCw0YDRgtC40L3QutC4LCDQtNC+0LrRg9C80LXQvdGC0LDRhtC40Y8g0LIgUERGIgogICAgICAgICAgICAgICAgdGFncyAiZm9sZGVyIgogICAgICAgICAgICB9CgogICAgICAgICAgICBncm91cCAiYXBwX2thbGtwcm8iIHsKICAgICAgICAgICAgICAgIGFwcF9iYWNrZW5kID0gY29udGFpbmVyICJCYWNrZW5kLdC/0YDQuNC70L7QttC10L3QuNC1IEtBTEsuUFJPIiB7CiAgICAgICAgICAgICAgICAgICAgdXJsICJodHRwczovL2JpdGJ1Y2tldC5vcmcvYXNjaHVnYXlub3Yva2Fsay5wcm8tdGVtcGxhdGUvc3JjL21hc3Rlci8iCiAgICAgICAgICAgICAgICAgICAgdGVjaG5vbG9neSAicGhwIDcuMy4zMywgVU1JLkNNUyIKICAgICAgICAgICAgICAgICAgICBkZXNjcmlwdGlvbiAi0J7RgdC90L7QstC90LDRjyDQsdC40LfQvdC10YEt0LvQvtCz0LjQutCwINGB0LDQudGC0LAgKyDRgNC10LPQu9Cw0LzQtdC90YLQvdGL0LUg0LfQsNC00LDQvdC40Y8iCiAgICAgICAgICAgICAgICAgICAgLT4gZGJfa2Fsa3BybwogICAgICAgICAgICAgICAgICAgIC0+IHN5c3RlbV9zdGF0aWNfc3RvcmFnZSAi0JHQtdC30L7Qv9Cw0YHQvdC+0LUg0YHQvtGF0YDQsNC90LXQvdC40LUg0YHRgtCw0YLQuNGH0LXRgdC60LjRhSDRhNCw0LnQu9C+0LIg0L/QvtC70YzQt9C+0LLQsNGC0LXQu9GPIiAiSFRUUCIKICAgICAgICAgICAgICAgICAgICAtPiBmc19zdGF0aWMgItCl0YDQsNC90LjQu9C40YnQtSDRgdGC0LDRgtC40YfQtdGB0LrQuNGFINGE0LDQudC70L7QsiDRgdCw0LnRgtCwIiAiRlMiCiAgICAgICAgICAgICAgICAgICAgLT4gZXh0X3NtcHQgItCe0YLQv9GA0LDQstC60LAg0YPQstC10LTQvtC80LvQtdC90LjQuSDQv9C+IGVtYWlsIiAiU01UUCIKICAgICAgICAgICAgICAgIH0KCiAgICAgICAgICAgICAgICBhcHBfdWkgPSBjb250YWluZXIgItCd0LDQsdC+0YAg0YTRgNC+0L3RgtC10L3QtCDQv9GA0LjQu9C+0LbQtdC90LjQuSIgewogICAgICAgICAgICAgICAgICAgIHVybCAiaHR0cHM6Ly9iaXRidWNrZXQub3JnL2thbGtwcm8iCiAgICAgICAgICAgICAgICAgICAgdGVjaG5vbG9neSAicGhwIDcuMy4zMywgUmVhY3RKUyIKICAgICAgICAgICAgICAgICAgICBkZXNjcmlwdGlvbiAiRnJvbnQt0L/RgNC40LvQvtC20LXQvdC40Y8sINCz0LXQvdC10YDQuNGA0YPQtdC80YvQtSDQvdCwINCx0Y3QutC10L3QtNC1INC4INGA0LXQsNC60YLQuNCy0L3Ri9C1IgogICAgICAgICAgICAgICAgICAgIC0+IHN5c3RlbV9ub2RlX2NhbGMgItCf0L7Qu9GD0YfQtdC90LjQtSDQv9GA0L7QtdC60YLQvtCyIDNEINC4INGH0LXRgNGC0LXQttC10LkiICJXRUItU09DS0VUUyIKICAgICAgICAgICAgICAgICAgICAtPiBzeXN0ZW1fc2ltcGxlX2NhbGMgItCf0L7Qu9GD0YfQtdC90LjQtSDRgtC40L/QvtCy0YvRhSDRgdGC0YDQvtC40YLQtdC70YzQvdGL0YUg0YDQsNGB0YfQtdGC0L7QsiIgIldFQi1TT0NLRVRTIgogICAgICAgICAgICAgICAgICAgIC0+IHN5c3RlbV9tZXRhbF9jYWxjICLQn9C+0LvRg9GH0LXQvdC40LUg0YDQsNGB0YfQtdGC0L7QsiDQv9C+INC80LXRgtCw0LvQu9C+0L/RgNC+0LrQsNGC0YMiICJpRnJhbWUiCiAgICAgICAgICAgICAgICAgICAgLT4gc3lzdGVtX29wdGlzdGFpcl9jYWxjICLQn9C+0LTQsdC+0YAg0L7Qv9GC0LjQvNCw0LvRjNC90YvRhSDQutC+0L3RhNC40LPRg9GA0LDRhtC40Lkg0LvQtdGB0YLQvdC40YYiICJIVFRQIgogICAgICAgICAgICAgICAgICAgIC0+IHN5c3RlbV9zdGF0aWNfc3RvcmFnZSAi0J/QvtC70YPRh9C10L3QuNC1INGB0YLQsNGC0LjRh9C10YHQutC40LnRhSDRhNCw0LnQu9C+0LIg0L/QvtC70YzQt9C+0LLQsNGC0LXQu9GPIiAiSFRUUCIKICAgICAgICAgICAgICAgIH0KICAgICAgICAgICAgfQoKICAgICAgICAgICAgYXBwX3dlYl9zZXJ2ZXIgPSBjb250YWluZXIgItCS0LXQsS3RgdC10YDQstC10YAiIHsKICAgICAgICAgICAgICAgIHVybCAiaHR0cHM6Ly9rYWxrLnBybyIKICAgICAgICAgICAgICAgIHRlY2hub2xvZ3kgIm5naW54LzEuMjIuMSArIHBocC1mcG0iCiAgICAgICAgICAgIH0KCiAgICAgICAgICAgIGV4dF9wZXJzb25fd2ViIC0+IGFwcF93ZWJfc2VydmVyICJIVFRQLdC30LDQv9GA0L7RgdGLIiAiSFRUUFMsIFJFU1QgQVBJIgogICAgICAgICAgICBhcHBfd2ViX3NlcnZlciAtPiBhcHBfdWkgIlVJINC/0YDQuNC70L7QttC10L3QuNGPIiAiSFRUUFMiCiAgICAgICAgICAgIGFwcF93ZWJfc2VydmVyIC0+IGFwcF9iYWNrZW5kICLQn9C+0LvRg9GH0LXQvdC40LUg0LTQsNC90L3Ri9GFINC00LvRjyBVSSIgIlJFU1QgQVBJIgogICAgICAgIH0KCiAgICAgICAgLy8gREVWCiAgICAgICAgIXJlZiAiRGVwbG95bWVudE5vZGU6Ly9EZXZlbG9wbWVudC9GaXJzdFZEUy9XRUItU0VSVkVSIiB7CiAgICAgICAgICAgIGNvbnRhaW5lckluc3RhbmNlIGRiX2thbGtwcm8gewogICAgICAgICAgICAgICAgZGVzY3JpcHRpb24gImRiOiBkYl9kZXZrYWxrcHJvcnUgKE1hcmlhREIgMTAuMTEuNCkiCiAgICAgICAgICAgIH0KCiAgICAgICAgICAgIGNvbnRhaW5lckluc3RhbmNlIGZzX3N0YXRpYyB7CiAgICAgICAgICAgICAgICBkZXNjcmlwdGlvbiAi0KTQsNC50LvQvtCy0LDRjyDQtNC40YDQtdC60YLQvtGA0LjRjyDRgSDQv9GA0LDQstCw0LzQuCDRgtC+0LvRjNC60L4g0L3QsCDRh9GC0LXQvdC40LUsIDIwR2IgKERlYmlhbiAxMSwgZXh0NCkiCiAgICAgICAgICAgIH0KCiAgICAgICAgICAgIGNvbnRhaW5lckluc3RhbmNlIGFwcF9iYWNrZW5kIHsKICAgICAgICAgICAgICAgIGRlc2NyaXB0aW9uICLQkdGN0LrQtdC90LQg0L/RgNC40LvQvtC20LXQvdC40LUgKFBIUCA3LjMuMzMpIgogICAgICAgICAgICB9CgogICAgICAgICAgICBjb250YWluZXJJbnN0YW5jZSBhcHBfdWkgewogICAgICAgICAgICAgICAgZGVzY3JpcHRpb24gItCk0YDQvtC90YLQtdC90LQg0L/RgNC40LvQvtC20LXQvdC40Y8gKEhUTUwsIFJlYWN0SlMsIFBIUCA3LjMuMzMpIgogICAgICAgICAgICB9CgogICAgICAgICAgICBjb250YWluZXJJbnN0YW5jZSBhcHBfd2ViX3NlcnZlciB7CiAgICAgICAgICAgICAgICBkZXNjcmlwdGlvbiAi0JLQtdCxLdGB0LXRgNCy0LXRgCAobmdpbngvMS4yMi4xICsgcGhwLWZwbSkiCiAgICAgICAgICAgIH0KICAgICAgICB9CgoKICAgICAgICAvLyBTdGFnZQogICAgICAgICFyZWYgIkRlcGxveW1lbnROb2RlOi8vU3RhZ2UvRmlyc3RWRFMvV0VCLVNFUlZFUiIgewogICAgICAgICAgICBjb250YWluZXJJbnN0YW5jZSBkYl9rYWxrcHJvIHsKICAgICAgICAgICAgICAgIGRlc2NyaXB0aW9uICJkYjogZGJfa2Fsa3Byb3J1IChNYXJpYURCIDEwLjExLjQpIgogICAgICAgICAgICB9CgogICAgICAgICAgICBjb250YWluZXJJbnN0YW5jZSBmc19zdGF0aWMgewogICAgICAgICAgICAgICAgZGVzY3JpcHRpb24gItCk0LDQudC70L7QstCw0Y8g0LTQuNGA0LXQutGC0L7RgNC40Y8g0YEg0L/RgNCw0LLQsNC80Lgg0YLQvtC70YzQutC+INC90LAg0YfRgtC10L3QuNC1LCAyMEdiIChEZWJpYW4gMTEsIGV4dDQpIgogICAgICAgICAgICB9CgogICAgICAgICAgICBjb250YWluZXJJbnN0YW5jZSBhcHBfYmFja2VuZCB7CiAgICAgICAgICAgICAgICBkZXNjcmlwdGlvbiAi0JHRjdC60LXQvdC0INC/0YDQuNC70L7QttC10L3QuNC1IChQSFAgNy4zLjMzKSIKICAgICAgICAgICAgfQoKICAgICAgICAgICAgY29udGFpbmVySW5zdGFuY2UgYXBwX3VpIHsKICAgICAgICAgICAgICAgIGRlc2NyaXB0aW9uICLQpNGA0L7QvdGC0LXQvdC0INC/0YDQuNC70L7QttC10L3QuNGPIChIVE1MLCBSZWFjdEpTLCBQSFAgNy4zLjMzKSIKICAgICAgICAgICAgfQoKICAgICAgICAgICAgY29udGFpbmVySW5zdGFuY2UgYXBwX3dlYl9zZXJ2ZXIgewogICAgICAgICAgICAgICAgZGVzY3JpcHRpb24gItCS0LXQsS3RgdC10YDQstC10YAgKG5naW54LzEuMjIuMSArIHBocC1mcG0pIgogICAgICAgICAgICB9CiAgICAgICAgfQoKICAgICAgICAvLyBQcm9kdWN0aW9uCiAgICAgICAgIXJlZiAiRGVwbG95bWVudE5vZGU6Ly9Qcm9kdWN0aW9uL0ZpcnN0VkRTL1dFQi1TRVJWRVIiIHsKICAgICAgICAgICAgY29udGFpbmVySW5zdGFuY2UgZGJfa2Fsa3BybyB7CiAgICAgICAgICAgICAgICBkZXNjcmlwdGlvbiAiZGI6IGRiX2thbGtwcm8gKE1hcmlhREIgMTAuMTEuNCkiCiAgICAgICAgICAgIH0KCiAgICAgICAgICAgIGNvbnRhaW5lckluc3RhbmNlIGZzX3N0YXRpYyB7CiAgICAgICAgICAgICAgICBkZXNjcmlwdGlvbiAi0KTQsNC50LvQvtCy0LDRjyDQtNC40YDQtdC60YLQvtGA0LjRjyDRgSDQv9GA0LDQstCw0LzQuCDRgtC+0LvRjNC60L4g0L3QsCDRh9GC0LXQvdC40LUsIDIwR2IgKERlYmlhbiAxMSwgZXh0NCkiCiAgICAgICAgICAgIH0KCiAgICAgICAgICAgIGNvbnRhaW5lckluc3RhbmNlIGFwcF9iYWNrZW5kIHsKICAgICAgICAgICAgICAgIGRlc2NyaXB0aW9uICLQkdGN0LrQtdC90LQg0L/RgNC40LvQvtC20LXQvdC40LUgKFBIUCA3LjMuMzMpIgogICAgICAgICAgICB9CgogICAgICAgICAgICBjb250YWluZXJJbnN0YW5jZSBhcHBfdWkgewogICAgICAgICAgICAgICAgZGVzY3JpcHRpb24gItCk0YDQvtC90YLQtdC90LQg0L/RgNC40LvQvtC20LXQvdC40Y8gKEhUTUwsIFJlYWN0SlMsIFBIUCA3LjMuMzMpIgogICAgICAgICAgICB9CgogICAgICAgICAgICBjb250YWluZXJJbnN0YW5jZSBhcHBfd2ViX3NlcnZlciB7CiAgICAgICAgICAgICAgICBkZXNjcmlwdGlvbiAi0JLQtdCxLdGB0LXRgNCy0LXRgCAobmdpbngvMS4yMi4xICsgcGhwLWZwbSkiCiAgICAgICAgICAgIH0KICAgICAgICB9CiAgICB9CgogICAgdmlld3MgewogICAgICAgIHN5c3RlbUNvbnRleHQgc3lzdGVtX3dlYl9zaXRlIFdFQl9TSVRFX0M0TDEgItCh0LDQudGCIEtBTEsuUFJPIC0g0JrQvtC90YLQtdC60YHRgtC90LDRjyDQtNC40LDQs9GA0LDQvNC80LAiIHsKICAgICAgICAgICAgYXV0b0xheW91dAogICAgICAgICAgICBpbmNsdWRlIC0+c3lzdGVtX3dlYl9zaXRlLT4KICAgICAgICB9CiAgICAgICAgY29udGFpbmVyIHN5c3RlbV93ZWJfc2l0ZSBXRUJfU0lURV9DNEwyICLQodCw0LnRgiBLQUxLLlBSTyAtINCa0L7QvdGC0LXQudC90LXRgNGLIiB7CiAgICAgICAgICAgIGF1dG9MYXlvdXQKICAgICAgICAgICAgaW5jbHVkZSAqCiAgICAgICAgfQogICAgICAgIGRlcGxveW1lbnQgc3lzdGVtX3dlYl9zaXRlIERldmVsb3BtZW50IFdFQl9TSVRFX0RFUExPWV9ERVZFTE9QTUVOVCAi0KHQsNC50YIgS0FMSy5QUk8gLSDQodGF0LXQvNCwINGA0LDQt9Cy0LXRgNGC0YvQstCw0L3QuNGPINCyIGRldiDQvtC60YDRg9C20LXQvdC40LgiIHsKICAgICAgICAgICAgYXV0b0xheW91dAogICAgICAgICAgICBpbmNsdWRlICoKICAgICAgICAgICAgZXhjbHVkZSAiZWxlbWVudC50YWc9PVNvZnR3YXJlIFN5c3RlbSIKICAgICAgICAgICAgZXhjbHVkZSAiZWxlbWVudC50YWc9PUluZnJhc3RydWN0dXJlIE5vZGUiCiAgICAgICAgfQogICAgICAgIGRlcGxveW1lbnQgc3lzdGVtX3dlYl9zaXRlIFN0YWdlIFdFQl9TSVRFX0RFUExPWV9TVEFHRSAi0KHQsNC50YIgS0FMSy5QUk8gLSDQodGF0LXQvNCwINGA0LDQt9Cy0LXRgNGC0YvQstCw0L3QuNGPINCyIHN0YWdlINC+0LrRgNGD0LbQtdC90LjQuCIgewogICAgICAgICAgICBhdXRvTGF5b3V0CiAgICAgICAgICAgIGluY2x1ZGUgKgogICAgICAgICAgICBleGNsdWRlICJlbGVtZW50LnRhZz09U29mdHdhcmUgU3lzdGVtIgogICAgICAgICAgICBleGNsdWRlICJlbGVtZW50LnRhZz09SW5mcmFzdHJ1Y3R1cmUgTm9kZSIKICAgICAgICB9CiAgICAgICAgZGVwbG95bWVudCBzeXN0ZW1fd2ViX3NpdGUgUHJvZHVjdGlvbiBXRUJfU0lURV9ERVBMT1lfUFJPRCAi0KHQsNC50YIgS0FMSy5QUk8gLSDQodGF0LXQvNCwINGA0LDQt9Cy0LXRgNGC0YvQstCw0L3QuNGPINCyIHByb2R1Y3Rpb24g0L7QutGA0YPQttC10L3QuNC4IiB7CiAgICAgICAgICAgIGF1dG9MYXlvdXQKICAgICAgICAgICAgaW5jbHVkZSAqCiAgICAgICAgICAgIGV4Y2x1ZGUgImVsZW1lbnQudGFnPT1Tb2Z0d2FyZSBTeXN0ZW0iCiAgICAgICAgICAgIGV4Y2x1ZGUgImVsZW1lbnQudGFnPT1JbmZyYXN0cnVjdHVyZSBOb2RlIgogICAgICAgIH0KICAgIH0KfQo="
+  },
+  "configuration" : { },
+  "model" : {
+    "people" : [ {
+      "id" : "1",
+      "tags" : "Element,Person,external",
+      "properties" : {
+        "structurizr.dsl.identifier" : "ext_person_web"
+      },
+      "name" : "Пользователь (посетитель сайта)",
+      "relationships" : [ {
+        "id" : "75",
+        "tags" : "Relationship",
+        "properties" : {
+          "structurizr.dsl.identifier" : "a5286c16-9b31-4210-bc0a-e322c40957bf"
+        },
+        "sourceId" : "1",
+        "destinationId" : "74",
+        "description" : "HTTP-запросы",
+        "technology" : "HTTPS, REST API"
+      }, {
+        "id" : "10",
+        "tags" : "Relationship",
+        "properties" : {
+          "structurizr.dsl.identifier" : "36b0ab1d-8a5c-4400-9fe8-7d332d08b7da"
+        },
+        "sourceId" : "1",
+        "destinationId" : "4",
+        "description" : "Работа с веб-интерфейсом (расчеты, проекты)",
+        "technology" : "HTTPS"
+      } ],
+      "location" : "Unspecified"
+    }, {
+      "id" : "2",
+      "tags" : "Element,Person,external",
+      "properties" : {
+        "structurizr.dsl.identifier" : "ext_person_admin"
+      },
+      "name" : "Администратор сайта",
+      "relationships" : [ {
+        "id" : "11",
+        "tags" : "Relationship",
+        "properties" : {
+          "structurizr.dsl.identifier" : "0ff75ce8-497a-4ea0-ab5e-f83d2a5f321e"
+        },
+        "sourceId" : "2",
+        "destinationId" : "4",
+        "description" : "Управление структруой и данными на сайте",
+        "technology" : "HTTPS"
+      } ],
+      "location" : "Unspecified"
+    } ],
+    "softwareSystems" : [ {
+      "id" : "4",
+      "tags" : "Element,Software System",
+      "properties" : {
+        "structurizr.dsl.identifier" : "system_web_site"
+      },
+      "name" : "Онлайн-сервис автоматизации строительных расчетов",
+      "description" : "KALK.PRO",
+      "relationships" : [ {
+        "id" : "17",
+        "tags" : "Relationship",
+        "properties" : {
+          "structurizr.dsl.identifier" : "e2b5c120-8abc-480c-8df1-36b50a45fc91"
+        },
+        "sourceId" : "4",
+        "destinationId" : "3",
+        "description" : "Отправка e-mail уведомлений через внешний шлюз",
+        "technology" : "SMTP"
+      }, {
+        "id" : "72",
+        "sourceId" : "4",
+        "destinationId" : "8",
+        "description" : "Подбор оптимальных конфигураций лестниц",
+        "technology" : "HTTP",
+        "linkedRelationshipId" : "71"
+      }, {
+        "id" : "13",
+        "tags" : "Relationship,L1",
+        "properties" : {
+          "structurizr.dsl.identifier" : "1406e2f8-7add-45f0-b004-99f149f7042b"
+        },
+        "sourceId" : "4",
+        "destinationId" : "6",
+        "description" : "Расчет типовых строительных расчетов",
+        "technology" : "WEB-SOCKETS"
+      }, {
+        "id" : "12",
+        "tags" : "Relationship,L1",
+        "properties" : {
+          "structurizr.dsl.identifier" : "9c9be3e5-d5a1-46cb-bfa8-de921f9f9fd2"
+        },
+        "sourceId" : "4",
+        "destinationId" : "5",
+        "description" : "Получение проекта с чертежами и 3D",
+        "technology" : "WEB-SOCKETS"
+      }, {
+        "id" : "14",
+        "tags" : "Relationship,L1",
+        "properties" : {
+          "structurizr.dsl.identifier" : "289fdbef-c9a4-4379-a966-60217e25325b"
+        },
+        "sourceId" : "4",
+        "destinationId" : "7",
+        "description" : "Расчет металлопроката",
+        "technology" : "iFrame"
+      }, {
+        "id" : "15",
+        "tags" : "Relationship,L1",
+        "properties" : {
+          "structurizr.dsl.identifier" : "1ba60670-ebae-47f1-aaab-6d54366682a2"
+        },
+        "sourceId" : "4",
+        "destinationId" : "9",
+        "description" : "Размещение файлов статики",
+        "technology" : "HTTP"
+      } ],
+      "location" : "Unspecified",
+      "containers" : [ {
+        "id" : "62",
+        "tags" : "Element,Container",
+        "url" : "https://bitbucket.org/aschugaynov/kalk.pro-template/src/master/",
+        "properties" : {
+          "structurizr.dsl.identifier" : "app_backend"
+        },
+        "name" : "Backend-приложение KALK.PRO",
+        "description" : "Основная бизнес-логика сайта + регламентные задания",
+        "relationships" : [ {
+          "id" : "63",
+          "tags" : "Relationship",
+          "properties" : {
+            "structurizr.dsl.identifier" : "1f0ec388-e370-4cf9-999f-164e19778e73"
+          },
+          "sourceId" : "62",
+          "destinationId" : "60"
+        }, {
+          "id" : "65",
+          "tags" : "Relationship",
+          "properties" : {
+            "structurizr.dsl.identifier" : "8efa3d8b-794b-45b5-ab5f-7b329e98ab1c"
+          },
+          "sourceId" : "62",
+          "destinationId" : "61",
+          "description" : "Хранилище статических файлов сайта",
+          "technology" : "FS"
+        }, {
+          "id" : "66",
+          "tags" : "Relationship",
+          "properties" : {
+            "structurizr.dsl.identifier" : "9d66f34d-d010-497d-85fb-adfe1a8d3ca2"
+          },
+          "sourceId" : "62",
+          "destinationId" : "3",
+          "description" : "Отправка уведомлений по email",
+          "technology" : "SMTP"
+        }, {
+          "id" : "64",
+          "tags" : "Relationship",
+          "properties" : {
+            "structurizr.dsl.identifier" : "e71daeef-fd90-4d47-9d64-eefa5fea48ab"
+          },
+          "sourceId" : "62",
+          "destinationId" : "9",
+          "description" : "Безопасное сохранение статических файлов пользователя",
+          "technology" : "HTTP"
+        } ],
+        "group" : "app_kalkpro",
+        "technology" : "php 7.3.33, UMI.CMS",
+        "documentation" : { }
+      }, {
+        "id" : "67",
+        "tags" : "Element,Container",
+        "url" : "https://bitbucket.org/kalkpro",
+        "properties" : {
+          "structurizr.dsl.identifier" : "app_ui"
+        },
+        "name" : "Набор фронтенд приложений",
+        "description" : "Front-приложения, генерируемые на бэкенде и реактивные",
+        "relationships" : [ {
+          "id" : "68",
+          "tags" : "Relationship",
+          "properties" : {
+            "structurizr.dsl.identifier" : "06e4371c-6d8d-4c48-a9d3-4e8832c6c503"
+          },
+          "sourceId" : "67",
+          "destinationId" : "5",
+          "description" : "Получение проектов 3D и чертежей",
+          "technology" : "WEB-SOCKETS"
+        }, {
+          "id" : "70",
+          "tags" : "Relationship",
+          "properties" : {
+            "structurizr.dsl.identifier" : "d9e113ac-0375-4ed2-b996-d71f2f8df2f3"
+          },
+          "sourceId" : "67",
+          "destinationId" : "7",
+          "description" : "Получение расчетов по металлопрокату",
+          "technology" : "iFrame"
+        }, {
+          "id" : "71",
+          "tags" : "Relationship",
+          "properties" : {
+            "structurizr.dsl.identifier" : "473e9b3b-29a1-4e71-96d4-96b675c49a55"
+          },
+          "sourceId" : "67",
+          "destinationId" : "8",
+          "description" : "Подбор оптимальных конфигураций лестниц",
+          "technology" : "HTTP"
+        }, {
+          "id" : "69",
+          "tags" : "Relationship",
+          "properties" : {
+            "structurizr.dsl.identifier" : "0718d665-6679-4ed1-b3d6-0041df23870a"
+          },
+          "sourceId" : "67",
+          "destinationId" : "6",
+          "description" : "Получение типовых строительных расчетов",
+          "technology" : "WEB-SOCKETS"
+        }, {
+          "id" : "73",
+          "tags" : "Relationship",
+          "properties" : {
+            "structurizr.dsl.identifier" : "94513d79-1c3d-4b3e-b812-7285ec9efafa"
+          },
+          "sourceId" : "67",
+          "destinationId" : "9",
+          "description" : "Получение статическийх файлов пользователя",
+          "technology" : "HTTP"
+        } ],
+        "group" : "app_kalkpro",
+        "technology" : "php 7.3.33, ReactJS",
+        "documentation" : { }
+      }, {
+        "id" : "74",
+        "tags" : "Element,Container",
+        "url" : "https://kalk.pro",
+        "properties" : {
+          "structurizr.dsl.identifier" : "app_web_server"
+        },
+        "name" : "Веб-сервер",
+        "relationships" : [ {
+          "id" : "77",
+          "tags" : "Relationship",
+          "properties" : {
+            "structurizr.dsl.identifier" : "27928186-d851-45fe-a141-df28fa730c9e"
+          },
+          "sourceId" : "74",
+          "destinationId" : "62",
+          "description" : "Получение данных для UI",
+          "technology" : "REST API"
+        }, {
+          "id" : "76",
+          "tags" : "Relationship",
+          "properties" : {
+            "structurizr.dsl.identifier" : "a1b31301-6a7e-40c7-816c-deff79870a62"
+          },
+          "sourceId" : "74",
+          "destinationId" : "67",
+          "description" : "UI приложения",
+          "technology" : "HTTPS"
+        } ],
+        "technology" : "nginx/1.22.1 + php-fpm",
+        "documentation" : { }
+      }, {
+        "id" : "61",
+        "tags" : "Element,Container,folder",
+        "properties" : {
+          "structurizr.dsl.identifier" : "fs_static"
+        },
+        "name" : "Статические файлы для сайта",
+        "description" : "Файлы картинки, документация в PDF",
+        "documentation" : { }
+      }, {
+        "id" : "60",
+        "tags" : "Element,Container,storage",
+        "properties" : {
+          "structurizr.dsl.identifier" : "db_kalkpro"
+        },
+        "name" : "БД db_kalkpro",
+        "description" : "База данных сайта",
+        "technology" : "MySQL",
+        "documentation" : { }
+      } ],
+      "documentation" : { }
+    }, {
+      "id" : "5",
+      "tags" : "Element,Software System",
+      "properties" : {
+        "structurizr.dsl.identifier" : "system_node_calc"
+      },
+      "name" : "Кластер проектных расчетов",
+      "description" : "Расчет проектов (чертежи, 3D модель, характеристики конструкций)",
+      "relationships" : [ {
+        "id" : "16",
+        "tags" : "Relationship,L1",
+        "properties" : {
+          "structurizr.dsl.identifier" : "fc0df2ba-41d7-4210-b3ab-4de867970d92"
+        },
+        "sourceId" : "5",
+        "destinationId" : "8",
+        "description" : "Получение оптимальных конфигураций лестниц",
+        "technology" : "HTTP"
+      } ],
+      "location" : "Unspecified",
+      "documentation" : { }
+    }, {
+      "id" : "8",
+      "tags" : "Element,Software System",
+      "properties" : {
+        "structurizr.dsl.identifier" : "system_optistair_calc"
+      },
+      "name" : "Сервис подбора оптимальной конфигурации лестницы",
+      "description" : "Сервис подбора оптимальной конфигурации лестницы",
+      "location" : "Unspecified",
+      "documentation" : { }
+    }, {
+      "id" : "9",
+      "tags" : "Element,Software System",
+      "properties" : {
+        "structurizr.dsl.identifier" : "system_static_storage"
+      },
+      "name" : "Сервис публикации файлов статики",
+      "description" : "Сервис публикации файлов статики на защищенном сервере",
+      "location" : "Unspecified",
+      "documentation" : { }
+    }, {
+      "id" : "7",
+      "tags" : "Element,Software System",
+      "properties" : {
+        "structurizr.dsl.identifier" : "system_metal_calc"
+      },
+      "name" : "Сервис расчета металлопроката",
+      "description" : "Расчет изделий из металлопроката. Справочник ГОСТов по металлопрокату.",
+      "location" : "Unspecified",
+      "documentation" : { }
+    }, {
+      "id" : "6",
+      "tags" : "Element,Software System",
+      "properties" : {
+        "structurizr.dsl.identifier" : "system_simple_calc"
+      },
+      "name" : "Сервис простых расчетов",
+      "description" : "Расчет типовых строительных конструкций",
+      "location" : "Unspecified",
+      "documentation" : { }
+    }, {
+      "id" : "3",
+      "tags" : "Element,Software System,external",
+      "properties" : {
+        "structurizr.dsl.identifier" : "ext_smpt"
+      },
+      "name" : "Yandex SMTP",
+      "location" : "Unspecified",
+      "documentation" : { }
+    } ],
+    "deploymentNodes" : [ {
+      "id" : "46",
+      "tags" : "Element,Deployment Node",
+      "properties" : {
+        "structurizr.dsl.identifier" : "fa3cf143-2166-45a6-8669-8257db9a757b.258a4642-4e33-400d-8d4e-142eb7153981"
+      },
+      "name" : "FirstVDS",
+      "environment" : "Production",
+      "instances" : "1",
+      "children" : [ {
+        "id" : "47",
+        "tags" : "Element,Deployment Node",
+        "properties" : {
+          "structurizr.dsl.identifier" : "fa3cf143-2166-45a6-8669-8257db9a757b.258a4642-4e33-400d-8d4e-142eb7153981.8f5a741e-c94d-4527-bb32-ba243ef95de6"
+        },
+        "name" : "WEB-SERVER",
+        "description" : "Веб-сайт основного онлайн-сервиса (IP: 91.107.126.103)",
+        "environment" : "Production",
+        "technology" : "VPS KVM",
+        "instances" : "1",
+        "containerInstances" : [ {
+          "id" : "102",
+          "tags" : "Container Instance",
+          "properties" : {
+            "structurizr.dsl.identifier" : "0d9dfd9b-9783-4027-8d2e-d3b3978f9c55"
+          },
+          "description" : "Веб-сервер (nginx/1.22.1 + php-fpm)",
+          "relationships" : [ {
+            "id" : "103",
+            "sourceId" : "102",
+            "destinationId" : "98",
+            "description" : "Получение данных для UI",
+            "technology" : "REST API",
+            "linkedRelationshipId" : "77"
+          }, {
+            "id" : "104",
+            "sourceId" : "102",
+            "destinationId" : "101",
+            "description" : "UI приложения",
+            "technology" : "HTTPS",
+            "linkedRelationshipId" : "76"
+          } ],
+          "environment" : "Production",
+          "deploymentGroups" : [ "Default" ],
+          "instanceId" : 1,
+          "containerId" : "74"
+        }, {
+          "id" : "98",
+          "tags" : "Container Instance",
+          "properties" : {
+            "structurizr.dsl.identifier" : "d014b1a2-1554-4941-b9bf-89a6b371156d"
+          },
+          "description" : "Бэкенд приложение (PHP 7.3.33)",
+          "relationships" : [ {
+            "id" : "99",
+            "sourceId" : "98",
+            "destinationId" : "96",
+            "linkedRelationshipId" : "63"
+          }, {
+            "id" : "100",
+            "sourceId" : "98",
+            "destinationId" : "97",
+            "description" : "Хранилище статических файлов сайта",
+            "technology" : "FS",
+            "linkedRelationshipId" : "65"
+          } ],
+          "environment" : "Production",
+          "deploymentGroups" : [ "Default" ],
+          "instanceId" : 1,
+          "containerId" : "62"
+        }, {
+          "id" : "96",
+          "tags" : "Container Instance",
+          "properties" : {
+            "structurizr.dsl.identifier" : "a0a01faf-9e29-4003-91d6-39ffb4ec7437"
+          },
+          "description" : "db: db_kalkpro (MariaDB 10.11.4)",
+          "environment" : "Production",
+          "deploymentGroups" : [ "Default" ],
+          "instanceId" : 1,
+          "containerId" : "60"
+        }, {
+          "id" : "101",
+          "tags" : "Container Instance",
+          "properties" : {
+            "structurizr.dsl.identifier" : "3ab46994-5670-4b0c-9469-89901ffceade"
+          },
+          "description" : "Фронтенд приложения (HTML, ReactJS, PHP 7.3.33)",
+          "environment" : "Production",
+          "deploymentGroups" : [ "Default" ],
+          "instanceId" : 1,
+          "containerId" : "67"
+        }, {
+          "id" : "97",
+          "tags" : "Container Instance",
+          "properties" : {
+            "structurizr.dsl.identifier" : "822adf67-25b5-45df-a302-8f5976a6e8fc"
+          },
+          "description" : "Файловая директория с правами только на чтение, 20Gb (Debian 11, ext4)",
+          "environment" : "Production",
+          "deploymentGroups" : [ "Default" ],
+          "instanceId" : 1,
+          "containerId" : "61"
+        } ]
+      }, {
+        "id" : "49",
+        "tags" : "Element,Deployment Node",
+        "properties" : {
+          "structurizr.dsl.identifier" : "fa3cf143-2166-45a6-8669-8257db9a757b.258a4642-4e33-400d-8d4e-142eb7153981.7cfd599d-5152-4adc-a210-94ed9798b3fd"
+        },
+        "name" : "NODE-1",
+        "description" : "Сервер проектных расчетов PROD (IP: 212.109.221.247)",
+        "environment" : "Production",
+        "technology" : "VPS KVM",
+        "instances" : "1"
+      }, {
+        "id" : "48",
+        "tags" : "Element,Deployment Node",
+        "properties" : {
+          "structurizr.dsl.identifier" : "fa3cf143-2166-45a6-8669-8257db9a757b.258a4642-4e33-400d-8d4e-142eb7153981.ed1fc163-617e-41ac-b6fc-e76c5ea9c87a"
+        },
+        "name" : "STATIC-STORAGE",
+        "description" : "Хранилище статических файлов (IP: 62.109.15.25)",
+        "environment" : "Production",
+        "technology" : "VPS KVM",
+        "instances" : "1"
+      }, {
+        "id" : "51",
+        "tags" : "Element,Deployment Node",
+        "properties" : {
+          "structurizr.dsl.identifier" : "fa3cf143-2166-45a6-8669-8257db9a757b.258a4642-4e33-400d-8d4e-142eb7153981.9ba8c5e4-c837-4412-8020-191a05016279"
+        },
+        "name" : "SINODE-1",
+        "description" : "Сервер простых расчетов DEV/STAGE/PROD (IP: 83.220.170.100)",
+        "environment" : "Production",
+        "technology" : "VPS KVM",
+        "instances" : "1"
+      }, {
+        "id" : "50",
+        "tags" : "Element,Deployment Node",
+        "properties" : {
+          "structurizr.dsl.identifier" : "fa3cf143-2166-45a6-8669-8257db9a757b.258a4642-4e33-400d-8d4e-142eb7153981.889c07d4-235c-41a1-af54-43ac28aef2c8"
+        },
+        "name" : "NODE-2",
+        "description" : "Сервер проектных расчетов DEV/STAGE (IP: 188.120.254.218)",
+        "environment" : "Production",
+        "technology" : "VPS KVM",
+        "instances" : "1"
+      } ]
+    }, {
+      "id" : "32",
+      "tags" : "Element,Deployment Node",
+      "properties" : {
+        "structurizr.dsl.identifier" : "bfb21088-a34c-4e39-91a3-d32043294af6.ebe1f02c-1dea-419a-a2e8-174f5e5976fa"
+      },
+      "name" : "FirstVDS",
+      "environment" : "Stage",
+      "instances" : "1",
+      "children" : [ {
+        "id" : "36",
+        "tags" : "Element,Deployment Node",
+        "properties" : {
+          "structurizr.dsl.identifier" : "bfb21088-a34c-4e39-91a3-d32043294af6.ebe1f02c-1dea-419a-a2e8-174f5e5976fa.ab98c63d-2303-4a57-a074-152d2ce47068"
+        },
+        "name" : "NODE-2",
+        "description" : "Сервер проектных расчетов DEV/STAGE (IP: 188.120.254.218)",
+        "environment" : "Stage",
+        "technology" : "VPS KVM",
+        "instances" : "1"
+      }, {
+        "id" : "33",
+        "tags" : "Element,Deployment Node",
+        "properties" : {
+          "structurizr.dsl.identifier" : "bfb21088-a34c-4e39-91a3-d32043294af6.ebe1f02c-1dea-419a-a2e8-174f5e5976fa.69f7cf30-b0b9-4621-9177-3fbced57f7fc"
+        },
+        "name" : "WEB-SERVER",
+        "description" : "Веб-сайт основного онлайн-сервиса (IP: 91.107.126.103)",
+        "environment" : "Stage",
+        "technology" : "VPS KVM",
+        "instances" : "1",
+        "containerInstances" : [ {
+          "id" : "92",
+          "tags" : "Container Instance",
+          "properties" : {
+            "structurizr.dsl.identifier" : "ebfe6a1a-2795-4ff7-95fa-cc69278736a0"
+          },
+          "description" : "Фронтенд приложения (HTML, ReactJS, PHP 7.3.33)",
+          "environment" : "Stage",
+          "deploymentGroups" : [ "Default" ],
+          "instanceId" : 1,
+          "containerId" : "67"
+        }, {
+          "id" : "93",
+          "tags" : "Container Instance",
+          "properties" : {
+            "structurizr.dsl.identifier" : "b0c20d19-881c-4d7a-8b46-85cc75b7e2eb"
+          },
+          "description" : "Веб-сервер (nginx/1.22.1 + php-fpm)",
+          "relationships" : [ {
+            "id" : "95",
+            "sourceId" : "93",
+            "destinationId" : "92",
+            "description" : "UI приложения",
+            "technology" : "HTTPS",
+            "linkedRelationshipId" : "76"
+          }, {
+            "id" : "94",
+            "sourceId" : "93",
+            "destinationId" : "89",
+            "description" : "Получение данных для UI",
+            "technology" : "REST API",
+            "linkedRelationshipId" : "77"
+          } ],
+          "environment" : "Stage",
+          "deploymentGroups" : [ "Default" ],
+          "instanceId" : 1,
+          "containerId" : "74"
+        }, {
+          "id" : "89",
+          "tags" : "Container Instance",
+          "properties" : {
+            "structurizr.dsl.identifier" : "e28d6d30-c649-4537-ae2b-77078aba47ce"
+          },
+          "description" : "Бэкенд приложение (PHP 7.3.33)",
+          "relationships" : [ {
+            "id" : "91",
+            "sourceId" : "89",
+            "destinationId" : "87",
+            "linkedRelationshipId" : "63"
+          }, {
+            "id" : "90",
+            "sourceId" : "89",
+            "destinationId" : "88",
+            "description" : "Хранилище статических файлов сайта",
+            "technology" : "FS",
+            "linkedRelationshipId" : "65"
+          } ],
+          "environment" : "Stage",
+          "deploymentGroups" : [ "Default" ],
+          "instanceId" : 1,
+          "containerId" : "62"
+        }, {
+          "id" : "87",
+          "tags" : "Container Instance",
+          "properties" : {
+            "structurizr.dsl.identifier" : "6fb0f70c-1f8c-4dba-9a08-8de744659f4d"
+          },
+          "description" : "db: db_kalkproru (MariaDB 10.11.4)",
+          "environment" : "Stage",
+          "deploymentGroups" : [ "Default" ],
+          "instanceId" : 1,
+          "containerId" : "60"
+        }, {
+          "id" : "88",
+          "tags" : "Container Instance",
+          "properties" : {
+            "structurizr.dsl.identifier" : "bfbe90b1-da21-4720-88eb-cca7e06ef10a"
+          },
+          "description" : "Файловая директория с правами только на чтение, 20Gb (Debian 11, ext4)",
+          "environment" : "Stage",
+          "deploymentGroups" : [ "Default" ],
+          "instanceId" : 1,
+          "containerId" : "61"
+        } ]
+      }, {
+        "id" : "35",
+        "tags" : "Element,Deployment Node",
+        "properties" : {
+          "structurizr.dsl.identifier" : "bfb21088-a34c-4e39-91a3-d32043294af6.ebe1f02c-1dea-419a-a2e8-174f5e5976fa.72b8813f-5777-4846-908a-cc9fc27d72a4"
+        },
+        "name" : "NODE-1",
+        "description" : "Сервер проектных расчетов PROD (IP: 212.109.221.247)",
+        "environment" : "Stage",
+        "technology" : "VPS KVM",
+        "instances" : "1"
+      }, {
+        "id" : "37",
+        "tags" : "Element,Deployment Node",
+        "properties" : {
+          "structurizr.dsl.identifier" : "bfb21088-a34c-4e39-91a3-d32043294af6.ebe1f02c-1dea-419a-a2e8-174f5e5976fa.97b8d137-51c9-4a4e-90fe-abf181d15e9c"
+        },
+        "name" : "SINODE-1",
+        "description" : "Сервер простых расчетов DEV/STAGE/PROD (IP: 83.220.170.100)",
+        "environment" : "Stage",
+        "technology" : "VPS KVM",
+        "instances" : "1"
+      }, {
+        "id" : "34",
+        "tags" : "Element,Deployment Node",
+        "properties" : {
+          "structurizr.dsl.identifier" : "bfb21088-a34c-4e39-91a3-d32043294af6.ebe1f02c-1dea-419a-a2e8-174f5e5976fa.603bcce6-bb38-4f90-b98b-be014d200d22"
+        },
+        "name" : "STATIC-STORAGE",
+        "description" : "Хранилище статических файлов (IP: 62.109.15.25)",
+        "environment" : "Stage",
+        "technology" : "VPS KVM",
+        "instances" : "1"
+      } ]
+    }, {
+      "id" : "18",
+      "tags" : "Element,Deployment Node",
+      "properties" : {
+        "structurizr.dsl.identifier" : "74a4829d-e7ca-4bba-b8d8-27c740d00d76.c9f25483-5863-417d-afab-2383f5343e98"
+      },
+      "name" : "FirstVDS",
+      "environment" : "Development",
+      "instances" : "1",
+      "children" : [ {
+        "id" : "20",
+        "tags" : "Element,Deployment Node",
+        "properties" : {
+          "structurizr.dsl.identifier" : "74a4829d-e7ca-4bba-b8d8-27c740d00d76.c9f25483-5863-417d-afab-2383f5343e98.2e1b8eb4-94c7-48eb-86c6-e83bdad18534"
+        },
+        "name" : "STATIC-STORAGE",
+        "description" : "Хранилище статических файлов (IP: 62.109.15.25)",
+        "environment" : "Development",
+        "technology" : "VPS KVM",
+        "instances" : "1"
+      }, {
+        "id" : "21",
+        "tags" : "Element,Deployment Node",
+        "properties" : {
+          "structurizr.dsl.identifier" : "74a4829d-e7ca-4bba-b8d8-27c740d00d76.c9f25483-5863-417d-afab-2383f5343e98.31c6a074-f1c4-4103-ad3a-1ca4a583764b"
+        },
+        "name" : "NODE-1",
+        "description" : "Сервер проектных расчетов PROD (IP: 212.109.221.247)",
+        "environment" : "Development",
+        "technology" : "VPS KVM",
+        "instances" : "1"
+      }, {
+        "id" : "22",
+        "tags" : "Element,Deployment Node",
+        "properties" : {
+          "structurizr.dsl.identifier" : "74a4829d-e7ca-4bba-b8d8-27c740d00d76.c9f25483-5863-417d-afab-2383f5343e98.fed927f6-01ff-4301-89fc-850818accbe9"
+        },
+        "name" : "NODE-2",
+        "description" : "Сервер проектных расчетов DEV/STAGE (IP: 188.120.254.218)",
+        "environment" : "Development",
+        "technology" : "VPS KVM",
+        "instances" : "1"
+      }, {
+        "id" : "23",
+        "tags" : "Element,Deployment Node",
+        "properties" : {
+          "structurizr.dsl.identifier" : "74a4829d-e7ca-4bba-b8d8-27c740d00d76.c9f25483-5863-417d-afab-2383f5343e98.0c8bd24f-07b6-4383-b84f-fc5465efb4a1"
+        },
+        "name" : "SINODE-1",
+        "description" : "Сервер простых расчетов DEV/STAGE/PROD (IP: 83.220.170.100)",
+        "environment" : "Development",
+        "technology" : "VPS KVM",
+        "instances" : "1"
+      }, {
+        "id" : "19",
+        "tags" : "Element,Deployment Node",
+        "properties" : {
+          "structurizr.dsl.identifier" : "74a4829d-e7ca-4bba-b8d8-27c740d00d76.c9f25483-5863-417d-afab-2383f5343e98.829a9116-9fdb-4b02-8e0d-3e38a30dc111"
+        },
+        "name" : "WEB-SERVER",
+        "description" : "Веб-сайт основного онлайн-сервиса (IP: 91.107.126.103)",
+        "environment" : "Development",
+        "technology" : "VPS KVM",
+        "instances" : "1",
+        "containerInstances" : [ {
+          "id" : "83",
+          "tags" : "Container Instance",
+          "properties" : {
+            "structurizr.dsl.identifier" : "0c7dbec4-2c3c-4934-8b82-df6898023862"
+          },
+          "description" : "Фронтенд приложения (HTML, ReactJS, PHP 7.3.33)",
+          "environment" : "Development",
+          "deploymentGroups" : [ "Default" ],
+          "instanceId" : 1,
+          "containerId" : "67"
+        }, {
+          "id" : "79",
+          "tags" : "Container Instance",
+          "properties" : {
+            "structurizr.dsl.identifier" : "129241c4-13db-4762-9bc2-cd10dc3c4be9"
+          },
+          "description" : "Файловая директория с правами только на чтение, 20Gb (Debian 11, ext4)",
+          "environment" : "Development",
+          "deploymentGroups" : [ "Default" ],
+          "instanceId" : 1,
+          "containerId" : "61"
+        }, {
+          "id" : "78",
+          "tags" : "Container Instance",
+          "properties" : {
+            "structurizr.dsl.identifier" : "dc46a456-319d-41d7-bb9f-5fdefd93c2ba"
+          },
+          "description" : "db: db_devkalkproru (MariaDB 10.11.4)",
+          "environment" : "Development",
+          "deploymentGroups" : [ "Default" ],
+          "instanceId" : 1,
+          "containerId" : "60"
+        }, {
+          "id" : "80",
+          "tags" : "Container Instance",
+          "properties" : {
+            "structurizr.dsl.identifier" : "6a02fc4c-d088-477f-8b76-c1488b138566"
+          },
+          "description" : "Бэкенд приложение (PHP 7.3.33)",
+          "relationships" : [ {
+            "id" : "81",
+            "sourceId" : "80",
+            "destinationId" : "79",
+            "description" : "Хранилище статических файлов сайта",
+            "technology" : "FS",
+            "linkedRelationshipId" : "65"
+          }, {
+            "id" : "82",
+            "sourceId" : "80",
+            "destinationId" : "78",
+            "linkedRelationshipId" : "63"
+          } ],
+          "environment" : "Development",
+          "deploymentGroups" : [ "Default" ],
+          "instanceId" : 1,
+          "containerId" : "62"
+        }, {
+          "id" : "84",
+          "tags" : "Container Instance",
+          "properties" : {
+            "structurizr.dsl.identifier" : "b17b8256-2535-414b-afd4-6fae807f7e13"
+          },
+          "description" : "Веб-сервер (nginx/1.22.1 + php-fpm)",
+          "relationships" : [ {
+            "id" : "86",
+            "sourceId" : "84",
+            "destinationId" : "80",
+            "description" : "Получение данных для UI",
+            "technology" : "REST API",
+            "linkedRelationshipId" : "77"
+          }, {
+            "id" : "85",
+            "sourceId" : "84",
+            "destinationId" : "83",
+            "description" : "UI приложения",
+            "technology" : "HTTPS",
+            "linkedRelationshipId" : "76"
+          } ],
+          "environment" : "Development",
+          "deploymentGroups" : [ "Default" ],
+          "instanceId" : 1,
+          "containerId" : "74"
+        } ]
+      } ]
+    }, {
+      "id" : "24",
+      "tags" : "Element,Deployment Node",
+      "properties" : {
+        "structurizr.dsl.identifier" : "74a4829d-e7ca-4bba-b8d8-27c740d00d76.467b0c6a-7728-4151-a4bc-04dddfc609ed"
+      },
+      "name" : "CloRu",
+      "environment" : "Development",
+      "instances" : "1",
+      "children" : [ {
+        "id" : "25",
+        "tags" : "Element,Deployment Node",
+        "properties" : {
+          "structurizr.dsl.identifier" : "74a4829d-e7ca-4bba-b8d8-27c740d00d76.467b0c6a-7728-4151-a4bc-04dddfc609ed.9d2ae7a1-f939-46d7-93ed-423dfcf0a070"
+        },
+        "name" : "kalkpro_project",
+        "description" : "Кластер для расчета оптимальных конфигураций лестниц. URL https://optistair(-dev).kalk.rpo",
+        "environment" : "Development",
+        "technology" : "VPC",
+        "instances" : "1",
+        "children" : [ {
+          "id" : "26",
+          "tags" : "Element,Deployment Node",
+          "properties" : {
+            "structurizr.dsl.identifier" : "74a4829d-e7ca-4bba-b8d8-27c740d00d76.467b0c6a-7728-4151-a4bc-04dddfc609ed.9d2ae7a1-f939-46d7-93ed-423dfcf0a070.d315eeca-5027-4fe4-8814-d03af8887000"
+          },
+          "name" : "Кластер kalkpro-k8s",
+          "environment" : "Development",
+          "technology" : "kubernetes",
+          "instances" : "1",
+          "children" : [ {
+            "id" : "27",
+            "tags" : "Element,Deployment Node",
+            "properties" : {
+              "structurizr.dsl.identifier" : "74a4829d-e7ca-4bba-b8d8-27c740d00d76.467b0c6a-7728-4151-a4bc-04dddfc609ed.9d2ae7a1-f939-46d7-93ed-423dfcf0a070.d315eeca-5027-4fe4-8814-d03af8887000.cf5dd82a-bb3f-45f2-a6c1-1af6af00c7ff"
+            },
+            "name" : "infrastructure",
+            "environment" : "Development",
+            "technology" : "k8s namespace",
+            "instances" : "1",
+            "children" : [ {
+              "id" : "29",
+              "tags" : "Element,Deployment Node,tagDeploymentInfrastructure,l1",
+              "properties" : {
+                "structurizr.dsl.identifier" : "74a4829d-e7ca-4bba-b8d8-27c740d00d76.467b0c6a-7728-4151-a4bc-04dddfc609ed.9d2ae7a1-f939-46d7-93ed-423dfcf0a070.d315eeca-5027-4fe4-8814-d03af8887000.cf5dd82a-bb3f-45f2-a6c1-1af6af00c7ff.9f4da9c5-49fa-45f0-adb5-20d7a99ccde6"
+              },
+              "name" : "balancer",
+              "description" : "Получение и обновление сертификатов",
+              "environment" : "Development",
+              "technology" : "Ingregress Nginx",
+              "instances" : "1"
+            } ],
+            "infrastructureNodes" : [ {
+              "id" : "28",
+              "tags" : "Element,Infrastructure Node,tagDeploymentInfrastructure,l1",
+              "properties" : {
+                "structurizr.dsl.identifier" : "74a4829d-e7ca-4bba-b8d8-27c740d00d76.467b0c6a-7728-4151-a4bc-04dddfc609ed.9d2ae7a1-f939-46d7-93ed-423dfcf0a070.d315eeca-5027-4fe4-8814-d03af8887000.cf5dd82a-bb3f-45f2-a6c1-1af6af00c7ff.ec33abc8-338e-4e17-adf0-114e0b791f1d"
+              },
+              "name" : "Cert-Manager",
+              "description" : "Получение и обновление сертификатов",
+              "environment" : "Development",
+              "technology" : "Cert manager"
+            } ]
+          }, {
+            "id" : "31",
+            "tags" : "Element,Deployment Node",
+            "properties" : {
+              "structurizr.dsl.identifier" : "74a4829d-e7ca-4bba-b8d8-27c740d00d76.467b0c6a-7728-4151-a4bc-04dddfc609ed.9d2ae7a1-f939-46d7-93ed-423dfcf0a070.d315eeca-5027-4fe4-8814-d03af8887000.e9bd209f-e79c-4249-a86c-b05fdb9e8dfd"
+            },
+            "name" : "optistair-calc-dev",
+            "environment" : "Development",
+            "technology" : "k8s namespace",
+            "instances" : "1"
+          }, {
+            "id" : "30",
+            "tags" : "Element,Deployment Node",
+            "properties" : {
+              "structurizr.dsl.identifier" : "74a4829d-e7ca-4bba-b8d8-27c740d00d76.467b0c6a-7728-4151-a4bc-04dddfc609ed.9d2ae7a1-f939-46d7-93ed-423dfcf0a070.d315eeca-5027-4fe4-8814-d03af8887000.5c39cd4d-35ba-433c-a9e0-2e6061a73041"
+            },
+            "name" : "optistair-calc",
+            "environment" : "Development",
+            "technology" : "k8s namespace",
+            "instances" : "1"
+          } ]
+        } ]
+      } ]
+    }, {
+      "id" : "38",
+      "tags" : "Element,Deployment Node",
+      "properties" : {
+        "structurizr.dsl.identifier" : "bfb21088-a34c-4e39-91a3-d32043294af6.a353453d-cb0b-4da2-9f2a-e409c21523c4"
+      },
+      "name" : "CloRu",
+      "environment" : "Stage",
+      "instances" : "1",
+      "children" : [ {
+        "id" : "39",
+        "tags" : "Element,Deployment Node",
+        "properties" : {
+          "structurizr.dsl.identifier" : "bfb21088-a34c-4e39-91a3-d32043294af6.a353453d-cb0b-4da2-9f2a-e409c21523c4.e4659398-695c-48fe-b3fe-b3a160a0e692"
+        },
+        "name" : "kalkpro_project",
+        "description" : "Кластер для расчета оптимальных конфигураций лестниц. URL https://optistair(-dev).kalk.rpo",
+        "environment" : "Stage",
+        "technology" : "VPC",
+        "instances" : "1",
+        "children" : [ {
+          "id" : "40",
+          "tags" : "Element,Deployment Node",
+          "properties" : {
+            "structurizr.dsl.identifier" : "bfb21088-a34c-4e39-91a3-d32043294af6.a353453d-cb0b-4da2-9f2a-e409c21523c4.e4659398-695c-48fe-b3fe-b3a160a0e692.460bad61-5723-4823-acdb-c4e266988ac0"
+          },
+          "name" : "Кластер kalkpro-k8s",
+          "environment" : "Stage",
+          "technology" : "kubernetes",
+          "instances" : "1",
+          "children" : [ {
+            "id" : "45",
+            "tags" : "Element,Deployment Node",
+            "properties" : {
+              "structurizr.dsl.identifier" : "bfb21088-a34c-4e39-91a3-d32043294af6.a353453d-cb0b-4da2-9f2a-e409c21523c4.e4659398-695c-48fe-b3fe-b3a160a0e692.460bad61-5723-4823-acdb-c4e266988ac0.8a33f22e-fe3d-4dd9-a9cc-725f2eb4d77e"
+            },
+            "name" : "optistair-calc-dev",
+            "environment" : "Stage",
+            "technology" : "k8s namespace",
+            "instances" : "1"
+          }, {
+            "id" : "41",
+            "tags" : "Element,Deployment Node",
+            "properties" : {
+              "structurizr.dsl.identifier" : "bfb21088-a34c-4e39-91a3-d32043294af6.a353453d-cb0b-4da2-9f2a-e409c21523c4.e4659398-695c-48fe-b3fe-b3a160a0e692.460bad61-5723-4823-acdb-c4e266988ac0.df6f9783-d56c-4523-a5c7-581d7b9c3b7a"
+            },
+            "name" : "infrastructure",
+            "environment" : "Stage",
+            "technology" : "k8s namespace",
+            "instances" : "1",
+            "children" : [ {
+              "id" : "43",
+              "tags" : "Element,Deployment Node,tagDeploymentInfrastructure,l1",
+              "properties" : {
+                "structurizr.dsl.identifier" : "bfb21088-a34c-4e39-91a3-d32043294af6.a353453d-cb0b-4da2-9f2a-e409c21523c4.e4659398-695c-48fe-b3fe-b3a160a0e692.460bad61-5723-4823-acdb-c4e266988ac0.df6f9783-d56c-4523-a5c7-581d7b9c3b7a.1bfd7c94-c356-41cd-ab1a-20059a1bb37e"
+              },
+              "name" : "balancer",
+              "description" : "Получение и обновление сертификатов",
+              "environment" : "Stage",
+              "technology" : "Ingregress Nginx",
+              "instances" : "1"
+            } ],
+            "infrastructureNodes" : [ {
+              "id" : "42",
+              "tags" : "Element,Infrastructure Node,tagDeploymentInfrastructure,l1",
+              "properties" : {
+                "structurizr.dsl.identifier" : "bfb21088-a34c-4e39-91a3-d32043294af6.a353453d-cb0b-4da2-9f2a-e409c21523c4.e4659398-695c-48fe-b3fe-b3a160a0e692.460bad61-5723-4823-acdb-c4e266988ac0.df6f9783-d56c-4523-a5c7-581d7b9c3b7a.01506d6a-8b36-4c22-831e-2c4af932b2b9"
+              },
+              "name" : "Cert-Manager",
+              "description" : "Получение и обновление сертификатов",
+              "environment" : "Stage",
+              "technology" : "Cert manager"
+            } ]
+          }, {
+            "id" : "44",
+            "tags" : "Element,Deployment Node",
+            "properties" : {
+              "structurizr.dsl.identifier" : "bfb21088-a34c-4e39-91a3-d32043294af6.a353453d-cb0b-4da2-9f2a-e409c21523c4.e4659398-695c-48fe-b3fe-b3a160a0e692.460bad61-5723-4823-acdb-c4e266988ac0.afcfdb55-d29c-4284-9495-2412f5296d8e"
+            },
+            "name" : "optistair-calc",
+            "environment" : "Stage",
+            "technology" : "k8s namespace",
+            "instances" : "1"
+          } ]
+        } ]
+      } ]
+    }, {
+      "id" : "52",
+      "tags" : "Element,Deployment Node",
+      "properties" : {
+        "structurizr.dsl.identifier" : "fa3cf143-2166-45a6-8669-8257db9a757b.9f450e92-32da-4169-87cc-f9141d08cdba"
+      },
+      "name" : "CloRu",
+      "environment" : "Production",
+      "instances" : "1",
+      "children" : [ {
+        "id" : "53",
+        "tags" : "Element,Deployment Node",
+        "properties" : {
+          "structurizr.dsl.identifier" : "fa3cf143-2166-45a6-8669-8257db9a757b.9f450e92-32da-4169-87cc-f9141d08cdba.887a1805-cad4-4d1e-aa35-0745ba062f4f"
+        },
+        "name" : "kalkpro_project",
+        "description" : "Кластер для расчета оптимальных конфигураций лестниц. URL https://optistair(-dev).kalk.rpo",
+        "environment" : "Production",
+        "technology" : "VPC",
+        "instances" : "1",
+        "children" : [ {
+          "id" : "54",
+          "tags" : "Element,Deployment Node",
+          "properties" : {
+            "structurizr.dsl.identifier" : "fa3cf143-2166-45a6-8669-8257db9a757b.9f450e92-32da-4169-87cc-f9141d08cdba.887a1805-cad4-4d1e-aa35-0745ba062f4f.9c7cfcde-ba06-481e-a96f-d7f44227f12c"
+          },
+          "name" : "Кластер kalkpro-k8s",
+          "environment" : "Production",
+          "technology" : "kubernetes",
+          "instances" : "1",
+          "children" : [ {
+            "id" : "59",
+            "tags" : "Element,Deployment Node",
+            "properties" : {
+              "structurizr.dsl.identifier" : "fa3cf143-2166-45a6-8669-8257db9a757b.9f450e92-32da-4169-87cc-f9141d08cdba.887a1805-cad4-4d1e-aa35-0745ba062f4f.9c7cfcde-ba06-481e-a96f-d7f44227f12c.66be8a1c-4bb9-4624-a267-92af18b4fd18"
+            },
+            "name" : "optistair-calc-dev",
+            "environment" : "Production",
+            "technology" : "k8s namespace",
+            "instances" : "1"
+          }, {
+            "id" : "58",
+            "tags" : "Element,Deployment Node",
+            "properties" : {
+              "structurizr.dsl.identifier" : "fa3cf143-2166-45a6-8669-8257db9a757b.9f450e92-32da-4169-87cc-f9141d08cdba.887a1805-cad4-4d1e-aa35-0745ba062f4f.9c7cfcde-ba06-481e-a96f-d7f44227f12c.2fbef182-ea85-4b69-9fc2-4bf42edd0c79"
+            },
+            "name" : "optistair-calc",
+            "environment" : "Production",
+            "technology" : "k8s namespace",
+            "instances" : "1"
+          }, {
+            "id" : "55",
+            "tags" : "Element,Deployment Node",
+            "properties" : {
+              "structurizr.dsl.identifier" : "fa3cf143-2166-45a6-8669-8257db9a757b.9f450e92-32da-4169-87cc-f9141d08cdba.887a1805-cad4-4d1e-aa35-0745ba062f4f.9c7cfcde-ba06-481e-a96f-d7f44227f12c.47b3044e-a889-4510-b5c7-55cf68591a9b"
+            },
+            "name" : "infrastructure",
+            "environment" : "Production",
+            "technology" : "k8s namespace",
+            "instances" : "1",
+            "children" : [ {
+              "id" : "57",
+              "tags" : "Element,Deployment Node,tagDeploymentInfrastructure,l1",
+              "properties" : {
+                "structurizr.dsl.identifier" : "fa3cf143-2166-45a6-8669-8257db9a757b.9f450e92-32da-4169-87cc-f9141d08cdba.887a1805-cad4-4d1e-aa35-0745ba062f4f.9c7cfcde-ba06-481e-a96f-d7f44227f12c.47b3044e-a889-4510-b5c7-55cf68591a9b.3e063064-95f1-476a-9faf-b1991b6503dd"
+              },
+              "name" : "balancer",
+              "description" : "Получение и обновление сертификатов",
+              "environment" : "Production",
+              "technology" : "Ingregress Nginx",
+              "instances" : "1"
+            } ],
+            "infrastructureNodes" : [ {
+              "id" : "56",
+              "tags" : "Element,Infrastructure Node,tagDeploymentInfrastructure,l1",
+              "properties" : {
+                "structurizr.dsl.identifier" : "fa3cf143-2166-45a6-8669-8257db9a757b.9f450e92-32da-4169-87cc-f9141d08cdba.887a1805-cad4-4d1e-aa35-0745ba062f4f.9c7cfcde-ba06-481e-a96f-d7f44227f12c.47b3044e-a889-4510-b5c7-55cf68591a9b.1d1ee1eb-6470-4953-8fba-c64ebeee164b"
+              },
+              "name" : "Cert-Manager",
+              "description" : "Получение и обновление сертификатов",
+              "environment" : "Production",
+              "technology" : "Cert manager"
+            } ]
+          } ]
+        } ]
+      } ]
+    } ]
+  },
+  "documentation" : { },
+  "views" : {
+    "systemContextViews" : [ {
+      "key" : "WEB_SITE_C4L1",
+      "order" : 1,
+      "description" : "Сайт KALK.PRO - Контекстная диаграмма",
+      "softwareSystemId" : "4",
+      "dimensions" : {
+        "width" : 4459,
+        "height" : 2500
+      },
+      "automaticLayout" : {
+        "implementation" : "Graphviz",
+        "rankDirection" : "TopBottom",
+        "rankSeparation" : 300,
+        "nodeSeparation" : 300,
+        "edgeSeparation" : 0,
+        "vertices" : false,
+        "applied" : true
+      },
+      "enterpriseBoundaryVisible" : true,
+      "elements" : [ {
+        "id" : "1",
+        "x" : 1699,
+        "y" : 200
+      }, {
+        "id" : "2",
+        "x" : 2449,
+        "y" : 200
+      }, {
+        "id" : "3",
+        "x" : 199,
+        "y" : 1400
+      }, {
+        "id" : "4",
+        "x" : 2074,
+        "y" : 800
+      }, {
+        "id" : "5",
+        "x" : 949,
+        "y" : 1400
+      }, {
+        "id" : "6",
+        "x" : 1699,
+        "y" : 1400
+      }, {
+        "id" : "7",
+        "x" : 2449,
+        "y" : 1400
+      }, {
+        "id" : "8",
+        "x" : 2037,
+        "y" : 2000
+      }, {
+        "id" : "9",
+        "x" : 3808,
+        "y" : 1400
+      } ],
+      "relationships" : [ {
+        "id" : "17",
+        "vertices" : [ {
+          "x" : 799,
+          "y" : 1400
+        } ]
+      }, {
+        "id" : "16"
+      }, {
+        "id" : "72",
+        "vertices" : [ {
+          "x" : 3049,
+          "y" : 1400
+        }, {
+          "x" : 3049,
+          "y" : 1700
+        } ]
+      }, {
+        "id" : "15"
+      }, {
+        "id" : "14"
+      }, {
+        "id" : "13"
+      }, {
+        "id" : "11"
+      }, {
+        "id" : "12"
+      }, {
+        "id" : "10"
+      } ]
+    } ],
+    "containerViews" : [ {
+      "key" : "WEB_SITE_C4L2",
+      "order" : 2,
+      "description" : "Сайт KALK.PRO - Контейнеры",
+      "softwareSystemId" : "4",
+      "dimensions" : {
+        "width" : 5586,
+        "height" : 3100
+      },
+      "automaticLayout" : {
+        "implementation" : "Graphviz",
+        "rankDirection" : "TopBottom",
+        "rankSeparation" : 300,
+        "nodeSeparation" : 300,
+        "edgeSeparation" : 0,
+        "vertices" : false,
+        "applied" : true
+      },
+      "externalSoftwareSystemBoundariesVisible" : true,
+      "elements" : [ {
+        "id" : "67",
+        "x" : 1024,
+        "y" : 1399
+      }, {
+        "id" : "1",
+        "x" : 649,
+        "y" : 199
+      }, {
+        "id" : "3",
+        "x" : 1786,
+        "y" : 1999
+      }, {
+        "id" : "5",
+        "x" : 3286,
+        "y" : 1999
+      }, {
+        "id" : "6",
+        "x" : 4036,
+        "y" : 1999
+      }, {
+        "id" : "7",
+        "x" : 4786,
+        "y" : 1999
+      }, {
+        "id" : "8",
+        "x" : 4374,
+        "y" : 2599
+      }, {
+        "id" : "9",
+        "x" : 2536,
+        "y" : 1999
+      }, {
+        "id" : "60",
+        "x" : 220,
+        "y" : 1999
+      }, {
+        "id" : "61",
+        "x" : 970,
+        "y" : 1999
+      }, {
+        "id" : "62",
+        "x" : 274,
+        "y" : 1399
+      }, {
+        "id" : "74",
+        "x" : 649,
+        "y" : 799
+      } ],
+      "relationships" : [ {
+        "id" : "70",
+        "vertices" : [ {
+          "x" : 4636,
+          "y" : 1999
+        } ]
+      }, {
+        "id" : "71",
+        "vertices" : [ {
+          "x" : 5386,
+          "y" : 1999
+        }, {
+          "x" : 5386,
+          "y" : 2403
+        } ]
+      }, {
+        "id" : "63"
+      }, {
+        "id" : "73"
+      }, {
+        "id" : "65"
+      }, {
+        "id" : "76"
+      }, {
+        "id" : "64",
+        "vertices" : [ {
+          "x" : 874,
+          "y" : 1803
+        }, {
+          "x" : 2386,
+          "y" : 1999
+        } ]
+      }, {
+        "id" : "75"
+      }, {
+        "id" : "16",
+        "vertices" : [ {
+          "x" : 3886,
+          "y" : 2403
+        } ]
+      }, {
+        "id" : "66",
+        "vertices" : [ {
+          "x" : 874,
+          "y" : 1803
+        } ]
+      }, {
+        "id" : "77"
+      }, {
+        "id" : "69",
+        "vertices" : [ {
+          "x" : 3886,
+          "y" : 1999
+        } ]
+      }, {
+        "id" : "68",
+        "vertices" : [ {
+          "x" : 3136,
+          "y" : 1999
+        } ]
+      } ]
+    } ],
+    "deploymentViews" : [ {
+      "key" : "WEB_SITE_DEPLOY_STAGE",
+      "order" : 4,
+      "description" : "Сайт KALK.PRO - Схема развертывания в stage окружении",
+      "softwareSystemId" : "4",
+      "dimensions" : {
+        "width" : 2100,
+        "height" : 2122
+      },
+      "automaticLayout" : {
+        "implementation" : "Graphviz",
+        "rankDirection" : "TopBottom",
+        "rankSeparation" : 300,
+        "nodeSeparation" : 300,
+        "edgeSeparation" : 0,
+        "vertices" : false,
+        "applied" : true
+      },
+      "environment" : "Stage",
+      "elements" : [ {
+        "id" : "88",
+        "x" : 1200,
+        "y" : 1440
+      }, {
+        "id" : "33",
+        "x" : 175,
+        "y" : 175
+      }, {
+        "id" : "89",
+        "x" : 450,
+        "y" : 840
+      }, {
+        "id" : "38",
+        "x" : 175,
+        "y" : 175
+      }, {
+        "id" : "39",
+        "x" : 175,
+        "y" : 175
+      }, {
+        "id" : "92",
+        "x" : 1200,
+        "y" : 840
+      }, {
+        "id" : "93",
+        "x" : 825,
+        "y" : 240
+      }, {
+        "id" : "40",
+        "x" : 175,
+        "y" : 175
+      }, {
+        "id" : "41",
+        "x" : 175,
+        "y" : 175
+      }, {
+        "id" : "87",
+        "x" : 450,
+        "y" : 1440
+      }, {
+        "id" : "32",
+        "x" : 175,
+        "y" : 175
+      } ],
+      "relationships" : [ {
+        "id" : "94"
+      }, {
+        "id" : "91"
+      }, {
+        "id" : "95"
+      }, {
+        "id" : "90"
+      } ]
+    }, {
+      "key" : "WEB_SITE_DEPLOY_PROD",
+      "order" : 5,
+      "description" : "Сайт KALK.PRO - Схема развертывания в production окружении",
+      "softwareSystemId" : "4",
+      "dimensions" : {
+        "width" : 2250,
+        "height" : 2122
+      },
+      "automaticLayout" : {
+        "implementation" : "Graphviz",
+        "rankDirection" : "TopBottom",
+        "rankSeparation" : 300,
+        "nodeSeparation" : 300,
+        "edgeSeparation" : 0,
+        "vertices" : false,
+        "applied" : true
+      },
+      "environment" : "Production",
+      "elements" : [ {
+        "id" : "55",
+        "x" : 175,
+        "y" : 175
+      }, {
+        "id" : "101",
+        "x" : 525,
+        "y" : 840
+      }, {
+        "id" : "46",
+        "x" : 175,
+        "y" : 175
+      }, {
+        "id" : "102",
+        "x" : 900,
+        "y" : 240
+      }, {
+        "id" : "47",
+        "x" : 175,
+        "y" : 175
+      }, {
+        "id" : "96",
+        "x" : 525,
+        "y" : 1440
+      }, {
+        "id" : "52",
+        "x" : 175,
+        "y" : 175
+      }, {
+        "id" : "97",
+        "x" : 1275,
+        "y" : 1440
+      }, {
+        "id" : "53",
+        "x" : 175,
+        "y" : 175
+      }, {
+        "id" : "98",
+        "x" : 1275,
+        "y" : 840
+      }, {
+        "id" : "54",
+        "x" : 175,
+        "y" : 175
+      } ],
+      "relationships" : [ {
+        "id" : "100"
+      }, {
+        "id" : "99"
+      }, {
+        "id" : "104"
+      }, {
+        "id" : "103"
+      } ]
+    }, {
+      "key" : "WEB_SITE_DEPLOY_DEVELOPMENT",
+      "order" : 3,
+      "description" : "Сайт KALK.PRO - Схема развертывания в dev окружении",
+      "softwareSystemId" : "4",
+      "dimensions" : {
+        "width" : 2280,
+        "height" : 2122
+      },
+      "automaticLayout" : {
+        "implementation" : "Graphviz",
+        "rankDirection" : "TopBottom",
+        "rankSeparation" : 300,
+        "nodeSeparation" : 300,
+        "edgeSeparation" : 0,
+        "vertices" : false,
+        "applied" : true
+      },
+      "environment" : "Development",
+      "elements" : [ {
+        "id" : "78",
+        "x" : 540,
+        "y" : 1440
+      }, {
+        "id" : "79",
+        "x" : 1290,
+        "y" : 1440
+      }, {
+        "id" : "24",
+        "x" : 175,
+        "y" : 175
+      }, {
+        "id" : "25",
+        "x" : 175,
+        "y" : 175
+      }, {
+        "id" : "26",
+        "x" : 175,
+        "y" : 175
+      }, {
+        "id" : "27",
+        "x" : 175,
+        "y" : 175
+      }, {
+        "id" : "18",
+        "x" : 175,
+        "y" : 175
+      }, {
+        "id" : "80",
+        "x" : 540,
+        "y" : 840
+      }, {
+        "id" : "19",
+        "x" : 175,
+        "y" : 175
+      }, {
+        "id" : "83",
+        "x" : 1290,
+        "y" : 840
+      }, {
+        "id" : "84",
+        "x" : 915,
+        "y" : 240
+      } ],
+      "relationships" : [ {
+        "id" : "82"
+      }, {
+        "id" : "81"
+      }, {
+        "id" : "86"
+      }, {
+        "id" : "85"
+      } ]
+    } ],
+    "configuration" : {
+      "branding" : { },
+      "styles" : {
+        "elements" : [ {
+          "tag" : "Software System",
+          "metadata" : true
+        }, {
+          "tag" : "web",
+          "shape" : "WebBrowser"
+        }, {
+          "tag" : "storage",
+          "background" : "#85bbf0",
+          "shape" : "Cylinder"
+        }, {
+          "tag" : "queue",
+          "background" : "#85bbf0",
+          "shape" : "Pipe"
+        }, {
+          "tag" : "folder",
+          "background" : "#85bbf0",
+          "shape" : "Folder"
+        }, {
+          "tag" : "proxy",
+          "background" : "#85bbf0"
+        }, {
+          "tag" : "external",
+          "background" : "#cccccc"
+        }, {
+          "tag" : "infrastructure",
+          "background" : "#ffffff",
+          "color" : "#999999"
+        }, {
+          "tag" : "o11y",
+          "background" : "#aacc99",
+          "color" : "#ffffff"
+        }, {
+          "tag" : "obsolete",
+          "background" : "#f085bb",
+          "color" : "#ffffff"
+        }, {
+          "tag" : "tagArchDebt",
+          "background" : "#f035bb",
+          "color" : "#ffffff"
+        }, {
+          "tag" : "tagStorageDev",
+          "background" : "#a5abd0",
+          "color" : "#ffffff",
+          "shape" : "Cylinder"
+        }, {
+          "tag" : "Boundary",
+          "fontSize" : 40,
+          "metadata" : true,
+          "description" : true
+        }, {
+          "tag" : "Group",
+          "color" : "#2e3a50",
+          "fontSize" : 32,
+          "metadata" : true,
+          "description" : true
+        } ],
+        "relationships" : [ {
+          "tag" : "tagArchDebt",
+          "color" : "#f035bb"
+        } ]
+      },
+      "themes" : [ "https://static.structurizr.com/themes/default/theme.json" ],
+      "terminology" : { },
+      "metadataSymbols" : "SquareBrackets",
+      "lastSavedView" : "WEB_SITE_C4L1"
+    }
+  }
+}

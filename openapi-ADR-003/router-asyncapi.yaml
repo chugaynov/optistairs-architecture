@@ -1,0 +1,74 @@
+asyncapi: '2.6.0'
+info:
+  title: Router API
+  version: '1.0.0'
+  description: Частичная спецификация для Сервиса sockets/Router.js системы "Кластер проектных расчетов".
+
+servers:
+  production:
+    url: wss://node-1.kalk.pro/socket.io/
+    protocol: wss
+  stage:
+    url: wss://node-2.kalk.pro/socket.io/
+    protocol: wss
+  development:
+    url: wss://node-2.kalk.pro/socket.io/
+    protocol: wss
+
+channels:
+  ui-rest-message:
+    description: Канал для обмена сообщениями между "кластером" и UI
+    subscribe:
+      operationId: rest-message-request
+      summary: Ожидание сообщения от userId UI и отправка этого сообщения на REST-сервер
+      message:
+        $ref: '#/components/messages/Message'
+    publish:
+      operationId: rest-message-response
+      summary: Опубликовать ответ REST-сервера пользователю с userId UI
+      message:
+        $ref: '#/components/messages/Message'
+  webhook:
+    description: Канал для обмена сообщениями между "кластером" и WebHook Listener-ом
+    subscribe:
+      operationId: rest-webhook
+      summary: Получить от REST-сервера асинхронный response инициированный событием rest-message-request и вернуть его пользователю через rest-message-response
+      message:
+        $ref: '#/components/messages/Message'
+
+components:
+  messages:
+    Message:
+      contentType: application/json
+      payload:
+        type: object
+        properties:
+          userId:
+            type: string
+            description: Уникальный идентификатор пользователя, который сделал запрос на расчет
+            example: "user@email.ru"
+          rest:
+            type: object
+            properties:
+              url:
+                type: string
+                description: Endpoint сервере куда будет отправлен запрос
+                example: "https://domain.com/api"
+              method:
+                type: string
+                enum:
+                  - GET
+                  - POST
+                  - PUT
+                  - PATCH
+                  - DELETE
+                  - HEAD
+                  - OPTIONS
+                  - CONNECT
+                  - TRACE
+              headers:
+                type: object
+                description: Может быть пустым в контексте отправки сообщений. Требования к содержимому определены спецификациями RFC 7230 - «Message Syntax and Routing», RFC 7231 - «Semantics and Content», RFC 2616.
+              body:
+                type: object
+                description: Требования к содержимому определены спецификациями RFC 7230 - «Message Syntax and Routing», RFC 7231 - «Semantics and Content», RFC 2616.

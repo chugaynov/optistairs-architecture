@@ -1,0 +1,294 @@
+@startuml
+actor "User" as user
+participant "Kalk.Pro сайт\n(Frontend приложение OptiStair)" as frontend
+participant "Kalk.Pro сайт\n(Backend)" as site
+participant "OptiStair App\n(K8s Backend)" as app
+participant "OptiStair БД\n(K8s Cluster)" as db
+== Пользователь зарегистрировался на сайте ==
+user -> frontend: Авторизация на сайте
+frontend -> site: POST логин + пароль
+site -> app: POST: /user-acl
+    note right of site
+        Установить
+        max_simultaneous_requests = 1
+        available_calculations_count = 999
+    end note
+app -> db: Установить параметры доступа
+    note right of app
+        INSERT user_acl (`max_simultaneous_requests`, `available_calculations_count`)
+        VALUES ({maxSimultaneousRequests}, {availableCalculationsCount})
+    end note
+app <-- db: Параметры установлены
+site <-- app: Настройки пользователя установлены
+frontend <-- site: Пользователь авторизован на сайте
+user <-- frontend: Пользователь получил доступ к веб-приложению
+
+== Бесконечный цикл опроса состояния расчёта (после авторизации) ==
+user -> frontend: Запуск веб-приложения
+loop Периодический запрос состояния расчёта через каждые 5 секунд
+    frontend -> app: GET: /request-status
+    app -> db: Получить статус расчёта
+        note right of app
+            Выборки из таблицы optimal_configurations
+            status_id = 'new' - Количество запросов в очереди на расчёт перед текущим
+            status_id = 'processing' - В процессе расчёта (можно запросить прогресс)
+            status_id = 'ready' - Можно запросить подобранные конфигурации
+        end note
+
+        note right of app
+            // Готовые расчёты
+            SELECT id
+            FROM requests
+            WHERE
+            user_email={userEmail}
+            AND calculation_id={userCalculationId}
+            AND status IN ('ready')
+        end note
+    app <-- db: Текущий статус расчёта
+    alt СТАТУС NULL (запросов нет))
+        frontend <-- app: HTTP 200
+        note right of frontend
+            status: null
+            positionInQueue: 0
+            progress: 0.0
+            result: {}
+        end note
+        note right of frontend #LightGreen
+            Кнопка "Рассчитать" - разблокирована
+        end note
+        user <-- frontend: Пользователь может нажать кнопку "Рассчитать""
+    else IF СТАТУС_РАСЧËТА = 'new'
+        frontend <-- app: HTTP 200
+        note right of frontend
+            status: 'new'
+            positionInQueue: 5
+            progress: 0.0
+            result: {}
+        end note
+        note right of frontend #Pink
+            Кнопка "Рассчитать" - заблокирована
+        end note
+        user <-- frontend: Показать сообщение пользователю
+        note right of user
+            Ваш расчёт 5-й в очереди
+        end note
+    else IF СТАТУС_РАСЧËТА = 'processing'
+        frontend <-- app: HTTP 200
+        note right of frontend
+            status: 'processing'
+            positionInQueue: 0
+            progress: 71.32
+            result: {}
+        end note
+        note right of frontend #Pink
+            Кнопка "Рассчитать" - заблокирована
+        end note
+        user <-- frontend: Показать сообщение пользователю
+        note right of user
+            Готовность вашего расчёта 71.32%
+        end note
+        opt IF progress не меняется в течении 30 сек THEN Расчёт завис на сервере
+            user <-- frontend: Показать сообщение пользователю
+            note right of user
+                Не удается выполнить расчёт.
+                Пожалуйста измените параметры проёма
+                или критерии удобства лестницы.
+            end note
+            user -> frontend: Вносит изменения в параметры
+            note right of frontend #LightGreen
+                Кнопка "Рассчитать" - разблокирована
+            end note
+        end
+    else IF СТАТУС_РАСЧËТА = 'ready'
+        app -> db: Получить найденные конфигурации
+            note right of app
+                SELECT configurations
+                FROM optimal_configurations
+                WHERE request_id={id}
+            end note
+        app <- db: configurations
+        frontend <-- app: HTTP 200
+        note right of frontend
+            status: 'ready'
+            positionInQueue: 0
+            progress: 100.0
+            result: {...configurations...}
+        end note
+        note right of frontend #LightGreen
+            Кнопка "Рассчитать" - разблокирована
+        end note
+        user <-- frontend: Вывести найденные конфигурации лестниц
+        note right of user
+            Список оптимальных конфигураций лестниц
+        end note
+        frontend --> app: PATCH: /request-status
+            app -> db: Установить status_id='ready'
+                note right of app
+                    UPDATE requests SET
+                        status_id='send',
+                        update_time=NOW()
+                    WHERE user_email={userEmail}
+                    AND calculation_id={userCalculationId}
+                    AND status_id='ready'
+                end note
+            app <-- db: Значение available_calculations_count
+        frontend <-- app: Статус запроса изменён
+    else IF HTTP_CODE = 400 OR HTTP_CODE = 408
+        frontend <-- app: HTTP 400 || 408
+        note right of frontend #Pink
+            Кнопка "Рассчитать" - заблокирована
+        end note
+        user <-- frontend: Показать ошибку пользователю
+        note right of user
+            400 Bad Request
+            408 Request Timeout
+        end note
+    else IF HTTP_CODE = 500
+        frontend <-- app: HTTP 500
+        note right of frontend #Pink
+            Кнопка "Рассчитать" - заблокирована
+        end note
+        user <-- frontend: Показать ошибку пользователю
+        note right of user
+            500 Internal Server Error
+        end note
+    end
+end
+
+== Создание запроса на подбор оптимальных конфигураций лестниц ==
+note right of frontend #LightGreen
+    Кнопка "Рассчитать" - разблокирована
+end note
+user -> frontend: Запрос на подбор оптимальной конфигурации
+frontend -> app: POST: /{stair-type}
+    note right of frontend
+        Установить параметры подбора конфигураций
+        - идентификатор расчёта
+        - критерии удобства лестницы
+        - параметры проема
+        - тип конструкции
+    end note
+app -> db: Проверка ACL пользователя
+    note right of app
+        SELECT  max_simultaneous_requests,
+                available_calculations_count
+        FROM user_acl
+    end note
+app <-- db: Значение available_calculations_count
+alt IF available_calculations_count > 0 THEN Пользователю доступен подбор конфигураций лестниц
+    app -> db: Проверка запросов пользователя, которые сейчас в состоянии расчёта
+        note right of app
+            SELECT COUNT(*) AS processing_requests
+            FROM requests
+            WHERE user_email={userEmail}
+            AND status IN ('new', 'processing')
+        end note
+    app <-- db: Значение processing_requests
+
+    alt IF max_simultaneous_requests > processing_requests THEN Можно разместить новый расчёт
+        app -> db: Создать новый запрос на подбор конфигураций
+            note right of app
+                INSERT requests VALUES (... status_id='new', request_data={...} ...)
+            end note
+        app <-- db: Запрос создан
+        frontend <-- app: HTTP: 200 Success
+        note right of frontend #Pink
+            Кнопка "Рассчитать" - заблокирована
+        end note
+        user <- frontend: Сообщение со статусом состояние расчёта
+        note right of user
+            Ожидание очереди расчёта... 30 сек
+        end note
+    else ELSE Превышен лимит на размещение новых запросов
+        frontend <-- app: HTTP: 429 Too Many Requests
+        note right of frontend #Pink
+            Кнопка "Рассчитать" - заблокирована
+        end note
+        user <- frontend: Сообщение пользователю о запрете размещения запроса
+        note right of user
+            Превышен лимит на размещение новых запросов
+            Попробуйте позже
+        end note
+    end
+else ELSE Использованы все доступные запросы на подбор конфигураций
+    frontend <-- app: HTTP: 402 Payment Required
+    note right of frontend #Pink
+        Кнопка "Рассчитать" - заблокирована
+    end note
+    user <- frontend: Сообщение пользователю о запрете размещения запроса
+    note right of user
+        Использованы все доступные запросы на подбор конфигураций
+        Требуется оплата доступа
+    end note
+end
+
+== CRONJOB: Задание на выполнение расчёта и очереди ==
+loop Периодический опрос на появление новых расчётов через каждые 30 секунд
+    app -> db: Получить идентификатор запроса для расчёта
+    note right of app
+        UPDATE requests SET
+            status_id='processing',
+            create_time=NOW(),
+            update_time=NOW(),
+            progress_percent=0.00
+        WHERE id=(SELECT id
+            FROM requests
+            WHERE
+            AND status_id='new'
+            ORDER by create_time ASC
+            LIMIT 1);
+        SELECT LAST_INSERT_ID();
+    end note
+    opt IF id > 0
+        app <-- db: Идентификатор запроса для расчёта id
+        app -> db: Получить параметры запроса
+        note right of app
+            SELECT r.user_email, acl.available_calculations_count, r.request_data
+            FROM requests r, user_acl acl
+            WHERE r.id={id}
+            AND r.user_email=acl.user_email
+        end note
+        app <-- db: JSON с параметрами запроса, user_email, available_calculations_count
+        activate app #Pink
+        app -> app: Проверить что request_data соответствует\nтекущему инстансу калькулятора соответсвующей лестницы
+        app -> db: Уменьшить количество расчётов, доступных пользователю
+        deactivate app
+            note right of app
+                UPDATE user_acl SET
+                available_calculations_count={availableCalculationsCount - 1}
+                WHERE user_email={userEmail}
+            end note
+        app <-- db: Можно проводить расчет
+        activate app #Pink
+        note right of app
+            Подбор оптимальных конфигураций лестниц
+            по заданным параметрам проёма и критериям
+            удобства лестницы
+        end note
+        app -> app: Расчёт
+        activate app #DarkSalmon
+            app -> db: Обновить прогресс выполнения расчёта
+            note right of app
+                UPDATE requests SET
+                    progress_percent={currentProgressValue},
+                    update_time=NOW()
+                WHERE id={id}
+            end note
+            app <-- db: Прогресс обновлен
+        deactivate app
+        app -> db: Записать в БД результат расчёта
+        note right of app
+            // В одной транзакции
+            INSERT optimal_configurations (`request_id`, `configurations`)
+            VALUES ({id}, {calculationResult});
+            UPDATE requests SET
+                progress_percent=100.0,
+                status_id='ready'
+                update_time=NOW()
+            WHERE id={id};
+        end note
+        app <-- db: Результат расчёта записан в БД
+        deactivate app
+    end
+end
+@enduml

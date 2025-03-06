@@ -1,0 +1,30 @@
+@startuml
+
+entity "requests" as requests {
+    *id : SERIAL PRIMARY KEY
+    --
+    *user_email : VARCHAR(128) NOT NULL
+    *calculation_id : VARCHAR(36) NOT NULL
+    *status_id : ENUM ('new', 'processing', 'ready', 'send') NOT NULL
+    *request_data : JSON NOT NULL
+    *progress_percent : DECIMAL
+    *create_time : TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+    *update_time : TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+}
+
+entity "optimal_configurations" as optimal_configurations {
+    *request_id : INTEGER NOT NULL
+    --
+    *configurations : JSON NOT NULL
+}
+optimal_configurations }--|{ requests : request_ids
+
+entity "user_acl" as user_acl {
+    *user_email : VARCHAR(128) NOT NULL PRIMARY KEY
+    --
+    *update_time : TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+    *max_simultaneous_requests : INTEGER
+    *available_calculations_count : INTEGER
+}
+
+@enduml

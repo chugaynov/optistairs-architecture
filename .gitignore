@@ -1,0 +1,8 @@
+.idea
+
+.structurizr
+c4_sys/.structurizr
+#c4_sys/workspace.json
+c4_sys/*/.structurizr
+#c4_sys/*/workspace.json
+

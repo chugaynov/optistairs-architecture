@@ -1,0 +1,138 @@
+openapi: 3.0.0
+info:
+  title: WebHookListener API
+  version: 1.0.0
+  description: Спецификация для Сервиса WebHookListener системы "Кластер проектных расчетов".
+
+servers:
+  - url: wss://node-1.kalk.pro/socket.io/
+    description: Базовый URL для PROD
+  - url: wss://node-2.kalk.pro/socket.io/
+    description: Базовый URL для STAGE и DEV
+
+paths:
+  /webhooks:
+    post:
+      operationId: sendWebhook
+      summary: Получить список оптимальных конфигураций для Прямой лестницы
+      tags:
+        - Public
+      parameters:
+        - $ref: '#/components/parameters/version'
+      requestBody:
+        $ref: '#/components/requestBodies/RequestBody'
+      responses:
+        200:
+          $ref: '#/components/responses/StatusOk'
+        400:
+          $ref: '#/components/responses/Error400'
+        422:
+          $ref: '#/components/responses/Error422'
+        500:
+          $ref: '#/components/responses/Error500'
+
+components:
+  schemas:
+    Error:
+      type: object
+      properties:
+        message:
+          type: string
+        reason:
+          type: string
+    UserId:
+      type: string
+      description: Уникальный идентификатор пользователя, который сделал запрос на расчет
+      example: "user@email.ru"
+    Md5:
+      type: string
+      description: Контрольная сумма запроса
+      example: "a6caec181131e2d8b3c626ce75f8ec0a"
+    ResponseBody:
+      type: object
+      properties:
+        md5:
+          $ref: '#/components/schemas/Md5'
+    RequestData:
+      type: object
+      properties:
+        userId:
+          type: string
+          description: Уникальный идентификатор пользователя, который сделал запрос на расчет
+          example: "user@email.ru"
+        rest:
+          type: object
+          properties:
+            url:
+              type: string
+              description: Endpoint сервере куда будет отправлен запрос
+              example: "https://domain.com/api"
+            method:
+              type: string
+              enum:
+                - GET
+                - POST
+                - PUT
+                - PATCH
+                - DELETE
+                - HEAD
+                - OPTIONS
+                - CONNECT
+                - TRACE
+            headers:
+              type: object
+              description: Может быть пустым в контексте отправки сообщений. Требования к содержимому определены спецификациями RFC 7230 - «Message Syntax and Routing», RFC 7231 - «Semantics and Content», RFC 2616.
+            body:
+              type: object
+              description: Требования к содержимому определены спецификациями RFC 7230 - «Message Syntax and Routing», RFC 7231 - «Semantics and Content», RFC 2616.
+
+  requestBodies:
+    RequestBody:
+      required: true
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/RequestData'
+  responses:
+    StatusOk:
+      description: Удачный ответ
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/ResponseBody'
+    Error400:
+      description: Некорректный запрос
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/Error'
+          example:
+            message: Запрос не может быть обработан
+            reason: Запрос является некорректным
+    Error422:
+      description: Невозможно обработать
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/Error'
+          example:
+            message: Запрос не может быть обработан
+            reason: Невозможно выполнить расчет с заданными параметрами
+    Error500:
+      description: Внутренняя ошибка сервера
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/Error'
+          example:
+            message: Ведутся технические работы, попробуйте позднее
+            reason: Ошибка сервера
+  parameters:
+    version:
+      name: version
+      in: query
+      required: false
+      schema:
+        type: string
+      description: Версия API, например, "v1"
+
