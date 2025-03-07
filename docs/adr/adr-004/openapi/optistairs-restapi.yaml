@@ -1,0 +1,556 @@
+openapi: 3.0.0
+info:
+  title: OptiStairs API
+    Программная система "Автоматический подбор оптимальной конфигурации лестницы" (Функциональный Сервис)
+  version: 1.0.0
+  description: Сервис доступен для всех систем делающих запрос с доменов группы *.kalk.pro
+    или любых других, добавленных в конфигурацию функционального сервиса.
+
+servers:
+  - url: https://optistairs.kalk.pro
+    description: Базовый URL для PROD
+  - url: https://optistairs-dev.kalk.pro
+    description: Базовый URL для STAGE и DEV
+
+paths:
+  /request-status:
+    get:
+      operationId: GetRequestStatus
+      summary: Получить статус состояния расчета
+      tags:
+        - Public
+      parameters:
+        - $ref: '#/components/parameters/version'
+      responses:
+        200:
+          $ref: '#/components/responses/RequestStatus'
+        400:
+          $ref: '#/components/responses/Error400'
+        422:
+          $ref: '#/components/responses/Error422'
+        500:
+          $ref: '#/components/responses/Error500'
+    patch:
+      operationId: UpdateRequestStatus
+      summary: Обновить статус расчёта (меняет status_id с 'ready' на 'send')
+      tags:
+        - Public
+      parameters:
+        - $ref: '#/components/parameters/version'
+      responses:
+        200:
+          $ref: '#/components/responses/EmptySuccess200'
+        400:
+          $ref: '#/components/responses/Error400'
+        422:
+          $ref: '#/components/responses/Error422'
+        500:
+          $ref: '#/components/responses/Error500'
+  /straight-stair:
+    post:
+      operationId: CreateRequestIShapeStair
+      summary: Создать запрос на подбор оптимальных конфигураций Прямой лестницы
+      tags:
+        - Public
+      parameters:
+        - $ref: '#/components/parameters/version'
+      requestBody:
+        $ref: '#/components/requestBodies/StraightStairRequestBody'
+      responses:
+        200:
+          $ref: '#/components/responses/EmptySuccess200'
+        400:
+          $ref: '#/components/responses/Error400'
+        422:
+          $ref: '#/components/responses/Error422'
+        500:
+          $ref: '#/components/responses/Error500'
+
+  /l-shape-stair:
+    post:
+      operationId: CreateRequestLShapeStair
+      summary: Создать запрос на подбор оптимальных конфигураций Г-образной лестницы
+      tags:
+        - Public
+      parameters:
+        - $ref: '#/components/parameters/version'
+      requestBody:
+        $ref: '#/components/requestBodies/LShapeStairRequestBody'
+      responses:
+        200:
+          $ref: '#/components/responses/EmptySuccess200'
+        400:
+          $ref: '#/components/responses/Error400'
+        422:
+          $ref: '#/components/responses/Error422'
+        500:
+          $ref: '#/components/responses/Error500'
+
+  /u-shape-stair:
+    post:
+      operationId: CreateRequestUShapeStair
+      summary: Создать запрос на подбор оптимальных конфигураций П-образной лестницы
+      tags:
+        - Public
+      parameters:
+        - $ref: '#/components/parameters/version'
+      requestBody:
+        $ref: '#/components/requestBodies/UShapeStairRequestBody'
+      responses:
+        200:
+          $ref: '#/components/responses/EmptySuccess200'
+        400:
+          $ref: '#/components/responses/Error400'
+        422:
+          $ref: '#/components/responses/Error422'
+        500:
+          $ref: '#/components/responses/Error500'
+  /user-acl:
+    post:
+      operationId: CreateUserAcl
+      summary: Установить параметры доступа пользователя к расчетам
+      tags:
+        - Private
+      security:
+        - ApiKeyAuth: []
+      parameters:
+        - $ref: '#/components/parameters/version'
+        - $ref: '#/components/securitySchemes/ApiKeyAuth'
+      requestBody:
+        $ref: '#/components/requestBodies/UserAcl'
+      responses:
+        200:
+          $ref: '#/components/responses/EmptySuccess200'
+        400:
+          $ref: '#/components/responses/Error400'
+        422:
+          $ref: '#/components/responses/Error422'
+        500:
+          $ref: '#/components/responses/Error500'
+    patch:
+      operationId: UpdateUserAcl
+      summary: Обновить параметры доступа пользователя к расчетам
+      tags:
+        - Private
+      security:
+        - ApiKeyAuth: [ ]
+      parameters:
+        - $ref: '#/components/parameters/version'
+        - $ref: '#/components/securitySchemes/ApiKeyAuth'
+      requestBody:
+        $ref: '#/components/requestBodies/UserAcl'
+      responses:
+        200:
+          $ref: '#/components/responses/EmptySuccess200'
+        400:
+          $ref: '#/components/responses/Error400'
+        422:
+          $ref: '#/components/responses/Error422'
+        500:
+          $ref: '#/components/responses/Error500'
+components:
+  securitySchemes:
+    ApiKeyAuth:
+      description: Секретный ключ для приватных методов
+      type: apiKey
+      in: header
+      name: X-API-Key
+  schemas:
+    Status:
+      type: string
+      enum:
+        - new
+        - processing
+        - ready
+        - send
+      description: Статус обработки запроса на расчёт
+    PositionInQueue:
+      type: integer
+      description: Позиция запроса в очереди на обработку (для статуса 'new')
+      example: 4
+    Progress:
+      type: number
+      multipleOf: 0.01
+      description: Процент готовности расчёта (для статуса 'processing')
+      example: 71.32
+    ComfortFactor:
+      type: number
+      description: Коэффициент комфорта от 0 до 1
+      example: 0.8
+    StairAngle:
+      type: number
+      description: Угол наклона лестницы, градусы
+      example: 45.6
+    ComfortFormula:
+      type: number
+      description: Формула удобства (h + s), мм
+      example: 414
+    BlondelFormula:
+      type: number
+      description: Формула удобства (2h + s), мм
+      example: 630
+    StepHeight:
+      type: number
+      description: Высота ступени, мм
+      example: 134.5
+    StepRun:
+      type: number
+      description: Глубина ступени, мм
+      example: 270
+    StairWidth:
+      type: number
+      description: Ширина лестницы, мм
+      example: 1000
+    StepsTotalCount:
+      type: integer
+      description: Количество ступеней, шт
+      example: 15
+    WinderStepsCount:
+      type: integer
+      description: Количество забежных ступеней, шт
+      example: 3
+    MinSaddleWidth:
+      type: number
+      description: Минимальная ширина косоура, мм
+      example: 150.7
+    Error:
+      type: object
+      properties:
+        message:
+          type: string
+        reason:
+          type: string
+    MaxSimultaneousRequests:
+      type: integer
+      description: Количество запросов пользователя, которые могут обрабатываться одновременно
+      example: 1
+    AvailableCalculationsCount:
+      type: integer
+      description: Количество оставшихся запросов пользователя, которые могут быть обработаны
+      example: 10
+    UserId:
+      type: string
+      description: Уникальный идентификатор пользователя, который сделал запрос на расчет
+      example: "user@email.ru"
+    CalculationId:
+      type: string
+      description: Уникальный идентификатор подбора конфигураций, varchar(36) uuid4 (создается на стороне frontend)
+      example: "179eeee9-1699-4e2c-b648-0eb643c1cfb7"
+    ConfigurationsItem:
+      type: object
+      properties:
+        comfortFactor:
+          $ref: '#/components/schemas/ComfortFactor'
+        stairAngle:
+          $ref: '#/components/schemas/StairAngle'
+        comfortFormula:
+          $ref: '#/components/schemas/ComfortFormula'
+        blondelFormula:
+          $ref: '#/components/schemas/BlondelFormula'
+        stepHeight:
+          $ref: '#/components/schemas/StepHeight'
+        stepRun:
+          $ref: '#/components/schemas/StepRun'
+        stairWidth:
+          $ref: '#/components/schemas/StairWidth'
+        stepsTotalCount:
+          $ref: '#/components/schemas/StepsTotalCount'
+        winderStepsCount:
+          $ref: '#/components/schemas/WinderStepsCount'
+        minSaddleWidth:
+          $ref: '#/components/schemas/MinSaddleWidth'
+      required:
+        - comfortFactor
+        - stairAngle
+        - comfortFormula
+        - blondelFormula
+        - stepHeight
+        - stepRun
+        - stairWidth
+        - stepsTotalCount
+    StraightStairConfigurationsItems:
+      type: array
+      items:
+        $ref: '#/components/schemas/ConfigurationsItem'
+    AcceptableRange:
+      type: object
+      properties:
+        min:
+          type: integer
+          description: Левая граница допустимого значения
+          example: 15
+        max:
+          type: integer
+          description: Правая граница допустимого значения
+          example: 18
+    ComfortParams:
+      type: object
+      properties:
+        stepRise:
+          $ref: '#/components/schemas/AcceptableRange'
+        stepRun:
+          $ref: '#/components/schemas/AcceptableRange'
+        headRoom:
+          $ref: '#/components/schemas/AcceptableRange'
+        blondelFormula:
+          $ref: '#/components/schemas/AcceptableRange'
+        stepOverhangSpace:
+          $ref: '#/components/schemas/AcceptableRange'
+        stairWidth:
+          $ref: '#/components/schemas/AcceptableRange'
+    Construction:
+      type: object
+      properties:
+        stringerType:
+          type: string
+          enum:
+            - sawtooth
+            - stringer
+            - metal-zigzag
+            - mono-stringer
+    StraightStairOpening:
+      type: object
+      properties:
+        height:
+          type: integer
+          description: Высота проема, мм
+          example: 2700
+        width:
+          type: integer
+          description: Ширина проема, мм
+          example: 100
+        length:
+          type: integer
+          description: Длина проема, мм
+          example: 5000
+        maxBaseLength:
+          type: integer
+          description: Допустимая длина по основанию, мм
+          example: 6000
+        slabThickness:
+          type: integer
+          description: Толщина междуэтажного перекрытия, мм
+          example: 300
+      required:
+        - height
+        - width
+        - length
+        - maxBaseLength
+        - slabThickness
+    LShapeStairOpening:
+      type: object
+      properties:
+        shape:
+          description: Форма проема (прямоугольная или Г-образная)
+          type: string
+          enum:
+            - rectangle
+            - l-shape
+        height:
+          type: integer
+          description: Высота проема, мм
+          example: 2700
+        overTopRunWidth:
+          type: integer
+          description: Ширина проема, мм
+          example: 100
+        overTopRunLength:
+          type: integer
+          description: Длина проема над верхним маршем, мм
+          example: 5000
+        overBottomRunLength:
+          type: integer
+          description: Длина проема над нижним маршем, мм (>= overTopRunWidth)
+          example: 3000
+        maxBaseLength:
+          type: integer
+          description: Допустимая длина по основанию, мм
+          example: 6000
+        slabThickness:
+          type: integer
+          description: Толщина междуэтажного перекрытия, мм
+          example: 300
+      required:
+        - shape
+        - height
+        - overTopRunWidth
+        - overTopRunLength
+        - maxBaseLength
+        - slabThickness
+    UShapeStairOpening:
+      type: object
+      properties:
+        shape:
+          description: Форма проема (прямоугольная, Г-образная, обратная Г-образная)
+          type: string
+          enum:
+            - rectangle
+            - l-shape
+            - reverse-l-shape
+        height:
+          type: integer
+          description: Высота проема, мм
+          example: 2700
+        overTopRunLength:
+          type: integer
+          description: Длина проема над верхним маршем, мм
+          example: 5000
+        overMiddleRunLength:
+          type: integer
+          description: Длина проема над промежуточным маршем, мм
+          example: 2000
+        overBottomRunLength:
+          type: integer
+          description: Длина проема над нижним маршем, мм
+          example: 3000
+        maxBaseLength:
+          type: integer
+          description: Допустимая длина по основанию, мм
+          example: 6000
+        slabThickness:
+          type: integer
+          description: Толщина междуэтажного перекрытия, мм
+          example: 300
+      required:
+        - shape
+        - height
+        - overTopRunLength
+        - overMiddleRunLength
+        - overBottomRunLength
+        - maxBaseLength
+        - slabThickness
+    UserAclRequestData:
+      type: object
+      properties:
+        userId:
+          $ref: '#/components/schemas/UserId'
+        maxSimultaneousRequests:
+          $ref: '#/components/schemas/MaxSimultaneousRequests'
+        availableCalculationsCount:
+          $ref: '#/components/schemas/AvailableCalculationsCount'
+    StraightStairRequestData:
+      type: object
+      properties:
+        userId:
+          $ref: '#/components/schemas/UserId'
+        comfortParams:
+          $ref: '#/components/schemas/ComfortParams'
+        opening:
+          $ref: '#/components/schemas/StraightStairOpening'
+        construction:
+          $ref: '#/components/schemas/Construction'
+    LShapeStairRequestData:
+      type: object
+      properties:
+        userId:
+          $ref: '#/components/schemas/UserId'
+        comfortParams:
+          $ref: '#/components/schemas/ComfortParams'
+        opening:
+          $ref: '#/components/schemas/LShapeStairOpening'
+        construction:
+          $ref: '#/components/schemas/Construction'
+    UShapeStairRequestData:
+      type: object
+      properties:
+        userId:
+          $ref: '#/components/schemas/UserId'
+        comfortParams:
+          $ref: '#/components/schemas/ComfortParams'
+        opening:
+          $ref: '#/components/schemas/UShapeStairOpening'
+        construction:
+          $ref: '#/components/schemas/Construction'
+    RequestStatusResponseBody:
+      type: object
+      properties:
+        status:
+          $ref: '#/components/schemas/Status'
+        positionInQueue:
+          $ref: '#/components/schemas/PositionInQueue'
+        progress:
+          $ref: '#/components/schemas/Progress'
+        result:
+          $ref: '#/components/schemas/OptimalConfigurationsResponseBody'
+    OptimalConfigurationsResponseBody:
+      type: object
+      properties:
+        calculationId:
+          $ref: '#/components/schemas/CalculationId'
+        requestData:
+          $ref: '#/components/schemas/StraightStairRequestData'
+        configurations:
+          $ref: '#/components/schemas/StraightStairConfigurationsItems'
+  requestBodies:
+    UserAcl:
+      required: true
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/UserAclRequestData'
+    StraightStairRequestBody:
+      required: true
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/StraightStairRequestData'
+    LShapeStairRequestBody:
+      required: true
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/LShapeStairRequestData'
+    UShapeStairRequestBody:
+      required: true
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/UShapeStairRequestData'
+  responses:
+    RequestStatus:
+      description: Состояние запроса на расчёт оптимальных конфигураций лестниц
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/RequestStatusResponseBody'
+    EmptySuccess200:
+      description: Успешный запрос
+      content:
+        application/json:
+          schema: {}
+    Error400:
+      description: Некорректный запрос
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/Error'
+          example:
+            message: Запрос не может быть обработан
+            reason: Запрос является некорректным
+    Error422:
+      description: Невозможно обработать
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/Error'
+          example:
+            message: Запрос не может быть обработан
+            reason: Невозможно выполнить расчет с заданными параметрами
+    Error500:
+      description: Внутренняя ошибка сервера
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/Error'
+          example:
+            message: Ведутся технические работы, попробуйте позднее
+            reason: Ошибка сервера
+  parameters:
+    version:
+      name: version
+      in: query
+      required: false
+      schema:
+        type: string
+      description: Версия API, например, "v1"
+

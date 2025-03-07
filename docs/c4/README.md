@@ -9,7 +9,7 @@
 * [Программная система "Сервис публикации файлов статики"](#программная-система-сервис-публикации-файлов-статики)
 
 ## Ландшафт программных систем онлайн-сервиса автоматизации строительных расчетов Kalk.Pro
-![System Landscape](images/c4/structurizr-1-systemLandscape.svg)
+![System Landscape](models/structurizr-1-systemLandscape.svg)
 
 ## Программная система "Онлайн-сервис Kalk.Pro" (монолит)
 ### Назначение
@@ -30,15 +30,15 @@
 * Создания дополнительных данных для поисковой оптимизации сервиса.
 * Мониторинг окружения среды пользователя с целью предоставления контента на релевантном языке пользователя.
 ### L1: Контекст программных систем
-![System Context](images/c4/web-site/structurizr-1-WEB_SITE_C4L1.svg)
+![System Context](models/web-site/structurizr-1-WEB_SITE_C4L1.svg)
 ### L2: Контейнеры программной системы
-![Container](images/c4/web-site/structurizr-1-WEB_SITE_C4L2.svg)
+![Container](models/web-site/structurizr-1-WEB_SITE_C4L2.svg)
 ### Схема развертывания Dev
-![Deployment Development](images/c4/web-site/structurizr-1-WEB_SITE_DEPLOY_DEVELOPMENT.svg)
+![Deployment Development](models/web-site/structurizr-1-WEB_SITE_DEPLOY_DEVELOPMENT.svg)
 ### Схема развертывания Stage
-![Deployment Stage](images/c4/web-site/structurizr-1-WEB_SITE_DEPLOY_STAGE.svg)
+![Deployment Stage](models/web-site/structurizr-1-WEB_SITE_DEPLOY_STAGE.svg)
 ### Схема развертывания Prod
-![Deployment Production](images/c4/web-site/structurizr-1-WEB_SITE_DEPLOY_PROD.svg)
+![Deployment Production](models/web-site/structurizr-1-WEB_SITE_DEPLOY_PROD.svg)
 
 
 ## Программная система "Автоматический подбор оптимальной конфигурации лестницы" (Функциональный Сервис)
@@ -47,13 +47,13 @@
 ### Зона ответственности
 Расчет параметров лестницы, сопоставление найденных параметров с критериями удобства для этих параметров, указанные пользователем. Поиск оптимальной конфигурации лестницы среди множества найденных рассчитанных вариантов.  TOBE: Хранение, найденных оптимальных конфигураций лестницы для обеспечения быстрого доступа к ранее рассчитанным конфигурациям.
 ### L1: Контекст программных систем
-![System Context](images/c4/optistair-calc/structurizr-1-OPTISTAIR_CALC_C4L1.svg)
+![System Context](models/optistair-calc/structurizr-1-OPTISTAIR_CALC_C4L1.svg)
 ### L2: Контейнеры программной системы
-![Container](images/c4/optistair-calc/structurizr-1-OPTISTAIR_CALC_C4L2.svg)
+![Container](models/optistair-calc/structurizr-1-OPTISTAIR_CALC_C4L2.svg)
 ### Схема развертывания Dev
-![Deployment Development](images/c4/optistair-calc/structurizr-1-OPTISTAIR_CALC_DEPLOY_DEV.svg)
+![Deployment Development](models/optistair-calc/structurizr-1-OPTISTAIR_CALC_DEPLOY_DEV.svg)
 ### Схема развертывания Prod
-![Deployment Production](images/c4/optistair-calc/structurizr-1-OPTISTAIR_CALC_DEPLOY_PROD.svg)
+![Deployment Production](models/optistair-calc/structurizr-1-OPTISTAIR_CALC_DEPLOY_PROD.svg)
 
 
 ## Программная система "Кластер проектных расчетов" (Функциональный Сервис)
@@ -109,13 +109,13 @@
 * Межсервисная маршрутизация запросов внутри "кластера"
 * Получение webhook-сообщений и их последующая передача через Web-Sockets
 ### L1: Контекст программных систем
-![System Context](images/c4/node-calc/structurizr-1-NODE_CALC_C4L1.svg)
+![System Context](models/node-calc/structurizr-1-NODE_CALC_C4L1.svg)
 ### L2: Контейнеры программной системы
-![Container](images/c4/node-calc/structurizr-1-NODE_CALC_C4L2.svg)
+![Container](models/node-calc/structurizr-1-NODE_CALC_C4L2.svg)
 ### Схема развертывания Dev
-![Deployment Development](images/c4/node-calc/structurizr-1-NODE_CALC_DEPLOY_DEV.svg)
+![Deployment Development](models/node-calc/structurizr-1-NODE_CALC_DEPLOY_DEV.svg)
 ### Схема развертывания Prod
-![Deployment Production](images/c4/node-calc/structurizr-1-NODE_CALC_DEPLOY_PROD.svg)
+![Deployment Production](models/node-calc/structurizr-1-NODE_CALC_DEPLOY_PROD.svg)
 
 
 
@@ -125,11 +125,11 @@
 ### Зона ответственности
 Создание и модификация калькуляторов. Компиляция заложенного функционала и графического представления интерфейса калькулятора в JavaScript-код. Кэширование, управление обновлением, компрессия кода калькуляторов. Отправка кода по запросу через Web-Sockets.
 ### L1: Контекст программных систем
-![System Context](images/c4/simple-calc/structurizr-1-SIMPLE_CALC_C4L1.svg)
+![System Context](models/simple-calc/structurizr-1-SIMPLE_CALC_C4L1.svg)
 ### L2: Контейнеры программной системы
-![Container](images/c4/simple-calc/structurizr-1-SIMPLE_CALC_C4L2.svg)
+![Container](models/simple-calc/structurizr-1-SIMPLE_CALC_C4L2.svg)
 ### Схема развертывания Prod
-![Deployment Production](images/c4/simple-calc/structurizr-1-SIMPLE_CALC_DEPLOY_PROD.svg)
+![Deployment Production](models/simple-calc/structurizr-1-SIMPLE_CALC_DEPLOY_PROD.svg)
 
 
 ## Программная система "Сервис расчета металлопроката"
@@ -138,11 +138,11 @@
 ### Зона ответственности
 Добавление, редактирование, удаление номенклатуры металлопроката. Предоставление графического интерфейса для автоматизированной работы с параметрами номенклатуры. Расчет весовых и объемных характеристик для выбранной номенклатуры.
 ### L1: Контекст программных систем
-![System Context](images/c4/metal-calc/structurizr-1-METAL_CALC_C4L1.svg)
+![System Context](models/metal-calc/structurizr-1-METAL_CALC_C4L1.svg)
 ### L2: Контейнеры программной системы
-![Container](images/c4/metal-calc/structurizr-1-METAL_CALC_C4L2.svg)
+![Container](models/metal-calc/structurizr-1-METAL_CALC_C4L2.svg)
 ### Схема развертывания Prod
-![Deployment Production](images/c4/metal-calc/structurizr-1-METAL_CALC_DEPLOY_PROD.svg)
+![Deployment Production](models/metal-calc/structurizr-1-METAL_CALC_DEPLOY_PROD.svg)
 
 
 ## Программная система "Сервис публикации файлов статики"
@@ -151,8 +151,10 @@
 ### Зона ответственности
 Хранение статических файлов. Проверка загружаемых файлов на целостность и безопасность. Косвенная защита системы путем предотвращения загрузки пользователем инфицированных статических файлов на сервер с исполняемой средой.
 ### L1: Контекст программных систем
-![System Context](images/c4/static-storage/structurizr-1-STATIC_STORAGE_C4L1.svg)
+![System Context](models/static-storage/structurizr-1-STATIC_STORAGE_C4L1.svg)
 ### L2: Контейнеры программной системы
-![Container](images/c4/static-storage/structurizr-1-STATIC_STORAGE_C4L2.svg)
+![Container](models/static-storage/structurizr-1-STATIC_STORAGE_C4L2.svg)
 ### Схема развертывания Prod
-![Deployment Production](images/c4/static-storage/structurizr-1-STATIC_STORAGE_DEPLOY_PROD.svg)
+![Deployment Production](models/static-storage/structurizr-1-STATIC_STORAGE_DEPLOY_PROD.svg)
+
+[> На главную страницу](/README.md)
