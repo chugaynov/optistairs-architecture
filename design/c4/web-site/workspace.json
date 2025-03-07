@@ -80,7 +80,7 @@
         "id" : "72",
         "sourceId" : "4",
         "destinationId" : "8",
-        "description" : "Подбор оптимальных конфигураций лестниц",
+        "description" : "Подбор оптимальной конфигурации лестницы",
         "technology" : "HTTP",
         "linkedRelationshipId" : "71"
       }, {
@@ -213,7 +213,7 @@
           },
           "sourceId" : "67",
           "destinationId" : "8",
-          "description" : "Подбор оптимальных конфигураций лестниц",
+          "description" : "Подбор оптимальной конфигурации лестницы",
           "technology" : "HTTP"
         }, {
           "id" : "69",

@@ -38,15 +38,15 @@
 
 ### Архитектурные артефакты
 [Спецификация OpenAPI](openapi/optistairs-restapi.yaml)
-[Схема БД ФС Подбор оптимальных конфигураций лестниц](/design/diagrams/optistairs-db.puml)
-![Схема БД ФС Подбор оптимальных конфигураций лестниц (изображение)](diagrams/optistairs-db.svg)
+[Схема БД ФС Подбор оптимальной конфигурации лестницы](/design/diagrams/optistairs-db.puml)
+![Схема БД ФС Подбор оптимальной конфигурации лестницы (изображение)](diagrams/optistairs-db.svg)
 [ДП взаимодействия веб-приложения с backend-приложением, расчёт конфигураций](/design/diagrams/optistairs-calculation-sd.puml)
 ![ДП взаимодействия веб-приложения с backend-приложением, расчёт конфигураций (изображение)](diagrams/optistairs-calculation-sd.svg)
-[ФС Подбор оптимальных конфигураций лестниц](/design/c4/optistair-calc/workspace.dsl)
-![ФС Подбор оптимальных конфигураций лестниц C4L1](/docs/c4/models/optistair-calc/structurizr-1-OPTISTAIR_CALC_C4L1.svg)
-![ФС Подбор оптимальных конфигураций лестниц C4L2](/docs/c4/models/optistair-calc/structurizr-1-OPTISTAIR_CALC_C4L2.svg)
-![ФС Подбор оптимальных конфигураций лестниц DEPLOY DEV](/docs/c4/models/optistair-calc/structurizr-1-OPTISTAIR_CALC_DEPLOY_DEV.svg)
-![ФС Подбор оптимальных конфигураций лестниц DEPLOY PROD](/docs/c4/models/optistair-calc/structurizr-1-OPTISTAIR_CALC_DEPLOY_PROD.svg)
+[ФС Подбор оптимальной конфигурации лестницы](/design/c4/optistair-calc/workspace.dsl)
+![ФС Подбор оптимальной конфигурации лестницы C4L1](/docs/c4/models/optistair-calc/structurizr-1-OPTISTAIR_CALC_C4L1.svg)
+![ФС Подбор оптимальной конфигурации лестницы C4L2](/docs/c4/models/optistair-calc/structurizr-1-OPTISTAIR_CALC_C4L2.svg)
+![ФС Подбор оптимальной конфигурации лестницы DEPLOY DEV](/docs/c4/models/optistair-calc/structurizr-1-OPTISTAIR_CALC_DEPLOY_DEV.svg)
+![ФС Подбор оптимальной конфигурации лестницы DEPLOY PROD](/docs/c4/models/optistair-calc/structurizr-1-OPTISTAIR_CALC_DEPLOY_PROD.svg)
 [Ландшафт программных систем](/design/c4/workspace.dsl)
 ![Ландшафт программных систем (изображение)](/docs/c4/models/structurizr-1-systemLandscape.svg)
 

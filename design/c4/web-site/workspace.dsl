@@ -30,7 +30,7 @@ workspace extends ../system-landscape.dsl {
                     -> system_node_calc "Получение проектов 3D и чертежей" "WEB-SOCKETS"
                     -> system_simple_calc "Получение типовых строительных расчетов" "WEB-SOCKETS"
                     -> system_metal_calc "Получение расчетов по металлопрокату" "iFrame"
-                    -> system_optistair_calc "Подбор оптимальных конфигураций лестниц" "HTTP"
+                    -> system_optistair_calc "Подбор оптимальной конфигурации лестницы" "HTTP"
                     -> system_static_storage "Получение статическийх файлов пользователя" "HTTP"
                 }
             }
