@@ -223,72 +223,74 @@ else ELSE Использованы все доступные запросы на
 end
 
 == CRONJOB: Задание на выполнение расчёта и очереди ==
-loop Периодический опрос на появление новых расчётов через каждые 30 секунд
-    app -> db: Получить идентификатор запроса для расчёта
-    note right of app
-        UPDATE requests SET
-            status_id='processing',
-            create_time=NOW(),
-            update_time=NOW(),
-            progress_percent=0.00
-        WHERE id=(SELECT id
-            FROM requests
-            WHERE
-            AND status_id='new'
-            ORDER by create_time ASC
-            LIMIT 1);
-        SELECT LAST_INSERT_ID();
-    end note
-    opt IF id > 0
-        app <-- db: Идентификатор запроса для расчёта id
-        app -> db: Получить параметры запроса
-        note right of app
-            SELECT r.user_email, acl.available_calculations_count, r.request_data
-            FROM requests r, user_acl acl
-            WHERE r.id={id}
-            AND r.user_email=acl.user_email
-        end note
-        app <-- db: JSON с параметрами запроса, user_email, available_calculations_count
-        activate app #Pink
-        app -> app: Проверить что request_data соответствует\nтекущему инстансу калькулятора соответсвующей лестницы
-        app -> db: Уменьшить количество расчётов, доступных пользователю
-        deactivate app
-            note right of app
-                UPDATE user_acl SET
-                available_calculations_count={availableCalculationsCount - 1}
-                WHERE user_email={userEmail}
-            end note
-        app <-- db: Можно проводить расчет
-        activate app #Pink
-        note right of app
-            Подбор оптимальной конфигурации лестницы
-            по заданным параметрам проёма и критериям
-            удобства лестницы
-        end note
-        app -> app: Расчёт
-        activate app #DarkSalmon
-            app -> db: Обновить прогресс выполнения расчёта
-            note right of app
-                UPDATE requests SET
-                    progress_percent={currentProgressValue},
-                    update_time=NOW()
-                WHERE id={id}
-            end note
-            app <-- db: Прогресс обновлен
-        deactivate app
-        app -> db: Записать в БД результат расчёта
-        note right of app
-            // В одной транзакции
-            INSERT optimal_configurations (`request_id`, `configurations`)
-            VALUES ({id}, {calculationResult});
-            UPDATE requests SET
-                progress_percent=100.0,
-                status_id='ready'
-                update_time=NOW()
-            WHERE id={id};
-        end note
-        app <-- db: Результат расчёта записан в БД
-        deactivate app
+loop Периодический опрос на появление новых расчётов через каждые 5 секунд,\nпосле завершения цикла обработки предыдущей партии запросов
+    loop Пока есть запрос со статусом status_id='new'
+      app -> db: Получить идентификатор запроса для расчёта
+          note right of app
+              UPDATE requests SET
+                  status_id='processing',
+                  create_time=NOW(),
+                  update_time=NOW(),
+                  progress_percent=0.00
+              WHERE id=(SELECT id
+                  FROM requests
+                  WHERE
+                  AND status_id='new'
+                  ORDER by create_time ASC
+                  LIMIT 1);
+              SELECT LAST_INSERT_ID();
+          end note
+          opt IF id > 0
+              app <-- db: Идентификатор запроса для расчёта id
+              app -> db: Получить параметры запроса
+              note right of app
+                  SELECT r.user_email, acl.available_calculations_count, r.request_data
+                  FROM requests r, user_acl acl
+                  WHERE r.id={id}
+                  AND r.user_email=acl.user_email
+              end note
+              app <-- db: JSON с параметрами запроса, user_email, available_calculations_count
+              activate app #Pink
+              app -> app: Проверить что request_data соответствует\nтекущему инстансу калькулятора соответсвующей лестницы
+              app -> db: Уменьшить количество расчётов, доступных пользователю
+              deactivate app
+                  note right of app
+                      UPDATE user_acl SET
+                      available_calculations_count={availableCalculationsCount - 1}
+                      WHERE user_email={userEmail}
+                  end note
+              app <-- db: Можно проводить расчет
+              activate app #Pink
+              note right of app
+                  Подбор оптимальной конфигурации лестницы
+                  по заданным параметрам проёма и критериям
+                  удобства лестницы
+              end note
+              app -> app: Расчёт
+              activate app #DarkSalmon
+                  app -> db: Обновить прогресс выполнения расчёта
+                  note right of app
+                      UPDATE requests SET
+                          progress_percent={currentProgressValue},
+                          update_time=NOW()
+                      WHERE id={id}
+                  end note
+                  app <-- db: Прогресс обновлен
+              deactivate app
+              app -> db: Записать в БД результат расчёта
+              note right of app
+                  // В одной транзакции
+                  INSERT optimal_configurations (`request_id`, `configurations`)
+                  VALUES ({id}, {calculationResult});
+                  UPDATE requests SET
+                      progress_percent=100.0,
+                      status_id='ready'
+                      update_time=NOW()
+                  WHERE id={id};
+              end note
+              app <-- db: Результат расчёта записан в БД
+              deactivate app
+          end
     end
 end
 @enduml

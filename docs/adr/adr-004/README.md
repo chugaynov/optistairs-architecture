@@ -37,11 +37,11 @@
 * Затраты на обучение сотрудников технического сопровождения проекта для работы с инфраструктурой Kubernetes.
 
 ### Архитектурные артефакты
-- [Спецификация OpenAPI](openapi/optistairs-restapi.yaml)
+- [Спецификация OpenAPI](/design/openapi/optistairs-restapi.yaml)
 - [Схема БД ФС Подбор оптимальной конфигурации лестницы](/design/diagrams/optistairs-db.puml)
-![Схема БД ФС Подбор оптимальной конфигурации лестницы (изображение)](diagrams/optistairs-db.svg)
+![Схема БД ФС Подбор оптимальной конфигурации лестницы (изображение)](../../../design/diagrams/optistairs-db.svg)
 - [ДП взаимодействия веб-приложения с backend-приложением, расчёт конфигураций](/design/diagrams/optistairs-calculation-sd.puml)
-![ДП взаимодействия веб-приложения с backend-приложением, расчёт конфигураций (изображение)](diagrams/optistairs-calculation-sd.svg)
+![ДП взаимодействия веб-приложения с backend-приложением, расчёт конфигураций (изображение)](../../../design/diagrams/optistairs-calculation-sd.svg)
 - [ФС Подбор оптимальной конфигурации лестницы](/design/c4/optistair-calc/workspace.dsl)
 ![ФС Подбор оптимальной конфигурации лестницы C4L1](/docs/c4/models/optistair-calc/structurizr-1-OPTISTAIR_CALC_C4L1.svg)
 ![ФС Подбор оптимальной конфигурации лестницы C4L2](/docs/c4/models/optistair-calc/structurizr-1-OPTISTAIR_CALC_C4L2.svg)
