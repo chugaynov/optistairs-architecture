@@ -74,7 +74,7 @@ workspace system-landscape "Ландшафт Онлайн-сервиса" {
             element "Element" {
                 background #1168bd
                 shape RoundedBox
-                color #ffffff
+                color #000000
             }
             element "Software System" {
                 background #1168bd
