@@ -22,7 +22,6 @@ deploymentNode "FirstVDS" {
     }
 }
 
-// TODO: technology "k8s namespace"
 deploymentNode "CloRu" {
     deploymentNode "kalkpro_project" {
         description "Кластер для расчета оптимальных конфигураций лестниц. URL https://optistair(-dev).kalk.rpo"
@@ -45,12 +44,38 @@ deploymentNode "CloRu" {
                 deploymentNode "pgsql" {
                     technology "PostgreSQL operator"
                 }
+                deploymentNode "kafka" {
+                    technology "Apache Kafka multi-tenant cluster"
+                    description "3х. UI https://kafka-ui.infrastructure.kalk.pro."
+                }
             }
             deploymentNode "optistair-calc" {
                 technology "k8s namespace"
             }
-            deploymentNode "optistair-calc-dev" {
+
+            deploymentNode "dev" {
                 technology "k8s namespace"
+                infrastructureNode "Cert-Manager" {
+                    technology "Cert manager"
+                    description "Получение и обновление сертификатов"
+                    tags "tagDeploymentInfrastructure,l1"
+                }
+                deploymentNode "balancer" {
+                    technology "Ingregress Nginx"
+                    description "Получение и обновление сертификатов"
+                    tags "tagDeploymentInfrastructure,l1"
+                }
+                deploymentNode "pgsql" {
+                    technology "PostgreSQL operator"
+                }
+                deploymentNode "kafka" {
+                    technology "Apache Kafka multi-tenant cluster"
+                    description "3х. UI https://kafka-ui.infrastructure-dev.kalk.pro."
+                }
+
+                deploymentNode "optistair-calc" {
+                    technology "k8s namespace"
+                }
             }
         }
     }

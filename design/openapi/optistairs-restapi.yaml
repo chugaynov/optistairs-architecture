@@ -13,14 +13,14 @@ servers:
     description: Базовый URL для STAGE и DEV
 
 paths:
-  /request-status:
+  /api/request-status:
     get:
       operationId: GetRequestStatus
       summary: Получить статус состояния расчета
       tags:
         - Public
       parameters:
-        - $ref: '#/components/parameters/version'
+        - $ref: '#/components/parameters/Version'
       responses:
         200:
           $ref: '#/components/responses/RequestStatus'
@@ -36,7 +36,7 @@ paths:
       tags:
         - Public
       parameters:
-        - $ref: '#/components/parameters/version'
+        - $ref: '#/components/parameters/Version'
       responses:
         200:
           $ref: '#/components/responses/EmptySuccess200'
@@ -46,14 +46,53 @@ paths:
           $ref: '#/components/responses/Error422'
         500:
           $ref: '#/components/responses/Error500'
-  /straight-stair:
+  /result:
+    post:
+      operationId: PutResult
+      summary: Сохранить результат расчёта
+      tags:
+        - Private
+      parameters:
+        - $ref: '#/components/parameters/Version'
+      requestBody:
+        $ref: '#/components/schemas/OptimalConfigurationsResponseBody'
+      responses:
+        200:
+          $ref: '#/components/responses/EmptySuccess200'
+        400:
+          $ref: '#/components/responses/Error400'
+        422:
+          $ref: '#/components/responses/Error422'
+        500:
+          $ref: '#/components/responses/Error500'
+  /progress:
+    post:
+      operationId: UpdateProgress
+      summary: Обновить прогресс расчёта в соответствии с уведомлениями от калькулятора
+      tags:
+        - Private
+      parameters:
+        - $ref: '#/components/parameters/Version'
+      requestBody:
+        $ref: '#/components/schemas/OptimalConfigurationsResponseBody'
+      responses:
+        200:
+          $ref: '#/components/responses/EmptySuccess200'
+        400:
+          $ref: '#/components/responses/Error400'
+        422:
+          $ref: '#/components/responses/Error422'
+        500:
+          $ref: '#/components/responses/Error500'
+
+  /api/straight-stair:
     post:
       operationId: CreateRequestIShapeStair
       summary: Создать запрос на подбор оптимальных конфигураций Прямой лестницы
       tags:
         - Public
       parameters:
-        - $ref: '#/components/parameters/version'
+        - $ref: '#/components/parameters/Version'
       requestBody:
         $ref: '#/components/requestBodies/StraightStairRequestBody'
       responses:
@@ -65,15 +104,53 @@ paths:
           $ref: '#/components/responses/Error422'
         500:
           $ref: '#/components/responses/Error500'
+  /straight-stair/calculation:
+    post:
+      operationId: CalculationOfStraightStair
+      summary: Запрос на расчёт оптимальных конфигураций прямой лестницы
+      tags:
+        - Private
+      parameters:
+        - $ref: '#/components/parameters/Version'
+      requestBody:
+        $ref: '#/components/requestBodies/StraightStairCalculationRequestBody'
+      responses:
+        200:
+          $ref: '#/components/responses/EmptySuccess200'
+        400:
+          $ref: '#/components/responses/Error400'
+        422:
+          $ref: '#/components/responses/Error422'
+        500:
+          $ref: '#/components/responses/Error500'
+  /straight-stair/status:
+    get:
+      operationId: StatusOfStraightStair
+      summary: Запрос на расчёт оптимальных конфигураций прямой лестницы
+      tags:
+        - Private
+      parameters:
+        - $ref: '#/components/parameters/Version'
+        - $ref: '#/components/parameters/UserId'
+        - $ref: '#/components/parameters/RequestId'
+      responses:
+        200:
+          $ref: '#/components/responses/CalculationStatus'
+        400:
+          $ref: '#/components/responses/Error400'
+        422:
+          $ref: '#/components/responses/Error422'
+        500:
+          $ref: '#/components/responses/Error500'
 
-  /l-shape-stair:
+  /api/l-shape-stair:
     post:
       operationId: CreateRequestLShapeStair
       summary: Создать запрос на подбор оптимальных конфигураций Г-образной лестницы
       tags:
         - Public
       parameters:
-        - $ref: '#/components/parameters/version'
+        - $ref: '#/components/parameters/Version'
       requestBody:
         $ref: '#/components/requestBodies/LShapeStairRequestBody'
       responses:
@@ -85,15 +162,53 @@ paths:
           $ref: '#/components/responses/Error422'
         500:
           $ref: '#/components/responses/Error500'
+  /l-shape-stair/calculation:
+    post:
+      operationId: CalculationOfLShapeStair
+      summary: Запрос на расчёт оптимальных конфигураций прямой лестницы
+      tags:
+        - Private
+      parameters:
+        - $ref: '#/components/parameters/Version'
+      requestBody:
+        $ref: '#/components/requestBodies/LShapeStairCalculationRequestBody'
+      responses:
+        200:
+          $ref: '#/components/responses/EmptySuccess200'
+        400:
+          $ref: '#/components/responses/Error400'
+        422:
+          $ref: '#/components/responses/Error422'
+        500:
+          $ref: '#/components/responses/Error500'
+  /l-shape-stair/status:
+    get:
+      operationId: StatusOfLShapeStair
+      summary: Запрос на расчёт оптимальных конфигураций прямой лестницы
+      tags:
+        - Private
+      parameters:
+        - $ref: '#/components/parameters/Version'
+        - $ref: '#/components/parameters/UserId'
+        - $ref: '#/components/parameters/RequestId'
+      responses:
+        200:
+          $ref: '#/components/responses/CalculationStatus'
+        400:
+          $ref: '#/components/responses/Error400'
+        422:
+          $ref: '#/components/responses/Error422'
+        500:
+          $ref: '#/components/responses/Error500'
 
-  /u-shape-stair:
+  /api/u-shape-stair:
     post:
       operationId: CreateRequestUShapeStair
       summary: Создать запрос на подбор оптимальных конфигураций П-образной лестницы
       tags:
         - Public
       parameters:
-        - $ref: '#/components/parameters/version'
+        - $ref: '#/components/parameters/Version'
       requestBody:
         $ref: '#/components/requestBodies/UShapeStairRequestBody'
       responses:
@@ -105,7 +220,46 @@ paths:
           $ref: '#/components/responses/Error422'
         500:
           $ref: '#/components/responses/Error500'
-  /user-acl:
+  /u-shape-stair/calculation:
+    post:
+      operationId: CalculationOfUShapeStair
+      summary: Запрос на расчёт оптимальных конфигураций прямой лестницы
+      tags:
+        - Private
+      parameters:
+        - $ref: '#/components/parameters/Version'
+      requestBody:
+        $ref: '#/components/requestBodies/UShapeStairCalculationRequestBody'
+      responses:
+        200:
+          $ref: '#/components/responses/EmptySuccess200'
+        400:
+          $ref: '#/components/responses/Error400'
+        422:
+          $ref: '#/components/responses/Error422'
+        500:
+          $ref: '#/components/responses/Error500'
+  /u-shape-stair/status:
+    get:
+      operationId: StatusOfUShapeStair
+      summary: Запрос на расчёт оптимальных конфигураций прямой лестницы
+      tags:
+        - Private
+      parameters:
+        - $ref: '#/components/parameters/Version'
+        - $ref: '#/components/parameters/UserId'
+        - $ref: '#/components/parameters/RequestId'
+      responses:
+        200:
+          $ref: '#/components/responses/CalculationStatus'
+        400:
+          $ref: '#/components/responses/Error400'
+        422:
+          $ref: '#/components/responses/Error422'
+        500:
+          $ref: '#/components/responses/Error500'
+
+  /api/user-acl:
     post:
       operationId: CreateUserAcl
       summary: Установить параметры доступа пользователя к расчетам
@@ -114,7 +268,7 @@ paths:
       security:
         - ApiKeyAuth: []
       parameters:
-        - $ref: '#/components/parameters/version'
+        - $ref: '#/components/parameters/Version'
         - $ref: '#/components/securitySchemes/ApiKeyAuth'
       requestBody:
         $ref: '#/components/requestBodies/UserAcl'
@@ -135,7 +289,7 @@ paths:
       security:
         - ApiKeyAuth: [ ]
       parameters:
-        - $ref: '#/components/parameters/version'
+        - $ref: '#/components/parameters/Version'
         - $ref: '#/components/securitySchemes/ApiKeyAuth'
       requestBody:
         $ref: '#/components/requestBodies/UserAcl'
@@ -163,6 +317,13 @@ components:
         - processing
         - ready
         - send
+        - fail
+      description: Статус обработки запроса на расчёт
+    CalculationStatus:
+      type: string
+      enum:
+        - processing
+        - ready
       description: Статус обработки запроса на расчёт
     PositionInQueue:
       type: integer
@@ -236,6 +397,10 @@ components:
       type: string
       description: Уникальный идентификатор подбора конфигураций, varchar(36) uuid4 (создается на стороне frontend)
       example: "179eeee9-1699-4e2c-b648-0eb643c1cfb7"
+    RequestId:
+      type: integer
+      description: Уникальный идентификатор запроса на расчет
+      example: 220012
     ConfigurationsItem:
       type: object
       properties:
@@ -461,6 +626,39 @@ components:
           $ref: '#/components/schemas/UShapeStairOpening'
         construction:
           $ref: '#/components/schemas/Construction'
+    StraightStairCalculationData:
+      type: object
+      properties:
+        requestId:
+          $ref: '#/components/schemas/RequestId'
+        comfortParams:
+          $ref: '#/components/schemas/ComfortParams'
+        opening:
+          $ref: '#/components/schemas/StraightStairOpening'
+        construction:
+          $ref: '#/components/schemas/Construction'
+    LShapeStairCalculationData:
+      type: object
+      properties:
+        requestId:
+          $ref: '#/components/schemas/RequestId'
+        comfortParams:
+          $ref: '#/components/schemas/ComfortParams'
+        opening:
+          $ref: '#/components/schemas/LShapeStairOpening'
+        construction:
+          $ref: '#/components/schemas/Construction'
+    UShapeStairCalculationData:
+      type: object
+      properties:
+        requestId:
+          $ref: '#/components/schemas/RequestId'
+        comfortParams:
+          $ref: '#/components/schemas/ComfortParams'
+        opening:
+          $ref: '#/components/schemas/UShapeStairOpening'
+        construction:
+          $ref: '#/components/schemas/Construction'
     RequestStatusResponseBody:
       type: object
       properties:
@@ -472,15 +670,31 @@ components:
           $ref: '#/components/schemas/Progress'
         result:
           $ref: '#/components/schemas/OptimalConfigurationsResponseBody'
+    CalculatorStatusResponseBody:
+      type: object
+      properties:
+        calculationStatus:
+          $ref: '#/components/schemas/CalculationStatus'
+        progress:
+          $ref: '#/components/schemas/Progress'
     OptimalConfigurationsResponseBody:
       type: object
       properties:
-        calculationId:
-          $ref: '#/components/schemas/CalculationId'
+        requestId:
+          $ref: '#/components/schemas/RequestId'
         requestData:
           $ref: '#/components/schemas/StraightStairRequestData'
         configurations:
           $ref: '#/components/schemas/StraightStairConfigurationsItems'
+    ProgressResponseBody:
+      type: object
+      properties:
+        requestId:
+          $ref: '#/components/schemas/RequestId'
+        progress:
+          $ref: '#/components/schemas/Progress'
+        status:
+          $ref: '#/components/schemas/Status'
   requestBodies:
     UserAcl:
       required: true
@@ -488,6 +702,24 @@ components:
         application/json:
           schema:
             $ref: '#/components/schemas/UserAclRequestData'
+    StraightStairCalculationRequestBody:
+      required: true
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/StraightStairCalculationData'
+    LShapeStairCalculationRequestBody:
+      required: true
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/LShapeStairCalculationData'
+    UShapeStairCalculationRequestBody:
+      required: true
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/UShapeStairCalculationData'
     StraightStairRequestBody:
       required: true
       content:
@@ -507,6 +739,12 @@ components:
           schema:
             $ref: '#/components/schemas/UShapeStairRequestData'
   responses:
+    CalculationStatus:
+      description: Состояние расчёта
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/CalculatorStatusResponseBody'
     RequestStatus:
       description: Состояние запроса на расчёт оптимальных конфигураций лестниц
       content:
@@ -546,11 +784,26 @@ components:
             message: Ведутся технические работы, попробуйте позднее
             reason: Ошибка сервера
   parameters:
-    version:
+    Version:
       name: version
       in: query
       required: false
       schema:
         type: string
       description: Версия API, например, "v1"
+      example: v1
+    UserId:
+      name: userId
+      in: query
+      schema:
+        type: string
+      description: Уникальный идентификатор пользователя, который сделал запрос на расчет
+      example: "user@email.ru"
+    RequestId:
+      name: requestId
+      in: query
+      schema:
+        type: integer
+      description: Уникальный идентификатор запроса на расчет
+      example: 220012
 

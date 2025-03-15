@@ -2,12 +2,13 @@
 actor "User" as user
 participant "Kalk.Pro сайт\n(Frontend приложение OptiStair)" as frontend
 participant "Kalk.Pro сайт\n(Backend)" as site
-participant "OptiStair App\n(K8s Backend)" as app
+participant "OptiStair RequestManager App\n(K8s Backend)" as app
+participant "OptiStair CalculatorInc App\n(K8s Backend)" as calc
 participant "OptiStair БД\n(K8s Cluster)" as db
 == Пользователь зарегистрировался на сайте ==
 user -> frontend: Авторизация на сайте
 frontend -> site: POST логин + пароль
-site -> app: POST: /user-acl
+site -> app: POST: /api/user-acl + X-API-KEY
     note right of site
         Установить
         max_simultaneous_requests = 1
@@ -26,13 +27,13 @@ user <-- frontend: Пользователь получил доступ к ве�
 == Бесконечный цикл опроса состояния расчёта (после авторизации) ==
 user -> frontend: Запуск веб-приложения
 loop Периодический запрос состояния расчёта через каждые 5 секунд
-    frontend -> app: GET: /request-status
+    frontend -> app: Получить статус расчёта GET: /api/request-status
     app -> db: Получить статус расчёта
         note right of app
             Выборки из таблицы optimal_configurations
-            status_id = 'new' - Количество запросов в очереди на расчёт перед текущим
-            status_id = 'processing' - В процессе расчёта (можно запросить прогресс)
-            status_id = 'ready' - Можно запросить подобранные конфигурации
+            status = 'new' - Новый расчёт
+            status = 'processing' - В процессе расчёта (можно запросить прогресс)
+            status = 'ready' - Можно запросить подобранные конфигурации
         end note
 
         note right of app
@@ -94,11 +95,28 @@ loop Периодический запрос состояния расчёта �
                 Пожалуйста измените параметры проёма
                 или критерии удобства лестницы.
             end note
+            note right of frontend #Pink
+                Кнопка "Рассчитать" - заблокирована
+            end note
             user -> frontend: Вносит изменения в параметры
             note right of frontend #LightGreen
                 Кнопка "Рассчитать" - разблокирована
             end note
         end
+    else IF СТАТУС_РАСЧËТА = 'fail'
+        user <-- frontend: Показать сообщение пользователю
+        note right of user
+            Не удается выполнить расчёт.
+            Пожалуйста измените параметры проёма
+            или критерии удобства лестницы.
+        end note
+        note right of frontend #Pink
+            Кнопка "Рассчитать" - заблокирована
+        end note
+        user -> frontend: Вносит изменения в параметры
+        note right of frontend #LightGreen
+            Кнопка "Рассчитать" - разблокирована
+        end note
     else IF СТАТУС_РАСЧËТА = 'ready'
         app -> db: Получить найденные конфигурации
             note right of app
@@ -122,14 +140,14 @@ loop Периодический запрос состояния расчёта �
             Список оптимальных конфигураций лестниц
         end note
         frontend --> app: PATCH: /request-status
-            app -> db: Установить status_id='ready'
+            app -> db: Установить status='ready'
                 note right of app
                     UPDATE requests SET
-                        status_id='send',
+                        status='send',
                         update_time=NOW()
                     WHERE user_email={userEmail}
                     AND calculation_id={userCalculationId}
-                    AND status_id='ready'
+                    AND status='ready'
                 end note
             app <-- db: Значение available_calculations_count
         frontend <-- app: Статус запроса изменён
@@ -188,7 +206,7 @@ alt IF available_calculations_count > 0 THEN Пользователю досту
     alt IF max_simultaneous_requests > processing_requests THEN Можно разместить новый расчёт
         app -> db: Создать новый запрос на подбор конфигураций
             note right of app
-                INSERT requests VALUES (... status_id='new', request_data={...} ...)
+                INSERT requests VALUES (... status='new', request_data={...} ...)
             end note
         app <-- db: Запрос создан
         frontend <-- app: HTTP: 200 Success
@@ -224,18 +242,18 @@ end
 
 == CRONJOB: Задание на выполнение расчёта и очереди ==
 loop Периодический опрос на появление новых расчётов через каждые 5 секунд,\nпосле завершения цикла обработки предыдущей партии запросов
-    loop Пока есть запрос со статусом status_id='new'
+    loop Пока есть запрос со статусом status='new'
       app -> db: Получить идентификатор запроса для расчёта
           note right of app
               UPDATE requests SET
-                  status_id='processing',
+                  status='processing',
                   create_time=NOW(),
                   update_time=NOW(),
                   progress_percent=0.00
               WHERE id=(SELECT id
                   FROM requests
                   WHERE
-                  AND status_id='new'
+                  AND status='new'
                   ORDER by create_time ASC
                   LIMIT 1);
               SELECT LAST_INSERT_ID();
@@ -266,17 +284,19 @@ loop Периодический опрос на появление новых р
                   по заданным параметрам проёма и критериям
                   удобства лестницы
               end note
-              app -> app: Расчёт
-              activate app #DarkSalmon
-                  app -> db: Обновить прогресс выполнения расчёта
-                  note right of app
-                      UPDATE requests SET
-                          progress_percent={currentProgressValue},
-                          update_time=NOW()
-                      WHERE id={id}
-                  end note
-                  app <-- db: Прогресс обновлен
-              deactivate app
+              app -> calc: Запросить расчёт POST: /{stair-type-calc}/calculation
+              activate calc #DarkSalmon
+              app <-- calc: Расчёт размещен
+              calc -> calc: СТАРТ:\nПодбор оптимальной конфигурации лестницы
+              loop Периодическая отправка прогресса расчёта (например, каждые 10%)
+                app <- calc: Прогресс WebHook POST: /progress
+                app --> calc: Ok
+              end
+              calc <- calc: КОНЕЦ
+              app <- calc: Результат расчёта WebHook POST: /result
+              calc -> calc: WebHook retry
+              app --> calc: Ok
+              deactivate calc
               app -> db: Записать в БД результат расчёта
               note right of app
                   // В одной транзакции
@@ -284,7 +304,7 @@ loop Периодический опрос на появление новых р
                   VALUES ({id}, {calculationResult});
                   UPDATE requests SET
                       progress_percent=100.0,
-                      status_id='ready'
+                      status='ready'
                       update_time=NOW()
                   WHERE id={id};
               end note

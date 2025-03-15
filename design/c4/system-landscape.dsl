@@ -78,6 +78,7 @@ workspace system-landscape "Ландшафт Онлайн-сервиса" {
             }
             element "Software System" {
                 background #1168bd
+                color #ffffff
             }
             element "external" {
                 background #cccccc

@@ -1,4 +1,5 @@
-FROM structurizr/structurizr:1.15.0
+#FROM structurizr/structurizr:1.15.0
+FROM structurizr/structurizr:latest
 ENV USER=tomcat
 
 # ADD ./structurizr-onpremises.war /usr/local/tomcat/webapps/ROOT.war
