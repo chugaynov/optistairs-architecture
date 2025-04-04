@@ -4,71 +4,71 @@
   "documentation" : { },
   "id" : 1,
   "lastModifiedAgent" : "structurizr-ui",
-  "lastModifiedDate" : "2025-03-15T17:22:54Z",
+  "lastModifiedDate" : "2025-04-04T13:29:21Z",
   "model" : {
     "deploymentNodes" : [ {
       "children" : [ {
         "description" : "Веб-сайт основного онлайн-сервиса (IP: 91.107.126.103)",
         "environment" : "Development",
-        "id" : "20",
+        "id" : "25",
         "instances" : "1",
         "name" : "WEB-SERVER",
         "properties" : {
-          "structurizr.dsl.identifier" : "78e1c0f0-11e5-48a1-a4ce-1970cba64296.b25b682b-7abe-4e68-b4a5-13b3c536a524.549766cb-f3e3-4f9c-ba5b-db2447c4f1f5"
+          "structurizr.dsl.identifier" : "966a2ead-b09c-4f2b-8950-f3ff62d46f11.a64cee4a-9234-4b18-b121-78ecc99d3344.ff5575cf-50bd-49cb-b1c2-161262aadbc4"
         },
         "tags" : "Element,Deployment Node",
         "technology" : "VPS KVM"
       }, {
         "description" : "Хранилище статических файлов (IP: 62.109.15.25)",
         "environment" : "Development",
-        "id" : "21",
+        "id" : "26",
         "instances" : "1",
         "name" : "STATIC-STORAGE",
         "properties" : {
-          "structurizr.dsl.identifier" : "78e1c0f0-11e5-48a1-a4ce-1970cba64296.b25b682b-7abe-4e68-b4a5-13b3c536a524.4cbf7967-80d8-494a-9fa2-906046747930"
+          "structurizr.dsl.identifier" : "966a2ead-b09c-4f2b-8950-f3ff62d46f11.a64cee4a-9234-4b18-b121-78ecc99d3344.ddafb92a-5103-46f6-98e9-be0aeeaee0c5"
         },
         "tags" : "Element,Deployment Node",
         "technology" : "VPS KVM"
       }, {
         "description" : "Сервер проектных расчетов PROD (IP: 212.109.221.247)",
         "environment" : "Development",
-        "id" : "22",
+        "id" : "27",
         "instances" : "1",
         "name" : "NODE-1",
         "properties" : {
-          "structurizr.dsl.identifier" : "78e1c0f0-11e5-48a1-a4ce-1970cba64296.b25b682b-7abe-4e68-b4a5-13b3c536a524.af6cc47d-e8dd-4574-a5d5-6f74ee4a0aaa"
+          "structurizr.dsl.identifier" : "966a2ead-b09c-4f2b-8950-f3ff62d46f11.a64cee4a-9234-4b18-b121-78ecc99d3344.f58cf1ad-df59-4fe7-b612-06cd09ea6415"
         },
         "tags" : "Element,Deployment Node",
         "technology" : "VPS KVM"
       }, {
         "description" : "Сервер проектных расчетов DEV/STAGE (IP: 188.120.254.218)",
         "environment" : "Development",
-        "id" : "23",
+        "id" : "28",
         "instances" : "1",
         "name" : "NODE-2",
         "properties" : {
-          "structurizr.dsl.identifier" : "78e1c0f0-11e5-48a1-a4ce-1970cba64296.b25b682b-7abe-4e68-b4a5-13b3c536a524.1e4f9c7b-04dc-48fa-a207-a2fc0669bfef"
+          "structurizr.dsl.identifier" : "966a2ead-b09c-4f2b-8950-f3ff62d46f11.a64cee4a-9234-4b18-b121-78ecc99d3344.ab317167-1865-4f7c-b9a0-02fa05bc69ec"
         },
         "tags" : "Element,Deployment Node",
         "technology" : "VPS KVM"
       }, {
         "description" : "Сервер простых расчетов DEV/STAGE/PROD (IP: 83.220.170.100)",
         "environment" : "Development",
-        "id" : "24",
+        "id" : "29",
         "instances" : "1",
         "name" : "SINODE-1",
         "properties" : {
-          "structurizr.dsl.identifier" : "78e1c0f0-11e5-48a1-a4ce-1970cba64296.b25b682b-7abe-4e68-b4a5-13b3c536a524.d48440cb-bcf0-49c0-8719-31850af4180f"
+          "structurizr.dsl.identifier" : "966a2ead-b09c-4f2b-8950-f3ff62d46f11.a64cee4a-9234-4b18-b121-78ecc99d3344.45531cfb-cdda-4a6a-941a-c7a9b5d69712"
         },
         "tags" : "Element,Deployment Node",
         "technology" : "VPS KVM"
       } ],
       "environment" : "Development",
-      "id" : "19",
+      "id" : "24",
       "instances" : "1",
       "name" : "FirstVDS",
       "properties" : {
-        "structurizr.dsl.identifier" : "78e1c0f0-11e5-48a1-a4ce-1970cba64296.b25b682b-7abe-4e68-b4a5-13b3c536a524"
+        "structurizr.dsl.identifier" : "966a2ead-b09c-4f2b-8950-f3ff62d46f11.a64cee4a-9234-4b18-b121-78ecc99d3344"
       },
       "tags" : "Element,Deployment Node"
     }, {
@@ -78,45 +78,45 @@
             "children" : [ {
               "description" : "Получение и обновление сертификатов",
               "environment" : "Development",
-              "id" : "30",
+              "id" : "35",
               "instances" : "1",
               "name" : "balancer",
               "properties" : {
-                "structurizr.dsl.identifier" : "78e1c0f0-11e5-48a1-a4ce-1970cba64296.fe962568-cfd4-4d08-ab3e-aa8744f12ebe.69001d39-fc08-4f99-8dd8-59b707a597a0.6557d363-be9f-49d4-ad7d-aacbbf0b2e93.126c296e-2f7d-4adf-a665-3620bc2e70a4.6913e30d-3c9c-4bf9-8db0-ad0bd4e77985"
+                "structurizr.dsl.identifier" : "966a2ead-b09c-4f2b-8950-f3ff62d46f11.16190ad5-b315-4ead-92b4-9d2e66d97405.a7c62589-01d0-4e5c-8ca1-2b4f7c507254.db1ecde9-b617-4174-9e93-7a7f13790416.a0a57b49-4c62-4667-92a6-73d795fa3825.84a8075f-bc22-484d-9199-45c833d969cf"
               },
               "tags" : "Element,Deployment Node,tagDeploymentInfrastructure,l1",
               "technology" : "Ingregress Nginx"
             }, {
               "environment" : "Development",
-              "id" : "31",
+              "id" : "36",
               "instances" : "1",
               "name" : "pgsql",
               "properties" : {
-                "structurizr.dsl.identifier" : "78e1c0f0-11e5-48a1-a4ce-1970cba64296.fe962568-cfd4-4d08-ab3e-aa8744f12ebe.69001d39-fc08-4f99-8dd8-59b707a597a0.6557d363-be9f-49d4-ad7d-aacbbf0b2e93.126c296e-2f7d-4adf-a665-3620bc2e70a4.1a2bee24-bc9e-47c6-8d04-18e371ce6044"
+                "structurizr.dsl.identifier" : "966a2ead-b09c-4f2b-8950-f3ff62d46f11.16190ad5-b315-4ead-92b4-9d2e66d97405.a7c62589-01d0-4e5c-8ca1-2b4f7c507254.db1ecde9-b617-4174-9e93-7a7f13790416.a0a57b49-4c62-4667-92a6-73d795fa3825.33a99a30-3661-4964-bc18-fd9ed4313f4e"
               },
               "tags" : "Element,Deployment Node",
               "technology" : "PostgreSQL operator"
             }, {
               "description" : "3х. UI https://kafka-ui.infrastructure.kalk.pro.",
               "environment" : "Development",
-              "id" : "32",
+              "id" : "37",
               "instances" : "1",
               "name" : "kafka",
               "properties" : {
-                "structurizr.dsl.identifier" : "78e1c0f0-11e5-48a1-a4ce-1970cba64296.fe962568-cfd4-4d08-ab3e-aa8744f12ebe.69001d39-fc08-4f99-8dd8-59b707a597a0.6557d363-be9f-49d4-ad7d-aacbbf0b2e93.126c296e-2f7d-4adf-a665-3620bc2e70a4.a0564fab-7865-45ab-8c47-1682b50f2895"
+                "structurizr.dsl.identifier" : "966a2ead-b09c-4f2b-8950-f3ff62d46f11.16190ad5-b315-4ead-92b4-9d2e66d97405.a7c62589-01d0-4e5c-8ca1-2b4f7c507254.db1ecde9-b617-4174-9e93-7a7f13790416.a0a57b49-4c62-4667-92a6-73d795fa3825.aee185c4-d582-483f-886e-7e82afb02ec9"
               },
               "tags" : "Element,Deployment Node",
               "technology" : "Apache Kafka multi-tenant cluster"
             } ],
             "environment" : "Development",
-            "id" : "28",
+            "id" : "33",
             "infrastructureNodes" : [ {
               "description" : "Получение и обновление сертификатов",
               "environment" : "Development",
-              "id" : "29",
+              "id" : "34",
               "name" : "Cert-Manager",
               "properties" : {
-                "structurizr.dsl.identifier" : "78e1c0f0-11e5-48a1-a4ce-1970cba64296.fe962568-cfd4-4d08-ab3e-aa8744f12ebe.69001d39-fc08-4f99-8dd8-59b707a597a0.6557d363-be9f-49d4-ad7d-aacbbf0b2e93.126c296e-2f7d-4adf-a665-3620bc2e70a4.f492845f-51b5-4a68-a6ee-8dfac2af2c54"
+                "structurizr.dsl.identifier" : "966a2ead-b09c-4f2b-8950-f3ff62d46f11.16190ad5-b315-4ead-92b4-9d2e66d97405.a7c62589-01d0-4e5c-8ca1-2b4f7c507254.db1ecde9-b617-4174-9e93-7a7f13790416.a0a57b49-4c62-4667-92a6-73d795fa3825.e8fd7257-c59b-4117-a8b1-888c4af5dc13"
               },
               "tags" : "Element,Infrastructure Node,tagDeploymentInfrastructure,l1",
               "technology" : "Cert manager"
@@ -124,17 +124,17 @@
             "instances" : "1",
             "name" : "infrastructure",
             "properties" : {
-              "structurizr.dsl.identifier" : "78e1c0f0-11e5-48a1-a4ce-1970cba64296.fe962568-cfd4-4d08-ab3e-aa8744f12ebe.69001d39-fc08-4f99-8dd8-59b707a597a0.6557d363-be9f-49d4-ad7d-aacbbf0b2e93.126c296e-2f7d-4adf-a665-3620bc2e70a4"
+              "structurizr.dsl.identifier" : "966a2ead-b09c-4f2b-8950-f3ff62d46f11.16190ad5-b315-4ead-92b4-9d2e66d97405.a7c62589-01d0-4e5c-8ca1-2b4f7c507254.db1ecde9-b617-4174-9e93-7a7f13790416.a0a57b49-4c62-4667-92a6-73d795fa3825"
             },
             "tags" : "Element,Deployment Node",
             "technology" : "k8s namespace"
           }, {
             "environment" : "Development",
-            "id" : "33",
+            "id" : "38",
             "instances" : "1",
             "name" : "optistair-calc",
             "properties" : {
-              "structurizr.dsl.identifier" : "78e1c0f0-11e5-48a1-a4ce-1970cba64296.fe962568-cfd4-4d08-ab3e-aa8744f12ebe.69001d39-fc08-4f99-8dd8-59b707a597a0.6557d363-be9f-49d4-ad7d-aacbbf0b2e93.49c244b3-1c92-44ee-9766-873078042265"
+              "structurizr.dsl.identifier" : "966a2ead-b09c-4f2b-8950-f3ff62d46f11.16190ad5-b315-4ead-92b4-9d2e66d97405.a7c62589-01d0-4e5c-8ca1-2b4f7c507254.db1ecde9-b617-4174-9e93-7a7f13790416.b0f84a97-7012-4b40-9387-f313cdc6a40f"
             },
             "tags" : "Element,Deployment Node",
             "technology" : "k8s namespace"
@@ -142,55 +142,55 @@
             "children" : [ {
               "description" : "Получение и обновление сертификатов",
               "environment" : "Development",
-              "id" : "36",
+              "id" : "41",
               "instances" : "1",
               "name" : "balancer",
               "properties" : {
-                "structurizr.dsl.identifier" : "78e1c0f0-11e5-48a1-a4ce-1970cba64296.fe962568-cfd4-4d08-ab3e-aa8744f12ebe.69001d39-fc08-4f99-8dd8-59b707a597a0.6557d363-be9f-49d4-ad7d-aacbbf0b2e93.b24505eb-a287-4d63-8efc-45ffca538349.0433076e-edb3-442d-8b58-abd9f1fb31a9"
+                "structurizr.dsl.identifier" : "966a2ead-b09c-4f2b-8950-f3ff62d46f11.16190ad5-b315-4ead-92b4-9d2e66d97405.a7c62589-01d0-4e5c-8ca1-2b4f7c507254.db1ecde9-b617-4174-9e93-7a7f13790416.516702e5-1305-442d-995d-37bfd5350613.d894ce52-6e95-4cf9-a694-2de58819cbb3"
               },
               "tags" : "Element,Deployment Node,tagDeploymentInfrastructure,l1",
               "technology" : "Ingregress Nginx"
             }, {
               "environment" : "Development",
-              "id" : "37",
+              "id" : "42",
               "instances" : "1",
               "name" : "pgsql",
               "properties" : {
-                "structurizr.dsl.identifier" : "78e1c0f0-11e5-48a1-a4ce-1970cba64296.fe962568-cfd4-4d08-ab3e-aa8744f12ebe.69001d39-fc08-4f99-8dd8-59b707a597a0.6557d363-be9f-49d4-ad7d-aacbbf0b2e93.b24505eb-a287-4d63-8efc-45ffca538349.3e85448f-d22d-48b5-9e45-76042631f56d"
+                "structurizr.dsl.identifier" : "966a2ead-b09c-4f2b-8950-f3ff62d46f11.16190ad5-b315-4ead-92b4-9d2e66d97405.a7c62589-01d0-4e5c-8ca1-2b4f7c507254.db1ecde9-b617-4174-9e93-7a7f13790416.516702e5-1305-442d-995d-37bfd5350613.9ef37d89-d285-4c5d-a1a1-21f34d85e5e8"
               },
               "tags" : "Element,Deployment Node",
               "technology" : "PostgreSQL operator"
             }, {
               "description" : "3х. UI https://kafka-ui.infrastructure-dev.kalk.pro.",
               "environment" : "Development",
-              "id" : "38",
+              "id" : "43",
               "instances" : "1",
               "name" : "kafka",
               "properties" : {
-                "structurizr.dsl.identifier" : "78e1c0f0-11e5-48a1-a4ce-1970cba64296.fe962568-cfd4-4d08-ab3e-aa8744f12ebe.69001d39-fc08-4f99-8dd8-59b707a597a0.6557d363-be9f-49d4-ad7d-aacbbf0b2e93.b24505eb-a287-4d63-8efc-45ffca538349.ed8d60d3-cb1f-4e27-8918-38b2d23956e4"
+                "structurizr.dsl.identifier" : "966a2ead-b09c-4f2b-8950-f3ff62d46f11.16190ad5-b315-4ead-92b4-9d2e66d97405.a7c62589-01d0-4e5c-8ca1-2b4f7c507254.db1ecde9-b617-4174-9e93-7a7f13790416.516702e5-1305-442d-995d-37bfd5350613.f1f33612-1b99-4787-8c0f-3fd5e79ef82a"
               },
               "tags" : "Element,Deployment Node",
               "technology" : "Apache Kafka multi-tenant cluster"
             }, {
               "environment" : "Development",
-              "id" : "39",
+              "id" : "44",
               "instances" : "1",
               "name" : "optistair-calc",
               "properties" : {
-                "structurizr.dsl.identifier" : "78e1c0f0-11e5-48a1-a4ce-1970cba64296.fe962568-cfd4-4d08-ab3e-aa8744f12ebe.69001d39-fc08-4f99-8dd8-59b707a597a0.6557d363-be9f-49d4-ad7d-aacbbf0b2e93.b24505eb-a287-4d63-8efc-45ffca538349.a887fa42-1c37-4ffb-9c05-f268288fad7d"
+                "structurizr.dsl.identifier" : "966a2ead-b09c-4f2b-8950-f3ff62d46f11.16190ad5-b315-4ead-92b4-9d2e66d97405.a7c62589-01d0-4e5c-8ca1-2b4f7c507254.db1ecde9-b617-4174-9e93-7a7f13790416.516702e5-1305-442d-995d-37bfd5350613.aa0c031d-c99f-49a2-adc7-673e9d3bce1c"
               },
               "tags" : "Element,Deployment Node",
               "technology" : "k8s namespace"
             } ],
             "environment" : "Development",
-            "id" : "34",
+            "id" : "39",
             "infrastructureNodes" : [ {
               "description" : "Получение и обновление сертификатов",
               "environment" : "Development",
-              "id" : "35",
+              "id" : "40",
               "name" : "Cert-Manager",
               "properties" : {
-                "structurizr.dsl.identifier" : "78e1c0f0-11e5-48a1-a4ce-1970cba64296.fe962568-cfd4-4d08-ab3e-aa8744f12ebe.69001d39-fc08-4f99-8dd8-59b707a597a0.6557d363-be9f-49d4-ad7d-aacbbf0b2e93.b24505eb-a287-4d63-8efc-45ffca538349.9f72cf24-5360-4e33-a0f4-3954543841d1"
+                "structurizr.dsl.identifier" : "966a2ead-b09c-4f2b-8950-f3ff62d46f11.16190ad5-b315-4ead-92b4-9d2e66d97405.a7c62589-01d0-4e5c-8ca1-2b4f7c507254.db1ecde9-b617-4174-9e93-7a7f13790416.516702e5-1305-442d-995d-37bfd5350613.4ed1b974-943f-40be-b63d-25eab7df7786"
               },
               "tags" : "Element,Infrastructure Node,tagDeploymentInfrastructure,l1",
               "technology" : "Cert manager"
@@ -198,103 +198,103 @@
             "instances" : "1",
             "name" : "dev",
             "properties" : {
-              "structurizr.dsl.identifier" : "78e1c0f0-11e5-48a1-a4ce-1970cba64296.fe962568-cfd4-4d08-ab3e-aa8744f12ebe.69001d39-fc08-4f99-8dd8-59b707a597a0.6557d363-be9f-49d4-ad7d-aacbbf0b2e93.b24505eb-a287-4d63-8efc-45ffca538349"
+              "structurizr.dsl.identifier" : "966a2ead-b09c-4f2b-8950-f3ff62d46f11.16190ad5-b315-4ead-92b4-9d2e66d97405.a7c62589-01d0-4e5c-8ca1-2b4f7c507254.db1ecde9-b617-4174-9e93-7a7f13790416.516702e5-1305-442d-995d-37bfd5350613"
             },
             "tags" : "Element,Deployment Node",
             "technology" : "k8s namespace"
           } ],
           "environment" : "Development",
-          "id" : "27",
+          "id" : "32",
           "instances" : "1",
           "name" : "Кластер kalkpro-k8s",
           "properties" : {
-            "structurizr.dsl.identifier" : "78e1c0f0-11e5-48a1-a4ce-1970cba64296.fe962568-cfd4-4d08-ab3e-aa8744f12ebe.69001d39-fc08-4f99-8dd8-59b707a597a0.6557d363-be9f-49d4-ad7d-aacbbf0b2e93"
+            "structurizr.dsl.identifier" : "966a2ead-b09c-4f2b-8950-f3ff62d46f11.16190ad5-b315-4ead-92b4-9d2e66d97405.a7c62589-01d0-4e5c-8ca1-2b4f7c507254.db1ecde9-b617-4174-9e93-7a7f13790416"
           },
           "tags" : "Element,Deployment Node",
           "technology" : "kubernetes"
         } ],
         "description" : "Кластер для расчета оптимальных конфигураций лестниц. URL https://optistair(-dev).kalk.rpo",
         "environment" : "Development",
-        "id" : "26",
+        "id" : "31",
         "instances" : "1",
         "name" : "kalkpro_project",
         "properties" : {
-          "structurizr.dsl.identifier" : "78e1c0f0-11e5-48a1-a4ce-1970cba64296.fe962568-cfd4-4d08-ab3e-aa8744f12ebe.69001d39-fc08-4f99-8dd8-59b707a597a0"
+          "structurizr.dsl.identifier" : "966a2ead-b09c-4f2b-8950-f3ff62d46f11.16190ad5-b315-4ead-92b4-9d2e66d97405.a7c62589-01d0-4e5c-8ca1-2b4f7c507254"
         },
         "tags" : "Element,Deployment Node",
         "technology" : "VPC"
       } ],
       "environment" : "Development",
-      "id" : "25",
+      "id" : "30",
       "instances" : "1",
       "name" : "CloRu",
       "properties" : {
-        "structurizr.dsl.identifier" : "78e1c0f0-11e5-48a1-a4ce-1970cba64296.fe962568-cfd4-4d08-ab3e-aa8744f12ebe"
+        "structurizr.dsl.identifier" : "966a2ead-b09c-4f2b-8950-f3ff62d46f11.16190ad5-b315-4ead-92b4-9d2e66d97405"
       },
       "tags" : "Element,Deployment Node"
     }, {
       "children" : [ {
         "description" : "Веб-сайт основного онлайн-сервиса (IP: 91.107.126.103)",
         "environment" : "Stage",
-        "id" : "41",
+        "id" : "46",
         "instances" : "1",
         "name" : "WEB-SERVER",
         "properties" : {
-          "structurizr.dsl.identifier" : "3d484952-949a-4fac-ba4e-a60f8751a2ff.7e47e0e8-2ce4-4e38-a531-d4cf96045656.069d453c-1d1f-4011-8442-e32d66a14e79"
+          "structurizr.dsl.identifier" : "35a1d59c-1e5e-48ff-b320-5c001bfd4812.19af9bd1-a7aa-4bb4-bbd6-5585a3a063b8.918cddff-4441-4bac-9738-88c71e802b74"
         },
         "tags" : "Element,Deployment Node",
         "technology" : "VPS KVM"
       }, {
         "description" : "Хранилище статических файлов (IP: 62.109.15.25)",
         "environment" : "Stage",
-        "id" : "42",
+        "id" : "47",
         "instances" : "1",
         "name" : "STATIC-STORAGE",
         "properties" : {
-          "structurizr.dsl.identifier" : "3d484952-949a-4fac-ba4e-a60f8751a2ff.7e47e0e8-2ce4-4e38-a531-d4cf96045656.94f49dfe-60b1-498d-8802-697a9b84c180"
+          "structurizr.dsl.identifier" : "35a1d59c-1e5e-48ff-b320-5c001bfd4812.19af9bd1-a7aa-4bb4-bbd6-5585a3a063b8.4301a0d4-087b-4a1c-85ed-20853b5d3466"
         },
         "tags" : "Element,Deployment Node",
         "technology" : "VPS KVM"
       }, {
         "description" : "Сервер проектных расчетов PROD (IP: 212.109.221.247)",
         "environment" : "Stage",
-        "id" : "43",
+        "id" : "48",
         "instances" : "1",
         "name" : "NODE-1",
         "properties" : {
-          "structurizr.dsl.identifier" : "3d484952-949a-4fac-ba4e-a60f8751a2ff.7e47e0e8-2ce4-4e38-a531-d4cf96045656.db5db84e-d359-4ea4-b221-93c728b60f93"
+          "structurizr.dsl.identifier" : "35a1d59c-1e5e-48ff-b320-5c001bfd4812.19af9bd1-a7aa-4bb4-bbd6-5585a3a063b8.3315c5b5-af87-4c5a-a0ea-cb03c653b7e5"
         },
         "tags" : "Element,Deployment Node",
         "technology" : "VPS KVM"
       }, {
         "description" : "Сервер проектных расчетов DEV/STAGE (IP: 188.120.254.218)",
         "environment" : "Stage",
-        "id" : "44",
+        "id" : "49",
         "instances" : "1",
         "name" : "NODE-2",
         "properties" : {
-          "structurizr.dsl.identifier" : "3d484952-949a-4fac-ba4e-a60f8751a2ff.7e47e0e8-2ce4-4e38-a531-d4cf96045656.5721d405-403b-4741-86a0-a8b876aaaaee"
+          "structurizr.dsl.identifier" : "35a1d59c-1e5e-48ff-b320-5c001bfd4812.19af9bd1-a7aa-4bb4-bbd6-5585a3a063b8.710ce3e3-8834-49c6-b42a-ca628fe10e4f"
         },
         "tags" : "Element,Deployment Node",
         "technology" : "VPS KVM"
       }, {
         "description" : "Сервер простых расчетов DEV/STAGE/PROD (IP: 83.220.170.100)",
         "environment" : "Stage",
-        "id" : "45",
+        "id" : "50",
         "instances" : "1",
         "name" : "SINODE-1",
         "properties" : {
-          "structurizr.dsl.identifier" : "3d484952-949a-4fac-ba4e-a60f8751a2ff.7e47e0e8-2ce4-4e38-a531-d4cf96045656.091938be-b8c5-4ad1-bd11-244f261b3f0a"
+          "structurizr.dsl.identifier" : "35a1d59c-1e5e-48ff-b320-5c001bfd4812.19af9bd1-a7aa-4bb4-bbd6-5585a3a063b8.46101407-fb40-45ec-9ee1-28cdf75f1bd5"
         },
         "tags" : "Element,Deployment Node",
         "technology" : "VPS KVM"
       } ],
       "environment" : "Stage",
-      "id" : "40",
+      "id" : "45",
       "instances" : "1",
       "name" : "FirstVDS",
       "properties" : {
-        "structurizr.dsl.identifier" : "3d484952-949a-4fac-ba4e-a60f8751a2ff.7e47e0e8-2ce4-4e38-a531-d4cf96045656"
+        "structurizr.dsl.identifier" : "35a1d59c-1e5e-48ff-b320-5c001bfd4812.19af9bd1-a7aa-4bb4-bbd6-5585a3a063b8"
       },
       "tags" : "Element,Deployment Node"
     }, {
@@ -304,45 +304,45 @@
             "children" : [ {
               "description" : "Получение и обновление сертификатов",
               "environment" : "Stage",
-              "id" : "51",
+              "id" : "56",
               "instances" : "1",
               "name" : "balancer",
               "properties" : {
-                "structurizr.dsl.identifier" : "3d484952-949a-4fac-ba4e-a60f8751a2ff.b0ef1198-7270-40c0-9889-05b2c102e340.f42a253b-6da6-47ab-9561-33a0c493761d.5148397c-8f72-4d69-be87-7f2ddcf3bd7c.2a50ec1a-89c8-42a7-a864-24202608e254.29efe1de-f683-4ed1-99f4-6abf74b5923a"
+                "structurizr.dsl.identifier" : "35a1d59c-1e5e-48ff-b320-5c001bfd4812.b3d3eff5-2294-4ecc-b092-dbf7075e5a5f.c09c6c94-791b-49c0-b862-dd6b1e774087.ca3459ee-e24e-40b8-a43a-ceb509805d0b.5db7a448-17fb-483b-80f1-dc5eb9b409c4.11a9381b-826a-4ce2-8e04-8f26ae863a81"
               },
               "tags" : "Element,Deployment Node,tagDeploymentInfrastructure,l1",
               "technology" : "Ingregress Nginx"
             }, {
               "environment" : "Stage",
-              "id" : "52",
+              "id" : "57",
               "instances" : "1",
               "name" : "pgsql",
               "properties" : {
-                "structurizr.dsl.identifier" : "3d484952-949a-4fac-ba4e-a60f8751a2ff.b0ef1198-7270-40c0-9889-05b2c102e340.f42a253b-6da6-47ab-9561-33a0c493761d.5148397c-8f72-4d69-be87-7f2ddcf3bd7c.2a50ec1a-89c8-42a7-a864-24202608e254.09ab7f35-2fdd-4898-9230-62e5e417cb7a"
+                "structurizr.dsl.identifier" : "35a1d59c-1e5e-48ff-b320-5c001bfd4812.b3d3eff5-2294-4ecc-b092-dbf7075e5a5f.c09c6c94-791b-49c0-b862-dd6b1e774087.ca3459ee-e24e-40b8-a43a-ceb509805d0b.5db7a448-17fb-483b-80f1-dc5eb9b409c4.0c2415a4-2cee-411f-84bc-039eee3ba569"
               },
               "tags" : "Element,Deployment Node",
               "technology" : "PostgreSQL operator"
             }, {
               "description" : "3х. UI https://kafka-ui.infrastructure.kalk.pro.",
               "environment" : "Stage",
-              "id" : "53",
+              "id" : "58",
               "instances" : "1",
               "name" : "kafka",
               "properties" : {
-                "structurizr.dsl.identifier" : "3d484952-949a-4fac-ba4e-a60f8751a2ff.b0ef1198-7270-40c0-9889-05b2c102e340.f42a253b-6da6-47ab-9561-33a0c493761d.5148397c-8f72-4d69-be87-7f2ddcf3bd7c.2a50ec1a-89c8-42a7-a864-24202608e254.6022ebe3-8bcb-4249-bc12-d2835a03109f"
+                "structurizr.dsl.identifier" : "35a1d59c-1e5e-48ff-b320-5c001bfd4812.b3d3eff5-2294-4ecc-b092-dbf7075e5a5f.c09c6c94-791b-49c0-b862-dd6b1e774087.ca3459ee-e24e-40b8-a43a-ceb509805d0b.5db7a448-17fb-483b-80f1-dc5eb9b409c4.1221e7c6-82f4-4127-8ef4-d5c4192e2361"
               },
               "tags" : "Element,Deployment Node",
               "technology" : "Apache Kafka multi-tenant cluster"
             } ],
             "environment" : "Stage",
-            "id" : "49",
+            "id" : "54",
             "infrastructureNodes" : [ {
               "description" : "Получение и обновление сертификатов",
               "environment" : "Stage",
-              "id" : "50",
+              "id" : "55",
               "name" : "Cert-Manager",
               "properties" : {
-                "structurizr.dsl.identifier" : "3d484952-949a-4fac-ba4e-a60f8751a2ff.b0ef1198-7270-40c0-9889-05b2c102e340.f42a253b-6da6-47ab-9561-33a0c493761d.5148397c-8f72-4d69-be87-7f2ddcf3bd7c.2a50ec1a-89c8-42a7-a864-24202608e254.03d46836-2413-4582-bd85-e4173c7f0bff"
+                "structurizr.dsl.identifier" : "35a1d59c-1e5e-48ff-b320-5c001bfd4812.b3d3eff5-2294-4ecc-b092-dbf7075e5a5f.c09c6c94-791b-49c0-b862-dd6b1e774087.ca3459ee-e24e-40b8-a43a-ceb509805d0b.5db7a448-17fb-483b-80f1-dc5eb9b409c4.91a68a37-2ca6-4f77-afbc-2a5684dfc000"
               },
               "tags" : "Element,Infrastructure Node,tagDeploymentInfrastructure,l1",
               "technology" : "Cert manager"
@@ -350,17 +350,17 @@
             "instances" : "1",
             "name" : "infrastructure",
             "properties" : {
-              "structurizr.dsl.identifier" : "3d484952-949a-4fac-ba4e-a60f8751a2ff.b0ef1198-7270-40c0-9889-05b2c102e340.f42a253b-6da6-47ab-9561-33a0c493761d.5148397c-8f72-4d69-be87-7f2ddcf3bd7c.2a50ec1a-89c8-42a7-a864-24202608e254"
+              "structurizr.dsl.identifier" : "35a1d59c-1e5e-48ff-b320-5c001bfd4812.b3d3eff5-2294-4ecc-b092-dbf7075e5a5f.c09c6c94-791b-49c0-b862-dd6b1e774087.ca3459ee-e24e-40b8-a43a-ceb509805d0b.5db7a448-17fb-483b-80f1-dc5eb9b409c4"
             },
             "tags" : "Element,Deployment Node",
             "technology" : "k8s namespace"
           }, {
             "environment" : "Stage",
-            "id" : "54",
+            "id" : "59",
             "instances" : "1",
             "name" : "optistair-calc",
             "properties" : {
-              "structurizr.dsl.identifier" : "3d484952-949a-4fac-ba4e-a60f8751a2ff.b0ef1198-7270-40c0-9889-05b2c102e340.f42a253b-6da6-47ab-9561-33a0c493761d.5148397c-8f72-4d69-be87-7f2ddcf3bd7c.fddb2e3d-12e1-466c-b002-45b0b8c495fe"
+              "structurizr.dsl.identifier" : "35a1d59c-1e5e-48ff-b320-5c001bfd4812.b3d3eff5-2294-4ecc-b092-dbf7075e5a5f.c09c6c94-791b-49c0-b862-dd6b1e774087.ca3459ee-e24e-40b8-a43a-ceb509805d0b.a3d7b4e8-a903-470d-92d3-c1f110bccd11"
             },
             "tags" : "Element,Deployment Node",
             "technology" : "k8s namespace"
@@ -368,55 +368,55 @@
             "children" : [ {
               "description" : "Получение и обновление сертификатов",
               "environment" : "Stage",
-              "id" : "57",
+              "id" : "62",
               "instances" : "1",
               "name" : "balancer",
               "properties" : {
-                "structurizr.dsl.identifier" : "3d484952-949a-4fac-ba4e-a60f8751a2ff.b0ef1198-7270-40c0-9889-05b2c102e340.f42a253b-6da6-47ab-9561-33a0c493761d.5148397c-8f72-4d69-be87-7f2ddcf3bd7c.10448f34-59fa-4111-b4e1-b443281ac897.a678248c-f4cc-40a6-93bf-e7e2efcac69a"
+                "structurizr.dsl.identifier" : "35a1d59c-1e5e-48ff-b320-5c001bfd4812.b3d3eff5-2294-4ecc-b092-dbf7075e5a5f.c09c6c94-791b-49c0-b862-dd6b1e774087.ca3459ee-e24e-40b8-a43a-ceb509805d0b.e78a21fd-c58c-4958-bbef-09970abe5907.4ae4b334-e7bf-4c0d-ad9f-747480d23cd7"
               },
               "tags" : "Element,Deployment Node,tagDeploymentInfrastructure,l1",
               "technology" : "Ingregress Nginx"
             }, {
               "environment" : "Stage",
-              "id" : "58",
+              "id" : "63",
               "instances" : "1",
               "name" : "pgsql",
               "properties" : {
-                "structurizr.dsl.identifier" : "3d484952-949a-4fac-ba4e-a60f8751a2ff.b0ef1198-7270-40c0-9889-05b2c102e340.f42a253b-6da6-47ab-9561-33a0c493761d.5148397c-8f72-4d69-be87-7f2ddcf3bd7c.10448f34-59fa-4111-b4e1-b443281ac897.3fc9ccf1-51e3-4930-aecc-2bf653ec304f"
+                "structurizr.dsl.identifier" : "35a1d59c-1e5e-48ff-b320-5c001bfd4812.b3d3eff5-2294-4ecc-b092-dbf7075e5a5f.c09c6c94-791b-49c0-b862-dd6b1e774087.ca3459ee-e24e-40b8-a43a-ceb509805d0b.e78a21fd-c58c-4958-bbef-09970abe5907.d177421a-84ad-4ce9-9da0-5688803a1030"
               },
               "tags" : "Element,Deployment Node",
               "technology" : "PostgreSQL operator"
             }, {
               "description" : "3х. UI https://kafka-ui.infrastructure-dev.kalk.pro.",
               "environment" : "Stage",
-              "id" : "59",
+              "id" : "64",
               "instances" : "1",
               "name" : "kafka",
               "properties" : {
-                "structurizr.dsl.identifier" : "3d484952-949a-4fac-ba4e-a60f8751a2ff.b0ef1198-7270-40c0-9889-05b2c102e340.f42a253b-6da6-47ab-9561-33a0c493761d.5148397c-8f72-4d69-be87-7f2ddcf3bd7c.10448f34-59fa-4111-b4e1-b443281ac897.5fd57097-c11c-4780-8efd-e05ac55fb273"
+                "structurizr.dsl.identifier" : "35a1d59c-1e5e-48ff-b320-5c001bfd4812.b3d3eff5-2294-4ecc-b092-dbf7075e5a5f.c09c6c94-791b-49c0-b862-dd6b1e774087.ca3459ee-e24e-40b8-a43a-ceb509805d0b.e78a21fd-c58c-4958-bbef-09970abe5907.e32ca32a-b621-4732-916e-3a68c2c8e461"
               },
               "tags" : "Element,Deployment Node",
               "technology" : "Apache Kafka multi-tenant cluster"
             }, {
               "environment" : "Stage",
-              "id" : "60",
+              "id" : "65",
               "instances" : "1",
               "name" : "optistair-calc",
               "properties" : {
-                "structurizr.dsl.identifier" : "3d484952-949a-4fac-ba4e-a60f8751a2ff.b0ef1198-7270-40c0-9889-05b2c102e340.f42a253b-6da6-47ab-9561-33a0c493761d.5148397c-8f72-4d69-be87-7f2ddcf3bd7c.10448f34-59fa-4111-b4e1-b443281ac897.d3da18ce-19a0-4e16-bd50-be862798afd6"
+                "structurizr.dsl.identifier" : "35a1d59c-1e5e-48ff-b320-5c001bfd4812.b3d3eff5-2294-4ecc-b092-dbf7075e5a5f.c09c6c94-791b-49c0-b862-dd6b1e774087.ca3459ee-e24e-40b8-a43a-ceb509805d0b.e78a21fd-c58c-4958-bbef-09970abe5907.c4e891a5-8d78-4358-9f55-c2dc1ba2037d"
               },
               "tags" : "Element,Deployment Node",
               "technology" : "k8s namespace"
             } ],
             "environment" : "Stage",
-            "id" : "55",
+            "id" : "60",
             "infrastructureNodes" : [ {
               "description" : "Получение и обновление сертификатов",
               "environment" : "Stage",
-              "id" : "56",
+              "id" : "61",
               "name" : "Cert-Manager",
               "properties" : {
-                "structurizr.dsl.identifier" : "3d484952-949a-4fac-ba4e-a60f8751a2ff.b0ef1198-7270-40c0-9889-05b2c102e340.f42a253b-6da6-47ab-9561-33a0c493761d.5148397c-8f72-4d69-be87-7f2ddcf3bd7c.10448f34-59fa-4111-b4e1-b443281ac897.64c6f480-de41-42cb-8b18-ba2d08020d71"
+                "structurizr.dsl.identifier" : "35a1d59c-1e5e-48ff-b320-5c001bfd4812.b3d3eff5-2294-4ecc-b092-dbf7075e5a5f.c09c6c94-791b-49c0-b862-dd6b1e774087.ca3459ee-e24e-40b8-a43a-ceb509805d0b.e78a21fd-c58c-4958-bbef-09970abe5907.5ccaff8d-3e83-4fb9-8319-d8c383573dd1"
               },
               "tags" : "Element,Infrastructure Node,tagDeploymentInfrastructure,l1",
               "technology" : "Cert manager"
@@ -424,60 +424,60 @@
             "instances" : "1",
             "name" : "dev",
             "properties" : {
-              "structurizr.dsl.identifier" : "3d484952-949a-4fac-ba4e-a60f8751a2ff.b0ef1198-7270-40c0-9889-05b2c102e340.f42a253b-6da6-47ab-9561-33a0c493761d.5148397c-8f72-4d69-be87-7f2ddcf3bd7c.10448f34-59fa-4111-b4e1-b443281ac897"
+              "structurizr.dsl.identifier" : "35a1d59c-1e5e-48ff-b320-5c001bfd4812.b3d3eff5-2294-4ecc-b092-dbf7075e5a5f.c09c6c94-791b-49c0-b862-dd6b1e774087.ca3459ee-e24e-40b8-a43a-ceb509805d0b.e78a21fd-c58c-4958-bbef-09970abe5907"
             },
             "tags" : "Element,Deployment Node",
             "technology" : "k8s namespace"
           } ],
           "environment" : "Stage",
-          "id" : "48",
+          "id" : "53",
           "instances" : "1",
           "name" : "Кластер kalkpro-k8s",
           "properties" : {
-            "structurizr.dsl.identifier" : "3d484952-949a-4fac-ba4e-a60f8751a2ff.b0ef1198-7270-40c0-9889-05b2c102e340.f42a253b-6da6-47ab-9561-33a0c493761d.5148397c-8f72-4d69-be87-7f2ddcf3bd7c"
+            "structurizr.dsl.identifier" : "35a1d59c-1e5e-48ff-b320-5c001bfd4812.b3d3eff5-2294-4ecc-b092-dbf7075e5a5f.c09c6c94-791b-49c0-b862-dd6b1e774087.ca3459ee-e24e-40b8-a43a-ceb509805d0b"
           },
           "tags" : "Element,Deployment Node",
           "technology" : "kubernetes"
         } ],
         "description" : "Кластер для расчета оптимальных конфигураций лестниц. URL https://optistair(-dev).kalk.rpo",
         "environment" : "Stage",
-        "id" : "47",
+        "id" : "52",
         "instances" : "1",
         "name" : "kalkpro_project",
         "properties" : {
-          "structurizr.dsl.identifier" : "3d484952-949a-4fac-ba4e-a60f8751a2ff.b0ef1198-7270-40c0-9889-05b2c102e340.f42a253b-6da6-47ab-9561-33a0c493761d"
+          "structurizr.dsl.identifier" : "35a1d59c-1e5e-48ff-b320-5c001bfd4812.b3d3eff5-2294-4ecc-b092-dbf7075e5a5f.c09c6c94-791b-49c0-b862-dd6b1e774087"
         },
         "tags" : "Element,Deployment Node",
         "technology" : "VPC"
       } ],
       "environment" : "Stage",
-      "id" : "46",
+      "id" : "51",
       "instances" : "1",
       "name" : "CloRu",
       "properties" : {
-        "structurizr.dsl.identifier" : "3d484952-949a-4fac-ba4e-a60f8751a2ff.b0ef1198-7270-40c0-9889-05b2c102e340"
+        "structurizr.dsl.identifier" : "35a1d59c-1e5e-48ff-b320-5c001bfd4812.b3d3eff5-2294-4ecc-b092-dbf7075e5a5f"
       },
       "tags" : "Element,Deployment Node"
     }, {
       "children" : [ {
         "description" : "Веб-сайт основного онлайн-сервиса (IP: 91.107.126.103)",
         "environment" : "Production",
-        "id" : "62",
+        "id" : "67",
         "instances" : "1",
         "name" : "WEB-SERVER",
         "properties" : {
-          "structurizr.dsl.identifier" : "e6f6233f-6a91-454f-bc9c-c4f70dfd6227.13e29e42-425a-402f-92b9-18a3ab009d57.c9ff972f-055e-4bc6-a7af-a7fb64cc9414"
+          "structurizr.dsl.identifier" : "afadd6ad-2c7b-4a54-870b-138b1a371b99.188d0ac5-8a30-42eb-9b16-0ef1e0ebe0de.520f1751-87e9-426c-b163-d9d5ff4b90b1"
         },
         "softwareSystemInstances" : [ {
           "deploymentGroups" : [ "Default" ],
           "description" : "Веб-сайт онлайн-сервиса автоматизации строительных расчетов",
           "environment" : "Production",
-          "id" : "82",
+          "id" : "87",
           "instanceId" : 1,
           "properties" : {
-            "structurizr.dsl.identifier" : "44ec7500-21f4-429f-80d0-ca07f55306db"
+            "structurizr.dsl.identifier" : "aa4a8d5f-c263-4681-ad00-6b73eab39867"
           },
-          "softwareSystemId" : "4",
+          "softwareSystemId" : "5",
           "tags" : "Software System Instance",
           "url" : "https://kalk.pro"
         } ],
@@ -486,54 +486,54 @@
       }, {
         "description" : "Хранилище статических файлов (IP: 62.109.15.25)",
         "environment" : "Production",
-        "id" : "63",
+        "id" : "68",
         "instances" : "1",
         "name" : "STATIC-STORAGE",
         "properties" : {
-          "structurizr.dsl.identifier" : "e6f6233f-6a91-454f-bc9c-c4f70dfd6227.13e29e42-425a-402f-92b9-18a3ab009d57.03eceabd-029a-4c5b-a540-0a9387476747"
+          "structurizr.dsl.identifier" : "afadd6ad-2c7b-4a54-870b-138b1a371b99.188d0ac5-8a30-42eb-9b16-0ef1e0ebe0de.2812a98a-b0d1-4ac2-854c-1671dca55026"
         },
         "tags" : "Element,Deployment Node",
         "technology" : "VPS KVM"
       }, {
         "description" : "Сервер проектных расчетов PROD (IP: 212.109.221.247)",
         "environment" : "Production",
-        "id" : "64",
+        "id" : "69",
         "instances" : "1",
         "name" : "NODE-1",
         "properties" : {
-          "structurizr.dsl.identifier" : "e6f6233f-6a91-454f-bc9c-c4f70dfd6227.13e29e42-425a-402f-92b9-18a3ab009d57.afc10e86-cd9f-43d2-b6db-360c57f4337c"
+          "structurizr.dsl.identifier" : "afadd6ad-2c7b-4a54-870b-138b1a371b99.188d0ac5-8a30-42eb-9b16-0ef1e0ebe0de.a0180552-a29b-4c96-8136-bfcb27cd8a5b"
         },
         "tags" : "Element,Deployment Node",
         "technology" : "VPS KVM"
       }, {
         "description" : "Сервер проектных расчетов DEV/STAGE (IP: 188.120.254.218)",
         "environment" : "Production",
-        "id" : "65",
+        "id" : "70",
         "instances" : "1",
         "name" : "NODE-2",
         "properties" : {
-          "structurizr.dsl.identifier" : "e6f6233f-6a91-454f-bc9c-c4f70dfd6227.13e29e42-425a-402f-92b9-18a3ab009d57.67bc7caf-afef-4e9b-b9af-5d894493191c"
+          "structurizr.dsl.identifier" : "afadd6ad-2c7b-4a54-870b-138b1a371b99.188d0ac5-8a30-42eb-9b16-0ef1e0ebe0de.322fed25-0116-4ecc-ae38-59bd61d75080"
         },
         "tags" : "Element,Deployment Node",
         "technology" : "VPS KVM"
       }, {
         "description" : "Сервер простых расчетов DEV/STAGE/PROD (IP: 83.220.170.100)",
         "environment" : "Production",
-        "id" : "66",
+        "id" : "71",
         "instances" : "1",
         "name" : "SINODE-1",
         "properties" : {
-          "structurizr.dsl.identifier" : "e6f6233f-6a91-454f-bc9c-c4f70dfd6227.13e29e42-425a-402f-92b9-18a3ab009d57.d3571db1-cd3e-4a1b-adea-54b1398e8e0f"
+          "structurizr.dsl.identifier" : "afadd6ad-2c7b-4a54-870b-138b1a371b99.188d0ac5-8a30-42eb-9b16-0ef1e0ebe0de.188b3593-33bf-4eaa-9f55-6b7dbb7e2977"
         },
         "tags" : "Element,Deployment Node",
         "technology" : "VPS KVM"
       } ],
       "environment" : "Production",
-      "id" : "61",
+      "id" : "66",
       "instances" : "1",
       "name" : "FirstVDS",
       "properties" : {
-        "structurizr.dsl.identifier" : "e6f6233f-6a91-454f-bc9c-c4f70dfd6227.13e29e42-425a-402f-92b9-18a3ab009d57"
+        "structurizr.dsl.identifier" : "afadd6ad-2c7b-4a54-870b-138b1a371b99.188d0ac5-8a30-42eb-9b16-0ef1e0ebe0de"
       },
       "tags" : "Element,Deployment Node"
     }, {
@@ -543,45 +543,45 @@
             "children" : [ {
               "description" : "Получение и обновление сертификатов",
               "environment" : "Production",
-              "id" : "72",
+              "id" : "77",
               "instances" : "1",
               "name" : "balancer",
               "properties" : {
-                "structurizr.dsl.identifier" : "e6f6233f-6a91-454f-bc9c-c4f70dfd6227.f016cc45-6735-4713-a895-9847fb1131ef.beb0dcee-b7ad-4c4a-b4a0-c437d4a7ef15.90a93f78-ed66-48a8-9943-3e863b8b2b88.84829de5-5f85-4bc8-adc8-22ec014c85ca.1c7e8e81-4863-42d1-ae62-b8df553eac01"
+                "structurizr.dsl.identifier" : "afadd6ad-2c7b-4a54-870b-138b1a371b99.39fa2e97-fdc5-47a2-9655-745de2248f6d.5701b68e-1f10-4b14-bcf2-7292c011ed41.8573ecec-8cfb-47be-96ea-71403b6aa506.26710200-014f-4509-8134-79facea45545.97b7fe89-d754-4cfe-909c-52f83faa13f8"
               },
               "tags" : "Element,Deployment Node,tagDeploymentInfrastructure,l1",
               "technology" : "Ingregress Nginx"
             }, {
               "environment" : "Production",
-              "id" : "73",
+              "id" : "78",
               "instances" : "1",
               "name" : "pgsql",
               "properties" : {
-                "structurizr.dsl.identifier" : "e6f6233f-6a91-454f-bc9c-c4f70dfd6227.f016cc45-6735-4713-a895-9847fb1131ef.beb0dcee-b7ad-4c4a-b4a0-c437d4a7ef15.90a93f78-ed66-48a8-9943-3e863b8b2b88.84829de5-5f85-4bc8-adc8-22ec014c85ca.a000e774-a767-4f23-8fea-08b16e3869cb"
+                "structurizr.dsl.identifier" : "afadd6ad-2c7b-4a54-870b-138b1a371b99.39fa2e97-fdc5-47a2-9655-745de2248f6d.5701b68e-1f10-4b14-bcf2-7292c011ed41.8573ecec-8cfb-47be-96ea-71403b6aa506.26710200-014f-4509-8134-79facea45545.972834f9-e24a-44d9-8f17-9c7380b034e2"
               },
               "tags" : "Element,Deployment Node",
               "technology" : "PostgreSQL operator"
             }, {
               "description" : "3х. UI https://kafka-ui.infrastructure.kalk.pro.",
               "environment" : "Production",
-              "id" : "74",
+              "id" : "79",
               "instances" : "1",
               "name" : "kafka",
               "properties" : {
-                "structurizr.dsl.identifier" : "e6f6233f-6a91-454f-bc9c-c4f70dfd6227.f016cc45-6735-4713-a895-9847fb1131ef.beb0dcee-b7ad-4c4a-b4a0-c437d4a7ef15.90a93f78-ed66-48a8-9943-3e863b8b2b88.84829de5-5f85-4bc8-adc8-22ec014c85ca.4d6ada28-c498-410c-bd61-c5c6bcb4d4b1"
+                "structurizr.dsl.identifier" : "afadd6ad-2c7b-4a54-870b-138b1a371b99.39fa2e97-fdc5-47a2-9655-745de2248f6d.5701b68e-1f10-4b14-bcf2-7292c011ed41.8573ecec-8cfb-47be-96ea-71403b6aa506.26710200-014f-4509-8134-79facea45545.632b2d60-25af-46df-b05a-a9aea75a982d"
               },
               "tags" : "Element,Deployment Node",
               "technology" : "Apache Kafka multi-tenant cluster"
             } ],
             "environment" : "Production",
-            "id" : "70",
+            "id" : "75",
             "infrastructureNodes" : [ {
               "description" : "Получение и обновление сертификатов",
               "environment" : "Production",
-              "id" : "71",
+              "id" : "76",
               "name" : "Cert-Manager",
               "properties" : {
-                "structurizr.dsl.identifier" : "e6f6233f-6a91-454f-bc9c-c4f70dfd6227.f016cc45-6735-4713-a895-9847fb1131ef.beb0dcee-b7ad-4c4a-b4a0-c437d4a7ef15.90a93f78-ed66-48a8-9943-3e863b8b2b88.84829de5-5f85-4bc8-adc8-22ec014c85ca.4841c9eb-937c-40ce-a585-ef343edd2a72"
+                "structurizr.dsl.identifier" : "afadd6ad-2c7b-4a54-870b-138b1a371b99.39fa2e97-fdc5-47a2-9655-745de2248f6d.5701b68e-1f10-4b14-bcf2-7292c011ed41.8573ecec-8cfb-47be-96ea-71403b6aa506.26710200-014f-4509-8134-79facea45545.10ad3008-dfef-440e-8ce4-bc0307a82a76"
               },
               "tags" : "Element,Infrastructure Node,tagDeploymentInfrastructure,l1",
               "technology" : "Cert manager"
@@ -589,17 +589,17 @@
             "instances" : "1",
             "name" : "infrastructure",
             "properties" : {
-              "structurizr.dsl.identifier" : "e6f6233f-6a91-454f-bc9c-c4f70dfd6227.f016cc45-6735-4713-a895-9847fb1131ef.beb0dcee-b7ad-4c4a-b4a0-c437d4a7ef15.90a93f78-ed66-48a8-9943-3e863b8b2b88.84829de5-5f85-4bc8-adc8-22ec014c85ca"
+              "structurizr.dsl.identifier" : "afadd6ad-2c7b-4a54-870b-138b1a371b99.39fa2e97-fdc5-47a2-9655-745de2248f6d.5701b68e-1f10-4b14-bcf2-7292c011ed41.8573ecec-8cfb-47be-96ea-71403b6aa506.26710200-014f-4509-8134-79facea45545"
             },
             "tags" : "Element,Deployment Node",
             "technology" : "k8s namespace"
           }, {
             "environment" : "Production",
-            "id" : "75",
+            "id" : "80",
             "instances" : "1",
             "name" : "optistair-calc",
             "properties" : {
-              "structurizr.dsl.identifier" : "e6f6233f-6a91-454f-bc9c-c4f70dfd6227.f016cc45-6735-4713-a895-9847fb1131ef.beb0dcee-b7ad-4c4a-b4a0-c437d4a7ef15.90a93f78-ed66-48a8-9943-3e863b8b2b88.f2c1167e-60e9-4c1e-886a-9e6a4c49c90c"
+              "structurizr.dsl.identifier" : "afadd6ad-2c7b-4a54-870b-138b1a371b99.39fa2e97-fdc5-47a2-9655-745de2248f6d.5701b68e-1f10-4b14-bcf2-7292c011ed41.8573ecec-8cfb-47be-96ea-71403b6aa506.7884b5a1-acd7-4882-bcf9-3d584a251b27"
             },
             "tags" : "Element,Deployment Node",
             "technology" : "k8s namespace"
@@ -607,55 +607,55 @@
             "children" : [ {
               "description" : "Получение и обновление сертификатов",
               "environment" : "Production",
-              "id" : "78",
+              "id" : "83",
               "instances" : "1",
               "name" : "balancer",
               "properties" : {
-                "structurizr.dsl.identifier" : "e6f6233f-6a91-454f-bc9c-c4f70dfd6227.f016cc45-6735-4713-a895-9847fb1131ef.beb0dcee-b7ad-4c4a-b4a0-c437d4a7ef15.90a93f78-ed66-48a8-9943-3e863b8b2b88.f43d9084-6e75-4fea-b522-50b83b30249e.bfe7b114-8bc0-4a88-99af-c27591a3fa05"
+                "structurizr.dsl.identifier" : "afadd6ad-2c7b-4a54-870b-138b1a371b99.39fa2e97-fdc5-47a2-9655-745de2248f6d.5701b68e-1f10-4b14-bcf2-7292c011ed41.8573ecec-8cfb-47be-96ea-71403b6aa506.974e08cd-80fc-4ae3-b174-f572c5801414.a342e4b7-f097-49d8-8954-fd0fd8c37e01"
               },
               "tags" : "Element,Deployment Node,tagDeploymentInfrastructure,l1",
               "technology" : "Ingregress Nginx"
             }, {
               "environment" : "Production",
-              "id" : "79",
+              "id" : "84",
               "instances" : "1",
               "name" : "pgsql",
               "properties" : {
-                "structurizr.dsl.identifier" : "e6f6233f-6a91-454f-bc9c-c4f70dfd6227.f016cc45-6735-4713-a895-9847fb1131ef.beb0dcee-b7ad-4c4a-b4a0-c437d4a7ef15.90a93f78-ed66-48a8-9943-3e863b8b2b88.f43d9084-6e75-4fea-b522-50b83b30249e.e1b01e75-7804-4cc3-bc13-854d1faa31a6"
+                "structurizr.dsl.identifier" : "afadd6ad-2c7b-4a54-870b-138b1a371b99.39fa2e97-fdc5-47a2-9655-745de2248f6d.5701b68e-1f10-4b14-bcf2-7292c011ed41.8573ecec-8cfb-47be-96ea-71403b6aa506.974e08cd-80fc-4ae3-b174-f572c5801414.e5a657b7-72db-4a26-9173-e12da103f969"
               },
               "tags" : "Element,Deployment Node",
               "technology" : "PostgreSQL operator"
             }, {
               "description" : "3х. UI https://kafka-ui.infrastructure-dev.kalk.pro.",
               "environment" : "Production",
-              "id" : "80",
+              "id" : "85",
               "instances" : "1",
               "name" : "kafka",
               "properties" : {
-                "structurizr.dsl.identifier" : "e6f6233f-6a91-454f-bc9c-c4f70dfd6227.f016cc45-6735-4713-a895-9847fb1131ef.beb0dcee-b7ad-4c4a-b4a0-c437d4a7ef15.90a93f78-ed66-48a8-9943-3e863b8b2b88.f43d9084-6e75-4fea-b522-50b83b30249e.b2047c16-7e17-4065-a8f2-31868e47d9b4"
+                "structurizr.dsl.identifier" : "afadd6ad-2c7b-4a54-870b-138b1a371b99.39fa2e97-fdc5-47a2-9655-745de2248f6d.5701b68e-1f10-4b14-bcf2-7292c011ed41.8573ecec-8cfb-47be-96ea-71403b6aa506.974e08cd-80fc-4ae3-b174-f572c5801414.e008d21f-0aa7-4aea-a5be-f873e62f8bfb"
               },
               "tags" : "Element,Deployment Node",
               "technology" : "Apache Kafka multi-tenant cluster"
             }, {
               "environment" : "Production",
-              "id" : "81",
+              "id" : "86",
               "instances" : "1",
               "name" : "optistair-calc",
               "properties" : {
-                "structurizr.dsl.identifier" : "e6f6233f-6a91-454f-bc9c-c4f70dfd6227.f016cc45-6735-4713-a895-9847fb1131ef.beb0dcee-b7ad-4c4a-b4a0-c437d4a7ef15.90a93f78-ed66-48a8-9943-3e863b8b2b88.f43d9084-6e75-4fea-b522-50b83b30249e.c15fe236-571b-475f-ae32-1020db7c119d"
+                "structurizr.dsl.identifier" : "afadd6ad-2c7b-4a54-870b-138b1a371b99.39fa2e97-fdc5-47a2-9655-745de2248f6d.5701b68e-1f10-4b14-bcf2-7292c011ed41.8573ecec-8cfb-47be-96ea-71403b6aa506.974e08cd-80fc-4ae3-b174-f572c5801414.b1d89173-263b-45f7-803f-7fd5623f78ee"
               },
               "tags" : "Element,Deployment Node",
               "technology" : "k8s namespace"
             } ],
             "environment" : "Production",
-            "id" : "76",
+            "id" : "81",
             "infrastructureNodes" : [ {
               "description" : "Получение и обновление сертификатов",
               "environment" : "Production",
-              "id" : "77",
+              "id" : "82",
               "name" : "Cert-Manager",
               "properties" : {
-                "structurizr.dsl.identifier" : "e6f6233f-6a91-454f-bc9c-c4f70dfd6227.f016cc45-6735-4713-a895-9847fb1131ef.beb0dcee-b7ad-4c4a-b4a0-c437d4a7ef15.90a93f78-ed66-48a8-9943-3e863b8b2b88.f43d9084-6e75-4fea-b522-50b83b30249e.6ab0dd27-68d5-4a5e-a3c8-994cc1b530fc"
+                "structurizr.dsl.identifier" : "afadd6ad-2c7b-4a54-870b-138b1a371b99.39fa2e97-fdc5-47a2-9655-745de2248f6d.5701b68e-1f10-4b14-bcf2-7292c011ed41.8573ecec-8cfb-47be-96ea-71403b6aa506.974e08cd-80fc-4ae3-b174-f572c5801414.b7fbad96-ca90-4a3c-a7d0-bdef5f72630c"
               },
               "tags" : "Element,Infrastructure Node,tagDeploymentInfrastructure,l1",
               "technology" : "Cert manager"
@@ -663,38 +663,38 @@
             "instances" : "1",
             "name" : "dev",
             "properties" : {
-              "structurizr.dsl.identifier" : "e6f6233f-6a91-454f-bc9c-c4f70dfd6227.f016cc45-6735-4713-a895-9847fb1131ef.beb0dcee-b7ad-4c4a-b4a0-c437d4a7ef15.90a93f78-ed66-48a8-9943-3e863b8b2b88.f43d9084-6e75-4fea-b522-50b83b30249e"
+              "structurizr.dsl.identifier" : "afadd6ad-2c7b-4a54-870b-138b1a371b99.39fa2e97-fdc5-47a2-9655-745de2248f6d.5701b68e-1f10-4b14-bcf2-7292c011ed41.8573ecec-8cfb-47be-96ea-71403b6aa506.974e08cd-80fc-4ae3-b174-f572c5801414"
             },
             "tags" : "Element,Deployment Node",
             "technology" : "k8s namespace"
           } ],
           "environment" : "Production",
-          "id" : "69",
+          "id" : "74",
           "instances" : "1",
           "name" : "Кластер kalkpro-k8s",
           "properties" : {
-            "structurizr.dsl.identifier" : "e6f6233f-6a91-454f-bc9c-c4f70dfd6227.f016cc45-6735-4713-a895-9847fb1131ef.beb0dcee-b7ad-4c4a-b4a0-c437d4a7ef15.90a93f78-ed66-48a8-9943-3e863b8b2b88"
+            "structurizr.dsl.identifier" : "afadd6ad-2c7b-4a54-870b-138b1a371b99.39fa2e97-fdc5-47a2-9655-745de2248f6d.5701b68e-1f10-4b14-bcf2-7292c011ed41.8573ecec-8cfb-47be-96ea-71403b6aa506"
           },
           "tags" : "Element,Deployment Node",
           "technology" : "kubernetes"
         } ],
         "description" : "Кластер для расчета оптимальных конфигураций лестниц. URL https://optistair(-dev).kalk.rpo",
         "environment" : "Production",
-        "id" : "68",
+        "id" : "73",
         "instances" : "1",
         "name" : "kalkpro_project",
         "properties" : {
-          "structurizr.dsl.identifier" : "e6f6233f-6a91-454f-bc9c-c4f70dfd6227.f016cc45-6735-4713-a895-9847fb1131ef.beb0dcee-b7ad-4c4a-b4a0-c437d4a7ef15"
+          "structurizr.dsl.identifier" : "afadd6ad-2c7b-4a54-870b-138b1a371b99.39fa2e97-fdc5-47a2-9655-745de2248f6d.5701b68e-1f10-4b14-bcf2-7292c011ed41"
         },
         "tags" : "Element,Deployment Node",
         "technology" : "VPC"
       } ],
       "environment" : "Production",
-      "id" : "67",
+      "id" : "72",
       "instances" : "1",
       "name" : "CloRu",
       "properties" : {
-        "structurizr.dsl.identifier" : "e6f6233f-6a91-454f-bc9c-c4f70dfd6227.f016cc45-6735-4713-a895-9847fb1131ef"
+        "structurizr.dsl.identifier" : "afadd6ad-2c7b-4a54-870b-138b1a371b99.39fa2e97-fdc5-47a2-9655-745de2248f6d"
       },
       "tags" : "Element,Deployment Node"
     } ],
@@ -707,8 +707,8 @@
       },
       "relationships" : [ {
         "description" : "Работа с веб-интерфейсом (расчеты, проекты)",
-        "destinationId" : "4",
-        "id" : "10",
+        "destinationId" : "5",
+        "id" : "11",
         "sourceId" : "1",
         "tags" : "Relationship",
         "technology" : "HTTPS"
@@ -723,8 +723,8 @@
       },
       "relationships" : [ {
         "description" : "Управление структруой и данными на сайте",
-        "destinationId" : "4",
-        "id" : "11",
+        "destinationId" : "5",
+        "id" : "12",
         "sourceId" : "2",
         "tags" : "Relationship",
         "technology" : "HTTPS"
@@ -741,9 +741,41 @@
       },
       "tags" : "Element,Software System,external"
     }, {
-      "description" : "KALK.PRO",
+      "description" : "API Gateway",
       "documentation" : { },
       "id" : "4",
+      "location" : "Unspecified",
+      "name" : "API Gateway",
+      "properties" : {
+        "structurizr.dsl.identifier" : "system_api_gatewai"
+      },
+      "relationships" : [ {
+        "description" : "Размещение запроса на расчёт. POST: /api/{stair-type}/request",
+        "destinationId" : "9",
+        "id" : "20",
+        "sourceId" : "4",
+        "tags" : "Relationship,L1,tagFrontReq",
+        "technology" : "REST API"
+      }, {
+        "description" : "Получение статуса и результата расчёта. GET: /api/requests-statuses",
+        "destinationId" : "9",
+        "id" : "21",
+        "sourceId" : "4",
+        "tags" : "Relationship,L1,tagBackReq",
+        "technology" : "REST API"
+      }, {
+        "description" : "Установить параметры доступа пользователя к расчётам. POST: /api/user-acl",
+        "destinationId" : "9",
+        "id" : "22",
+        "sourceId" : "4",
+        "tags" : "Relationship,L1,tagBackReq",
+        "technology" : "REST API"
+      } ],
+      "tags" : "Element,Software System"
+    }, {
+      "description" : "KALK.PRO",
+      "documentation" : { },
+      "id" : "5",
       "location" : "Unspecified",
       "name" : "Онлайн-сервис автоматизации строительных расчетов",
       "properties" : {
@@ -751,51 +783,58 @@
       },
       "relationships" : [ {
         "description" : "Получение проекта с чертежами и 3D",
-        "destinationId" : "5",
-        "id" : "12",
-        "sourceId" : "4",
+        "destinationId" : "6",
+        "id" : "13",
+        "sourceId" : "5",
         "tags" : "Relationship,L1",
         "technology" : "WEB-SOCKETS"
       }, {
         "description" : "Расчет типовых строительных расчетов",
-        "destinationId" : "6",
-        "id" : "13",
-        "sourceId" : "4",
+        "destinationId" : "7",
+        "id" : "14",
+        "sourceId" : "5",
         "tags" : "Relationship,L1",
         "technology" : "WEB-SOCKETS"
       }, {
         "description" : "Расчет металлопроката",
-        "destinationId" : "7",
-        "id" : "14",
-        "sourceId" : "4",
+        "destinationId" : "8",
+        "id" : "15",
+        "sourceId" : "5",
         "tags" : "Relationship,L1",
         "technology" : "iFrame"
       }, {
         "description" : "Размещение файлов статики",
-        "destinationId" : "9",
-        "id" : "15",
-        "sourceId" : "4",
+        "destinationId" : "10",
+        "id" : "16",
+        "sourceId" : "5",
         "tags" : "Relationship,L1",
         "technology" : "HTTP"
       }, {
-        "description" : "Размещение запроса на расчёт. Получение расчёта.",
-        "destinationId" : "8",
-        "id" : "16",
-        "sourceId" : "4",
+        "description" : "Размещение запроса на расчёт. POST: /optis-stairs/api/{stair-type}/request",
+        "destinationId" : "4",
+        "id" : "17",
+        "sourceId" : "5",
         "tags" : "Relationship,L1,tagFrontReq",
         "technology" : "REST API"
       }, {
-        "description" : "Установить параметры доступа пользователя к расчётам.",
-        "destinationId" : "8",
-        "id" : "17",
-        "sourceId" : "4",
+        "description" : "Получение статуса и результата расчёта. GET: /optis-stairs/api/requests-statuses",
+        "destinationId" : "4",
+        "id" : "18",
+        "sourceId" : "5",
+        "tags" : "Relationship,L1,tagBackReq",
+        "technology" : "REST API"
+      }, {
+        "description" : "Установить параметры доступа пользователя к расчётам. POST: /optis-stairs/api/user-acl",
+        "destinationId" : "4",
+        "id" : "19",
+        "sourceId" : "5",
         "tags" : "Relationship,L1,tagBackReq",
         "technology" : "REST API"
       }, {
         "description" : "Отправка e-mail уведомлений через внешний шлюз",
         "destinationId" : "3",
-        "id" : "18",
-        "sourceId" : "4",
+        "id" : "23",
+        "sourceId" : "5",
         "tags" : "Relationship",
         "technology" : "SMTP"
       } ],
@@ -803,7 +842,7 @@
     }, {
       "description" : "Расчет проектов (чертежи, 3D модель, характеристики конструкций)",
       "documentation" : { },
-      "id" : "5",
+      "id" : "6",
       "location" : "Unspecified",
       "name" : "Кластер проектных расчетов",
       "properties" : {
@@ -813,7 +852,7 @@
     }, {
       "description" : "Расчет типовых строительных конструкций",
       "documentation" : { },
-      "id" : "6",
+      "id" : "7",
       "location" : "Unspecified",
       "name" : "Сервис простых расчетов",
       "properties" : {
@@ -823,7 +862,7 @@
     }, {
       "description" : "Расчет изделий из металлопроката. Справочник ГОСТов по металлопрокату.",
       "documentation" : { },
-      "id" : "7",
+      "id" : "8",
       "location" : "Unspecified",
       "name" : "Сервис расчета металлопроката",
       "properties" : {
@@ -833,7 +872,7 @@
     }, {
       "description" : "Сервис подбора оптимальной конфигурации лестницы",
       "documentation" : { },
-      "id" : "8",
+      "id" : "9",
       "location" : "Unspecified",
       "name" : "Сервис подбора оптимальной конфигурации лестницы",
       "properties" : {
@@ -843,7 +882,7 @@
     }, {
       "description" : "Сервис публикации файлов статики на защищенном сервере",
       "documentation" : { },
-      "id" : "9",
+      "id" : "10",
       "location" : "Unspecified",
       "name" : "Сервис публикации файлов статики",
       "properties" : {
@@ -962,52 +1001,54 @@
       },
       "description" : "Программные системы онлайн-сервиса KALK.PRO",
       "dimensions" : {
-        "height" : 2000,
+        "height" : 2600,
         "width" : 4600
       },
       "elements" : [ {
         "id" : "1",
-        "x" : 2124,
-        "y" : 152
+        "x" : 1374,
+        "y" : 151
       }, {
         "id" : "2",
-        "x" : 2824,
-        "y" : 152
+        "x" : 2074,
+        "y" : 151
       }, {
         "id" : "3",
-        "x" : 199,
-        "y" : 1452
+        "x" : 949,
+        "y" : 1451
       }, {
         "id" : "4",
-        "x" : 2449,
-        "y" : 852
+        "x" : 1699,
+        "y" : 1451
       }, {
         "id" : "5",
-        "x" : 949,
-        "y" : 1452
+        "x" : 1699,
+        "y" : 851
       }, {
         "id" : "6",
-        "x" : 1699,
-        "y" : 1452
+        "x" : 2449,
+        "y" : 1451
       }, {
         "id" : "7",
-        "x" : 2449,
-        "y" : 1452
+        "x" : 3199,
+        "y" : 1451
       }, {
         "id" : "8",
-        "x" : 3199,
-        "y" : 1452
+        "x" : 3949,
+        "y" : 1451
       }, {
         "id" : "9",
-        "x" : 3949,
-        "y" : 1452
+        "x" : 1699,
+        "y" : 2051
+      }, {
+        "id" : "10",
+        "x" : 199,
+        "y" : 1451
       } ],
       "enterpriseBoundaryVisible" : true,
       "key" : "systemLandscape",
       "order" : 1,
       "relationships" : [ {
-        "id" : "10"
-      }, {
         "id" : "11"
       }, {
         "id" : "12"
@@ -1016,25 +1057,51 @@
       }, {
         "id" : "14"
       }, {
-        "id" : "15"
-      }, {
-        "id" : "16",
+        "id" : "15",
         "vertices" : [ {
-          "x" : 2955,
-          "y" : 1419
+          "x" : 3799,
+          "y" : 1451
         } ]
+      }, {
+        "id" : "16"
       }, {
         "id" : "17",
         "vertices" : [ {
-          "x" : 3142,
-          "y" : 1184
+          "x" : 1924,
+          "y" : 1301
         } ]
       }, {
         "id" : "18",
         "vertices" : [ {
-          "x" : 799,
-          "y" : 1452
+          "x" : 2074,
+          "y" : 1301
         } ]
+      }, {
+        "id" : "19",
+        "vertices" : [ {
+          "x" : 1774,
+          "y" : 1301
+        } ]
+      }, {
+        "id" : "20",
+        "vertices" : [ {
+          "x" : 1924,
+          "y" : 1901
+        } ]
+      }, {
+        "id" : "21",
+        "vertices" : [ {
+          "x" : 2074,
+          "y" : 1901
+        } ]
+      }, {
+        "id" : "22",
+        "vertices" : [ {
+          "x" : 1774,
+          "y" : 1901
+        } ]
+      }, {
+        "id" : "23"
       } ]
     } ]
   }

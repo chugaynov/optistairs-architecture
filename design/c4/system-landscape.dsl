@@ -15,6 +15,10 @@ workspace system-landscape "Ландшафт Онлайн-сервиса" {
         }
 
         // Internal
+        system_api_gatewai = softwareSystem "API Gateway" {
+            description "API Gateway"
+        }
+
         system_web_site = softwareSystem "Онлайн-сервис автоматизации строительных расчетов" {
             description "KALK.PRO"
         }
@@ -47,8 +51,14 @@ workspace system-landscape "Ландшафт Онлайн-сервиса" {
         system_web_site -> system_metal_calc "Расчет металлопроката" "iFrame" "L1"
         system_web_site -> system_static_storage "Размещение файлов статики" "HTTP" "L1"
 
-        system_web_site -> system_optistair_calc "Размещение запроса на расчёт. Получение расчёта." "REST API" "L1,tagFrontReq"
-        system_web_site -> system_optistair_calc "Установить параметры доступа пользователя к расчётам." "REST API" "L1,tagBackReq"
+        system_web_site -> system_api_gatewai "Размещение запроса на расчёт. POST: /optis-stairs/api/{stair-type}/request" "REST API" "L1,tagFrontReq"
+        system_web_site -> system_api_gatewai "Получение статуса и результата расчёта. GET: /optis-stairs/api/requests-statuses" "REST API" "L1,tagBackReq
+        system_web_site -> system_api_gatewai "Установить параметры доступа пользователя к расчётам. POST: /optis-stairs/api/user-acl" "REST API" "L1,tagBackReq"
+
+        system_api_gatewai -> system_optistair_calc "Размещение запроса на расчёт. POST: /api/{stair-type}/request" "REST API" "L1,tagFrontReq"
+        system_api_gatewai -> system_optistair_calc "Получение статуса и результата расчёта. GET: /api/requests-statuses" "REST API" "L1,tagBackReq
+        system_api_gatewai -> system_optistair_calc "Установить параметры доступа пользователя к расчётам. POST: /api/user-acl" "REST API" "L1,tagBackReq
+
 //        system_web_site -> system_optistair_calc "Frontend. Получить статус запроса GET: /request-status" "REST API" "L1"
 //        system_web_site -> system_optistair_calc "Frontend. Установаить статус запроса 'send' PATCH: /request-status" "REST API" "L1"
 //        system_web_site -> system_optistair_calc "Frontend. Создать запрос на подбор конфигураций Прямой лестницы POST: /straight-stair" "REST API" "L1"

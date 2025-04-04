@@ -4,71 +4,71 @@
   "documentation" : { },
   "id" : 1,
   "lastModifiedAgent" : "structurizr-ui",
-  "lastModifiedDate" : "2025-03-15T17:21:28Z",
+  "lastModifiedDate" : "2025-04-04T13:28:03Z",
   "model" : {
     "deploymentNodes" : [ {
       "children" : [ {
         "description" : "Веб-сайт основного онлайн-сервиса (IP: 91.107.126.103)",
         "environment" : "Development",
-        "id" : "20",
+        "id" : "25",
         "instances" : "1",
         "name" : "WEB-SERVER",
         "properties" : {
-          "structurizr.dsl.identifier" : "a1c12617-918e-401f-9659-5aa74e6f46fe.e5a5ee95-91fe-420e-836f-39a364529ccb.2f883c56-3a3b-4d97-ab67-5b80f574c8ac"
+          "structurizr.dsl.identifier" : "56571706-b811-4737-bdf6-1f94247e0d0c.2c3bc9b9-6a07-4849-b96c-e78e153ef1d2.635af7c0-aa28-4fe1-b2e7-f0527472c2c3"
         },
         "tags" : "Element,Deployment Node",
         "technology" : "VPS KVM"
       }, {
         "description" : "Хранилище статических файлов (IP: 62.109.15.25)",
         "environment" : "Development",
-        "id" : "21",
+        "id" : "26",
         "instances" : "1",
         "name" : "STATIC-STORAGE",
         "properties" : {
-          "structurizr.dsl.identifier" : "a1c12617-918e-401f-9659-5aa74e6f46fe.e5a5ee95-91fe-420e-836f-39a364529ccb.efad2f45-6034-403b-9259-4f7ec60c9558"
+          "structurizr.dsl.identifier" : "56571706-b811-4737-bdf6-1f94247e0d0c.2c3bc9b9-6a07-4849-b96c-e78e153ef1d2.6a60df8e-5860-48c2-b679-df842bd72409"
         },
         "tags" : "Element,Deployment Node",
         "technology" : "VPS KVM"
       }, {
         "description" : "Сервер проектных расчетов PROD (IP: 212.109.221.247)",
         "environment" : "Development",
-        "id" : "22",
+        "id" : "27",
         "instances" : "1",
         "name" : "NODE-1",
         "properties" : {
-          "structurizr.dsl.identifier" : "a1c12617-918e-401f-9659-5aa74e6f46fe.e5a5ee95-91fe-420e-836f-39a364529ccb.168b2b05-10c5-4222-b6bb-d060a186deb2"
+          "structurizr.dsl.identifier" : "56571706-b811-4737-bdf6-1f94247e0d0c.2c3bc9b9-6a07-4849-b96c-e78e153ef1d2.8cb21db1-1d41-471d-9929-5ec20e39aae6"
         },
         "tags" : "Element,Deployment Node",
         "technology" : "VPS KVM"
       }, {
         "description" : "Сервер проектных расчетов DEV/STAGE (IP: 188.120.254.218)",
         "environment" : "Development",
-        "id" : "23",
+        "id" : "28",
         "instances" : "1",
         "name" : "NODE-2",
         "properties" : {
-          "structurizr.dsl.identifier" : "a1c12617-918e-401f-9659-5aa74e6f46fe.e5a5ee95-91fe-420e-836f-39a364529ccb.8891b5f0-8c44-445b-86f1-6b2aba1ab736"
+          "structurizr.dsl.identifier" : "56571706-b811-4737-bdf6-1f94247e0d0c.2c3bc9b9-6a07-4849-b96c-e78e153ef1d2.c39d69b2-7906-409f-b39e-72f29f259800"
         },
         "tags" : "Element,Deployment Node",
         "technology" : "VPS KVM"
       }, {
         "description" : "Сервер простых расчетов DEV/STAGE/PROD (IP: 83.220.170.100)",
         "environment" : "Development",
-        "id" : "24",
+        "id" : "29",
         "instances" : "1",
         "name" : "SINODE-1",
         "properties" : {
-          "structurizr.dsl.identifier" : "a1c12617-918e-401f-9659-5aa74e6f46fe.e5a5ee95-91fe-420e-836f-39a364529ccb.f0bd8f89-8bcf-4a2a-ac02-0f41a0b26c07"
+          "structurizr.dsl.identifier" : "56571706-b811-4737-bdf6-1f94247e0d0c.2c3bc9b9-6a07-4849-b96c-e78e153ef1d2.4390d368-fbc5-4f14-8714-c6e1a9ca4ce3"
         },
         "tags" : "Element,Deployment Node",
         "technology" : "VPS KVM"
       } ],
       "environment" : "Development",
-      "id" : "19",
+      "id" : "24",
       "instances" : "1",
       "name" : "FirstVDS",
       "properties" : {
-        "structurizr.dsl.identifier" : "a1c12617-918e-401f-9659-5aa74e6f46fe.e5a5ee95-91fe-420e-836f-39a364529ccb"
+        "structurizr.dsl.identifier" : "56571706-b811-4737-bdf6-1f94247e0d0c.2c3bc9b9-6a07-4849-b96c-e78e153ef1d2"
       },
       "tags" : "Element,Deployment Node"
     }, {
@@ -78,45 +78,45 @@
             "children" : [ {
               "description" : "Получение и обновление сертификатов",
               "environment" : "Development",
-              "id" : "30",
+              "id" : "35",
               "instances" : "1",
               "name" : "balancer",
               "properties" : {
-                "structurizr.dsl.identifier" : "a1c12617-918e-401f-9659-5aa74e6f46fe.d2f1fdbc-3d3e-46e9-a826-13776ee9ef47.a5d63d63-771c-4627-afa3-d63fabf602a4.ad5a795d-0cb8-4c34-b88e-2ab666f208e0.8a790e10-b851-422d-b03c-ccbfa6c56787.a01d653c-a557-43eb-a1d1-f228050081f8"
+                "structurizr.dsl.identifier" : "56571706-b811-4737-bdf6-1f94247e0d0c.9e155690-cea4-4756-ba41-c7f9a9b573c1.e1224a06-4af2-47ac-871a-de6f0b98bc00.28b7d016-10a4-4b72-ab35-e4fc8c9673c1.43484a5d-d904-4073-bc9d-c10f11298041.15ea2f82-a724-47d3-b24b-3f113d291b5c"
               },
               "tags" : "Element,Deployment Node,tagDeploymentInfrastructure,l1",
               "technology" : "Ingregress Nginx"
             }, {
               "environment" : "Development",
-              "id" : "31",
+              "id" : "36",
               "instances" : "1",
               "name" : "pgsql",
               "properties" : {
-                "structurizr.dsl.identifier" : "a1c12617-918e-401f-9659-5aa74e6f46fe.d2f1fdbc-3d3e-46e9-a826-13776ee9ef47.a5d63d63-771c-4627-afa3-d63fabf602a4.ad5a795d-0cb8-4c34-b88e-2ab666f208e0.8a790e10-b851-422d-b03c-ccbfa6c56787.6e41620e-6d84-4e16-a8bb-f693a368fbd2"
+                "structurizr.dsl.identifier" : "56571706-b811-4737-bdf6-1f94247e0d0c.9e155690-cea4-4756-ba41-c7f9a9b573c1.e1224a06-4af2-47ac-871a-de6f0b98bc00.28b7d016-10a4-4b72-ab35-e4fc8c9673c1.43484a5d-d904-4073-bc9d-c10f11298041.f630b655-d1d7-4e5c-bdd5-14244da1ec42"
               },
               "tags" : "Element,Deployment Node",
               "technology" : "PostgreSQL operator"
             }, {
               "description" : "3х. UI https://kafka-ui.infrastructure.kalk.pro.",
               "environment" : "Development",
-              "id" : "32",
+              "id" : "37",
               "instances" : "1",
               "name" : "kafka",
               "properties" : {
-                "structurizr.dsl.identifier" : "a1c12617-918e-401f-9659-5aa74e6f46fe.d2f1fdbc-3d3e-46e9-a826-13776ee9ef47.a5d63d63-771c-4627-afa3-d63fabf602a4.ad5a795d-0cb8-4c34-b88e-2ab666f208e0.8a790e10-b851-422d-b03c-ccbfa6c56787.95219f66-adf1-428c-92b0-3ceabeb8169b"
+                "structurizr.dsl.identifier" : "56571706-b811-4737-bdf6-1f94247e0d0c.9e155690-cea4-4756-ba41-c7f9a9b573c1.e1224a06-4af2-47ac-871a-de6f0b98bc00.28b7d016-10a4-4b72-ab35-e4fc8c9673c1.43484a5d-d904-4073-bc9d-c10f11298041.d4740c70-f6fd-4913-a729-d22334481fac"
               },
               "tags" : "Element,Deployment Node",
               "technology" : "Apache Kafka multi-tenant cluster"
             } ],
             "environment" : "Development",
-            "id" : "28",
+            "id" : "33",
             "infrastructureNodes" : [ {
               "description" : "Получение и обновление сертификатов",
               "environment" : "Development",
-              "id" : "29",
+              "id" : "34",
               "name" : "Cert-Manager",
               "properties" : {
-                "structurizr.dsl.identifier" : "a1c12617-918e-401f-9659-5aa74e6f46fe.d2f1fdbc-3d3e-46e9-a826-13776ee9ef47.a5d63d63-771c-4627-afa3-d63fabf602a4.ad5a795d-0cb8-4c34-b88e-2ab666f208e0.8a790e10-b851-422d-b03c-ccbfa6c56787.0c39a596-b874-4927-8f52-6dfc2e0f018f"
+                "structurizr.dsl.identifier" : "56571706-b811-4737-bdf6-1f94247e0d0c.9e155690-cea4-4756-ba41-c7f9a9b573c1.e1224a06-4af2-47ac-871a-de6f0b98bc00.28b7d016-10a4-4b72-ab35-e4fc8c9673c1.43484a5d-d904-4073-bc9d-c10f11298041.b39e0c6b-eff0-4f4f-b316-ef46e477025b"
               },
               "tags" : "Element,Infrastructure Node,tagDeploymentInfrastructure,l1",
               "technology" : "Cert manager"
@@ -124,368 +124,392 @@
             "instances" : "1",
             "name" : "infrastructure",
             "properties" : {
-              "structurizr.dsl.identifier" : "a1c12617-918e-401f-9659-5aa74e6f46fe.d2f1fdbc-3d3e-46e9-a826-13776ee9ef47.a5d63d63-771c-4627-afa3-d63fabf602a4.ad5a795d-0cb8-4c34-b88e-2ab666f208e0.8a790e10-b851-422d-b03c-ccbfa6c56787"
+              "structurizr.dsl.identifier" : "56571706-b811-4737-bdf6-1f94247e0d0c.9e155690-cea4-4756-ba41-c7f9a9b573c1.e1224a06-4af2-47ac-871a-de6f0b98bc00.28b7d016-10a4-4b72-ab35-e4fc8c9673c1.43484a5d-d904-4073-bc9d-c10f11298041"
             },
             "tags" : "Element,Deployment Node",
             "technology" : "k8s namespace"
           }, {
             "environment" : "Development",
-            "id" : "33",
+            "id" : "38",
             "instances" : "1",
             "name" : "optistair-calc",
             "properties" : {
-              "structurizr.dsl.identifier" : "a1c12617-918e-401f-9659-5aa74e6f46fe.d2f1fdbc-3d3e-46e9-a826-13776ee9ef47.a5d63d63-771c-4627-afa3-d63fabf602a4.ad5a795d-0cb8-4c34-b88e-2ab666f208e0.0d19a972-7405-4658-b71c-6994c4367d0d"
+              "structurizr.dsl.identifier" : "56571706-b811-4737-bdf6-1f94247e0d0c.9e155690-cea4-4756-ba41-c7f9a9b573c1.e1224a06-4af2-47ac-871a-de6f0b98bc00.28b7d016-10a4-4b72-ab35-e4fc8c9673c1.aaca00b4-f710-4fc0-84c6-6ed4353e6450"
             },
             "tags" : "Element,Deployment Node",
             "technology" : "k8s namespace"
           }, {
             "children" : [ {
               "containerInstances" : [ {
-                "containerId" : "87",
+                "containerId" : "93",
                 "deploymentGroups" : [ "Default" ],
                 "description" : "K8s Ingress nginx\nreplicas: X1",
                 "environment" : "Development",
-                "id" : "117",
+                "id" : "128",
                 "instanceId" : 1,
                 "properties" : {
-                  "structurizr.dsl.identifier" : "b2a08e0c-638a-489c-8106-d6388a6629c8",
+                  "structurizr.dsl.identifier" : "6f436ddb-83d0-435a-9377-48edc4b8fc47",
                   "replicas" : "1"
                 },
                 "relationships" : [ {
-                  "description" : "Получить статус запроса на расчёт. GET (public): /api/request-status",
-                  "destinationId" : "119",
-                  "id" : "120",
-                  "linkedRelationshipId" : "109",
-                  "sourceId" : "117",
+                  "description" : "Получить статус запроса на расчёт. GET (public): /api/requests-statuses",
+                  "destinationId" : "130",
+                  "id" : "131",
+                  "linkedRelationshipId" : "119",
+                  "sourceId" : "128",
                   "technology" : "REST API"
                 }, {
-                  "description" : "Разместить запрос на расчёт Прямой лестницы. POST (public): /api/straight-stair",
-                  "destinationId" : "119",
-                  "id" : "121",
-                  "linkedRelationshipId" : "110",
-                  "sourceId" : "117",
+                  "description" : "Подтвердить получение расчёта со стороны frontend. PATCH (public): /api/request-status/send",
+                  "destinationId" : "130",
+                  "id" : "132",
+                  "linkedRelationshipId" : "120",
+                  "sourceId" : "128",
                   "technology" : "REST API"
                 }, {
-                  "description" : "Разместить запрос на расчёт Г-образной лестницы. POST (public): /api/l-shape-stair",
-                  "destinationId" : "119",
-                  "id" : "122",
-                  "linkedRelationshipId" : "111",
-                  "sourceId" : "117",
+                  "description" : "Разместить запрос на расчёт Прямой лестницы. POST (public): /api/straight-stair/request",
+                  "destinationId" : "130",
+                  "id" : "133",
+                  "linkedRelationshipId" : "121",
+                  "sourceId" : "128",
                   "technology" : "REST API"
                 }, {
-                  "description" : "Разместить запрос на расчёт П-образной лестницы. POST (public): /api/u-shape-stair",
-                  "destinationId" : "119",
-                  "id" : "123",
-                  "linkedRelationshipId" : "112",
-                  "sourceId" : "117",
+                  "description" : "Разместить запрос на расчёт Г-образной лестницы. POST (public): /api/l-shape-stair/request",
+                  "destinationId" : "130",
+                  "id" : "134",
+                  "linkedRelationshipId" : "122",
+                  "sourceId" : "128",
+                  "technology" : "REST API"
+                }, {
+                  "description" : "Разместить запрос на расчёт П-образной лестницы. POST (public): /api/u-shape-stair/request",
+                  "destinationId" : "130",
+                  "id" : "135",
+                  "linkedRelationshipId" : "123",
+                  "sourceId" : "128",
                   "technology" : "REST API"
                 }, {
                   "description" : "Установить ограничения пользователя. POST (public secured): /api/user-acl",
-                  "destinationId" : "119",
-                  "id" : "124",
-                  "linkedRelationshipId" : "113",
-                  "sourceId" : "117",
+                  "destinationId" : "130",
+                  "id" : "136",
+                  "linkedRelationshipId" : "124",
+                  "sourceId" : "128",
                   "technology" : "REST API"
                 } ],
                 "tags" : "Container Instance"
               } ],
               "description" : "Получение и обновление сертификатов",
               "environment" : "Development",
-              "id" : "36",
+              "id" : "41",
               "instances" : "1",
               "name" : "balancer",
               "properties" : {
-                "structurizr.dsl.identifier" : "a1c12617-918e-401f-9659-5aa74e6f46fe.d2f1fdbc-3d3e-46e9-a826-13776ee9ef47.a5d63d63-771c-4627-afa3-d63fabf602a4.ad5a795d-0cb8-4c34-b88e-2ab666f208e0.0a0b7e12-8484-4115-baef-03f6dacdd85e.ae07c400-61bf-4ccd-92cf-b7dc93e6296f"
+                "structurizr.dsl.identifier" : "56571706-b811-4737-bdf6-1f94247e0d0c.9e155690-cea4-4756-ba41-c7f9a9b573c1.e1224a06-4af2-47ac-871a-de6f0b98bc00.28b7d016-10a4-4b72-ab35-e4fc8c9673c1.27439fc4-7fd7-4525-9a7e-ccfb17916f40.302cff78-dd02-4fd1-aa4d-61393204173c"
               },
               "tags" : "Element,Deployment Node,tagDeploymentInfrastructure,l1",
               "technology" : "Ingregress Nginx"
             }, {
               "containerInstances" : [ {
-                "containerId" : "82",
+                "containerId" : "87",
                 "deploymentGroups" : [ "Default" ],
                 "description" : "db: optistairs\nreplicas: X1",
                 "environment" : "Development",
-                "id" : "118",
+                "id" : "129",
                 "instanceId" : 1,
                 "properties" : {
-                  "structurizr.dsl.identifier" : "4f4cca5f-2832-4b7e-8c99-b1343733fc9a",
+                  "structurizr.dsl.identifier" : "1cd94f73-de7e-4583-897f-2e24a3730793",
                   "replicas" : "1"
                 },
                 "tags" : "Container Instance"
               } ],
               "environment" : "Development",
-              "id" : "37",
+              "id" : "42",
               "instances" : "1",
               "name" : "pgsql",
               "properties" : {
-                "structurizr.dsl.identifier" : "a1c12617-918e-401f-9659-5aa74e6f46fe.d2f1fdbc-3d3e-46e9-a826-13776ee9ef47.a5d63d63-771c-4627-afa3-d63fabf602a4.ad5a795d-0cb8-4c34-b88e-2ab666f208e0.0a0b7e12-8484-4115-baef-03f6dacdd85e.c07fd9c7-e6fd-410d-9e4d-ad6b2f1fc0fa"
+                "structurizr.dsl.identifier" : "56571706-b811-4737-bdf6-1f94247e0d0c.9e155690-cea4-4756-ba41-c7f9a9b573c1.e1224a06-4af2-47ac-871a-de6f0b98bc00.28b7d016-10a4-4b72-ab35-e4fc8c9673c1.27439fc4-7fd7-4525-9a7e-ccfb17916f40.801f0efa-1e7f-473f-8acf-69d8ed8e0468"
               },
               "tags" : "Element,Deployment Node",
               "technology" : "postgres 17 operator 500Mi"
             }, {
               "description" : "3х. UI https://kafka-ui.infrastructure-dev.kalk.pro.",
               "environment" : "Development",
-              "id" : "38",
+              "id" : "43",
               "instances" : "1",
               "name" : "kafka",
               "properties" : {
-                "structurizr.dsl.identifier" : "a1c12617-918e-401f-9659-5aa74e6f46fe.d2f1fdbc-3d3e-46e9-a826-13776ee9ef47.a5d63d63-771c-4627-afa3-d63fabf602a4.ad5a795d-0cb8-4c34-b88e-2ab666f208e0.0a0b7e12-8484-4115-baef-03f6dacdd85e.d2785987-4694-4ea1-bdeb-9977a68242ae"
+                "structurizr.dsl.identifier" : "56571706-b811-4737-bdf6-1f94247e0d0c.9e155690-cea4-4756-ba41-c7f9a9b573c1.e1224a06-4af2-47ac-871a-de6f0b98bc00.28b7d016-10a4-4b72-ab35-e4fc8c9673c1.27439fc4-7fd7-4525-9a7e-ccfb17916f40.72d88169-33fc-4127-a37d-d11292817796"
               },
               "tags" : "Element,Deployment Node",
               "technology" : "Apache Kafka multi-tenant cluster"
             }, {
               "containerInstances" : [ {
-                "containerId" : "88",
-                "deploymentGroups" : [ "Default" ],
-                "description" : "replicas: X1",
-                "environment" : "Development",
-                "id" : "119",
-                "instanceId" : 1,
-                "properties" : {
-                  "structurizr.dsl.identifier" : "ea9de1eb-0d42-43c3-b45e-c547d7385bfa",
-                  "replicas" : "1"
-                },
-                "relationships" : [ {
-                  "description" : "Создание запросов на расчет. Получение статуса запроса. Запись и чтение результатов расчета.",
-                  "destinationId" : "118",
-                  "id" : "125",
-                  "linkedRelationshipId" : "89",
-                  "sourceId" : "119",
-                  "technology" : "pgsql"
-                }, {
-                  "description" : "Запросить выполнить расчет Прямой лестницы. POST: /straight-stair/calculation",
-                  "destinationId" : "126",
-                  "id" : "129",
-                  "linkedRelationshipId" : "114",
-                  "sourceId" : "119",
-                  "technology" : "REST API"
-                }, {
-                  "description" : "Запросить выполнить расчет Г-образной лестницы. POST: /l-shape-stair/calculation",
-                  "destinationId" : "130",
-                  "id" : "133",
-                  "linkedRelationshipId" : "115",
-                  "sourceId" : "119",
-                  "technology" : "REST API"
-                }, {
-                  "description" : "Запросить выполнить расчет П-образной лестницы. POST: /u-shape-stair/calculation",
-                  "destinationId" : "134",
-                  "id" : "137",
-                  "linkedRelationshipId" : "116",
-                  "sourceId" : "119",
-                  "technology" : "REST API"
-                }, {
-                  "description" : "W: Размещение запроса на расчёт Прямой лестницы",
-                  "destinationId" : "138",
-                  "id" : "139",
-                  "linkedRelationshipId" : "90",
-                  "sourceId" : "119",
-                  "technology" : "Kafka"
-                }, {
-                  "description" : "W: Размещение запроса на расчёт Г-образной лестницы",
-                  "destinationId" : "141",
-                  "id" : "142",
-                  "linkedRelationshipId" : "91",
-                  "sourceId" : "119",
-                  "technology" : "Kafka"
-                }, {
-                  "description" : "W: Размещение запроса на расчёт П-образной лестницы",
-                  "destinationId" : "144",
-                  "id" : "146",
-                  "linkedRelationshipId" : "92",
-                  "sourceId" : "119",
-                  "technology" : "Kafka"
-                }, {
-                  "description" : "R: Получение результатов расчёта",
-                  "destinationId" : "147",
-                  "id" : "149",
-                  "linkedRelationshipId" : "93",
-                  "sourceId" : "119",
-                  "technology" : "Kafka"
-                } ],
-                "tags" : "Container Instance"
-              }, {
                 "containerId" : "94",
-                "deploymentGroups" : [ "Default" ],
-                "description" : "replicas: X1",
-                "environment" : "Development",
-                "id" : "126",
-                "instanceId" : 1,
-                "properties" : {
-                  "structurizr.dsl.identifier" : "cf5cc587-690a-408f-aa90-61b67cf36d96",
-                  "replicas" : "1"
-                },
-                "relationships" : [ {
-                  "description" : "Передать результат расчёта. POST: /result",
-                  "destinationId" : "119",
-                  "id" : "127",
-                  "linkedRelationshipId" : "95",
-                  "sourceId" : "126",
-                  "technology" : "REST API"
-                }, {
-                  "description" : "Уведомить о прогрессе расчета. POST: /progress",
-                  "destinationId" : "119",
-                  "id" : "128",
-                  "linkedRelationshipId" : "96",
-                  "sourceId" : "126",
-                  "technology" : "REST API"
-                }, {
-                  "description" : "R: Получение запроса на расчёт Прямой лестницы",
-                  "destinationId" : "138",
-                  "id" : "140",
-                  "linkedRelationshipId" : "97",
-                  "sourceId" : "126",
-                  "technology" : "Kafka"
-                }, {
-                  "description" : "W: Размещение результата расчёта",
-                  "destinationId" : "147",
-                  "id" : "150",
-                  "linkedRelationshipId" : "98",
-                  "sourceId" : "126",
-                  "technology" : "Kafka"
-                } ],
-                "tags" : "Container Instance"
-              }, {
-                "containerId" : "99",
                 "deploymentGroups" : [ "Default" ],
                 "description" : "replicas: X1",
                 "environment" : "Development",
                 "id" : "130",
                 "instanceId" : 1,
                 "properties" : {
-                  "structurizr.dsl.identifier" : "cbf88afb-168d-46eb-bc7e-90df00a0aa12",
+                  "structurizr.dsl.identifier" : "eda25d05-6da7-4421-93f4-15a2255ed8d2",
                   "replicas" : "1"
                 },
                 "relationships" : [ {
-                  "description" : "Передать результат расчёта. POST: /result",
-                  "destinationId" : "119",
-                  "id" : "131",
+                  "description" : "Создание запросов на расчет. Получение статуса запроса. Запись и чтение результатов расчета.",
+                  "destinationId" : "129",
+                  "id" : "137",
+                  "linkedRelationshipId" : "95",
+                  "sourceId" : "130",
+                  "technology" : "pgsql"
+                }, {
+                  "description" : "W: Размещение запроса на расчёт Прямой лестницы",
+                  "destinationId" : "150",
+                  "id" : "151",
+                  "linkedRelationshipId" : "96",
+                  "sourceId" : "130",
+                  "technology" : "Kafka"
+                }, {
+                  "description" : "W: Размещение запроса на расчёт Г-образной лестницы",
+                  "destinationId" : "153",
+                  "id" : "154",
+                  "linkedRelationshipId" : "97",
+                  "sourceId" : "130",
+                  "technology" : "Kafka"
+                }, {
+                  "description" : "W: Размещение запроса на расчёт П-образной лестницы",
+                  "destinationId" : "156",
+                  "id" : "157",
+                  "linkedRelationshipId" : "98",
+                  "sourceId" : "130",
+                  "technology" : "Kafka"
+                }, {
+                  "description" : "R: Получение прогресса расчёта",
+                  "destinationId" : "159",
+                  "id" : "160",
+                  "linkedRelationshipId" : "99",
+                  "sourceId" : "130",
+                  "technology" : "Kafka"
+                }, {
+                  "description" : "R: Получение результатов расчёта",
+                  "destinationId" : "161",
+                  "id" : "162",
                   "linkedRelationshipId" : "100",
                   "sourceId" : "130",
-                  "technology" : "REST API"
-                }, {
-                  "description" : "Уведомить о прогрессе расчета. POST: /progress",
-                  "destinationId" : "119",
-                  "id" : "132",
-                  "linkedRelationshipId" : "101",
-                  "sourceId" : "130",
-                  "technology" : "REST API"
-                }, {
-                  "description" : "R: Получение запроса на расчёт Г-образной лестницы",
-                  "destinationId" : "141",
-                  "id" : "143",
-                  "linkedRelationshipId" : "102",
-                  "sourceId" : "130",
-                  "technology" : "Kafka"
-                }, {
-                  "description" : "W: Размещение результата расчёта",
-                  "destinationId" : "147",
-                  "id" : "151",
-                  "linkedRelationshipId" : "103",
-                  "sourceId" : "130",
                   "technology" : "Kafka"
                 } ],
                 "tags" : "Container Instance"
               }, {
-                "containerId" : "104",
+                "containerId" : "101",
                 "deploymentGroups" : [ "Default" ],
                 "description" : "replicas: X1",
-                "environment" : "Development",
-                "id" : "134",
-                "instanceId" : 1,
-                "properties" : {
-                  "structurizr.dsl.identifier" : "a60eec38-b690-4d62-9dc5-5702db794ca7",
-                  "replicas" : "1"
-                },
-                "relationships" : [ {
-                  "description" : "Передать результат расчёта. POST: /result",
-                  "destinationId" : "119",
-                  "id" : "135",
-                  "linkedRelationshipId" : "105",
-                  "sourceId" : "134",
-                  "technology" : "REST API"
-                }, {
-                  "description" : "Уведомить о прогрессе расчета. POST: /progress",
-                  "destinationId" : "119",
-                  "id" : "136",
-                  "linkedRelationshipId" : "106",
-                  "sourceId" : "134",
-                  "technology" : "REST API"
-                }, {
-                  "description" : "R: Получение запроса на расчёт П-образной лестницы",
-                  "destinationId" : "144",
-                  "id" : "145",
-                  "linkedRelationshipId" : "107",
-                  "sourceId" : "134",
-                  "technology" : "Kafka"
-                }, {
-                  "description" : "W: Размещение результата расчёта",
-                  "destinationId" : "147",
-                  "id" : "148",
-                  "linkedRelationshipId" : "108",
-                  "sourceId" : "134",
-                  "technology" : "Kafka"
-                } ],
-                "tags" : "Container Instance"
-              }, {
-                "containerId" : "83",
-                "deploymentGroups" : [ "Default" ],
                 "environment" : "Development",
                 "id" : "138",
                 "instanceId" : 1,
                 "properties" : {
-                  "structurizr.dsl.identifier" : "64f1a930-14b6-4c18-87c1-615cd08a04c0"
+                  "structurizr.dsl.identifier" : "11c50997-fad3-42fe-9885-2c00da30925b",
+                  "replicas" : "1"
+                },
+                "relationships" : [ {
+                  "description" : "Получить список запросов на расчёт при первичной инициализации сервиса. GET: /straight-stair/actual-requests",
+                  "destinationId" : "130",
+                  "id" : "139",
+                  "linkedRelationshipId" : "102",
+                  "sourceId" : "138",
+                  "technology" : "REST API"
+                }, {
+                  "description" : "Уведомить о прогрессе расчета и статусе. PATCH: /request-status",
+                  "destinationId" : "130",
+                  "id" : "140",
+                  "linkedRelationshipId" : "103",
+                  "sourceId" : "138",
+                  "technology" : "REST API"
+                }, {
+                  "description" : "Передать результат расчёта. POST: /save-result",
+                  "destinationId" : "130",
+                  "id" : "141",
+                  "linkedRelationshipId" : "104",
+                  "sourceId" : "138",
+                  "technology" : "REST API"
+                }, {
+                  "description" : "R: Получение запроса на расчёт Прямой лестницы",
+                  "destinationId" : "150",
+                  "id" : "152",
+                  "linkedRelationshipId" : "105",
+                  "sourceId" : "138",
+                  "technology" : "Kafka"
+                }, {
+                  "description" : "W: Размещение результата расчёта",
+                  "destinationId" : "161",
+                  "id" : "163",
+                  "linkedRelationshipId" : "106",
+                  "sourceId" : "138",
+                  "technology" : "Kafka"
+                } ],
+                "tags" : "Container Instance"
+              }, {
+                "containerId" : "107",
+                "deploymentGroups" : [ "Default" ],
+                "description" : "replicas: X1",
+                "environment" : "Development",
+                "id" : "142",
+                "instanceId" : 1,
+                "properties" : {
+                  "structurizr.dsl.identifier" : "65d0cb4f-d83b-44e7-933f-06fec393e797",
+                  "replicas" : "1"
+                },
+                "relationships" : [ {
+                  "description" : "Получить список запросов на расчёт при первичной инициализации сервиса. GET: /l-shape-stair/actual-requests",
+                  "destinationId" : "130",
+                  "id" : "143",
+                  "linkedRelationshipId" : "108",
+                  "sourceId" : "142",
+                  "technology" : "REST API"
+                }, {
+                  "description" : "Уведомить о прогрессе расчета и статусе. PATCH: /request-status",
+                  "destinationId" : "130",
+                  "id" : "144",
+                  "linkedRelationshipId" : "109",
+                  "sourceId" : "142",
+                  "technology" : "REST API"
+                }, {
+                  "description" : "Передать результат расчёта. POST: /save-result",
+                  "destinationId" : "130",
+                  "id" : "145",
+                  "linkedRelationshipId" : "110",
+                  "sourceId" : "142",
+                  "technology" : "REST API"
+                }, {
+                  "description" : "R: Получение запроса на расчёт Г-образной лестницы",
+                  "destinationId" : "153",
+                  "id" : "155",
+                  "linkedRelationshipId" : "111",
+                  "sourceId" : "142",
+                  "technology" : "Kafka"
+                }, {
+                  "description" : "W: Размещение результата расчёта",
+                  "destinationId" : "161",
+                  "id" : "165",
+                  "linkedRelationshipId" : "112",
+                  "sourceId" : "142",
+                  "technology" : "Kafka"
+                } ],
+                "tags" : "Container Instance"
+              }, {
+                "containerId" : "113",
+                "deploymentGroups" : [ "Default" ],
+                "description" : "replicas: X1",
+                "environment" : "Development",
+                "id" : "146",
+                "instanceId" : 1,
+                "properties" : {
+                  "structurizr.dsl.identifier" : "8cde202d-45ac-4ee1-94f6-8825a617b643",
+                  "replicas" : "1"
+                },
+                "relationships" : [ {
+                  "description" : "Получить список запросов на расчёт при первичной инициализации сервиса. GET: /u-shape-stair/actual-requests",
+                  "destinationId" : "130",
+                  "id" : "147",
+                  "linkedRelationshipId" : "114",
+                  "sourceId" : "146",
+                  "technology" : "REST API"
+                }, {
+                  "description" : "Уведомить о прогрессе расчета и статусе. PATCH: /request-status",
+                  "destinationId" : "130",
+                  "id" : "148",
+                  "linkedRelationshipId" : "115",
+                  "sourceId" : "146",
+                  "technology" : "REST API"
+                }, {
+                  "description" : "Передать результат расчёта. POST: /save-result",
+                  "destinationId" : "130",
+                  "id" : "149",
+                  "linkedRelationshipId" : "116",
+                  "sourceId" : "146",
+                  "technology" : "REST API"
+                }, {
+                  "description" : "R: Получение запроса на расчёт П-образной лестницы",
+                  "destinationId" : "156",
+                  "id" : "158",
+                  "linkedRelationshipId" : "117",
+                  "sourceId" : "146",
+                  "technology" : "Kafka"
+                }, {
+                  "description" : "W: Размещение результата расчёта",
+                  "destinationId" : "161",
+                  "id" : "164",
+                  "linkedRelationshipId" : "118",
+                  "sourceId" : "146",
+                  "technology" : "Kafka"
+                } ],
+                "tags" : "Container Instance"
+              }, {
+                "containerId" : "88",
+                "deploymentGroups" : [ "Default" ],
+                "environment" : "Development",
+                "id" : "150",
+                "instanceId" : 1,
+                "properties" : {
+                  "structurizr.dsl.identifier" : "7c2f4a4d-8b56-4a67-8c1e-9d1dfe36e531"
                 },
                 "tags" : "Container Instance"
               }, {
-                "containerId" : "84",
+                "containerId" : "89",
                 "deploymentGroups" : [ "Default" ],
                 "environment" : "Development",
-                "id" : "141",
+                "id" : "153",
                 "instanceId" : 1,
                 "properties" : {
-                  "structurizr.dsl.identifier" : "87df9a54-19f7-4323-9a1f-edf209640293"
+                  "structurizr.dsl.identifier" : "28cc2124-4f48-4f8f-b135-a321be2f6df3"
                 },
                 "tags" : "Container Instance"
               }, {
-                "containerId" : "85",
+                "containerId" : "90",
                 "deploymentGroups" : [ "Default" ],
                 "environment" : "Development",
-                "id" : "144",
+                "id" : "156",
                 "instanceId" : 1,
                 "properties" : {
-                  "structurizr.dsl.identifier" : "2828b7b6-dbf4-45ad-a7aa-1a305ce5c0f4"
+                  "structurizr.dsl.identifier" : "42ac9f3e-3618-4122-8428-297fdfb5401b"
                 },
                 "tags" : "Container Instance"
               }, {
-                "containerId" : "86",
+                "containerId" : "91",
                 "deploymentGroups" : [ "Default" ],
                 "environment" : "Development",
-                "id" : "147",
+                "id" : "159",
                 "instanceId" : 1,
                 "properties" : {
-                  "structurizr.dsl.identifier" : "f6568545-6c9b-49ba-964b-2db10c8a58cd"
+                  "structurizr.dsl.identifier" : "e9c15ea7-a5a6-46da-ad87-ea626160c3d2"
+                },
+                "tags" : "Container Instance"
+              }, {
+                "containerId" : "92",
+                "deploymentGroups" : [ "Default" ],
+                "environment" : "Development",
+                "id" : "161",
+                "instanceId" : 1,
+                "properties" : {
+                  "structurizr.dsl.identifier" : "39112de7-ac81-40d7-966e-ed5c7c15408f"
                 },
                 "tags" : "Container Instance"
               } ],
               "environment" : "Development",
-              "id" : "39",
+              "id" : "44",
               "instances" : "1",
               "name" : "optistair-calc",
               "properties" : {
-                "structurizr.dsl.identifier" : "a1c12617-918e-401f-9659-5aa74e6f46fe.d2f1fdbc-3d3e-46e9-a826-13776ee9ef47.a5d63d63-771c-4627-afa3-d63fabf602a4.ad5a795d-0cb8-4c34-b88e-2ab666f208e0.0a0b7e12-8484-4115-baef-03f6dacdd85e.354ea201-5bad-4147-8bae-8f06c50e74f3"
+                "structurizr.dsl.identifier" : "56571706-b811-4737-bdf6-1f94247e0d0c.9e155690-cea4-4756-ba41-c7f9a9b573c1.e1224a06-4af2-47ac-871a-de6f0b98bc00.28b7d016-10a4-4b72-ab35-e4fc8c9673c1.27439fc4-7fd7-4525-9a7e-ccfb17916f40.d85da6cb-0620-4e1c-9bd0-1c9b5e31406c"
               },
               "tags" : "Element,Deployment Node",
               "technology" : "k8s namespace"
             } ],
             "environment" : "Development",
-            "id" : "34",
+            "id" : "39",
             "infrastructureNodes" : [ {
               "description" : "Получение и обновление сертификатов",
               "environment" : "Development",
-              "id" : "35",
+              "id" : "40",
               "name" : "Cert-Manager",
               "properties" : {
-                "structurizr.dsl.identifier" : "a1c12617-918e-401f-9659-5aa74e6f46fe.d2f1fdbc-3d3e-46e9-a826-13776ee9ef47.a5d63d63-771c-4627-afa3-d63fabf602a4.ad5a795d-0cb8-4c34-b88e-2ab666f208e0.0a0b7e12-8484-4115-baef-03f6dacdd85e.6b3ac8dc-cb88-4a68-8138-e46b4ad70b4a"
+                "structurizr.dsl.identifier" : "56571706-b811-4737-bdf6-1f94247e0d0c.9e155690-cea4-4756-ba41-c7f9a9b573c1.e1224a06-4af2-47ac-871a-de6f0b98bc00.28b7d016-10a4-4b72-ab35-e4fc8c9673c1.27439fc4-7fd7-4525-9a7e-ccfb17916f40.7a2ee73f-5a4b-40b7-931f-d53d1f670997"
               },
               "tags" : "Element,Infrastructure Node,tagDeploymentInfrastructure,l1",
               "technology" : "Cert manager"
@@ -493,103 +517,103 @@
             "instances" : "1",
             "name" : "dev",
             "properties" : {
-              "structurizr.dsl.identifier" : "a1c12617-918e-401f-9659-5aa74e6f46fe.d2f1fdbc-3d3e-46e9-a826-13776ee9ef47.a5d63d63-771c-4627-afa3-d63fabf602a4.ad5a795d-0cb8-4c34-b88e-2ab666f208e0.0a0b7e12-8484-4115-baef-03f6dacdd85e"
+              "structurizr.dsl.identifier" : "56571706-b811-4737-bdf6-1f94247e0d0c.9e155690-cea4-4756-ba41-c7f9a9b573c1.e1224a06-4af2-47ac-871a-de6f0b98bc00.28b7d016-10a4-4b72-ab35-e4fc8c9673c1.27439fc4-7fd7-4525-9a7e-ccfb17916f40"
             },
             "tags" : "Element,Deployment Node",
             "technology" : "k8s namespace"
           } ],
           "environment" : "Development",
-          "id" : "27",
+          "id" : "32",
           "instances" : "1",
           "name" : "Кластер kalkpro-k8s",
           "properties" : {
-            "structurizr.dsl.identifier" : "a1c12617-918e-401f-9659-5aa74e6f46fe.d2f1fdbc-3d3e-46e9-a826-13776ee9ef47.a5d63d63-771c-4627-afa3-d63fabf602a4.ad5a795d-0cb8-4c34-b88e-2ab666f208e0"
+            "structurizr.dsl.identifier" : "56571706-b811-4737-bdf6-1f94247e0d0c.9e155690-cea4-4756-ba41-c7f9a9b573c1.e1224a06-4af2-47ac-871a-de6f0b98bc00.28b7d016-10a4-4b72-ab35-e4fc8c9673c1"
           },
           "tags" : "Element,Deployment Node",
           "technology" : "kubernetes"
         } ],
         "description" : "Кластер для расчета оптимальных конфигураций лестниц. URL https://optistair(-dev).kalk.rpo",
         "environment" : "Development",
-        "id" : "26",
+        "id" : "31",
         "instances" : "1",
         "name" : "kalkpro_project",
         "properties" : {
-          "structurizr.dsl.identifier" : "a1c12617-918e-401f-9659-5aa74e6f46fe.d2f1fdbc-3d3e-46e9-a826-13776ee9ef47.a5d63d63-771c-4627-afa3-d63fabf602a4"
+          "structurizr.dsl.identifier" : "56571706-b811-4737-bdf6-1f94247e0d0c.9e155690-cea4-4756-ba41-c7f9a9b573c1.e1224a06-4af2-47ac-871a-de6f0b98bc00"
         },
         "tags" : "Element,Deployment Node",
         "technology" : "VPC"
       } ],
       "environment" : "Development",
-      "id" : "25",
+      "id" : "30",
       "instances" : "1",
       "name" : "CloRu",
       "properties" : {
-        "structurizr.dsl.identifier" : "a1c12617-918e-401f-9659-5aa74e6f46fe.d2f1fdbc-3d3e-46e9-a826-13776ee9ef47"
+        "structurizr.dsl.identifier" : "56571706-b811-4737-bdf6-1f94247e0d0c.9e155690-cea4-4756-ba41-c7f9a9b573c1"
       },
       "tags" : "Element,Deployment Node"
     }, {
       "children" : [ {
         "description" : "Веб-сайт основного онлайн-сервиса (IP: 91.107.126.103)",
         "environment" : "Stage",
-        "id" : "41",
+        "id" : "46",
         "instances" : "1",
         "name" : "WEB-SERVER",
         "properties" : {
-          "structurizr.dsl.identifier" : "ea0c8df1-bb0d-4ee4-8a12-9484ac219d43.09c4b7e6-48bb-425c-b686-1cd393e2ff68.3d9a76dc-c5ec-49e6-884c-80657e39ac98"
+          "structurizr.dsl.identifier" : "b5a19a42-4edc-42dd-8850-412cbb3dbebf.3cc38234-dff2-4337-9848-b4c6a3897071.1f073414-d0b0-429c-b077-b7e6a9177fdc"
         },
         "tags" : "Element,Deployment Node",
         "technology" : "VPS KVM"
       }, {
         "description" : "Хранилище статических файлов (IP: 62.109.15.25)",
         "environment" : "Stage",
-        "id" : "42",
+        "id" : "47",
         "instances" : "1",
         "name" : "STATIC-STORAGE",
         "properties" : {
-          "structurizr.dsl.identifier" : "ea0c8df1-bb0d-4ee4-8a12-9484ac219d43.09c4b7e6-48bb-425c-b686-1cd393e2ff68.d7b0174f-da9c-4adc-95ad-22a643bf9a8c"
+          "structurizr.dsl.identifier" : "b5a19a42-4edc-42dd-8850-412cbb3dbebf.3cc38234-dff2-4337-9848-b4c6a3897071.ec3b9584-cd7d-43d4-b98e-2dc8b92c4e17"
         },
         "tags" : "Element,Deployment Node",
         "technology" : "VPS KVM"
       }, {
         "description" : "Сервер проектных расчетов PROD (IP: 212.109.221.247)",
         "environment" : "Stage",
-        "id" : "43",
+        "id" : "48",
         "instances" : "1",
         "name" : "NODE-1",
         "properties" : {
-          "structurizr.dsl.identifier" : "ea0c8df1-bb0d-4ee4-8a12-9484ac219d43.09c4b7e6-48bb-425c-b686-1cd393e2ff68.f4ecf8ea-948a-46c1-8e62-0a745bc47a91"
+          "structurizr.dsl.identifier" : "b5a19a42-4edc-42dd-8850-412cbb3dbebf.3cc38234-dff2-4337-9848-b4c6a3897071.4d6613fc-9e09-435d-ac74-517f9c3c7fdd"
         },
         "tags" : "Element,Deployment Node",
         "technology" : "VPS KVM"
       }, {
         "description" : "Сервер проектных расчетов DEV/STAGE (IP: 188.120.254.218)",
         "environment" : "Stage",
-        "id" : "44",
+        "id" : "49",
         "instances" : "1",
         "name" : "NODE-2",
         "properties" : {
-          "structurizr.dsl.identifier" : "ea0c8df1-bb0d-4ee4-8a12-9484ac219d43.09c4b7e6-48bb-425c-b686-1cd393e2ff68.125631a2-385a-42cd-a97c-47baae87fbaa"
+          "structurizr.dsl.identifier" : "b5a19a42-4edc-42dd-8850-412cbb3dbebf.3cc38234-dff2-4337-9848-b4c6a3897071.4b9b6a42-af2a-4eb6-b71d-0f72042b75c6"
         },
         "tags" : "Element,Deployment Node",
         "technology" : "VPS KVM"
       }, {
         "description" : "Сервер простых расчетов DEV/STAGE/PROD (IP: 83.220.170.100)",
         "environment" : "Stage",
-        "id" : "45",
+        "id" : "50",
         "instances" : "1",
         "name" : "SINODE-1",
         "properties" : {
-          "structurizr.dsl.identifier" : "ea0c8df1-bb0d-4ee4-8a12-9484ac219d43.09c4b7e6-48bb-425c-b686-1cd393e2ff68.c9383d59-3ce0-4965-b91b-c9a211ac9c3f"
+          "structurizr.dsl.identifier" : "b5a19a42-4edc-42dd-8850-412cbb3dbebf.3cc38234-dff2-4337-9848-b4c6a3897071.85db0b71-c4c4-438d-9fd0-65313bf3972a"
         },
         "tags" : "Element,Deployment Node",
         "technology" : "VPS KVM"
       } ],
       "environment" : "Stage",
-      "id" : "40",
+      "id" : "45",
       "instances" : "1",
       "name" : "FirstVDS",
       "properties" : {
-        "structurizr.dsl.identifier" : "ea0c8df1-bb0d-4ee4-8a12-9484ac219d43.09c4b7e6-48bb-425c-b686-1cd393e2ff68"
+        "structurizr.dsl.identifier" : "b5a19a42-4edc-42dd-8850-412cbb3dbebf.3cc38234-dff2-4337-9848-b4c6a3897071"
       },
       "tags" : "Element,Deployment Node"
     }, {
@@ -599,45 +623,45 @@
             "children" : [ {
               "description" : "Получение и обновление сертификатов",
               "environment" : "Stage",
-              "id" : "51",
+              "id" : "56",
               "instances" : "1",
               "name" : "balancer",
               "properties" : {
-                "structurizr.dsl.identifier" : "ea0c8df1-bb0d-4ee4-8a12-9484ac219d43.fe9036b3-e04a-4d61-bcbf-904da881b8f3.4f194839-e892-4085-9987-2bec696ad9d5.4d36a51a-6134-426d-8c12-0938d37dd5a9.36fca416-9851-474c-abe0-9568e0ddcdf8.076d1ab6-f918-47ab-835c-6026c9753109"
+                "structurizr.dsl.identifier" : "b5a19a42-4edc-42dd-8850-412cbb3dbebf.4487d161-2db8-4099-9252-c8a3bc1a4197.1dc0e93f-b642-4dc1-8fbb-44881cb5eee0.3b7ddb3f-c33f-4aed-bad4-19dc71b5692e.1d140b0c-5318-4268-a3cd-c0b507614a23.4a3f3e7b-de87-4cd1-a44d-a410cf5792e6"
               },
               "tags" : "Element,Deployment Node,tagDeploymentInfrastructure,l1",
               "technology" : "Ingregress Nginx"
             }, {
               "environment" : "Stage",
-              "id" : "52",
+              "id" : "57",
               "instances" : "1",
               "name" : "pgsql",
               "properties" : {
-                "structurizr.dsl.identifier" : "ea0c8df1-bb0d-4ee4-8a12-9484ac219d43.fe9036b3-e04a-4d61-bcbf-904da881b8f3.4f194839-e892-4085-9987-2bec696ad9d5.4d36a51a-6134-426d-8c12-0938d37dd5a9.36fca416-9851-474c-abe0-9568e0ddcdf8.251d44db-c075-4af0-ade2-ba3fee79c2b3"
+                "structurizr.dsl.identifier" : "b5a19a42-4edc-42dd-8850-412cbb3dbebf.4487d161-2db8-4099-9252-c8a3bc1a4197.1dc0e93f-b642-4dc1-8fbb-44881cb5eee0.3b7ddb3f-c33f-4aed-bad4-19dc71b5692e.1d140b0c-5318-4268-a3cd-c0b507614a23.3831a78a-87e3-4e90-9418-d6e319f7b78b"
               },
               "tags" : "Element,Deployment Node",
               "technology" : "PostgreSQL operator"
             }, {
               "description" : "3х. UI https://kafka-ui.infrastructure.kalk.pro.",
               "environment" : "Stage",
-              "id" : "53",
+              "id" : "58",
               "instances" : "1",
               "name" : "kafka",
               "properties" : {
-                "structurizr.dsl.identifier" : "ea0c8df1-bb0d-4ee4-8a12-9484ac219d43.fe9036b3-e04a-4d61-bcbf-904da881b8f3.4f194839-e892-4085-9987-2bec696ad9d5.4d36a51a-6134-426d-8c12-0938d37dd5a9.36fca416-9851-474c-abe0-9568e0ddcdf8.a5bcbccf-2c45-49ac-9993-9bfeeb793606"
+                "structurizr.dsl.identifier" : "b5a19a42-4edc-42dd-8850-412cbb3dbebf.4487d161-2db8-4099-9252-c8a3bc1a4197.1dc0e93f-b642-4dc1-8fbb-44881cb5eee0.3b7ddb3f-c33f-4aed-bad4-19dc71b5692e.1d140b0c-5318-4268-a3cd-c0b507614a23.26b9cc55-5522-47b0-9e48-886b25ff990e"
               },
               "tags" : "Element,Deployment Node",
               "technology" : "Apache Kafka multi-tenant cluster"
             } ],
             "environment" : "Stage",
-            "id" : "49",
+            "id" : "54",
             "infrastructureNodes" : [ {
               "description" : "Получение и обновление сертификатов",
               "environment" : "Stage",
-              "id" : "50",
+              "id" : "55",
               "name" : "Cert-Manager",
               "properties" : {
-                "structurizr.dsl.identifier" : "ea0c8df1-bb0d-4ee4-8a12-9484ac219d43.fe9036b3-e04a-4d61-bcbf-904da881b8f3.4f194839-e892-4085-9987-2bec696ad9d5.4d36a51a-6134-426d-8c12-0938d37dd5a9.36fca416-9851-474c-abe0-9568e0ddcdf8.ddd45fe6-dae1-4e8e-9383-adf31001d5c1"
+                "structurizr.dsl.identifier" : "b5a19a42-4edc-42dd-8850-412cbb3dbebf.4487d161-2db8-4099-9252-c8a3bc1a4197.1dc0e93f-b642-4dc1-8fbb-44881cb5eee0.3b7ddb3f-c33f-4aed-bad4-19dc71b5692e.1d140b0c-5318-4268-a3cd-c0b507614a23.f7b2cde0-1375-4d0e-8071-1def2c6c1698"
               },
               "tags" : "Element,Infrastructure Node,tagDeploymentInfrastructure,l1",
               "technology" : "Cert manager"
@@ -645,17 +669,17 @@
             "instances" : "1",
             "name" : "infrastructure",
             "properties" : {
-              "structurizr.dsl.identifier" : "ea0c8df1-bb0d-4ee4-8a12-9484ac219d43.fe9036b3-e04a-4d61-bcbf-904da881b8f3.4f194839-e892-4085-9987-2bec696ad9d5.4d36a51a-6134-426d-8c12-0938d37dd5a9.36fca416-9851-474c-abe0-9568e0ddcdf8"
+              "structurizr.dsl.identifier" : "b5a19a42-4edc-42dd-8850-412cbb3dbebf.4487d161-2db8-4099-9252-c8a3bc1a4197.1dc0e93f-b642-4dc1-8fbb-44881cb5eee0.3b7ddb3f-c33f-4aed-bad4-19dc71b5692e.1d140b0c-5318-4268-a3cd-c0b507614a23"
             },
             "tags" : "Element,Deployment Node",
             "technology" : "k8s namespace"
           }, {
             "environment" : "Stage",
-            "id" : "54",
+            "id" : "59",
             "instances" : "1",
             "name" : "optistair-calc",
             "properties" : {
-              "structurizr.dsl.identifier" : "ea0c8df1-bb0d-4ee4-8a12-9484ac219d43.fe9036b3-e04a-4d61-bcbf-904da881b8f3.4f194839-e892-4085-9987-2bec696ad9d5.4d36a51a-6134-426d-8c12-0938d37dd5a9.de85497a-107b-4464-8d23-d8b92e796941"
+              "structurizr.dsl.identifier" : "b5a19a42-4edc-42dd-8850-412cbb3dbebf.4487d161-2db8-4099-9252-c8a3bc1a4197.1dc0e93f-b642-4dc1-8fbb-44881cb5eee0.3b7ddb3f-c33f-4aed-bad4-19dc71b5692e.629f2162-47d9-4514-baff-ab5d57183bb9"
             },
             "tags" : "Element,Deployment Node",
             "technology" : "k8s namespace"
@@ -663,55 +687,55 @@
             "children" : [ {
               "description" : "Получение и обновление сертификатов",
               "environment" : "Stage",
-              "id" : "57",
+              "id" : "62",
               "instances" : "1",
               "name" : "balancer",
               "properties" : {
-                "structurizr.dsl.identifier" : "ea0c8df1-bb0d-4ee4-8a12-9484ac219d43.fe9036b3-e04a-4d61-bcbf-904da881b8f3.4f194839-e892-4085-9987-2bec696ad9d5.4d36a51a-6134-426d-8c12-0938d37dd5a9.96eb2e31-60e2-4933-9337-737e71cc706e.de19ccdc-5644-4ab0-ad4e-be91196239a3"
+                "structurizr.dsl.identifier" : "b5a19a42-4edc-42dd-8850-412cbb3dbebf.4487d161-2db8-4099-9252-c8a3bc1a4197.1dc0e93f-b642-4dc1-8fbb-44881cb5eee0.3b7ddb3f-c33f-4aed-bad4-19dc71b5692e.e38d0bcd-ce7e-4f0a-b7e1-ab872155924c.e6777528-9c7c-4131-8f64-5d514a8c01fd"
               },
               "tags" : "Element,Deployment Node,tagDeploymentInfrastructure,l1",
               "technology" : "Ingregress Nginx"
             }, {
               "environment" : "Stage",
-              "id" : "58",
+              "id" : "63",
               "instances" : "1",
               "name" : "pgsql",
               "properties" : {
-                "structurizr.dsl.identifier" : "ea0c8df1-bb0d-4ee4-8a12-9484ac219d43.fe9036b3-e04a-4d61-bcbf-904da881b8f3.4f194839-e892-4085-9987-2bec696ad9d5.4d36a51a-6134-426d-8c12-0938d37dd5a9.96eb2e31-60e2-4933-9337-737e71cc706e.fc342831-31b1-479d-83c7-2d7d6d3d2b9c"
+                "structurizr.dsl.identifier" : "b5a19a42-4edc-42dd-8850-412cbb3dbebf.4487d161-2db8-4099-9252-c8a3bc1a4197.1dc0e93f-b642-4dc1-8fbb-44881cb5eee0.3b7ddb3f-c33f-4aed-bad4-19dc71b5692e.e38d0bcd-ce7e-4f0a-b7e1-ab872155924c.59d0c268-d389-49c9-a216-f7b0c705c72d"
               },
               "tags" : "Element,Deployment Node",
               "technology" : "PostgreSQL operator"
             }, {
               "description" : "3х. UI https://kafka-ui.infrastructure-dev.kalk.pro.",
               "environment" : "Stage",
-              "id" : "59",
+              "id" : "64",
               "instances" : "1",
               "name" : "kafka",
               "properties" : {
-                "structurizr.dsl.identifier" : "ea0c8df1-bb0d-4ee4-8a12-9484ac219d43.fe9036b3-e04a-4d61-bcbf-904da881b8f3.4f194839-e892-4085-9987-2bec696ad9d5.4d36a51a-6134-426d-8c12-0938d37dd5a9.96eb2e31-60e2-4933-9337-737e71cc706e.f970bf60-bf82-458c-b294-0fe39a91f6b7"
+                "structurizr.dsl.identifier" : "b5a19a42-4edc-42dd-8850-412cbb3dbebf.4487d161-2db8-4099-9252-c8a3bc1a4197.1dc0e93f-b642-4dc1-8fbb-44881cb5eee0.3b7ddb3f-c33f-4aed-bad4-19dc71b5692e.e38d0bcd-ce7e-4f0a-b7e1-ab872155924c.4ee44aa3-24b3-4470-845d-cd0967bbb182"
               },
               "tags" : "Element,Deployment Node",
               "technology" : "Apache Kafka multi-tenant cluster"
             }, {
               "environment" : "Stage",
-              "id" : "60",
+              "id" : "65",
               "instances" : "1",
               "name" : "optistair-calc",
               "properties" : {
-                "structurizr.dsl.identifier" : "ea0c8df1-bb0d-4ee4-8a12-9484ac219d43.fe9036b3-e04a-4d61-bcbf-904da881b8f3.4f194839-e892-4085-9987-2bec696ad9d5.4d36a51a-6134-426d-8c12-0938d37dd5a9.96eb2e31-60e2-4933-9337-737e71cc706e.4ccfd559-d882-4e3f-9c1b-30b61c200de4"
+                "structurizr.dsl.identifier" : "b5a19a42-4edc-42dd-8850-412cbb3dbebf.4487d161-2db8-4099-9252-c8a3bc1a4197.1dc0e93f-b642-4dc1-8fbb-44881cb5eee0.3b7ddb3f-c33f-4aed-bad4-19dc71b5692e.e38d0bcd-ce7e-4f0a-b7e1-ab872155924c.7c3fdd1e-a387-49ad-b342-aa5876d158ef"
               },
               "tags" : "Element,Deployment Node",
               "technology" : "k8s namespace"
             } ],
             "environment" : "Stage",
-            "id" : "55",
+            "id" : "60",
             "infrastructureNodes" : [ {
               "description" : "Получение и обновление сертификатов",
               "environment" : "Stage",
-              "id" : "56",
+              "id" : "61",
               "name" : "Cert-Manager",
               "properties" : {
-                "structurizr.dsl.identifier" : "ea0c8df1-bb0d-4ee4-8a12-9484ac219d43.fe9036b3-e04a-4d61-bcbf-904da881b8f3.4f194839-e892-4085-9987-2bec696ad9d5.4d36a51a-6134-426d-8c12-0938d37dd5a9.96eb2e31-60e2-4933-9337-737e71cc706e.c9339f50-2732-49dc-8268-b8f27f784cf5"
+                "structurizr.dsl.identifier" : "b5a19a42-4edc-42dd-8850-412cbb3dbebf.4487d161-2db8-4099-9252-c8a3bc1a4197.1dc0e93f-b642-4dc1-8fbb-44881cb5eee0.3b7ddb3f-c33f-4aed-bad4-19dc71b5692e.e38d0bcd-ce7e-4f0a-b7e1-ab872155924c.f054cded-d3ee-4130-9c4c-27d9e9f54bfc"
               },
               "tags" : "Element,Infrastructure Node,tagDeploymentInfrastructure,l1",
               "technology" : "Cert manager"
@@ -719,103 +743,103 @@
             "instances" : "1",
             "name" : "dev",
             "properties" : {
-              "structurizr.dsl.identifier" : "ea0c8df1-bb0d-4ee4-8a12-9484ac219d43.fe9036b3-e04a-4d61-bcbf-904da881b8f3.4f194839-e892-4085-9987-2bec696ad9d5.4d36a51a-6134-426d-8c12-0938d37dd5a9.96eb2e31-60e2-4933-9337-737e71cc706e"
+              "structurizr.dsl.identifier" : "b5a19a42-4edc-42dd-8850-412cbb3dbebf.4487d161-2db8-4099-9252-c8a3bc1a4197.1dc0e93f-b642-4dc1-8fbb-44881cb5eee0.3b7ddb3f-c33f-4aed-bad4-19dc71b5692e.e38d0bcd-ce7e-4f0a-b7e1-ab872155924c"
             },
             "tags" : "Element,Deployment Node",
             "technology" : "k8s namespace"
           } ],
           "environment" : "Stage",
-          "id" : "48",
+          "id" : "53",
           "instances" : "1",
           "name" : "Кластер kalkpro-k8s",
           "properties" : {
-            "structurizr.dsl.identifier" : "ea0c8df1-bb0d-4ee4-8a12-9484ac219d43.fe9036b3-e04a-4d61-bcbf-904da881b8f3.4f194839-e892-4085-9987-2bec696ad9d5.4d36a51a-6134-426d-8c12-0938d37dd5a9"
+            "structurizr.dsl.identifier" : "b5a19a42-4edc-42dd-8850-412cbb3dbebf.4487d161-2db8-4099-9252-c8a3bc1a4197.1dc0e93f-b642-4dc1-8fbb-44881cb5eee0.3b7ddb3f-c33f-4aed-bad4-19dc71b5692e"
           },
           "tags" : "Element,Deployment Node",
           "technology" : "kubernetes"
         } ],
         "description" : "Кластер для расчета оптимальных конфигураций лестниц. URL https://optistair(-dev).kalk.rpo",
         "environment" : "Stage",
-        "id" : "47",
+        "id" : "52",
         "instances" : "1",
         "name" : "kalkpro_project",
         "properties" : {
-          "structurizr.dsl.identifier" : "ea0c8df1-bb0d-4ee4-8a12-9484ac219d43.fe9036b3-e04a-4d61-bcbf-904da881b8f3.4f194839-e892-4085-9987-2bec696ad9d5"
+          "structurizr.dsl.identifier" : "b5a19a42-4edc-42dd-8850-412cbb3dbebf.4487d161-2db8-4099-9252-c8a3bc1a4197.1dc0e93f-b642-4dc1-8fbb-44881cb5eee0"
         },
         "tags" : "Element,Deployment Node",
         "technology" : "VPC"
       } ],
       "environment" : "Stage",
-      "id" : "46",
+      "id" : "51",
       "instances" : "1",
       "name" : "CloRu",
       "properties" : {
-        "structurizr.dsl.identifier" : "ea0c8df1-bb0d-4ee4-8a12-9484ac219d43.fe9036b3-e04a-4d61-bcbf-904da881b8f3"
+        "structurizr.dsl.identifier" : "b5a19a42-4edc-42dd-8850-412cbb3dbebf.4487d161-2db8-4099-9252-c8a3bc1a4197"
       },
       "tags" : "Element,Deployment Node"
     }, {
       "children" : [ {
         "description" : "Веб-сайт основного онлайн-сервиса (IP: 91.107.126.103)",
         "environment" : "Production",
-        "id" : "62",
+        "id" : "67",
         "instances" : "1",
         "name" : "WEB-SERVER",
         "properties" : {
-          "structurizr.dsl.identifier" : "4116cd00-0546-4222-885a-e52902f93cee.15540e2f-a3a4-4e7c-8b3c-d452e84ecbfb.0212cdd8-157b-4647-9acd-62bcd4250daf"
+          "structurizr.dsl.identifier" : "ea43b652-2b8c-4f39-ab32-9469664e1ebd.8e4e7eba-2fa7-44bd-9527-595f091240ac.9eb9da4c-70b0-4ebc-9b2f-0ca6e711dac3"
         },
         "tags" : "Element,Deployment Node",
         "technology" : "VPS KVM"
       }, {
         "description" : "Хранилище статических файлов (IP: 62.109.15.25)",
         "environment" : "Production",
-        "id" : "63",
+        "id" : "68",
         "instances" : "1",
         "name" : "STATIC-STORAGE",
         "properties" : {
-          "structurizr.dsl.identifier" : "4116cd00-0546-4222-885a-e52902f93cee.15540e2f-a3a4-4e7c-8b3c-d452e84ecbfb.33e08737-d27d-4d0a-912e-c2872ca17b1c"
+          "structurizr.dsl.identifier" : "ea43b652-2b8c-4f39-ab32-9469664e1ebd.8e4e7eba-2fa7-44bd-9527-595f091240ac.e5b8aa17-2862-475c-a2a4-bd19b71a7b5d"
         },
         "tags" : "Element,Deployment Node",
         "technology" : "VPS KVM"
       }, {
         "description" : "Сервер проектных расчетов PROD (IP: 212.109.221.247)",
         "environment" : "Production",
-        "id" : "64",
+        "id" : "69",
         "instances" : "1",
         "name" : "NODE-1",
         "properties" : {
-          "structurizr.dsl.identifier" : "4116cd00-0546-4222-885a-e52902f93cee.15540e2f-a3a4-4e7c-8b3c-d452e84ecbfb.5b73b2e5-a64e-496f-8a96-3aee44f349a4"
+          "structurizr.dsl.identifier" : "ea43b652-2b8c-4f39-ab32-9469664e1ebd.8e4e7eba-2fa7-44bd-9527-595f091240ac.6ecdaab9-a043-4db1-949e-99600958e5a9"
         },
         "tags" : "Element,Deployment Node",
         "technology" : "VPS KVM"
       }, {
         "description" : "Сервер проектных расчетов DEV/STAGE (IP: 188.120.254.218)",
         "environment" : "Production",
-        "id" : "65",
+        "id" : "70",
         "instances" : "1",
         "name" : "NODE-2",
         "properties" : {
-          "structurizr.dsl.identifier" : "4116cd00-0546-4222-885a-e52902f93cee.15540e2f-a3a4-4e7c-8b3c-d452e84ecbfb.f9a08923-fc94-4c49-b137-e52cb7f56869"
+          "structurizr.dsl.identifier" : "ea43b652-2b8c-4f39-ab32-9469664e1ebd.8e4e7eba-2fa7-44bd-9527-595f091240ac.381a6f06-adc6-4055-854c-e736aec25d4f"
         },
         "tags" : "Element,Deployment Node",
         "technology" : "VPS KVM"
       }, {
         "description" : "Сервер простых расчетов DEV/STAGE/PROD (IP: 83.220.170.100)",
         "environment" : "Production",
-        "id" : "66",
+        "id" : "71",
         "instances" : "1",
         "name" : "SINODE-1",
         "properties" : {
-          "structurizr.dsl.identifier" : "4116cd00-0546-4222-885a-e52902f93cee.15540e2f-a3a4-4e7c-8b3c-d452e84ecbfb.3cade8d9-be6b-42a5-956e-e2fb45e7d54a"
+          "structurizr.dsl.identifier" : "ea43b652-2b8c-4f39-ab32-9469664e1ebd.8e4e7eba-2fa7-44bd-9527-595f091240ac.7686f53e-c72c-4333-84bb-ad4fd8263b18"
         },
         "tags" : "Element,Deployment Node",
         "technology" : "VPS KVM"
       } ],
       "environment" : "Production",
-      "id" : "61",
+      "id" : "66",
       "instances" : "1",
       "name" : "FirstVDS",
       "properties" : {
-        "structurizr.dsl.identifier" : "4116cd00-0546-4222-885a-e52902f93cee.15540e2f-a3a4-4e7c-8b3c-d452e84ecbfb"
+        "structurizr.dsl.identifier" : "ea43b652-2b8c-4f39-ab32-9469664e1ebd.8e4e7eba-2fa7-44bd-9527-595f091240ac"
       },
       "tags" : "Element,Deployment Node"
     }, {
@@ -824,149 +848,166 @@
           "children" : [ {
             "children" : [ {
               "containerInstances" : [ {
-                "containerId" : "87",
+                "containerId" : "93",
                 "deploymentGroups" : [ "Default" ],
                 "description" : "K8s Ingress nginx\nreplicas: X2",
                 "environment" : "Production",
-                "id" : "152",
+                "id" : "166",
                 "instanceId" : 1,
                 "properties" : {
-                  "structurizr.dsl.identifier" : "48cc9d61-fac1-48d7-9732-3939ee72bbb2",
+                  "structurizr.dsl.identifier" : "aa7397e8-5440-474f-85dc-79f67f4d2dbe",
                   "replicas" : "2"
                 },
                 "relationships" : [ {
-                  "description" : "Получить статус запроса на расчёт. GET (public): /api/request-status",
-                  "destinationId" : "158",
-                  "id" : "164",
-                  "linkedRelationshipId" : "109",
-                  "sourceId" : "152",
+                  "description" : "Получить статус запроса на расчёт. GET (public): /api/requests-statuses",
+                  "destinationId" : "173",
+                  "id" : "174",
+                  "linkedRelationshipId" : "119",
+                  "sourceId" : "166",
                   "technology" : "REST API"
                 }, {
-                  "description" : "Разместить запрос на расчёт Прямой лестницы. POST (public): /api/straight-stair",
-                  "destinationId" : "158",
-                  "id" : "165",
-                  "linkedRelationshipId" : "110",
-                  "sourceId" : "152",
+                  "description" : "Подтвердить получение расчёта со стороны frontend. PATCH (public): /api/request-status/send",
+                  "destinationId" : "173",
+                  "id" : "175",
+                  "linkedRelationshipId" : "120",
+                  "sourceId" : "166",
                   "technology" : "REST API"
                 }, {
-                  "description" : "Разместить запрос на расчёт Г-образной лестницы. POST (public): /api/l-shape-stair",
-                  "destinationId" : "158",
-                  "id" : "166",
-                  "linkedRelationshipId" : "111",
-                  "sourceId" : "152",
+                  "description" : "Разместить запрос на расчёт Прямой лестницы. POST (public): /api/straight-stair/request",
+                  "destinationId" : "173",
+                  "id" : "176",
+                  "linkedRelationshipId" : "121",
+                  "sourceId" : "166",
                   "technology" : "REST API"
                 }, {
-                  "description" : "Разместить запрос на расчёт П-образной лестницы. POST (public): /api/u-shape-stair",
-                  "destinationId" : "158",
-                  "id" : "167",
-                  "linkedRelationshipId" : "112",
-                  "sourceId" : "152",
+                  "description" : "Разместить запрос на расчёт Г-образной лестницы. POST (public): /api/l-shape-stair/request",
+                  "destinationId" : "173",
+                  "id" : "177",
+                  "linkedRelationshipId" : "122",
+                  "sourceId" : "166",
+                  "technology" : "REST API"
+                }, {
+                  "description" : "Разместить запрос на расчёт П-образной лестницы. POST (public): /api/u-shape-stair/request",
+                  "destinationId" : "173",
+                  "id" : "178",
+                  "linkedRelationshipId" : "123",
+                  "sourceId" : "166",
                   "technology" : "REST API"
                 }, {
                   "description" : "Установить ограничения пользователя. POST (public secured): /api/user-acl",
-                  "destinationId" : "158",
-                  "id" : "168",
-                  "linkedRelationshipId" : "113",
-                  "sourceId" : "152",
+                  "destinationId" : "173",
+                  "id" : "179",
+                  "linkedRelationshipId" : "124",
+                  "sourceId" : "166",
                   "technology" : "REST API"
                 } ],
                 "tags" : "Container Instance"
               } ],
               "description" : "Получение и обновление сертификатов",
               "environment" : "Production",
-              "id" : "72",
+              "id" : "77",
               "instances" : "1",
               "name" : "balancer",
               "properties" : {
-                "structurizr.dsl.identifier" : "4116cd00-0546-4222-885a-e52902f93cee.7f10e495-d95a-4c6c-8671-d65726e039ab.34e2e86d-7ae0-417a-9cb4-25bbb55f3289.95384d11-c945-4660-a38f-ff3fdb6bbf00.f4bc0ffc-7cc5-4ecf-a629-af09b95ef142.ccec58a2-daf5-4abd-b55e-6be61640bf60"
+                "structurizr.dsl.identifier" : "ea43b652-2b8c-4f39-ab32-9469664e1ebd.2b951b7d-e89e-4bfb-a701-c8a8dc8df24e.778b6e2a-68b3-4791-b3b0-f27a7ab5465a.c56d7588-e7e6-413a-8abe-0f43e90f21c3.156f1f31-b4ea-475d-84da-e1abab6e7963.e1721fbf-6a11-4cb2-88c7-27939be670c9"
               },
               "tags" : "Element,Deployment Node,tagDeploymentInfrastructure,l1",
               "technology" : "Ingregress Nginx"
             }, {
               "containerInstances" : [ {
-                "containerId" : "82",
+                "containerId" : "87",
                 "deploymentGroups" : [ "Default" ],
                 "description" : "db: optistairs\nreplicas: X2",
                 "environment" : "Production",
-                "id" : "153",
+                "id" : "167",
                 "instanceId" : 1,
                 "properties" : {
-                  "structurizr.dsl.identifier" : "4c44dc9b-681a-4211-9e50-ab3a606742b6",
+                  "structurizr.dsl.identifier" : "c5c618ce-548d-4d77-aee0-a7e05734ac52",
                   "replicas" : "2"
                 },
                 "tags" : "Container Instance"
               } ],
               "environment" : "Production",
-              "id" : "73",
+              "id" : "78",
               "instances" : "1",
               "name" : "pgsql",
               "properties" : {
-                "structurizr.dsl.identifier" : "4116cd00-0546-4222-885a-e52902f93cee.7f10e495-d95a-4c6c-8671-d65726e039ab.34e2e86d-7ae0-417a-9cb4-25bbb55f3289.95384d11-c945-4660-a38f-ff3fdb6bbf00.f4bc0ffc-7cc5-4ecf-a629-af09b95ef142.e3317700-d958-48b4-a4f5-3c1f135ca690"
+                "structurizr.dsl.identifier" : "ea43b652-2b8c-4f39-ab32-9469664e1ebd.2b951b7d-e89e-4bfb-a701-c8a8dc8df24e.778b6e2a-68b3-4791-b3b0-f27a7ab5465a.c56d7588-e7e6-413a-8abe-0f43e90f21c3.156f1f31-b4ea-475d-84da-e1abab6e7963.7e2c5e5f-c2d0-46e5-a488-d5527d210640"
               },
               "tags" : "Element,Deployment Node",
               "technology" : "postgres 17 operator 500Mi"
             }, {
               "containerInstances" : [ {
-                "containerId" : "83",
+                "containerId" : "88",
                 "deploymentGroups" : [ "Default" ],
                 "environment" : "Production",
-                "id" : "154",
+                "id" : "168",
                 "instanceId" : 1,
                 "properties" : {
-                  "structurizr.dsl.identifier" : "e7555f6f-162c-406e-9148-d030feff3842"
+                  "structurizr.dsl.identifier" : "7a1ae4e8-4636-4261-a842-c3e8224499c9"
                 },
                 "tags" : "Container Instance"
               }, {
-                "containerId" : "84",
+                "containerId" : "89",
                 "deploymentGroups" : [ "Default" ],
                 "environment" : "Production",
-                "id" : "155",
+                "id" : "169",
                 "instanceId" : 1,
                 "properties" : {
-                  "structurizr.dsl.identifier" : "6c5394c2-d23c-4992-a95f-8954122b840c"
+                  "structurizr.dsl.identifier" : "2844ad7e-e561-41a7-a639-83a4c0191a9d"
                 },
                 "tags" : "Container Instance"
               }, {
-                "containerId" : "85",
+                "containerId" : "90",
                 "deploymentGroups" : [ "Default" ],
                 "environment" : "Production",
-                "id" : "156",
+                "id" : "170",
                 "instanceId" : 1,
                 "properties" : {
-                  "structurizr.dsl.identifier" : "164cb230-080c-49b2-bbcc-1896ad0a5a7a"
+                  "structurizr.dsl.identifier" : "bcd326d5-a138-427c-a5fa-cc213775a15e"
                 },
                 "tags" : "Container Instance"
               }, {
-                "containerId" : "86",
+                "containerId" : "91",
                 "deploymentGroups" : [ "Default" ],
                 "environment" : "Production",
-                "id" : "157",
+                "id" : "171",
                 "instanceId" : 1,
                 "properties" : {
-                  "structurizr.dsl.identifier" : "47a1c660-5fb4-4851-8bde-1bb6d7577eee"
+                  "structurizr.dsl.identifier" : "8e55a73f-212a-4698-914f-c7fadeccc02f"
+                },
+                "tags" : "Container Instance"
+              }, {
+                "containerId" : "92",
+                "deploymentGroups" : [ "Default" ],
+                "environment" : "Production",
+                "id" : "172",
+                "instanceId" : 1,
+                "properties" : {
+                  "structurizr.dsl.identifier" : "730f913d-e423-4f63-b274-d96919b09a69"
                 },
                 "tags" : "Container Instance"
               } ],
               "description" : "3х. UI https://kafka-ui.infrastructure.kalk.pro.",
               "environment" : "Production",
-              "id" : "74",
+              "id" : "79",
               "instances" : "1",
               "name" : "kafka",
               "properties" : {
-                "structurizr.dsl.identifier" : "4116cd00-0546-4222-885a-e52902f93cee.7f10e495-d95a-4c6c-8671-d65726e039ab.34e2e86d-7ae0-417a-9cb4-25bbb55f3289.95384d11-c945-4660-a38f-ff3fdb6bbf00.f4bc0ffc-7cc5-4ecf-a629-af09b95ef142.1d556bb8-7bbf-45bf-affb-c17b480099f0"
+                "structurizr.dsl.identifier" : "ea43b652-2b8c-4f39-ab32-9469664e1ebd.2b951b7d-e89e-4bfb-a701-c8a8dc8df24e.778b6e2a-68b3-4791-b3b0-f27a7ab5465a.c56d7588-e7e6-413a-8abe-0f43e90f21c3.156f1f31-b4ea-475d-84da-e1abab6e7963.b0c1d866-8a8a-468a-bfc6-fd6666b7ff1f"
               },
               "tags" : "Element,Deployment Node",
               "technology" : "Apache Kafka multi-tenant cluster"
             } ],
             "environment" : "Production",
-            "id" : "70",
+            "id" : "75",
             "infrastructureNodes" : [ {
               "description" : "Получение и обновление сертификатов",
               "environment" : "Production",
-              "id" : "71",
+              "id" : "76",
               "name" : "Cert-Manager",
               "properties" : {
-                "structurizr.dsl.identifier" : "4116cd00-0546-4222-885a-e52902f93cee.7f10e495-d95a-4c6c-8671-d65726e039ab.34e2e86d-7ae0-417a-9cb4-25bbb55f3289.95384d11-c945-4660-a38f-ff3fdb6bbf00.f4bc0ffc-7cc5-4ecf-a629-af09b95ef142.b1ac976e-b7e9-48fe-821f-7ef0a5bd2297"
+                "structurizr.dsl.identifier" : "ea43b652-2b8c-4f39-ab32-9469664e1ebd.2b951b7d-e89e-4bfb-a701-c8a8dc8df24e.778b6e2a-68b3-4791-b3b0-f27a7ab5465a.c56d7588-e7e6-413a-8abe-0f43e90f21c3.156f1f31-b4ea-475d-84da-e1abab6e7963.5c9c49e6-c2fd-4df4-890a-4da334a3206e"
               },
               "tags" : "Element,Infrastructure Node,tagDeploymentInfrastructure,l1",
               "technology" : "Cert manager"
@@ -974,210 +1015,217 @@
             "instances" : "1",
             "name" : "infrastructure",
             "properties" : {
-              "structurizr.dsl.identifier" : "4116cd00-0546-4222-885a-e52902f93cee.7f10e495-d95a-4c6c-8671-d65726e039ab.34e2e86d-7ae0-417a-9cb4-25bbb55f3289.95384d11-c945-4660-a38f-ff3fdb6bbf00.f4bc0ffc-7cc5-4ecf-a629-af09b95ef142"
+              "structurizr.dsl.identifier" : "ea43b652-2b8c-4f39-ab32-9469664e1ebd.2b951b7d-e89e-4bfb-a701-c8a8dc8df24e.778b6e2a-68b3-4791-b3b0-f27a7ab5465a.c56d7588-e7e6-413a-8abe-0f43e90f21c3.156f1f31-b4ea-475d-84da-e1abab6e7963"
             },
             "tags" : "Element,Deployment Node",
             "technology" : "k8s namespace"
           }, {
             "containerInstances" : [ {
-              "containerId" : "88",
-              "deploymentGroups" : [ "Default" ],
-              "description" : "replicas: X2",
-              "environment" : "Production",
-              "id" : "158",
-              "instanceId" : 1,
-              "properties" : {
-                "structurizr.dsl.identifier" : "2a37ec5d-8df2-4964-9366-4b8ce599441f",
-                "replicas" : "2"
-              },
-              "relationships" : [ {
-                "description" : "W: Размещение запроса на расчёт Г-образной лестницы",
-                "destinationId" : "155",
-                "id" : "159",
-                "linkedRelationshipId" : "91",
-                "sourceId" : "158",
-                "technology" : "Kafka"
-              }, {
-                "description" : "W: Размещение запроса на расчёт Прямой лестницы",
-                "destinationId" : "154",
-                "id" : "160",
-                "linkedRelationshipId" : "90",
-                "sourceId" : "158",
-                "technology" : "Kafka"
-              }, {
-                "description" : "R: Получение результатов расчёта",
-                "destinationId" : "157",
-                "id" : "161",
-                "linkedRelationshipId" : "93",
-                "sourceId" : "158",
-                "technology" : "Kafka"
-              }, {
-                "description" : "Создание запросов на расчет. Получение статуса запроса. Запись и чтение результатов расчета.",
-                "destinationId" : "153",
-                "id" : "162",
-                "linkedRelationshipId" : "89",
-                "sourceId" : "158",
-                "technology" : "pgsql"
-              }, {
-                "description" : "W: Размещение запроса на расчёт П-образной лестницы",
-                "destinationId" : "156",
-                "id" : "163",
-                "linkedRelationshipId" : "92",
-                "sourceId" : "158",
-                "technology" : "Kafka"
-              }, {
-                "description" : "Запросить выполнить расчет Прямой лестницы. POST: /straight-stair/calculation",
-                "destinationId" : "169",
-                "id" : "173",
-                "linkedRelationshipId" : "114",
-                "sourceId" : "158",
-                "technology" : "REST API"
-              }, {
-                "description" : "Запросить выполнить расчет Г-образной лестницы. POST: /l-shape-stair/calculation",
-                "destinationId" : "175",
-                "id" : "179",
-                "linkedRelationshipId" : "115",
-                "sourceId" : "158",
-                "technology" : "REST API"
-              }, {
-                "description" : "Запросить выполнить расчет П-образной лестницы. POST: /u-shape-stair/calculation",
-                "destinationId" : "181",
-                "id" : "184",
-                "linkedRelationshipId" : "116",
-                "sourceId" : "158",
-                "technology" : "REST API"
-              } ],
-              "tags" : "Container Instance"
-            }, {
               "containerId" : "94",
               "deploymentGroups" : [ "Default" ],
               "description" : "replicas: X2",
               "environment" : "Production",
-              "id" : "169",
+              "id" : "173",
               "instanceId" : 1,
               "properties" : {
-                "structurizr.dsl.identifier" : "37d62dd9-7b78-480e-ad87-9fc9b7a9d504",
+                "structurizr.dsl.identifier" : "1d60ce20-9159-4a48-836c-e415331c01b3",
                 "replicas" : "2"
               },
               "relationships" : [ {
-                "description" : "R: Получение запроса на расчёт Прямой лестницы",
-                "destinationId" : "154",
-                "id" : "170",
-                "linkedRelationshipId" : "97",
-                "sourceId" : "169",
-                "technology" : "Kafka"
-              }, {
-                "description" : "Передать результат расчёта. POST: /result",
-                "destinationId" : "158",
-                "id" : "171",
-                "linkedRelationshipId" : "95",
-                "sourceId" : "169",
-                "technology" : "REST API"
-              }, {
-                "description" : "Уведомить о прогрессе расчета. POST: /progress",
-                "destinationId" : "158",
-                "id" : "172",
-                "linkedRelationshipId" : "96",
-                "sourceId" : "169",
-                "technology" : "REST API"
-              }, {
-                "description" : "W: Размещение результата расчёта",
-                "destinationId" : "157",
-                "id" : "174",
-                "linkedRelationshipId" : "98",
-                "sourceId" : "169",
-                "technology" : "Kafka"
-              } ],
-              "tags" : "Container Instance"
-            }, {
-              "containerId" : "99",
-              "deploymentGroups" : [ "Default" ],
-              "description" : "replicas: X2",
-              "environment" : "Production",
-              "id" : "175",
-              "instanceId" : 1,
-              "properties" : {
-                "structurizr.dsl.identifier" : "bebe7d74-8358-4441-b2a4-a4dc78ef6f5d",
-                "replicas" : "2"
-              },
-              "relationships" : [ {
-                "description" : "R: Получение запроса на расчёт Г-образной лестницы",
-                "destinationId" : "155",
-                "id" : "176",
-                "linkedRelationshipId" : "102",
-                "sourceId" : "175",
-                "technology" : "Kafka"
-              }, {
-                "description" : "Передать результат расчёта. POST: /result",
-                "destinationId" : "158",
-                "id" : "177",
-                "linkedRelationshipId" : "100",
-                "sourceId" : "175",
-                "technology" : "REST API"
-              }, {
-                "description" : "Уведомить о прогрессе расчета. POST: /progress",
-                "destinationId" : "158",
-                "id" : "178",
-                "linkedRelationshipId" : "101",
-                "sourceId" : "175",
-                "technology" : "REST API"
-              }, {
-                "description" : "W: Размещение результата расчёта",
-                "destinationId" : "157",
+                "description" : "R: Получение результатов расчёта",
+                "destinationId" : "172",
                 "id" : "180",
-                "linkedRelationshipId" : "103",
-                "sourceId" : "175",
+                "linkedRelationshipId" : "100",
+                "sourceId" : "173",
+                "technology" : "Kafka"
+              }, {
+                "description" : "Создание запросов на расчет. Получение статуса запроса. Запись и чтение результатов расчета.",
+                "destinationId" : "167",
+                "id" : "181",
+                "linkedRelationshipId" : "95",
+                "sourceId" : "173",
+                "technology" : "pgsql"
+              }, {
+                "description" : "W: Размещение запроса на расчёт П-образной лестницы",
+                "destinationId" : "170",
+                "id" : "182",
+                "linkedRelationshipId" : "98",
+                "sourceId" : "173",
+                "technology" : "Kafka"
+              }, {
+                "description" : "W: Размещение запроса на расчёт Г-образной лестницы",
+                "destinationId" : "169",
+                "id" : "183",
+                "linkedRelationshipId" : "97",
+                "sourceId" : "173",
+                "technology" : "Kafka"
+              }, {
+                "description" : "R: Получение прогресса расчёта",
+                "destinationId" : "171",
+                "id" : "184",
+                "linkedRelationshipId" : "99",
+                "sourceId" : "173",
+                "technology" : "Kafka"
+              }, {
+                "description" : "W: Размещение запроса на расчёт Прямой лестницы",
+                "destinationId" : "168",
+                "id" : "185",
+                "linkedRelationshipId" : "96",
+                "sourceId" : "173",
                 "technology" : "Kafka"
               } ],
               "tags" : "Container Instance"
             }, {
-              "containerId" : "104",
+              "containerId" : "101",
               "deploymentGroups" : [ "Default" ],
               "description" : "replicas: X2",
               "environment" : "Production",
-              "id" : "181",
+              "id" : "186",
               "instanceId" : 1,
               "properties" : {
-                "structurizr.dsl.identifier" : "59fe126e-430f-40f9-b0d7-6dfd35549e5b",
+                "structurizr.dsl.identifier" : "88a556d0-3f98-430c-97b8-0324082e47e7",
                 "replicas" : "2"
               },
               "relationships" : [ {
-                "description" : "Передать результат расчёта. POST: /result",
-                "destinationId" : "158",
-                "id" : "182",
-                "linkedRelationshipId" : "105",
-                "sourceId" : "181",
-                "technology" : "REST API"
-              }, {
-                "description" : "Уведомить о прогрессе расчета. POST: /progress",
-                "destinationId" : "158",
-                "id" : "183",
-                "linkedRelationshipId" : "106",
-                "sourceId" : "181",
-                "technology" : "REST API"
-              }, {
                 "description" : "W: Размещение результата расчёта",
-                "destinationId" : "157",
-                "id" : "185",
+                "destinationId" : "172",
+                "id" : "187",
+                "linkedRelationshipId" : "106",
+                "sourceId" : "186",
+                "technology" : "Kafka"
+              }, {
+                "description" : "Получить список запросов на расчёт при первичной инициализации сервиса. GET: /straight-stair/actual-requests",
+                "destinationId" : "173",
+                "id" : "188",
+                "linkedRelationshipId" : "102",
+                "sourceId" : "186",
+                "technology" : "REST API"
+              }, {
+                "description" : "Уведомить о прогрессе расчета и статусе. PATCH: /request-status",
+                "destinationId" : "173",
+                "id" : "189",
+                "linkedRelationshipId" : "103",
+                "sourceId" : "186",
+                "technology" : "REST API"
+              }, {
+                "description" : "Передать результат расчёта. POST: /save-result",
+                "destinationId" : "173",
+                "id" : "190",
+                "linkedRelationshipId" : "104",
+                "sourceId" : "186",
+                "technology" : "REST API"
+              }, {
+                "description" : "R: Получение запроса на расчёт Прямой лестницы",
+                "destinationId" : "168",
+                "id" : "191",
+                "linkedRelationshipId" : "105",
+                "sourceId" : "186",
+                "technology" : "Kafka"
+              } ],
+              "tags" : "Container Instance"
+            }, {
+              "containerId" : "107",
+              "deploymentGroups" : [ "Default" ],
+              "description" : "replicas: X2",
+              "environment" : "Production",
+              "id" : "192",
+              "instanceId" : 1,
+              "properties" : {
+                "structurizr.dsl.identifier" : "610df129-24c5-4973-bcba-a868952ce9b7",
+                "replicas" : "2"
+              },
+              "relationships" : [ {
+                "description" : "W: Размещение результата расчёта",
+                "destinationId" : "172",
+                "id" : "193",
+                "linkedRelationshipId" : "112",
+                "sourceId" : "192",
+                "technology" : "Kafka"
+              }, {
+                "description" : "R: Получение запроса на расчёт Г-образной лестницы",
+                "destinationId" : "169",
+                "id" : "194",
+                "linkedRelationshipId" : "111",
+                "sourceId" : "192",
+                "technology" : "Kafka"
+              }, {
+                "description" : "Получить список запросов на расчёт при первичной инициализации сервиса. GET: /l-shape-stair/actual-requests",
+                "destinationId" : "173",
+                "id" : "195",
                 "linkedRelationshipId" : "108",
-                "sourceId" : "181",
+                "sourceId" : "192",
+                "technology" : "REST API"
+              }, {
+                "description" : "Уведомить о прогрессе расчета и статусе. PATCH: /request-status",
+                "destinationId" : "173",
+                "id" : "196",
+                "linkedRelationshipId" : "109",
+                "sourceId" : "192",
+                "technology" : "REST API"
+              }, {
+                "description" : "Передать результат расчёта. POST: /save-result",
+                "destinationId" : "173",
+                "id" : "197",
+                "linkedRelationshipId" : "110",
+                "sourceId" : "192",
+                "technology" : "REST API"
+              } ],
+              "tags" : "Container Instance"
+            }, {
+              "containerId" : "113",
+              "deploymentGroups" : [ "Default" ],
+              "description" : "replicas: X2",
+              "environment" : "Production",
+              "id" : "198",
+              "instanceId" : 1,
+              "properties" : {
+                "structurizr.dsl.identifier" : "077a7164-2784-4150-a57b-53f002ddb5a8",
+                "replicas" : "2"
+              },
+              "relationships" : [ {
+                "description" : "W: Размещение результата расчёта",
+                "destinationId" : "172",
+                "id" : "199",
+                "linkedRelationshipId" : "118",
+                "sourceId" : "198",
                 "technology" : "Kafka"
               }, {
                 "description" : "R: Получение запроса на расчёт П-образной лестницы",
-                "destinationId" : "156",
-                "id" : "186",
-                "linkedRelationshipId" : "107",
-                "sourceId" : "181",
+                "destinationId" : "170",
+                "id" : "200",
+                "linkedRelationshipId" : "117",
+                "sourceId" : "198",
                 "technology" : "Kafka"
+              }, {
+                "description" : "Получить список запросов на расчёт при первичной инициализации сервиса. GET: /u-shape-stair/actual-requests",
+                "destinationId" : "173",
+                "id" : "201",
+                "linkedRelationshipId" : "114",
+                "sourceId" : "198",
+                "technology" : "REST API"
+              }, {
+                "description" : "Уведомить о прогрессе расчета и статусе. PATCH: /request-status",
+                "destinationId" : "173",
+                "id" : "202",
+                "linkedRelationshipId" : "115",
+                "sourceId" : "198",
+                "technology" : "REST API"
+              }, {
+                "description" : "Передать результат расчёта. POST: /save-result",
+                "destinationId" : "173",
+                "id" : "203",
+                "linkedRelationshipId" : "116",
+                "sourceId" : "198",
+                "technology" : "REST API"
               } ],
               "tags" : "Container Instance"
             } ],
             "environment" : "Production",
-            "id" : "75",
+            "id" : "80",
             "instances" : "1",
             "name" : "optistair-calc",
             "properties" : {
-              "structurizr.dsl.identifier" : "4116cd00-0546-4222-885a-e52902f93cee.7f10e495-d95a-4c6c-8671-d65726e039ab.34e2e86d-7ae0-417a-9cb4-25bbb55f3289.95384d11-c945-4660-a38f-ff3fdb6bbf00.a1e742e7-126b-4b2d-9adb-ba0107c6425d"
+              "structurizr.dsl.identifier" : "ea43b652-2b8c-4f39-ab32-9469664e1ebd.2b951b7d-e89e-4bfb-a701-c8a8dc8df24e.778b6e2a-68b3-4791-b3b0-f27a7ab5465a.c56d7588-e7e6-413a-8abe-0f43e90f21c3.d1c52ea7-1ade-4738-9d9f-5ab17b979acf"
             },
             "tags" : "Element,Deployment Node",
             "technology" : "k8s namespace"
@@ -1185,55 +1233,55 @@
             "children" : [ {
               "description" : "Получение и обновление сертификатов",
               "environment" : "Production",
-              "id" : "78",
+              "id" : "83",
               "instances" : "1",
               "name" : "balancer",
               "properties" : {
-                "structurizr.dsl.identifier" : "4116cd00-0546-4222-885a-e52902f93cee.7f10e495-d95a-4c6c-8671-d65726e039ab.34e2e86d-7ae0-417a-9cb4-25bbb55f3289.95384d11-c945-4660-a38f-ff3fdb6bbf00.817c12c0-6fb8-4473-8d0a-434216912ce2.99c660b1-4496-4ec7-83c7-fc99c1f866de"
+                "structurizr.dsl.identifier" : "ea43b652-2b8c-4f39-ab32-9469664e1ebd.2b951b7d-e89e-4bfb-a701-c8a8dc8df24e.778b6e2a-68b3-4791-b3b0-f27a7ab5465a.c56d7588-e7e6-413a-8abe-0f43e90f21c3.a9c2d9d2-f5f4-4d93-8fd7-1f5935404354.c212bda2-af72-478d-9663-cf131eda5cb7"
               },
               "tags" : "Element,Deployment Node,tagDeploymentInfrastructure,l1",
               "technology" : "Ingregress Nginx"
             }, {
               "environment" : "Production",
-              "id" : "79",
+              "id" : "84",
               "instances" : "1",
               "name" : "pgsql",
               "properties" : {
-                "structurizr.dsl.identifier" : "4116cd00-0546-4222-885a-e52902f93cee.7f10e495-d95a-4c6c-8671-d65726e039ab.34e2e86d-7ae0-417a-9cb4-25bbb55f3289.95384d11-c945-4660-a38f-ff3fdb6bbf00.817c12c0-6fb8-4473-8d0a-434216912ce2.3fbb538b-96c4-4724-9346-b8e8c26a91c7"
+                "structurizr.dsl.identifier" : "ea43b652-2b8c-4f39-ab32-9469664e1ebd.2b951b7d-e89e-4bfb-a701-c8a8dc8df24e.778b6e2a-68b3-4791-b3b0-f27a7ab5465a.c56d7588-e7e6-413a-8abe-0f43e90f21c3.a9c2d9d2-f5f4-4d93-8fd7-1f5935404354.3314e500-58a7-473b-a41c-bde86587a2b3"
               },
               "tags" : "Element,Deployment Node",
               "technology" : "PostgreSQL operator"
             }, {
               "description" : "3х. UI https://kafka-ui.infrastructure-dev.kalk.pro.",
               "environment" : "Production",
-              "id" : "80",
+              "id" : "85",
               "instances" : "1",
               "name" : "kafka",
               "properties" : {
-                "structurizr.dsl.identifier" : "4116cd00-0546-4222-885a-e52902f93cee.7f10e495-d95a-4c6c-8671-d65726e039ab.34e2e86d-7ae0-417a-9cb4-25bbb55f3289.95384d11-c945-4660-a38f-ff3fdb6bbf00.817c12c0-6fb8-4473-8d0a-434216912ce2.6972235d-6f84-4ea2-bb92-a8d53f73d694"
+                "structurizr.dsl.identifier" : "ea43b652-2b8c-4f39-ab32-9469664e1ebd.2b951b7d-e89e-4bfb-a701-c8a8dc8df24e.778b6e2a-68b3-4791-b3b0-f27a7ab5465a.c56d7588-e7e6-413a-8abe-0f43e90f21c3.a9c2d9d2-f5f4-4d93-8fd7-1f5935404354.3aa77513-5a9c-48d5-a05c-b137d14f1582"
               },
               "tags" : "Element,Deployment Node",
               "technology" : "Apache Kafka multi-tenant cluster"
             }, {
               "environment" : "Production",
-              "id" : "81",
+              "id" : "86",
               "instances" : "1",
               "name" : "optistair-calc",
               "properties" : {
-                "structurizr.dsl.identifier" : "4116cd00-0546-4222-885a-e52902f93cee.7f10e495-d95a-4c6c-8671-d65726e039ab.34e2e86d-7ae0-417a-9cb4-25bbb55f3289.95384d11-c945-4660-a38f-ff3fdb6bbf00.817c12c0-6fb8-4473-8d0a-434216912ce2.bb9bce77-bfd2-4cd5-a460-fa377176f1e6"
+                "structurizr.dsl.identifier" : "ea43b652-2b8c-4f39-ab32-9469664e1ebd.2b951b7d-e89e-4bfb-a701-c8a8dc8df24e.778b6e2a-68b3-4791-b3b0-f27a7ab5465a.c56d7588-e7e6-413a-8abe-0f43e90f21c3.a9c2d9d2-f5f4-4d93-8fd7-1f5935404354.a27f75f0-a859-43ba-b12b-37c9d8fc06b4"
               },
               "tags" : "Element,Deployment Node",
               "technology" : "k8s namespace"
             } ],
             "environment" : "Production",
-            "id" : "76",
+            "id" : "81",
             "infrastructureNodes" : [ {
               "description" : "Получение и обновление сертификатов",
               "environment" : "Production",
-              "id" : "77",
+              "id" : "82",
               "name" : "Cert-Manager",
               "properties" : {
-                "structurizr.dsl.identifier" : "4116cd00-0546-4222-885a-e52902f93cee.7f10e495-d95a-4c6c-8671-d65726e039ab.34e2e86d-7ae0-417a-9cb4-25bbb55f3289.95384d11-c945-4660-a38f-ff3fdb6bbf00.817c12c0-6fb8-4473-8d0a-434216912ce2.840619bf-0905-4f3b-bf66-24c5a2e571d0"
+                "structurizr.dsl.identifier" : "ea43b652-2b8c-4f39-ab32-9469664e1ebd.2b951b7d-e89e-4bfb-a701-c8a8dc8df24e.778b6e2a-68b3-4791-b3b0-f27a7ab5465a.c56d7588-e7e6-413a-8abe-0f43e90f21c3.a9c2d9d2-f5f4-4d93-8fd7-1f5935404354.09844e6c-97eb-462d-971a-b99604a5ddd8"
               },
               "tags" : "Element,Infrastructure Node,tagDeploymentInfrastructure,l1",
               "technology" : "Cert manager"
@@ -1241,38 +1289,38 @@
             "instances" : "1",
             "name" : "dev",
             "properties" : {
-              "structurizr.dsl.identifier" : "4116cd00-0546-4222-885a-e52902f93cee.7f10e495-d95a-4c6c-8671-d65726e039ab.34e2e86d-7ae0-417a-9cb4-25bbb55f3289.95384d11-c945-4660-a38f-ff3fdb6bbf00.817c12c0-6fb8-4473-8d0a-434216912ce2"
+              "structurizr.dsl.identifier" : "ea43b652-2b8c-4f39-ab32-9469664e1ebd.2b951b7d-e89e-4bfb-a701-c8a8dc8df24e.778b6e2a-68b3-4791-b3b0-f27a7ab5465a.c56d7588-e7e6-413a-8abe-0f43e90f21c3.a9c2d9d2-f5f4-4d93-8fd7-1f5935404354"
             },
             "tags" : "Element,Deployment Node",
             "technology" : "k8s namespace"
           } ],
           "environment" : "Production",
-          "id" : "69",
+          "id" : "74",
           "instances" : "1",
           "name" : "Кластер kalkpro-k8s",
           "properties" : {
-            "structurizr.dsl.identifier" : "4116cd00-0546-4222-885a-e52902f93cee.7f10e495-d95a-4c6c-8671-d65726e039ab.34e2e86d-7ae0-417a-9cb4-25bbb55f3289.95384d11-c945-4660-a38f-ff3fdb6bbf00"
+            "structurizr.dsl.identifier" : "ea43b652-2b8c-4f39-ab32-9469664e1ebd.2b951b7d-e89e-4bfb-a701-c8a8dc8df24e.778b6e2a-68b3-4791-b3b0-f27a7ab5465a.c56d7588-e7e6-413a-8abe-0f43e90f21c3"
           },
           "tags" : "Element,Deployment Node",
           "technology" : "kubernetes"
         } ],
         "description" : "Кластер для расчета оптимальных конфигураций лестниц. URL https://optistair(-dev).kalk.rpo",
         "environment" : "Production",
-        "id" : "68",
+        "id" : "73",
         "instances" : "1",
         "name" : "kalkpro_project",
         "properties" : {
-          "structurizr.dsl.identifier" : "4116cd00-0546-4222-885a-e52902f93cee.7f10e495-d95a-4c6c-8671-d65726e039ab.34e2e86d-7ae0-417a-9cb4-25bbb55f3289"
+          "structurizr.dsl.identifier" : "ea43b652-2b8c-4f39-ab32-9469664e1ebd.2b951b7d-e89e-4bfb-a701-c8a8dc8df24e.778b6e2a-68b3-4791-b3b0-f27a7ab5465a"
         },
         "tags" : "Element,Deployment Node",
         "technology" : "VPC"
       } ],
       "environment" : "Production",
-      "id" : "67",
+      "id" : "72",
       "instances" : "1",
       "name" : "CloRu",
       "properties" : {
-        "structurizr.dsl.identifier" : "4116cd00-0546-4222-885a-e52902f93cee.7f10e495-d95a-4c6c-8671-d65726e039ab"
+        "structurizr.dsl.identifier" : "ea43b652-2b8c-4f39-ab32-9469664e1ebd.2b951b7d-e89e-4bfb-a701-c8a8dc8df24e"
       },
       "tags" : "Element,Deployment Node"
     } ],
@@ -1285,8 +1333,8 @@
       },
       "relationships" : [ {
         "description" : "Работа с веб-интерфейсом (расчеты, проекты)",
-        "destinationId" : "4",
-        "id" : "10",
+        "destinationId" : "5",
+        "id" : "11",
         "sourceId" : "1",
         "tags" : "Relationship",
         "technology" : "HTTPS"
@@ -1301,8 +1349,8 @@
       },
       "relationships" : [ {
         "description" : "Управление структруой и данными на сайте",
-        "destinationId" : "4",
-        "id" : "11",
+        "destinationId" : "5",
+        "id" : "12",
         "sourceId" : "2",
         "tags" : "Relationship",
         "technology" : "HTTPS"
@@ -1319,9 +1367,62 @@
       },
       "tags" : "Element,Software System,external"
     }, {
-      "description" : "KALK.PRO",
+      "description" : "API Gateway",
       "documentation" : { },
       "id" : "4",
+      "location" : "Unspecified",
+      "name" : "API Gateway",
+      "properties" : {
+        "structurizr.dsl.identifier" : "system_api_gatewai"
+      },
+      "relationships" : [ {
+        "description" : "Размещение запроса на расчёт. POST: /api/{stair-type}/request",
+        "destinationId" : "9",
+        "id" : "20",
+        "sourceId" : "4",
+        "tags" : "Relationship,L1,tagFrontReq",
+        "technology" : "REST API"
+      }, {
+        "description" : "Получение статуса и результата расчёта. GET: /api/requests-statuses",
+        "destinationId" : "9",
+        "id" : "21",
+        "sourceId" : "4",
+        "tags" : "Relationship,L1,tagBackReq",
+        "technology" : "REST API"
+      }, {
+        "description" : "Установить параметры доступа пользователя к расчётам. POST: /api/user-acl",
+        "destinationId" : "9",
+        "id" : "22",
+        "sourceId" : "4",
+        "tags" : "Relationship,L1,tagBackReq",
+        "technology" : "REST API"
+      }, {
+        "description" : "Размещение запроса на расчёт. POST: /optis-stairs/api/{stair-type}/request",
+        "destinationId" : "93",
+        "id" : "125",
+        "sourceId" : "4",
+        "tags" : "Relationship",
+        "technology" : "REST API"
+      }, {
+        "description" : "Получение статуса и результата расчёта. GET: /optis-stairs/api/requests-statuses",
+        "destinationId" : "93",
+        "id" : "126",
+        "sourceId" : "4",
+        "tags" : "Relationship",
+        "technology" : "REST API"
+      }, {
+        "description" : "Установить параметры доступа пользователя к расчётам. POST: /optis-stairs/api/user-acl",
+        "destinationId" : "93",
+        "id" : "127",
+        "sourceId" : "4",
+        "tags" : "Relationship",
+        "technology" : "REST API"
+      } ],
+      "tags" : "Element,Software System"
+    }, {
+      "description" : "KALK.PRO",
+      "documentation" : { },
+      "id" : "5",
       "location" : "Unspecified",
       "name" : "Онлайн-сервис автоматизации строительных расчетов",
       "properties" : {
@@ -1329,51 +1430,58 @@
       },
       "relationships" : [ {
         "description" : "Получение проекта с чертежами и 3D",
-        "destinationId" : "5",
-        "id" : "12",
-        "sourceId" : "4",
+        "destinationId" : "6",
+        "id" : "13",
+        "sourceId" : "5",
         "tags" : "Relationship,L1",
         "technology" : "WEB-SOCKETS"
       }, {
         "description" : "Расчет типовых строительных расчетов",
-        "destinationId" : "6",
-        "id" : "13",
-        "sourceId" : "4",
+        "destinationId" : "7",
+        "id" : "14",
+        "sourceId" : "5",
         "tags" : "Relationship,L1",
         "technology" : "WEB-SOCKETS"
       }, {
         "description" : "Расчет металлопроката",
-        "destinationId" : "7",
-        "id" : "14",
-        "sourceId" : "4",
+        "destinationId" : "8",
+        "id" : "15",
+        "sourceId" : "5",
         "tags" : "Relationship,L1",
         "technology" : "iFrame"
       }, {
         "description" : "Размещение файлов статики",
-        "destinationId" : "9",
-        "id" : "15",
-        "sourceId" : "4",
+        "destinationId" : "10",
+        "id" : "16",
+        "sourceId" : "5",
         "tags" : "Relationship,L1",
         "technology" : "HTTP"
       }, {
-        "description" : "Размещение запроса на расчёт. Получение расчёта.",
-        "destinationId" : "8",
-        "id" : "16",
-        "sourceId" : "4",
+        "description" : "Размещение запроса на расчёт. POST: /optis-stairs/api/{stair-type}/request",
+        "destinationId" : "4",
+        "id" : "17",
+        "sourceId" : "5",
         "tags" : "Relationship,L1,tagFrontReq",
         "technology" : "REST API"
       }, {
-        "description" : "Установить параметры доступа пользователя к расчётам.",
-        "destinationId" : "8",
-        "id" : "17",
-        "sourceId" : "4",
+        "description" : "Получение статуса и результата расчёта. GET: /optis-stairs/api/requests-statuses",
+        "destinationId" : "4",
+        "id" : "18",
+        "sourceId" : "5",
+        "tags" : "Relationship,L1,tagBackReq",
+        "technology" : "REST API"
+      }, {
+        "description" : "Установить параметры доступа пользователя к расчётам. POST: /optis-stairs/api/user-acl",
+        "destinationId" : "4",
+        "id" : "19",
+        "sourceId" : "5",
         "tags" : "Relationship,L1,tagBackReq",
         "technology" : "REST API"
       }, {
         "description" : "Отправка e-mail уведомлений через внешний шлюз",
         "destinationId" : "3",
-        "id" : "18",
-        "sourceId" : "4",
+        "id" : "23",
+        "sourceId" : "5",
         "tags" : "Relationship",
         "technology" : "SMTP"
       } ],
@@ -1381,7 +1489,7 @@
     }, {
       "description" : "Расчет проектов (чертежи, 3D модель, характеристики конструкций)",
       "documentation" : { },
-      "id" : "5",
+      "id" : "6",
       "location" : "Unspecified",
       "name" : "Кластер проектных расчетов",
       "properties" : {
@@ -1391,7 +1499,7 @@
     }, {
       "description" : "Расчет типовых строительных конструкций",
       "documentation" : { },
-      "id" : "6",
+      "id" : "7",
       "location" : "Unspecified",
       "name" : "Сервис простых расчетов",
       "properties" : {
@@ -1401,7 +1509,7 @@
     }, {
       "description" : "Расчет изделий из металлопроката. Справочник ГОСТов по металлопрокату.",
       "documentation" : { },
-      "id" : "7",
+      "id" : "8",
       "location" : "Unspecified",
       "name" : "Сервис расчета металлопроката",
       "properties" : {
@@ -1412,7 +1520,7 @@
       "containers" : [ {
         "description" : "База данных с рассчитанными конфигурациями",
         "documentation" : { },
-        "id" : "82",
+        "id" : "87",
         "name" : "postgres-optistairs",
         "properties" : {
           "structurizr.dsl.identifier" : "db_optistairs"
@@ -1422,7 +1530,7 @@
       }, {
         "description" : "Запросы на расчет конфигураций Прямой лестницы",
         "documentation" : { },
-        "id" : "83",
+        "id" : "88",
         "name" : "Топик request.straight_stair",
         "properties" : {
           "structurizr.dsl.identifier" : "topic_request_straight_stair"
@@ -1432,7 +1540,7 @@
       }, {
         "description" : "Запросы на расчет конфигураций Г-образной лестницы",
         "documentation" : { },
-        "id" : "84",
+        "id" : "89",
         "name" : "Топик request.l_shape_stair",
         "properties" : {
           "structurizr.dsl.identifier" : "topic_request_l_shape_stair"
@@ -1442,7 +1550,7 @@
       }, {
         "description" : "Запросы на расчет конфигураций П-образной лестницы",
         "documentation" : { },
-        "id" : "85",
+        "id" : "90",
         "name" : "Топик request.u_shape_stair",
         "properties" : {
           "structurizr.dsl.identifier" : "topic_request_u_shape_stair"
@@ -1450,55 +1558,72 @@
         "tags" : "Element,Container,queue,tagToBe",
         "technology" : "Kafka"
       }, {
+        "description" : "Прогресс калькуляцыы",
+        "documentation" : { },
+        "id" : "91",
+        "name" : "Топик прогресс расчёта",
+        "properties" : {
+          "structurizr.dsl.identifier" : "topic_calculation_progress"
+        },
+        "tags" : "Element,Container,queue,tagToBe",
+        "technology" : "Kafka"
+      }, {
         "description" : "Результаты расчётов оптимальных конфигураций",
         "documentation" : { },
-        "id" : "86",
-        "name" : "Топик response",
+        "id" : "92",
+        "name" : "Топик результат расчёта",
         "properties" : {
-          "structurizr.dsl.identifier" : "topic_response"
+          "structurizr.dsl.identifier" : "topic_calculation_result"
         },
         "tags" : "Element,Container,queue,tagToBe",
         "technology" : "Kafka"
       }, {
         "documentation" : { },
-        "id" : "87",
-        "name" : "Балансировщик",
+        "id" : "93",
+        "name" : "IngressNginx",
         "properties" : {
           "structurizr.dsl.identifier" : "app_balancer"
         },
         "relationships" : [ {
-          "description" : "Получить статус запроса на расчёт. GET (public): /api/request-status",
-          "destinationId" : "88",
-          "id" : "109",
-          "sourceId" : "87",
+          "description" : "Получить статус запроса на расчёт. GET (public): /api/requests-statuses",
+          "destinationId" : "94",
+          "id" : "119",
+          "sourceId" : "93",
           "tags" : "Relationship",
           "technology" : "REST API"
         }, {
-          "description" : "Разместить запрос на расчёт Прямой лестницы. POST (public): /api/straight-stair",
-          "destinationId" : "88",
-          "id" : "110",
-          "sourceId" : "87",
+          "description" : "Подтвердить получение расчёта со стороны frontend. PATCH (public): /api/request-status/send",
+          "destinationId" : "94",
+          "id" : "120",
+          "sourceId" : "93",
           "tags" : "Relationship",
           "technology" : "REST API"
         }, {
-          "description" : "Разместить запрос на расчёт Г-образной лестницы. POST (public): /api/l-shape-stair",
-          "destinationId" : "88",
-          "id" : "111",
-          "sourceId" : "87",
+          "description" : "Разместить запрос на расчёт Прямой лестницы. POST (public): /api/straight-stair/request",
+          "destinationId" : "94",
+          "id" : "121",
+          "sourceId" : "93",
           "tags" : "Relationship",
           "technology" : "REST API"
         }, {
-          "description" : "Разместить запрос на расчёт П-образной лестницы. POST (public): /api/u-shape-stair",
-          "destinationId" : "88",
-          "id" : "112",
-          "sourceId" : "87",
+          "description" : "Разместить запрос на расчёт Г-образной лестницы. POST (public): /api/l-shape-stair/request",
+          "destinationId" : "94",
+          "id" : "122",
+          "sourceId" : "93",
+          "tags" : "Relationship",
+          "technology" : "REST API"
+        }, {
+          "description" : "Разместить запрос на расчёт П-образной лестницы. POST (public): /api/u-shape-stair/request",
+          "destinationId" : "94",
+          "id" : "123",
+          "sourceId" : "93",
           "tags" : "Relationship",
           "technology" : "REST API"
         }, {
           "description" : "Установить ограничения пользователя. POST (public secured): /api/user-acl",
-          "destinationId" : "88",
-          "id" : "113",
-          "sourceId" : "87",
+          "destinationId" : "94",
+          "id" : "124",
+          "sourceId" : "93",
           "tags" : "Relationship",
           "technology" : "REST API"
         } ],
@@ -1507,182 +1632,189 @@
         "url" : "https://optistair.kalk.pro"
       }, {
         "documentation" : { },
-        "id" : "88",
+        "id" : "94",
         "name" : "Менеджер обработки запросов",
         "properties" : {
           "structurizr.dsl.identifier" : "app_request_manager"
         },
         "relationships" : [ {
           "description" : "Создание запросов на расчет. Получение статуса запроса. Запись и чтение результатов расчета.",
-          "destinationId" : "82",
-          "id" : "89",
-          "sourceId" : "88",
+          "destinationId" : "87",
+          "id" : "95",
+          "sourceId" : "94",
           "tags" : "Relationship,tagRead,tagWrite",
           "technology" : "pgsql"
         }, {
           "description" : "W: Размещение запроса на расчёт Прямой лестницы",
-          "destinationId" : "83",
-          "id" : "90",
-          "sourceId" : "88",
+          "destinationId" : "88",
+          "id" : "96",
+          "sourceId" : "94",
           "tags" : "Relationship,queue,tagWrite,tagToBe",
           "technology" : "Kafka"
         }, {
           "description" : "W: Размещение запроса на расчёт Г-образной лестницы",
-          "destinationId" : "84",
-          "id" : "91",
-          "sourceId" : "88",
+          "destinationId" : "89",
+          "id" : "97",
+          "sourceId" : "94",
           "tags" : "Relationship,queue,tagWrite,tagToBe",
           "technology" : "Kafka"
         }, {
           "description" : "W: Размещение запроса на расчёт П-образной лестницы",
-          "destinationId" : "85",
-          "id" : "92",
-          "sourceId" : "88",
+          "destinationId" : "90",
+          "id" : "98",
+          "sourceId" : "94",
           "tags" : "Relationship,queue,tagWrite,tagToBe",
           "technology" : "Kafka"
         }, {
-          "description" : "R: Получение результатов расчёта",
-          "destinationId" : "86",
-          "id" : "93",
-          "sourceId" : "88",
+          "description" : "R: Получение прогресса расчёта",
+          "destinationId" : "91",
+          "id" : "99",
+          "sourceId" : "94",
           "tags" : "Relationship,queue,tagRead,tagToBe",
           "technology" : "Kafka"
         }, {
-          "description" : "Запросить выполнить расчет Прямой лестницы. POST: /straight-stair/calculation",
-          "destinationId" : "94",
-          "id" : "114",
-          "sourceId" : "88",
-          "tags" : "Relationship,tagArchDebt",
-          "technology" : "REST API"
-        }, {
-          "description" : "Запросить выполнить расчет Г-образной лестницы. POST: /l-shape-stair/calculation",
-          "destinationId" : "99",
-          "id" : "115",
-          "sourceId" : "88",
-          "tags" : "Relationship,tagArchDebt",
-          "technology" : "REST API"
-        }, {
-          "description" : "Запросить выполнить расчет П-образной лестницы. POST: /u-shape-stair/calculation",
-          "destinationId" : "104",
-          "id" : "116",
-          "sourceId" : "88",
-          "tags" : "Relationship,tagArchDebt",
-          "technology" : "REST API"
+          "description" : "R: Получение результатов расчёта",
+          "destinationId" : "92",
+          "id" : "100",
+          "sourceId" : "94",
+          "tags" : "Relationship,queue,tagRead,tagToBe",
+          "technology" : "Kafka"
         } ],
         "tags" : "Element,Container",
         "technology" : "Python"
       }, {
-        "description" : "Подбор оптимальной конфигурации лестницы по заданным параметрам проема",
+        "description" : "Подбор оптимальной конфигурации Прямой лестницы по заданным параметрам проема",
         "documentation" : { },
-        "id" : "94",
+        "id" : "101",
         "name" : "Калькулятор: Прямая лестница",
         "properties" : {
           "structurizr.dsl.identifier" : "app_straight_stair_calc"
         },
         "relationships" : [ {
-          "description" : "Передать результат расчёта. POST: /result",
-          "destinationId" : "88",
-          "id" : "95",
-          "sourceId" : "94",
+          "description" : "Получить список запросов на расчёт при первичной инициализации сервиса. GET: /straight-stair/actual-requests",
+          "destinationId" : "94",
+          "id" : "102",
+          "sourceId" : "101",
           "tags" : "Relationship",
           "technology" : "REST API"
         }, {
-          "description" : "Уведомить о прогрессе расчета. POST: /progress",
-          "destinationId" : "88",
-          "id" : "96",
-          "sourceId" : "94",
+          "description" : "Уведомить о прогрессе расчета и статусе. PATCH: /request-status",
+          "destinationId" : "94",
+          "id" : "103",
+          "sourceId" : "101",
+          "tags" : "Relationship",
+          "technology" : "REST API"
+        }, {
+          "description" : "Передать результат расчёта. POST: /save-result",
+          "destinationId" : "94",
+          "id" : "104",
+          "sourceId" : "101",
           "tags" : "Relationship",
           "technology" : "REST API"
         }, {
           "description" : "R: Получение запроса на расчёт Прямой лестницы",
-          "destinationId" : "83",
-          "id" : "97",
-          "sourceId" : "94",
+          "destinationId" : "88",
+          "id" : "105",
+          "sourceId" : "101",
           "tags" : "Relationship,queue,tagRead,tagToBe",
           "technology" : "Kafka"
         }, {
           "description" : "W: Размещение результата расчёта",
-          "destinationId" : "86",
-          "id" : "98",
-          "sourceId" : "94",
+          "destinationId" : "92",
+          "id" : "106",
+          "sourceId" : "101",
           "tags" : "Relationship,queue,tagWrite,tagToBe",
           "technology" : "Kafka"
         } ],
         "tags" : "Element,Container",
         "technology" : "Python"
       }, {
-        "description" : "Подбор оптимальной конфигурации лестницы по заданным параметрам проема",
+        "description" : "Подбор оптимальной конфигурации Г-образная лестницы по заданным параметрам проема",
         "documentation" : { },
-        "id" : "99",
+        "id" : "107",
         "name" : "Калькулятор: Г-образная лестница",
         "properties" : {
           "structurizr.dsl.identifier" : "app_l_shape_stair_calc"
         },
         "relationships" : [ {
-          "description" : "Передать результат расчёта. POST: /result",
-          "destinationId" : "88",
-          "id" : "100",
-          "sourceId" : "99",
+          "description" : "Получить список запросов на расчёт при первичной инициализации сервиса. GET: /l-shape-stair/actual-requests",
+          "destinationId" : "94",
+          "id" : "108",
+          "sourceId" : "107",
           "tags" : "Relationship",
           "technology" : "REST API"
         }, {
-          "description" : "Уведомить о прогрессе расчета. POST: /progress",
-          "destinationId" : "88",
-          "id" : "101",
-          "sourceId" : "99",
+          "description" : "Уведомить о прогрессе расчета и статусе. PATCH: /request-status",
+          "destinationId" : "94",
+          "id" : "109",
+          "sourceId" : "107",
+          "tags" : "Relationship",
+          "technology" : "REST API"
+        }, {
+          "description" : "Передать результат расчёта. POST: /save-result",
+          "destinationId" : "94",
+          "id" : "110",
+          "sourceId" : "107",
           "tags" : "Relationship",
           "technology" : "REST API"
         }, {
           "description" : "R: Получение запроса на расчёт Г-образной лестницы",
-          "destinationId" : "84",
-          "id" : "102",
-          "sourceId" : "99",
+          "destinationId" : "89",
+          "id" : "111",
+          "sourceId" : "107",
           "tags" : "Relationship,queue,tagRead,tagToBe",
           "technology" : "Kafka"
         }, {
           "description" : "W: Размещение результата расчёта",
-          "destinationId" : "86",
-          "id" : "103",
-          "sourceId" : "99",
+          "destinationId" : "92",
+          "id" : "112",
+          "sourceId" : "107",
           "tags" : "Relationship,queue,tagWrite,tagToBe",
           "technology" : "Kafka"
         } ],
         "tags" : "Element,Container",
         "technology" : "Python"
       }, {
-        "description" : "Подбор оптимальной конфигурации лестницы по заданным параметрам проема",
+        "description" : "Подбор оптимальной конфигурации П-образная лестницы по заданным параметрам проема",
         "documentation" : { },
-        "id" : "104",
+        "id" : "113",
         "name" : "Калькулятор: П-образная лестница",
         "properties" : {
           "structurizr.dsl.identifier" : "app_u_shape_stair_calc"
         },
         "relationships" : [ {
-          "description" : "Передать результат расчёта. POST: /result",
-          "destinationId" : "88",
-          "id" : "105",
-          "sourceId" : "104",
+          "description" : "Получить список запросов на расчёт при первичной инициализации сервиса. GET: /u-shape-stair/actual-requests",
+          "destinationId" : "94",
+          "id" : "114",
+          "sourceId" : "113",
           "tags" : "Relationship",
           "technology" : "REST API"
         }, {
-          "description" : "Уведомить о прогрессе расчета. POST: /progress",
-          "destinationId" : "88",
-          "id" : "106",
-          "sourceId" : "104",
+          "description" : "Уведомить о прогрессе расчета и статусе. PATCH: /request-status",
+          "destinationId" : "94",
+          "id" : "115",
+          "sourceId" : "113",
+          "tags" : "Relationship",
+          "technology" : "REST API"
+        }, {
+          "description" : "Передать результат расчёта. POST: /save-result",
+          "destinationId" : "94",
+          "id" : "116",
+          "sourceId" : "113",
           "tags" : "Relationship",
           "technology" : "REST API"
         }, {
           "description" : "R: Получение запроса на расчёт П-образной лестницы",
-          "destinationId" : "85",
-          "id" : "107",
-          "sourceId" : "104",
+          "destinationId" : "90",
+          "id" : "117",
+          "sourceId" : "113",
           "tags" : "Relationship,queue,tagRead,tagToBe",
           "technology" : "Kafka"
         }, {
           "description" : "W: Размещение результата расчёта",
-          "destinationId" : "86",
-          "id" : "108",
-          "sourceId" : "104",
+          "destinationId" : "92",
+          "id" : "118",
+          "sourceId" : "113",
           "tags" : "Relationship,queue,tagWrite,tagToBe",
           "technology" : "Kafka"
         } ],
@@ -1721,7 +1853,7 @@
           "title" : " ADR-0004 Отмена \"комбинированного\" варианта backend-приложения подбора оптимальных конфигураций лестницы (отмена ADR-003)"
         } ]
       },
-      "id" : "8",
+      "id" : "9",
       "location" : "Unspecified",
       "name" : "Сервис подбора оптимальной конфигурации лестницы",
       "properties" : {
@@ -1731,7 +1863,7 @@
     }, {
       "description" : "Сервис публикации файлов статики на защищенном сервере",
       "documentation" : { },
-      "id" : "9",
+      "id" : "10",
       "location" : "Unspecified",
       "name" : "Сервис публикации файлов статики",
       "properties" : {
@@ -1742,12 +1874,12 @@
   },
   "name" : "system-landscape",
   "properties" : {
-    "structurizr.dsl" : "d29ya3NwYWNlIGV4dGVuZHMgLi4vc3lzdGVtLWxhbmRzY2FwZS5kc2wgewogICAgbW9kZWwgewogICAgICAgICFyZWYgc3lzdGVtX29wdGlzdGFpcl9jYWxjIHsKICAgICAgICAgICAgIWFkcnMgYWRycwoKICAgICAgICAgICAgZGJfb3B0aXN0YWlycyA9IGNvbnRhaW5lciAicG9zdGdyZXMtb3B0aXN0YWlycyIgewogICAgICAgICAgICAgICAgZGVzY3JpcHRpb24gItCR0LDQt9CwINC00LDQvdC90YvRhSDRgSDRgNCw0YHRgdGH0LjRgtCw0L3QvdGL0LzQuCDQutC+0L3RhNC40LPRg9GA0LDRhtC40Y/QvNC4IgogICAgICAgICAgICAgICAgdGVjaG5vbG9neSAiUG9zdGdyZVNRTCIKICAgICAgICAgICAgICAgIHRhZ3Mgc3RvcmFnZQogICAgICAgICAgICB9CgogICAgICAgICAgICB0b3BpY19yZXF1ZXN0X3N0cmFpZ2h0X3N0YWlyID0gY29udGFpbmVyICLQotC+0L/QuNC6IHJlcXVlc3Quc3RyYWlnaHRfc3RhaXIiIHsKICAgICAgICAgICAgICAgIHRlY2hub2xvZ3kgIkthZmthIgogICAgICAgICAgICAgICAgZGVzY3JpcHRpb24gItCX0LDQv9GA0L7RgdGLINC90LAg0YDQsNGB0YfQtdGCINC60L7QvdGE0LjQs9GD0YDQsNGG0LjQuSDQn9GA0Y/QvNC+0Lkg0LvQtdGB0YLQvdC40YbRiyIKICAgICAgICAgICAgICAgIHRhZ3MgcXVldWUsdGFnVG9CZQogICAgICAgICAgICB9CgogICAgICAgICAgICB0b3BpY19yZXF1ZXN0X2xfc2hhcGVfc3RhaXIgPSBjb250YWluZXIgItCi0L7Qv9C40LogcmVxdWVzdC5sX3NoYXBlX3N0YWlyIiB7CiAgICAgICAgICAgICAgICB0ZWNobm9sb2d5ICJLYWZrYSIKICAgICAgICAgICAgICAgIGRlc2NyaXB0aW9uICLQl9Cw0L/RgNC+0YHRiyDQvdCwINGA0LDRgdGH0LXRgiDQutC+0L3RhNC40LPRg9GA0LDRhtC40Lkg0JMt0L7QsdGA0LDQt9C90L7QuSDQu9C10YHRgtC90LjRhtGLIgogICAgICAgICAgICAgICAgdGFncyBxdWV1ZSx0YWdUb0JlCiAgICAgICAgICAgIH0KCiAgICAgICAgICAgIHRvcGljX3JlcXVlc3RfdV9zaGFwZV9zdGFpciA9IGNvbnRhaW5lciAi0KLQvtC/0LjQuiByZXF1ZXN0LnVfc2hhcGVfc3RhaXIiIHsKICAgICAgICAgICAgICAgIHRlY2hub2xvZ3kgIkthZmthIgogICAgICAgICAgICAgICAgZGVzY3JpcHRpb24gItCX0LDQv9GA0L7RgdGLINC90LAg0YDQsNGB0YfQtdGCINC60L7QvdGE0LjQs9GD0YDQsNGG0LjQuSDQny3QvtCx0YDQsNC30L3QvtC5INC70LXRgdGC0L3QuNGG0YsiCiAgICAgICAgICAgICAgICB0YWdzIHF1ZXVlLHRhZ1RvQmUKICAgICAgICAgICAgfQoKICAgICAgICAgICAgdG9waWNfcmVzcG9uc2UgPSBjb250YWluZXIgItCi0L7Qv9C40LogcmVzcG9uc2UiIHsKICAgICAgICAgICAgICAgIHRlY2hub2xvZ3kgIkthZmthIgogICAgICAgICAgICAgICAgZGVzY3JpcHRpb24gItCg0LXQt9GD0LvRjNGC0LDRgtGLINGA0LDRgdGH0ZHRgtC+0LIg0L7Qv9GC0LjQvNCw0LvRjNC90YvRhSDQutC+0L3RhNC40LPRg9GA0LDRhtC40LkiCiAgICAgICAgICAgICAgICB0YWdzIHF1ZXVlLHRhZ1RvQmUKICAgICAgICAgICAgfQoKICAgICAgICAgICAgYXBwX2JhbGFuY2VyID0gY29udGFpbmVyICLQkdCw0LvQsNC90YHQuNGA0L7QstGJ0LjQuiIgewogICAgICAgICAgICAgICAgdXJsICJodHRwczovL29wdGlzdGFpci5rYWxrLnBybyIKICAgICAgICAgICAgICAgIHRlY2hub2xvZ3kgIkluZ3Jlc3MgbmdpbngiCiAgICAgICAgICAgIH0KCiAgICAgICAgICAgIGFwcF9yZXF1ZXN0X21hbmFnZXIgPSBjb250YWluZXIgItCc0LXQvdC10LTQttC10YAg0L7QsdGA0LDQsdC+0YLQutC4INC30LDQv9GA0L7RgdC+0LIiIHsKICAgICAgICAgICAgICAgIHRlY2hub2xvZ3kgIlB5dGhvbiIKICAgICAgICAgICAgICAgIGRlc2NyaXB0aW9uICIiCiAgICAgICAgICAgICAgICAtPiBkYl9vcHRpc3RhaXJzICLQodC+0LfQtNCw0L3QuNC1INC30LDQv9GA0L7RgdC+0LIg0L3QsCDRgNCw0YHRh9C10YIuINCf0L7Qu9GD0YfQtdC90LjQtSDRgdGC0LDRgtGD0YHQsCDQt9Cw0L/RgNC+0YHQsC4g0JfQsNC/0LjRgdGMINC4INGH0YLQtdC90LjQtSDRgNC10LfRg9C70YzRgtCw0YLQvtCyINGA0LDRgdGH0LXRgtCwLiIgInBnc3FsIiAidGFnUmVhZCwgdGFnV3JpdGUiCiAgICAgICAgICAgICAgICAtPiB0b3BpY19yZXF1ZXN0X3N0cmFpZ2h0X3N0YWlyICJXOiDQoNCw0LfQvNC10YnQtdC90LjQtSDQt9Cw0L/RgNC+0YHQsCDQvdCwINGA0LDRgdGH0ZHRgiDQn9GA0Y/QvNC+0Lkg0LvQtdGB0YLQvdC40YbRiyIgIkthZmthIiAicXVldWUsdGFnV3JpdGUsdGFnVG9CZSIKICAgICAgICAgICAgICAgIC0+IHRvcGljX3JlcXVlc3RfbF9zaGFwZV9zdGFpciAiVzog0KDQsNC30LzQtdGJ0LXQvdC40LUg0LfQsNC/0YDQvtGB0LAg0L3QsCDRgNCw0YHRh9GR0YIg0JMt0L7QsdGA0LDQt9C90L7QuSDQu9C10YHRgtC90LjRhtGLIiAiS2Fma2EiICJxdWV1ZSx0YWdXcml0ZSx0YWdUb0JlIgogICAgICAgICAgICAgICAgLT4gdG9waWNfcmVxdWVzdF91X3NoYXBlX3N0YWlyICJXOiDQoNCw0LfQvNC10YnQtdC90LjQtSDQt9Cw0L/RgNC+0YHQsCDQvdCwINGA0LDRgdGH0ZHRgiDQny3QvtCx0YDQsNC30L3QvtC5INC70LXRgdGC0L3QuNGG0YsiICJLYWZrYSIgInF1ZXVlLHRhZ1dyaXRlLHRhZ1RvQmUiCiAgICAgICAgICAgICAgICAtPiB0b3BpY19yZXNwb25zZSAiUjog0J/QvtC70YPRh9C10L3QuNC1INGA0LXQt9GD0LvRjNGC0LDRgtC+0LIg0YDQsNGB0YfRkdGC0LAiICJLYWZrYSIgInF1ZXVlLHRhZ1JlYWQsdGFnVG9CZSIKICAgICAgICAgICAgfQoKICAgICAgICAgICAgYXBwX3N0cmFpZ2h0X3N0YWlyX2NhbGMgPSBjb250YWluZXIgItCa0LDQu9GM0LrRg9C70Y/RgtC+0YA6INCf0YDRj9C80LDRjyDQu9C10YHRgtC90LjRhtCwIiB7CiAgICAgICAgICAgICAgICB0ZWNobm9sb2d5ICJQeXRob24iCiAgICAgICAgICAgICAgICBkZXNjcmlwdGlvbiAi0J/QvtC00LHQvtGAINC+0L/RgtC40LzQsNC70YzQvdC+0Lkg0LrQvtC90YTQuNCz0YPRgNCw0YbQuNC4INC70LXRgdGC0L3QuNGG0Ysg0L/QviDQt9Cw0LTQsNC90L3Ri9C8INC/0LDRgNCw0LzQtdGC0YDQsNC8INC/0YDQvtC10LzQsCIKICAgICAgICAgICAgICAgIC0+IGFwcF9yZXF1ZXN0X21hbmFnZXIgItCf0LXRgNC10LTQsNGC0Ywg0YDQtdC30YPQu9GM0YLQsNGCINGA0LDRgdGH0ZHRgtCwLiBQT1NUOiAvcmVzdWx0IiAiUkVTVCBBUEkiICIiCiAgICAgICAgICAgICAgICAtPiBhcHBfcmVxdWVzdF9tYW5hZ2VyICLQo9Cy0LXQtNC+0LzQuNGC0Ywg0L4g0L/RgNC+0LPRgNC10YHRgdC1INGA0LDRgdGH0LXRgtCwLiBQT1NUOiAvcHJvZ3Jlc3MiICJSRVNUIEFQSSIgIiIKICAgICAgICAgICAgICAgIC0+IHRvcGljX3JlcXVlc3Rfc3RyYWlnaHRfc3RhaXIgIlI6INCf0L7Qu9GD0YfQtdC90LjQtSDQt9Cw0L/RgNC+0YHQsCDQvdCwINGA0LDRgdGH0ZHRgiDQn9GA0Y/QvNC+0Lkg0LvQtdGB0YLQvdC40YbRiyIgIkthZmthIiAicXVldWUsdGFnUmVhZCx0YWdUb0JlIgogICAgICAgICAgICAgICAgLT4gdG9waWNfcmVzcG9uc2UgIlc6INCg0LDQt9C80LXRidC10L3QuNC1INGA0LXQt9GD0LvRjNGC0LDRgtCwINGA0LDRgdGH0ZHRgtCwIiAiS2Fma2EiICJxdWV1ZSx0YWdXcml0ZSx0YWdUb0JlIgogICAgICAgICAgICB9CgogICAgICAgICAgICBhcHBfbF9zaGFwZV9zdGFpcl9jYWxjID0gY29udGFpbmVyICLQmtCw0LvRjNC60YPQu9GP0YLQvtGAOiDQky3QvtCx0YDQsNC30L3QsNGPINC70LXRgdGC0L3QuNGG0LAiIHsKICAgICAgICAgICAgICAgIHRlY2hub2xvZ3kgIlB5dGhvbiIKICAgICAgICAgICAgICAgIGRlc2NyaXB0aW9uICLQn9C+0LTQsdC+0YAg0L7Qv9GC0LjQvNCw0LvRjNC90L7QuSDQutC+0L3RhNC40LPRg9GA0LDRhtC40Lgg0LvQtdGB0YLQvdC40YbRiyDQv9C+INC30LDQtNCw0L3QvdGL0Lwg0L/QsNGA0LDQvNC10YLRgNCw0Lwg0L/RgNC+0LXQvNCwIgogICAgICAgICAgICAgICAgLT4gYXBwX3JlcXVlc3RfbWFuYWdlciAi0J/QtdGA0LXQtNCw0YLRjCDRgNC10LfRg9C70YzRgtCw0YIg0YDQsNGB0YfRkdGC0LAuIFBPU1Q6IC9yZXN1bHQiICJSRVNUIEFQSSIgIiIKICAgICAgICAgICAgICAgIC0+IGFwcF9yZXF1ZXN0X21hbmFnZXIgItCj0LLQtdC00L7QvNC40YLRjCDQviDQv9GA0L7Qs9GA0LXRgdGB0LUg0YDQsNGB0YfQtdGC0LAuIFBPU1Q6IC9wcm9ncmVzcyIgIlJFU1QgQVBJIiAiIgogICAgICAgICAgICAgICAgLT4gdG9waWNfcmVxdWVzdF9sX3NoYXBlX3N0YWlyICJSOiDQn9C+0LvRg9GH0LXQvdC40LUg0LfQsNC/0YDQvtGB0LAg0L3QsCDRgNCw0YHRh9GR0YIg0JMt0L7QsdGA0LDQt9C90L7QuSDQu9C10YHRgtC90LjRhtGLIiAiS2Fma2EiICJxdWV1ZSx0YWdSZWFkLHRhZ1RvQmUiCiAgICAgICAgICAgICAgICAtPiB0b3BpY19yZXNwb25zZSAiVzog0KDQsNC30LzQtdGJ0LXQvdC40LUg0YDQtdC30YPQu9GM0YLQsNGC0LAg0YDQsNGB0YfRkdGC0LAiICJLYWZrYSIgInF1ZXVlLHRhZ1dyaXRlLHRhZ1RvQmUiCiAgICAgICAgICAgIH0KCiAgICAgICAgICAgIGFwcF91X3NoYXBlX3N0YWlyX2NhbGMgPSBjb250YWluZXIgItCa0LDQu9GM0LrRg9C70Y/RgtC+0YA6INCfLdC+0LHRgNCw0LfQvdCw0Y8g0LvQtdGB0YLQvdC40YbQsCIgewogICAgICAgICAgICAgICAgdGVjaG5vbG9neSAiUHl0aG9uIgogICAgICAgICAgICAgICAgZGVzY3JpcHRpb24gItCf0L7QtNCx0L7RgCDQvtC/0YLQuNC80LDQu9GM0L3QvtC5INC60L7QvdGE0LjQs9GD0YDQsNGG0LjQuCDQu9C10YHRgtC90LjRhtGLINC/0L4g0LfQsNC00LDQvdC90YvQvCDQv9Cw0YDQsNC80LXRgtGA0LDQvCDQv9GA0L7QtdC80LAiCiAgICAgICAgICAgICAgICAtPiBhcHBfcmVxdWVzdF9tYW5hZ2VyICLQn9C10YDQtdC00LDRgtGMINGA0LXQt9GD0LvRjNGC0LDRgiDRgNCw0YHRh9GR0YLQsC4gUE9TVDogL3Jlc3VsdCIgIlJFU1QgQVBJIiAiIgogICAgICAgICAgICAgICAgLT4gYXBwX3JlcXVlc3RfbWFuYWdlciAi0KPQstC10LTQvtC80LjRgtGMINC+INC/0YDQvtCz0YDQtdGB0YHQtSDRgNCw0YHRh9C10YLQsC4gUE9TVDogL3Byb2dyZXNzIiAiUkVTVCBBUEkiICIiCiAgICAgICAgICAgICAgICAtPiB0b3BpY19yZXF1ZXN0X3Vfc2hhcGVfc3RhaXIgIlI6INCf0L7Qu9GD0YfQtdC90LjQtSDQt9Cw0L/RgNC+0YHQsCDQvdCwINGA0LDRgdGH0ZHRgiDQny3QvtCx0YDQsNC30L3QvtC5INC70LXRgdGC0L3QuNGG0YsiICJLYWZrYSIgInF1ZXVlLHRhZ1JlYWQsdGFnVG9CZSIKICAgICAgICAgICAgICAgIC0+IHRvcGljX3Jlc3BvbnNlICJXOiDQoNCw0LfQvNC10YnQtdC90LjQtSDRgNC10LfRg9C70YzRgtCw0YLQsCDRgNCw0YHRh9GR0YLQsCIgIkthZmthIiAicXVldWUsdGFnV3JpdGUsdGFnVG9CZSIKICAgICAgICAgICAgfQoKICAgICAgICAgICAgYXBwX2JhbGFuY2VyIC0+IGFwcF9yZXF1ZXN0X21hbmFnZXIgItCf0L7Qu9GD0YfQuNGC0Ywg0YHRgtCw0YLRg9GBINC30LDQv9GA0L7RgdCwINC90LAg0YDQsNGB0YfRkdGCLiBHRVQgKHB1YmxpYyk6IC9hcGkvcmVxdWVzdC1zdGF0dXMiICJSRVNUIEFQSSIgIiIKICAgICAgICAgICAgYXBwX2JhbGFuY2VyIC0+IGFwcF9yZXF1ZXN0X21hbmFnZXIgItCg0LDQt9C80LXRgdGC0LjRgtGMINC30LDQv9GA0L7RgSDQvdCwINGA0LDRgdGH0ZHRgiDQn9GA0Y/QvNC+0Lkg0LvQtdGB0YLQvdC40YbRiy4gUE9TVCAocHVibGljKTogL2FwaS9zdHJhaWdodC1zdGFpciIgIlJFU1QgQVBJIiAiIgogICAgICAgICAgICBhcHBfYmFsYW5jZXIgLT4gYXBwX3JlcXVlc3RfbWFuYWdlciAi0KDQsNC30LzQtdGB0YLQuNGC0Ywg0LfQsNC/0YDQvtGBINC90LAg0YDQsNGB0YfRkdGCINCTLdC+0LHRgNCw0LfQvdC+0Lkg0LvQtdGB0YLQvdC40YbRiy4gUE9TVCAocHVibGljKTogL2FwaS9sLXNoYXBlLXN0YWlyIiAiUkVTVCBBUEkiICIiCiAgICAgICAgICAgIGFwcF9iYWxhbmNlciAtPiBhcHBfcmVxdWVzdF9tYW5hZ2VyICLQoNCw0LfQvNC10YHRgtC40YLRjCDQt9Cw0L/RgNC+0YEg0L3QsCDRgNCw0YHRh9GR0YIg0J8t0L7QsdGA0LDQt9C90L7QuSDQu9C10YHRgtC90LjRhtGLLiBQT1NUIChwdWJsaWMpOiAvYXBpL3Utc2hhcGUtc3RhaXIiICJSRVNUIEFQSSIgIiIKICAgICAgICAgICAgYXBwX2JhbGFuY2VyIC0+IGFwcF9yZXF1ZXN0X21hbmFnZXIgItCj0YHRgtCw0L3QvtCy0LjRgtGMINC+0LPRgNCw0L3QuNGH0LXQvdC40Y8g0L/QvtC70YzQt9C+0LLQsNGC0LXQu9GPLiBQT1NUIChwdWJsaWMgc2VjdXJlZCk6IC9hcGkvdXNlci1hY2wiICJSRVNUIEFQSSIgIiIKCiAgICAgICAgICAgIGFwcF9yZXF1ZXN0X21hbmFnZXIgLT4gYXBwX3N0cmFpZ2h0X3N0YWlyX2NhbGMgItCX0LDQv9GA0L7RgdC40YLRjCDQstGL0L/QvtC70L3QuNGC0Ywg0YDQsNGB0YfQtdGCINCf0YDRj9C80L7QuSDQu9C10YHRgtC90LjRhtGLLiBQT1NUOiAvc3RyYWlnaHQtc3RhaXIvY2FsY3VsYXRpb24iICJSRVNUIEFQSSIgInRhZ0FyY2hEZWJ0IgogICAgICAgICAgICBhcHBfcmVxdWVzdF9tYW5hZ2VyIC0+IGFwcF9sX3NoYXBlX3N0YWlyX2NhbGMgItCX0LDQv9GA0L7RgdC40YLRjCDQstGL0L/QvtC70L3QuNGC0Ywg0YDQsNGB0YfQtdGCINCTLdC+0LHRgNCw0LfQvdC+0Lkg0LvQtdGB0YLQvdC40YbRiy4gUE9TVDogL2wtc2hhcGUtc3RhaXIvY2FsY3VsYXRpb24iICJSRVNUIEFQSSIgInRhZ0FyY2hEZWJ0IgogICAgICAgICAgICBhcHBfcmVxdWVzdF9tYW5hZ2VyIC0+IGFwcF91X3NoYXBlX3N0YWlyX2NhbGMgItCX0LDQv9GA0L7RgdC40YLRjCDQstGL0L/QvtC70L3QuNGC0Ywg0YDQsNGB0YfQtdGCINCfLdC+0LHRgNCw0LfQvdC+0Lkg0LvQtdGB0YLQvdC40YbRiy4gUE9TVDogL3Utc2hhcGUtc3RhaXIvY2FsY3VsYXRpb24iICJSRVNUIEFQSSIgInRhZ0FyY2hEZWJ0IgogICAgICAgIH0KCiAgICAgICAgLy8gRGV2CiAgICAgICAgIXJlZiAiRGVwbG95bWVudE5vZGU6Ly9EZXZlbG9wbWVudC9DbG9SdS9rYWxrcHJvX3Byb2plY3Qv0JrQu9Cw0YHRgtC10YAga2Fsa3Byby1rOHMvZGV2L2JhbGFuY2VyIiB7CiAgICAgICAgICAgIGNvbnRhaW5lckluc3RhbmNlIGFwcF9iYWxhbmNlciB7CiAgICAgICAgICAgICAgICBkZXNjcmlwdGlvbiAiSzhzIEluZ3Jlc3MgbmdpbnhcbnJlcGxpY2FzOiBYMSIKICAgICAgICAgICAgICAgIHByb3BlcnRpZXMgewogICAgICAgICAgICAgICAgICAgICJyZXBsaWNhcyIgIjEiCiAgICAgICAgICAgICAgICB9CiAgICAgICAgICAgIH0KICAgICAgICB9CgogICAgICAgICFyZWYgIkRlcGxveW1lbnROb2RlOi8vRGV2ZWxvcG1lbnQvQ2xvUnUva2Fsa3Byb19wcm9qZWN0L9Ca0LvQsNGB0YLQtdGAIGthbGtwcm8tazhzL2Rldi9wZ3NxbCIgewogICAgICAgICAgICB0ZWNobm9sb2d5ICJwb3N0Z3JlcyAxNyBvcGVyYXRvciA1MDBNaSIKICAgICAgICAgICAgY29udGFpbmVySW5zdGFuY2UgZGJfb3B0aXN0YWlycyB7CiAgICAgICAgICAgICAgICBkZXNjcmlwdGlvbiAiZGI6IG9wdGlzdGFpcnNcbnJlcGxpY2FzOiBYMSIKICAgICAgICAgICAgICAgIHByb3BlcnRpZXMgewogICAgICAgICAgICAgICAgICAgICJyZXBsaWNhcyIgIjEiCiAgICAgICAgICAgICAgICB9CiAgICAgICAgICAgIH0KICAgICAgICB9CgoKICAgICAgICAhcmVmICJEZXBsb3ltZW50Tm9kZTovL0RldmVsb3BtZW50L0Nsb1J1L2thbGtwcm9fcHJvamVjdC/QmtC70LDRgdGC0LXRgCBrYWxrcHJvLWs4cy9kZXYvb3B0aXN0YWlyLWNhbGMiIHsKICAgICAgICAgICAgY29udGFpbmVySW5zdGFuY2UgYXBwX3JlcXVlc3RfbWFuYWdlciB7CiAgICAgICAgICAgICAgICBkZXNjcmlwdGlvbiAicmVwbGljYXM6IFgxIgogICAgICAgICAgICAgICAgcHJvcGVydGllcyB7CiAgICAgICAgICAgICAgICAgICAgInJlcGxpY2FzIiAiMSIKICAgICAgICAgICAgICAgIH0KICAgICAgICAgICAgfQogICAgICAgICAgICBjb250YWluZXJJbnN0YW5jZSBhcHBfc3RyYWlnaHRfc3RhaXJfY2FsYyB7CiAgICAgICAgICAgICAgICBkZXNjcmlwdGlvbiAicmVwbGljYXM6IFgxIgogICAgICAgICAgICAgICAgcHJvcGVydGllcyB7CiAgICAgICAgICAgICAgICAgICAgInJlcGxpY2FzIiAiMSIKICAgICAgICAgICAgICAgIH0KICAgICAgICAgICAgfQogICAgICAgICAgICBjb250YWluZXJJbnN0YW5jZSBhcHBfbF9zaGFwZV9zdGFpcl9jYWxjIHsKICAgICAgICAgICAgICAgIGRlc2NyaXB0aW9uICJyZXBsaWNhczogWDEiCiAgICAgICAgICAgICAgICBwcm9wZXJ0aWVzIHsKICAgICAgICAgICAgICAgICAgICAicmVwbGljYXMiICIxIgogICAgICAgICAgICAgICAgfQogICAgICAgICAgICB9CiAgICAgICAgICAgIGNvbnRhaW5lckluc3RhbmNlIGFwcF91X3NoYXBlX3N0YWlyX2NhbGMgewogICAgICAgICAgICAgICAgZGVzY3JpcHRpb24gInJlcGxpY2FzOiBYMSIKICAgICAgICAgICAgICAgIHByb3BlcnRpZXMgewogICAgICAgICAgICAgICAgICAgICJyZXBsaWNhcyIgIjEiCiAgICAgICAgICAgICAgICB9CiAgICAgICAgICAgIH0KCiAgICAgICAgICAgIGNvbnRhaW5lckluc3RhbmNlIHRvcGljX3JlcXVlc3Rfc3RyYWlnaHRfc3RhaXIKICAgICAgICAgICAgY29udGFpbmVySW5zdGFuY2UgdG9waWNfcmVxdWVzdF9sX3NoYXBlX3N0YWlyCiAgICAgICAgICAgIGNvbnRhaW5lckluc3RhbmNlIHRvcGljX3JlcXVlc3RfdV9zaGFwZV9zdGFpcgogICAgICAgICAgICBjb250YWluZXJJbnN0YW5jZSB0b3BpY19yZXNwb25zZQogICAgICAgIH0KCiAgICAgICAgLy8gUHJvZHVjdGlvbgogICAgICAgICFyZWYgIkRlcGxveW1lbnROb2RlOi8vUHJvZHVjdGlvbi9DbG9SdS9rYWxrcHJvX3Byb2plY3Qv0JrQu9Cw0YHRgtC10YAga2Fsa3Byby1rOHMvaW5mcmFzdHJ1Y3R1cmUvYmFsYW5jZXIiIHsKICAgICAgICAgICAgY29udGFpbmVySW5zdGFuY2UgYXBwX2JhbGFuY2VyIHsKICAgICAgICAgICAgICAgIGRlc2NyaXB0aW9uICJLOHMgSW5ncmVzcyBuZ2lueFxucmVwbGljYXM6IFgyIgogICAgICAgICAgICAgICAgcHJvcGVydGllcyB7CiAgICAgICAgICAgICAgICAgICAgInJlcGxpY2FzIiAiMiIKICAgICAgICAgICAgICAgIH0KICAgICAgICAgICAgfQogICAgICAgIH0KCiAgICAgICAgIXJlZiAiRGVwbG95bWVudE5vZGU6Ly9Qcm9kdWN0aW9uL0Nsb1J1L2thbGtwcm9fcHJvamVjdC/QmtC70LDRgdGC0LXRgCBrYWxrcHJvLWs4cy9pbmZyYXN0cnVjdHVyZS9wZ3NxbCIgewogICAgICAgICAgICB0ZWNobm9sb2d5ICJwb3N0Z3JlcyAxNyBvcGVyYXRvciA1MDBNaSIKICAgICAgICAgICAgY29udGFpbmVySW5zdGFuY2UgZGJfb3B0aXN0YWlycyB7CiAgICAgICAgICAgICAgICBkZXNjcmlwdGlvbiAiZGI6IG9wdGlzdGFpcnNcbnJlcGxpY2FzOiBYMiIKICAgICAgICAgICAgICAgIHByb3BlcnRpZXMgewogICAgICAgICAgICAgICAgICAgICJyZXBsaWNhcyIgIjIiCiAgICAgICAgICAgICAgICB9CiAgICAgICAgICAgIH0KICAgICAgICB9CgogICAgICAgICFyZWYgIkRlcGxveW1lbnROb2RlOi8vUHJvZHVjdGlvbi9DbG9SdS9rYWxrcHJvX3Byb2plY3Qv0JrQu9Cw0YHRgtC10YAga2Fsa3Byby1rOHMvaW5mcmFzdHJ1Y3R1cmUva2Fma2EiIHsKICAgICAgICAgICAgY29udGFpbmVySW5zdGFuY2UgdG9waWNfcmVxdWVzdF9zdHJhaWdodF9zdGFpcgogICAgICAgICAgICBjb250YWluZXJJbnN0YW5jZSB0b3BpY19yZXF1ZXN0X2xfc2hhcGVfc3RhaXIKICAgICAgICAgICAgY29udGFpbmVySW5zdGFuY2UgdG9waWNfcmVxdWVzdF91X3NoYXBlX3N0YWlyCiAgICAgICAgICAgIGNvbnRhaW5lckluc3RhbmNlIHRvcGljX3Jlc3BvbnNlCiAgICAgICAgfQoKICAgICAgICAhcmVmICJEZXBsb3ltZW50Tm9kZTovL1Byb2R1Y3Rpb24vQ2xvUnUva2Fsa3Byb19wcm9qZWN0L9Ca0LvQsNGB0YLQtdGAIGthbGtwcm8tazhzL29wdGlzdGFpci1jYWxjIiB7CiAgICAgICAgICAgIGNvbnRhaW5lckluc3RhbmNlIGFwcF9yZXF1ZXN0X21hbmFnZXIgewogICAgICAgICAgICAgICAgZGVzY3JpcHRpb24gInJlcGxpY2FzOiBYMiIKICAgICAgICAgICAgICAgIHByb3BlcnRpZXMgewogICAgICAgICAgICAgICAgICAgICJyZXBsaWNhcyIgIjIiCiAgICAgICAgICAgICAgICB9CiAgICAgICAgICAgIH0KICAgICAgICAgICAgY29udGFpbmVySW5zdGFuY2UgYXBwX3N0cmFpZ2h0X3N0YWlyX2NhbGMgewogICAgICAgICAgICAgICAgZGVzY3JpcHRpb24gInJlcGxpY2FzOiBYMiIKICAgICAgICAgICAgICAgIHByb3BlcnRpZXMgewogICAgICAgICAgICAgICAgICAgICJyZXBsaWNhcyIgIjIiCiAgICAgICAgICAgICAgICB9CiAgICAgICAgICAgIH0KICAgICAgICAgICAgY29udGFpbmVySW5zdGFuY2UgYXBwX2xfc2hhcGVfc3RhaXJfY2FsYyB7CiAgICAgICAgICAgICAgICBkZXNjcmlwdGlvbiAicmVwbGljYXM6IFgyIgogICAgICAgICAgICAgICAgcHJvcGVydGllcyB7CiAgICAgICAgICAgICAgICAgICAgInJlcGxpY2FzIiAiMiIKICAgICAgICAgICAgICAgIH0KICAgICAgICAgICAgfQogICAgICAgICAgICBjb250YWluZXJJbnN0YW5jZSBhcHBfdV9zaGFwZV9zdGFpcl9jYWxjIHsKICAgICAgICAgICAgICAgIGRlc2NyaXB0aW9uICJyZXBsaWNhczogWDIiCiAgICAgICAgICAgICAgICBwcm9wZXJ0aWVzIHsKICAgICAgICAgICAgICAgICAgICAicmVwbGljYXMiICIyIgogICAgICAgICAgICAgICAgfQogICAgICAgICAgICB9CiAgICAgICAgfQogICAgfQoKICAgIHZpZXdzIHsKICAgICAgICBzeXN0ZW1Db250ZXh0IHN5c3RlbV9vcHRpc3RhaXJfY2FsYyBPUFRJU1RBSVJfQ0FMQ19DNEwxICLQn9C+0LTQsdC+0YAg0L7Qv9GC0LjQvNCw0LvRjNC90L7QuSDQutC+0L3RhC4g0LvQtdGB0YLQvdC40YbRiyAtINCa0L7QvdGC0LXQutGB0YLQvdCw0Y8g0LTQuNCw0LPRgNCw0LzQvNCwIiB7CiAgICAgICAgICAgIGF1dG9MYXlvdXQKICAgICAgICAgICAgaW5jbHVkZSAtPnN5c3RlbV9vcHRpc3RhaXJfY2FsYy0+CiAgICAgICAgfQogICAgICAgIGNvbnRhaW5lciBzeXN0ZW1fb3B0aXN0YWlyX2NhbGMgT1BUSVNUQUlSX0NBTENfQzRMMiAi0J/QvtC00LHQvtGAINC+0L/RgtC40LzQsNC70YzQvdC+0Lkg0LrQvtC90YQuINC70LXRgdGC0L3QuNGG0YsiIHsKICAgICAgICAgICAgYXV0b0xheW91dAogICAgICAgICAgICBpbmNsdWRlICoKICAgICAgICB9CiAgICAgICAgZGVwbG95bWVudCBzeXN0ZW1fb3B0aXN0YWlyX2NhbGMgRGV2ZWxvcG1lbnQgT1BUSVNUQUlSX0NBTENfREVQTE9ZX0RFViAi0J/QvtC00LHQvtGAINC+0L/RgtC40LzQsNC70YzQvdC+0Lkg0LrQvtC90YQuINC70LXRgdGC0L3QuNGG0YsiIHsKICAgICAgICAgICAgYXV0b0xheW91dAogICAgICAgICAgICBpbmNsdWRlICoKICAgICAgICAgICAgZXhjbHVkZSAiZWxlbWVudC50YWc9PVNvZnR3YXJlIFN5c3RlbSIKICAgICAgICAgICAgZXhjbHVkZSAiZWxlbWVudC50YWc9PUluZnJhc3RydWN0dXJlIE5vZGUiCiAgICAgICAgfQogICAgICAgIGRlcGxveW1lbnQgc3lzdGVtX29wdGlzdGFpcl9jYWxjIFByb2R1Y3Rpb24gT1BUSVNUQUlSX0NBTENfREVQTE9ZX1BST0QgItCf0L7QtNCx0L7RgCDQvtC/0YLQuNC80LDQu9GM0L3QvtC5INC60L7QvdGELiDQu9C10YHRgtC90LjRhtGLIiB7CiAgICAgICAgICAgIGF1dG9MYXlvdXQKICAgICAgICAgICAgaW5jbHVkZSAqCiAgICAgICAgICAgIGV4Y2x1ZGUgImVsZW1lbnQudGFnPT1Tb2Z0d2FyZSBTeXN0ZW0iCiAgICAgICAgICAgIGV4Y2x1ZGUgImVsZW1lbnQudGFnPT1JbmZyYXN0cnVjdHVyZSBOb2RlIgogICAgICAgIH0KICAgIH0KfQ=="
+    "structurizr.dsl" : "d29ya3NwYWNlIGV4dGVuZHMgLi4vc3lzdGVtLWxhbmRzY2FwZS5kc2wgewogICAgbW9kZWwgewogICAgICAgICFyZWYgc3lzdGVtX29wdGlzdGFpcl9jYWxjIHsKICAgICAgICAgICAgIWFkcnMgYWRycwoKICAgICAgICAgICAgZGJfb3B0aXN0YWlycyA9IGNvbnRhaW5lciAicG9zdGdyZXMtb3B0aXN0YWlycyIgewogICAgICAgICAgICAgICAgZGVzY3JpcHRpb24gItCR0LDQt9CwINC00LDQvdC90YvRhSDRgSDRgNCw0YHRgdGH0LjRgtCw0L3QvdGL0LzQuCDQutC+0L3RhNC40LPRg9GA0LDRhtC40Y/QvNC4IgogICAgICAgICAgICAgICAgdGVjaG5vbG9neSAiUG9zdGdyZVNRTCIKICAgICAgICAgICAgICAgIHRhZ3Mgc3RvcmFnZQogICAgICAgICAgICB9CgogICAgICAgICAgICB0b3BpY19yZXF1ZXN0X3N0cmFpZ2h0X3N0YWlyID0gY29udGFpbmVyICLQotC+0L/QuNC6IHJlcXVlc3Quc3RyYWlnaHRfc3RhaXIiIHsKICAgICAgICAgICAgICAgIHRlY2hub2xvZ3kgIkthZmthIgogICAgICAgICAgICAgICAgZGVzY3JpcHRpb24gItCX0LDQv9GA0L7RgdGLINC90LAg0YDQsNGB0YfQtdGCINC60L7QvdGE0LjQs9GD0YDQsNGG0LjQuSDQn9GA0Y/QvNC+0Lkg0LvQtdGB0YLQvdC40YbRiyIKICAgICAgICAgICAgICAgIHRhZ3MgcXVldWUsdGFnVG9CZQogICAgICAgICAgICB9CgogICAgICAgICAgICB0b3BpY19yZXF1ZXN0X2xfc2hhcGVfc3RhaXIgPSBjb250YWluZXIgItCi0L7Qv9C40LogcmVxdWVzdC5sX3NoYXBlX3N0YWlyIiB7CiAgICAgICAgICAgICAgICB0ZWNobm9sb2d5ICJLYWZrYSIKICAgICAgICAgICAgICAgIGRlc2NyaXB0aW9uICLQl9Cw0L/RgNC+0YHRiyDQvdCwINGA0LDRgdGH0LXRgiDQutC+0L3RhNC40LPRg9GA0LDRhtC40Lkg0JMt0L7QsdGA0LDQt9C90L7QuSDQu9C10YHRgtC90LjRhtGLIgogICAgICAgICAgICAgICAgdGFncyBxdWV1ZSx0YWdUb0JlCiAgICAgICAgICAgIH0KCiAgICAgICAgICAgIHRvcGljX3JlcXVlc3RfdV9zaGFwZV9zdGFpciA9IGNvbnRhaW5lciAi0KLQvtC/0LjQuiByZXF1ZXN0LnVfc2hhcGVfc3RhaXIiIHsKICAgICAgICAgICAgICAgIHRlY2hub2xvZ3kgIkthZmthIgogICAgICAgICAgICAgICAgZGVzY3JpcHRpb24gItCX0LDQv9GA0L7RgdGLINC90LAg0YDQsNGB0YfQtdGCINC60L7QvdGE0LjQs9GD0YDQsNGG0LjQuSDQny3QvtCx0YDQsNC30L3QvtC5INC70LXRgdGC0L3QuNGG0YsiCiAgICAgICAgICAgICAgICB0YWdzIHF1ZXVlLHRhZ1RvQmUKICAgICAgICAgICAgfQoKICAgICAgICAgICAgdG9waWNfY2FsY3VsYXRpb25fcHJvZ3Jlc3MgPSBjb250YWluZXIgItCi0L7Qv9C40Log0L/RgNC+0LPRgNC10YHRgSDRgNCw0YHRh9GR0YLQsCIgewogICAgICAgICAgICAgICAgdGVjaG5vbG9neSAiS2Fma2EiCiAgICAgICAgICAgICAgICBkZXNjcmlwdGlvbiAi0J/RgNC+0LPRgNC10YHRgSDQutCw0LvRjNC60YPQu9GP0YbRi9GLIgogICAgICAgICAgICAgICAgdGFncyBxdWV1ZSx0YWdUb0JlCiAgICAgICAgICAgIH0KCiAgICAgICAgICAgIHRvcGljX2NhbGN1bGF0aW9uX3Jlc3VsdCA9IGNvbnRhaW5lciAi0KLQvtC/0LjQuiDRgNC10LfRg9C70YzRgtCw0YIg0YDQsNGB0YfRkdGC0LAiIHsKICAgICAgICAgICAgICAgIHRlY2hub2xvZ3kgIkthZmthIgogICAgICAgICAgICAgICAgZGVzY3JpcHRpb24gItCg0LXQt9GD0LvRjNGC0LDRgtGLINGA0LDRgdGH0ZHRgtC+0LIg0L7Qv9GC0LjQvNCw0LvRjNC90YvRhSDQutC+0L3RhNC40LPRg9GA0LDRhtC40LkiCiAgICAgICAgICAgICAgICB0YWdzIHF1ZXVlLHRhZ1RvQmUKICAgICAgICAgICAgfQoKICAgICAgICAgICAgYXBwX2JhbGFuY2VyID0gY29udGFpbmVyICJJbmdyZXNzTmdpbngiIHsKICAgICAgICAgICAgICAgIHVybCAiaHR0cHM6Ly9vcHRpc3RhaXIua2Fsay5wcm8iCiAgICAgICAgICAgICAgICB0ZWNobm9sb2d5ICJJbmdyZXNzIG5naW54IgogICAgICAgICAgICB9CgogICAgICAgICAgICBhcHBfcmVxdWVzdF9tYW5hZ2VyID0gY29udGFpbmVyICLQnNC10L3QtdC00LbQtdGAINC+0LHRgNCw0LHQvtGC0LrQuCDQt9Cw0L/RgNC+0YHQvtCyIiB7CiAgICAgICAgICAgICAgICB0ZWNobm9sb2d5ICJQeXRob24iCiAgICAgICAgICAgICAgICBkZXNjcmlwdGlvbiAiIgogICAgICAgICAgICAgICAgLT4gZGJfb3B0aXN0YWlycyAi0KHQvtC30LTQsNC90LjQtSDQt9Cw0L/RgNC+0YHQvtCyINC90LAg0YDQsNGB0YfQtdGCLiDQn9C+0LvRg9GH0LXQvdC40LUg0YHRgtCw0YLRg9GB0LAg0LfQsNC/0YDQvtGB0LAuINCX0LDQv9C40YHRjCDQuCDRh9GC0LXQvdC40LUg0YDQtdC30YPQu9GM0YLQsNGC0L7QsiDRgNCw0YHRh9C10YLQsC4iICJwZ3NxbCIgInRhZ1JlYWQsIHRhZ1dyaXRlIgoKICAgICAgICAgICAgICAgIC0+IHRvcGljX3JlcXVlc3Rfc3RyYWlnaHRfc3RhaXIgIlc6INCg0LDQt9C80LXRidC10L3QuNC1INC30LDQv9GA0L7RgdCwINC90LAg0YDQsNGB0YfRkdGCINCf0YDRj9C80L7QuSDQu9C10YHRgtC90LjRhtGLIiAiS2Fma2EiICJxdWV1ZSx0YWdXcml0ZSx0YWdUb0JlIgogICAgICAgICAgICAgICAgLT4gdG9waWNfcmVxdWVzdF9sX3NoYXBlX3N0YWlyICJXOiDQoNCw0LfQvNC10YnQtdC90LjQtSDQt9Cw0L/RgNC+0YHQsCDQvdCwINGA0LDRgdGH0ZHRgiDQky3QvtCx0YDQsNC30L3QvtC5INC70LXRgdGC0L3QuNGG0YsiICJLYWZrYSIgInF1ZXVlLHRhZ1dyaXRlLHRhZ1RvQmUiCiAgICAgICAgICAgICAgICAtPiB0b3BpY19yZXF1ZXN0X3Vfc2hhcGVfc3RhaXIgIlc6INCg0LDQt9C80LXRidC10L3QuNC1INC30LDQv9GA0L7RgdCwINC90LAg0YDQsNGB0YfRkdGCINCfLdC+0LHRgNCw0LfQvdC+0Lkg0LvQtdGB0YLQvdC40YbRiyIgIkthZmthIiAicXVldWUsdGFnV3JpdGUsdGFnVG9CZSIKICAgICAgICAgICAgICAgIC0+IHRvcGljX2NhbGN1bGF0aW9uX3Byb2dyZXNzICJSOiDQn9C+0LvRg9GH0LXQvdC40LUg0L/RgNC+0LPRgNC10YHRgdCwINGA0LDRgdGH0ZHRgtCwIiAiS2Fma2EiICJxdWV1ZSx0YWdSZWFkLHRhZ1RvQmUiCiAgICAgICAgICAgICAgICAtPiB0b3BpY19jYWxjdWxhdGlvbl9yZXN1bHQgIlI6INCf0L7Qu9GD0YfQtdC90LjQtSDRgNC10LfRg9C70YzRgtCw0YLQvtCyINGA0LDRgdGH0ZHRgtCwIiAiS2Fma2EiICJxdWV1ZSx0YWdSZWFkLHRhZ1RvQmUiCiAgICAgICAgICAgIH0KCiAgICAgICAgICAgIGFwcF9zdHJhaWdodF9zdGFpcl9jYWxjID0gY29udGFpbmVyICLQmtCw0LvRjNC60YPQu9GP0YLQvtGAOiDQn9GA0Y/QvNCw0Y8g0LvQtdGB0YLQvdC40YbQsCIgewogICAgICAgICAgICAgICAgdGVjaG5vbG9neSAiUHl0aG9uIgogICAgICAgICAgICAgICAgZGVzY3JpcHRpb24gItCf0L7QtNCx0L7RgCDQvtC/0YLQuNC80LDQu9GM0L3QvtC5INC60L7QvdGE0LjQs9GD0YDQsNGG0LjQuCDQn9GA0Y/QvNC+0Lkg0LvQtdGB0YLQvdC40YbRiyDQv9C+INC30LDQtNCw0L3QvdGL0Lwg0L/QsNGA0LDQvNC10YLRgNCw0Lwg0L/RgNC+0LXQvNCwIgogICAgICAgICAgICAgICAgLT4gYXBwX3JlcXVlc3RfbWFuYWdlciAi0J/QvtC70YPRh9C40YLRjCDRgdC/0LjRgdC+0Log0LfQsNC/0YDQvtGB0L7QsiDQvdCwINGA0LDRgdGH0ZHRgiDQv9GA0Lgg0L/QtdGA0LLQuNGH0L3QvtC5INC40L3QuNGG0LjQsNC70LjQt9Cw0YbQuNC4INGB0LXRgNCy0LjRgdCwLiBHRVQ6IC9zdHJhaWdodC1zdGFpci9hY3R1YWwtcmVxdWVzdHMiICJSRVNUIEFQSSIgIiIKICAgICAgICAgICAgICAgIC0+IGFwcF9yZXF1ZXN0X21hbmFnZXIgItCj0LLQtdC00L7QvNC40YLRjCDQviDQv9GA0L7Qs9GA0LXRgdGB0LUg0YDQsNGB0YfQtdGC0LAg0Lgg0YHRgtCw0YLRg9GB0LUuIFBBVENIOiAvcmVxdWVzdC1zdGF0dXMiICJSRVNUIEFQSSIgIiIKICAgICAgICAgICAgICAgIC0+IGFwcF9yZXF1ZXN0X21hbmFnZXIgItCf0LXRgNC10LTQsNGC0Ywg0YDQtdC30YPQu9GM0YLQsNGCINGA0LDRgdGH0ZHRgtCwLiBQT1NUOiAvc2F2ZS1yZXN1bHQiICJSRVNUIEFQSSIgIiIKCiAgICAgICAgICAgICAgICAtPiB0b3BpY19yZXF1ZXN0X3N0cmFpZ2h0X3N0YWlyICJSOiDQn9C+0LvRg9GH0LXQvdC40LUg0LfQsNC/0YDQvtGB0LAg0L3QsCDRgNCw0YHRh9GR0YIg0J/RgNGP0LzQvtC5INC70LXRgdGC0L3QuNGG0YsiICJLYWZrYSIgInF1ZXVlLHRhZ1JlYWQsdGFnVG9CZSIKICAgICAgICAgICAgICAgIC0+IHRvcGljX2NhbGN1bGF0aW9uX3Jlc3VsdCAiVzog0KDQsNC30LzQtdGJ0LXQvdC40LUg0YDQtdC30YPQu9GM0YLQsNGC0LAg0YDQsNGB0YfRkdGC0LAiICJLYWZrYSIgInF1ZXVlLHRhZ1dyaXRlLHRhZ1RvQmUiCiAgICAgICAgICAgIH0KCiAgICAgICAgICAgIGFwcF9sX3NoYXBlX3N0YWlyX2NhbGMgPSBjb250YWluZXIgItCa0LDQu9GM0LrRg9C70Y/RgtC+0YA6INCTLdC+0LHRgNCw0LfQvdCw0Y8g0LvQtdGB0YLQvdC40YbQsCIgewogICAgICAgICAgICAgICAgdGVjaG5vbG9neSAiUHl0aG9uIgogICAgICAgICAgICAgICAgZGVzY3JpcHRpb24gItCf0L7QtNCx0L7RgCDQvtC/0YLQuNC80LDQu9GM0L3QvtC5INC60L7QvdGE0LjQs9GD0YDQsNGG0LjQuCDQky3QvtCx0YDQsNC30L3QsNGPINC70LXRgdGC0L3QuNGG0Ysg0L/QviDQt9Cw0LTQsNC90L3Ri9C8INC/0LDRgNCw0LzQtdGC0YDQsNC8INC/0YDQvtC10LzQsCIKICAgICAgICAgICAgICAgIC0+IGFwcF9yZXF1ZXN0X21hbmFnZXIgItCf0L7Qu9GD0YfQuNGC0Ywg0YHQv9C40YHQvtC6INC30LDQv9GA0L7RgdC+0LIg0L3QsCDRgNCw0YHRh9GR0YIg0L/RgNC4INC/0LXRgNCy0LjRh9C90L7QuSDQuNC90LjRhtC40LDQu9C40LfQsNGG0LjQuCDRgdC10YDQstC40YHQsC4gR0VUOiAvbC1zaGFwZS1zdGFpci9hY3R1YWwtcmVxdWVzdHMiICJSRVNUIEFQSSIgIiIKICAgICAgICAgICAgICAgIC0+IGFwcF9yZXF1ZXN0X21hbmFnZXIgItCj0LLQtdC00L7QvNC40YLRjCDQviDQv9GA0L7Qs9GA0LXRgdGB0LUg0YDQsNGB0YfQtdGC0LAg0Lgg0YHRgtCw0YLRg9GB0LUuIFBBVENIOiAvcmVxdWVzdC1zdGF0dXMiICJSRVNUIEFQSSIgIiIKICAgICAgICAgICAgICAgIC0+IGFwcF9yZXF1ZXN0X21hbmFnZXIgItCf0LXRgNC10LTQsNGC0Ywg0YDQtdC30YPQu9GM0YLQsNGCINGA0LDRgdGH0ZHRgtCwLiBQT1NUOiAvc2F2ZS1yZXN1bHQiICJSRVNUIEFQSSIgIiIKCiAgICAgICAgICAgICAgICAtPiB0b3BpY19yZXF1ZXN0X2xfc2hhcGVfc3RhaXIgIlI6INCf0L7Qu9GD0YfQtdC90LjQtSDQt9Cw0L/RgNC+0YHQsCDQvdCwINGA0LDRgdGH0ZHRgiDQky3QvtCx0YDQsNC30L3QvtC5INC70LXRgdGC0L3QuNGG0YsiICJLYWZrYSIgInF1ZXVlLHRhZ1JlYWQsdGFnVG9CZSIKICAgICAgICAgICAgICAgIC0+IHRvcGljX2NhbGN1bGF0aW9uX3Jlc3VsdCAiVzog0KDQsNC30LzQtdGJ0LXQvdC40LUg0YDQtdC30YPQu9GM0YLQsNGC0LAg0YDQsNGB0YfRkdGC0LAiICJLYWZrYSIgInF1ZXVlLHRhZ1dyaXRlLHRhZ1RvQmUiCiAgICAgICAgICAgIH0KCiAgICAgICAgICAgIGFwcF91X3NoYXBlX3N0YWlyX2NhbGMgPSBjb250YWluZXIgItCa0LDQu9GM0LrRg9C70Y/RgtC+0YA6INCfLdC+0LHRgNCw0LfQvdCw0Y8g0LvQtdGB0YLQvdC40YbQsCIgewogICAgICAgICAgICAgICAgdGVjaG5vbG9neSAiUHl0aG9uIgogICAgICAgICAgICAgICAgZGVzY3JpcHRpb24gItCf0L7QtNCx0L7RgCDQvtC/0YLQuNC80LDQu9GM0L3QvtC5INC60L7QvdGE0LjQs9GD0YDQsNGG0LjQuCDQny3QvtCx0YDQsNC30L3QsNGPINC70LXRgdGC0L3QuNGG0Ysg0L/QviDQt9Cw0LTQsNC90L3Ri9C8INC/0LDRgNCw0LzQtdGC0YDQsNC8INC/0YDQvtC10LzQsCIKICAgICAgICAgICAgICAgIC0+IGFwcF9yZXF1ZXN0X21hbmFnZXIgItCf0L7Qu9GD0YfQuNGC0Ywg0YHQv9C40YHQvtC6INC30LDQv9GA0L7RgdC+0LIg0L3QsCDRgNCw0YHRh9GR0YIg0L/RgNC4INC/0LXRgNCy0LjRh9C90L7QuSDQuNC90LjRhtC40LDQu9C40LfQsNGG0LjQuCDRgdC10YDQstC40YHQsC4gR0VUOiAvdS1zaGFwZS1zdGFpci9hY3R1YWwtcmVxdWVzdHMiICJSRVNUIEFQSSIgIiIKICAgICAgICAgICAgICAgIC0+IGFwcF9yZXF1ZXN0X21hbmFnZXIgItCj0LLQtdC00L7QvNC40YLRjCDQviDQv9GA0L7Qs9GA0LXRgdGB0LUg0YDQsNGB0YfQtdGC0LAg0Lgg0YHRgtCw0YLRg9GB0LUuIFBBVENIOiAvcmVxdWVzdC1zdGF0dXMiICJSRVNUIEFQSSIgIiIKICAgICAgICAgICAgICAgIC0+IGFwcF9yZXF1ZXN0X21hbmFnZXIgItCf0LXRgNC10LTQsNGC0Ywg0YDQtdC30YPQu9GM0YLQsNGCINGA0LDRgdGH0ZHRgtCwLiBQT1NUOiAvc2F2ZS1yZXN1bHQiICJSRVNUIEFQSSIgIiIKCiAgICAgICAgICAgICAgICAtPiB0b3BpY19yZXF1ZXN0X3Vfc2hhcGVfc3RhaXIgIlI6INCf0L7Qu9GD0YfQtdC90LjQtSDQt9Cw0L/RgNC+0YHQsCDQvdCwINGA0LDRgdGH0ZHRgiDQny3QvtCx0YDQsNC30L3QvtC5INC70LXRgdGC0L3QuNGG0YsiICJLYWZrYSIgInF1ZXVlLHRhZ1JlYWQsdGFnVG9CZSIKICAgICAgICAgICAgICAgIC0+IHRvcGljX2NhbGN1bGF0aW9uX3Jlc3VsdCAiVzog0KDQsNC30LzQtdGJ0LXQvdC40LUg0YDQtdC30YPQu9GM0YLQsNGC0LAg0YDQsNGB0YfRkdGC0LAiICJLYWZrYSIgInF1ZXVlLHRhZ1dyaXRlLHRhZ1RvQmUiCiAgICAgICAgICAgIH0KCiAgICAgICAgICAgIGFwcF9iYWxhbmNlciAtPiBhcHBfcmVxdWVzdF9tYW5hZ2VyICLQn9C+0LvRg9GH0LjRgtGMINGB0YLQsNGC0YPRgSDQt9Cw0L/RgNC+0YHQsCDQvdCwINGA0LDRgdGH0ZHRgi4gR0VUIChwdWJsaWMpOiAvYXBpL3JlcXVlc3RzLXN0YXR1c2VzIiAiUkVTVCBBUEkiICIiCiAgICAgICAgICAgIGFwcF9iYWxhbmNlciAtPiBhcHBfcmVxdWVzdF9tYW5hZ2VyICLQn9C+0LTRgtCy0LXRgNC00LjRgtGMINC/0L7Qu9GD0YfQtdC90LjQtSDRgNCw0YHRh9GR0YLQsCDRgdC+INGB0YLQvtGA0L7QvdGLIGZyb250ZW5kLiBQQVRDSCAocHVibGljKTogL2FwaS9yZXF1ZXN0LXN0YXR1cy9zZW5kIiAiUkVTVCBBUEkiICIiCiAgICAgICAgICAgIGFwcF9iYWxhbmNlciAtPiBhcHBfcmVxdWVzdF9tYW5hZ2VyICLQoNCw0LfQvNC10YHRgtC40YLRjCDQt9Cw0L/RgNC+0YEg0L3QsCDRgNCw0YHRh9GR0YIg0J/RgNGP0LzQvtC5INC70LXRgdGC0L3QuNGG0YsuIFBPU1QgKHB1YmxpYyk6IC9hcGkvc3RyYWlnaHQtc3RhaXIvcmVxdWVzdCIgIlJFU1QgQVBJIiAiIgogICAgICAgICAgICBhcHBfYmFsYW5jZXIgLT4gYXBwX3JlcXVlc3RfbWFuYWdlciAi0KDQsNC30LzQtdGB0YLQuNGC0Ywg0LfQsNC/0YDQvtGBINC90LAg0YDQsNGB0YfRkdGCINCTLdC+0LHRgNCw0LfQvdC+0Lkg0LvQtdGB0YLQvdC40YbRiy4gUE9TVCAocHVibGljKTogL2FwaS9sLXNoYXBlLXN0YWlyL3JlcXVlc3QiICJSRVNUIEFQSSIgIiIKICAgICAgICAgICAgYXBwX2JhbGFuY2VyIC0+IGFwcF9yZXF1ZXN0X21hbmFnZXIgItCg0LDQt9C80LXRgdGC0LjRgtGMINC30LDQv9GA0L7RgSDQvdCwINGA0LDRgdGH0ZHRgiDQny3QvtCx0YDQsNC30L3QvtC5INC70LXRgdGC0L3QuNGG0YsuIFBPU1QgKHB1YmxpYyk6IC9hcGkvdS1zaGFwZS1zdGFpci9yZXF1ZXN0IiAiUkVTVCBBUEkiICIiCiAgICAgICAgICAgIGFwcF9iYWxhbmNlciAtPiBhcHBfcmVxdWVzdF9tYW5hZ2VyICLQo9GB0YLQsNC90L7QstC40YLRjCDQvtCz0YDQsNC90LjRh9C10L3QuNGPINC/0L7Qu9GM0LfQvtCy0LDRgtC10LvRjy4gUE9TVCAocHVibGljIHNlY3VyZWQpOiAvYXBpL3VzZXItYWNsIiAiUkVTVCBBUEkiICIiCgogICAgICAgICAgICBzeXN0ZW1fYXBpX2dhdGV3YWkgLT4gYXBwX2JhbGFuY2VyICLQoNCw0LfQvNC10YnQtdC90LjQtSDQt9Cw0L/RgNC+0YHQsCDQvdCwINGA0LDRgdGH0ZHRgi4gUE9TVDogL29wdGlzLXN0YWlycy9hcGkve3N0YWlyLXR5cGV9L3JlcXVlc3QiICJSRVNUIEFQSSIgIiIKICAgICAgICAgICAgc3lzdGVtX2FwaV9nYXRld2FpIC0+IGFwcF9iYWxhbmNlciAi0J/QvtC70YPRh9C10L3QuNC1INGB0YLQsNGC0YPRgdCwINC4INGA0LXQt9GD0LvRjNGC0LDRgtCwINGA0LDRgdGH0ZHRgtCwLiBHRVQ6IC9vcHRpcy1zdGFpcnMvYXBpL3JlcXVlc3RzLXN0YXR1c2VzIiAiUkVTVCBBUEkiICIiCiAgICAgICAgICAgIHN5c3RlbV9hcGlfZ2F0ZXdhaSAtPiBhcHBfYmFsYW5jZXIgItCj0YHRgtCw0L3QvtCy0LjRgtGMINC/0LDRgNCw0LzQtdGC0YDRiyDQtNC+0YHRgtGD0L/QsCDQv9C+0LvRjNC30L7QstCw0YLQtdC70Y8g0Log0YDQsNGB0YfRkdGC0LDQvC4gUE9TVDogL29wdGlzLXN0YWlycy9hcGkvdXNlci1hY2wiICJSRVNUIEFQSSIgIiIKICAgICAgICB9CgogICAgICAgIC8vIERldgogICAgICAgICFyZWYgIkRlcGxveW1lbnROb2RlOi8vRGV2ZWxvcG1lbnQvQ2xvUnUva2Fsa3Byb19wcm9qZWN0L9Ca0LvQsNGB0YLQtdGAIGthbGtwcm8tazhzL2Rldi9iYWxhbmNlciIgewogICAgICAgICAgICBjb250YWluZXJJbnN0YW5jZSBhcHBfYmFsYW5jZXIgewogICAgICAgICAgICAgICAgZGVzY3JpcHRpb24gIks4cyBJbmdyZXNzIG5naW54XG5yZXBsaWNhczogWDEiCiAgICAgICAgICAgICAgICBwcm9wZXJ0aWVzIHsKICAgICAgICAgICAgICAgICAgICAicmVwbGljYXMiICIxIgogICAgICAgICAgICAgICAgfQogICAgICAgICAgICB9CiAgICAgICAgfQoKICAgICAgICAhcmVmICJEZXBsb3ltZW50Tm9kZTovL0RldmVsb3BtZW50L0Nsb1J1L2thbGtwcm9fcHJvamVjdC/QmtC70LDRgdGC0LXRgCBrYWxrcHJvLWs4cy9kZXYvcGdzcWwiIHsKICAgICAgICAgICAgdGVjaG5vbG9neSAicG9zdGdyZXMgMTcgb3BlcmF0b3IgNTAwTWkiCiAgICAgICAgICAgIGNvbnRhaW5lckluc3RhbmNlIGRiX29wdGlzdGFpcnMgewogICAgICAgICAgICAgICAgZGVzY3JpcHRpb24gImRiOiBvcHRpc3RhaXJzXG5yZXBsaWNhczogWDEiCiAgICAgICAgICAgICAgICBwcm9wZXJ0aWVzIHsKICAgICAgICAgICAgICAgICAgICAicmVwbGljYXMiICIxIgogICAgICAgICAgICAgICAgfQogICAgICAgICAgICB9CiAgICAgICAgfQoKCiAgICAgICAgIXJlZiAiRGVwbG95bWVudE5vZGU6Ly9EZXZlbG9wbWVudC9DbG9SdS9rYWxrcHJvX3Byb2plY3Qv0JrQu9Cw0YHRgtC10YAga2Fsa3Byby1rOHMvZGV2L29wdGlzdGFpci1jYWxjIiB7CiAgICAgICAgICAgIGNvbnRhaW5lckluc3RhbmNlIGFwcF9yZXF1ZXN0X21hbmFnZXIgewogICAgICAgICAgICAgICAgZGVzY3JpcHRpb24gInJlcGxpY2FzOiBYMSIKICAgICAgICAgICAgICAgIHByb3BlcnRpZXMgewogICAgICAgICAgICAgICAgICAgICJyZXBsaWNhcyIgIjEiCiAgICAgICAgICAgICAgICB9CiAgICAgICAgICAgIH0KICAgICAgICAgICAgY29udGFpbmVySW5zdGFuY2UgYXBwX3N0cmFpZ2h0X3N0YWlyX2NhbGMgewogICAgICAgICAgICAgICAgZGVzY3JpcHRpb24gInJlcGxpY2FzOiBYMSIKICAgICAgICAgICAgICAgIHByb3BlcnRpZXMgewogICAgICAgICAgICAgICAgICAgICJyZXBsaWNhcyIgIjEiCiAgICAgICAgICAgICAgICB9CiAgICAgICAgICAgIH0KICAgICAgICAgICAgY29udGFpbmVySW5zdGFuY2UgYXBwX2xfc2hhcGVfc3RhaXJfY2FsYyB7CiAgICAgICAgICAgICAgICBkZXNjcmlwdGlvbiAicmVwbGljYXM6IFgxIgogICAgICAgICAgICAgICAgcHJvcGVydGllcyB7CiAgICAgICAgICAgICAgICAgICAgInJlcGxpY2FzIiAiMSIKICAgICAgICAgICAgICAgIH0KICAgICAgICAgICAgfQogICAgICAgICAgICBjb250YWluZXJJbnN0YW5jZSBhcHBfdV9zaGFwZV9zdGFpcl9jYWxjIHsKICAgICAgICAgICAgICAgIGRlc2NyaXB0aW9uICJyZXBsaWNhczogWDEiCiAgICAgICAgICAgICAgICBwcm9wZXJ0aWVzIHsKICAgICAgICAgICAgICAgICAgICAicmVwbGljYXMiICIxIgogICAgICAgICAgICAgICAgfQogICAgICAgICAgICB9CgogICAgICAgICAgICBjb250YWluZXJJbnN0YW5jZSB0b3BpY19yZXF1ZXN0X3N0cmFpZ2h0X3N0YWlyCiAgICAgICAgICAgIGNvbnRhaW5lckluc3RhbmNlIHRvcGljX3JlcXVlc3RfbF9zaGFwZV9zdGFpcgogICAgICAgICAgICBjb250YWluZXJJbnN0YW5jZSB0b3BpY19yZXF1ZXN0X3Vfc2hhcGVfc3RhaXIKICAgICAgICAgICAgY29udGFpbmVySW5zdGFuY2UgdG9waWNfY2FsY3VsYXRpb25fcHJvZ3Jlc3MKICAgICAgICAgICAgY29udGFpbmVySW5zdGFuY2UgdG9waWNfY2FsY3VsYXRpb25fcmVzdWx0CiAgICAgICAgfQoKICAgICAgICAvLyBQcm9kdWN0aW9uCiAgICAgICAgIXJlZiAiRGVwbG95bWVudE5vZGU6Ly9Qcm9kdWN0aW9uL0Nsb1J1L2thbGtwcm9fcHJvamVjdC/QmtC70LDRgdGC0LXRgCBrYWxrcHJvLWs4cy9pbmZyYXN0cnVjdHVyZS9iYWxhbmNlciIgewogICAgICAgICAgICBjb250YWluZXJJbnN0YW5jZSBhcHBfYmFsYW5jZXIgewogICAgICAgICAgICAgICAgZGVzY3JpcHRpb24gIks4cyBJbmdyZXNzIG5naW54XG5yZXBsaWNhczogWDIiCiAgICAgICAgICAgICAgICBwcm9wZXJ0aWVzIHsKICAgICAgICAgICAgICAgICAgICAicmVwbGljYXMiICIyIgogICAgICAgICAgICAgICAgfQogICAgICAgICAgICB9CiAgICAgICAgfQoKICAgICAgICAhcmVmICJEZXBsb3ltZW50Tm9kZTovL1Byb2R1Y3Rpb24vQ2xvUnUva2Fsa3Byb19wcm9qZWN0L9Ca0LvQsNGB0YLQtdGAIGthbGtwcm8tazhzL2luZnJhc3RydWN0dXJlL3Bnc3FsIiB7CiAgICAgICAgICAgIHRlY2hub2xvZ3kgInBvc3RncmVzIDE3IG9wZXJhdG9yIDUwME1pIgogICAgICAgICAgICBjb250YWluZXJJbnN0YW5jZSBkYl9vcHRpc3RhaXJzIHsKICAgICAgICAgICAgICAgIGRlc2NyaXB0aW9uICJkYjogb3B0aXN0YWlyc1xucmVwbGljYXM6IFgyIgogICAgICAgICAgICAgICAgcHJvcGVydGllcyB7CiAgICAgICAgICAgICAgICAgICAgInJlcGxpY2FzIiAiMiIKICAgICAgICAgICAgICAgIH0KICAgICAgICAgICAgfQogICAgICAgIH0KCiAgICAgICAgIXJlZiAiRGVwbG95bWVudE5vZGU6Ly9Qcm9kdWN0aW9uL0Nsb1J1L2thbGtwcm9fcHJvamVjdC/QmtC70LDRgdGC0LXRgCBrYWxrcHJvLWs4cy9pbmZyYXN0cnVjdHVyZS9rYWZrYSIgewogICAgICAgICAgICBjb250YWluZXJJbnN0YW5jZSB0b3BpY19yZXF1ZXN0X3N0cmFpZ2h0X3N0YWlyCiAgICAgICAgICAgIGNvbnRhaW5lckluc3RhbmNlIHRvcGljX3JlcXVlc3RfbF9zaGFwZV9zdGFpcgogICAgICAgICAgICBjb250YWluZXJJbnN0YW5jZSB0b3BpY19yZXF1ZXN0X3Vfc2hhcGVfc3RhaXIKICAgICAgICAgICAgY29udGFpbmVySW5zdGFuY2UgdG9waWNfY2FsY3VsYXRpb25fcHJvZ3Jlc3MKICAgICAgICAgICAgY29udGFpbmVySW5zdGFuY2UgdG9waWNfY2FsY3VsYXRpb25fcmVzdWx0CiAgICAgICAgfQoKICAgICAgICAhcmVmICJEZXBsb3ltZW50Tm9kZTovL1Byb2R1Y3Rpb24vQ2xvUnUva2Fsa3Byb19wcm9qZWN0L9Ca0LvQsNGB0YLQtdGAIGthbGtwcm8tazhzL29wdGlzdGFpci1jYWxjIiB7CiAgICAgICAgICAgIGNvbnRhaW5lckluc3RhbmNlIGFwcF9yZXF1ZXN0X21hbmFnZXIgewogICAgICAgICAgICAgICAgZGVzY3JpcHRpb24gInJlcGxpY2FzOiBYMiIKICAgICAgICAgICAgICAgIHByb3BlcnRpZXMgewogICAgICAgICAgICAgICAgICAgICJyZXBsaWNhcyIgIjIiCiAgICAgICAgICAgICAgICB9CiAgICAgICAgICAgIH0KICAgICAgICAgICAgY29udGFpbmVySW5zdGFuY2UgYXBwX3N0cmFpZ2h0X3N0YWlyX2NhbGMgewogICAgICAgICAgICAgICAgZGVzY3JpcHRpb24gInJlcGxpY2FzOiBYMiIKICAgICAgICAgICAgICAgIHByb3BlcnRpZXMgewogICAgICAgICAgICAgICAgICAgICJyZXBsaWNhcyIgIjIiCiAgICAgICAgICAgICAgICB9CiAgICAgICAgICAgIH0KICAgICAgICAgICAgY29udGFpbmVySW5zdGFuY2UgYXBwX2xfc2hhcGVfc3RhaXJfY2FsYyB7CiAgICAgICAgICAgICAgICBkZXNjcmlwdGlvbiAicmVwbGljYXM6IFgyIgogICAgICAgICAgICAgICAgcHJvcGVydGllcyB7CiAgICAgICAgICAgICAgICAgICAgInJlcGxpY2FzIiAiMiIKICAgICAgICAgICAgICAgIH0KICAgICAgICAgICAgfQogICAgICAgICAgICBjb250YWluZXJJbnN0YW5jZSBhcHBfdV9zaGFwZV9zdGFpcl9jYWxjIHsKICAgICAgICAgICAgICAgIGRlc2NyaXB0aW9uICJyZXBsaWNhczogWDIiCiAgICAgICAgICAgICAgICBwcm9wZXJ0aWVzIHsKICAgICAgICAgICAgICAgICAgICAicmVwbGljYXMiICIyIgogICAgICAgICAgICAgICAgfQogICAgICAgICAgICB9CiAgICAgICAgfQogICAgfQoKICAgIHZpZXdzIHsKICAgICAgICBzeXN0ZW1Db250ZXh0IHN5c3RlbV9vcHRpc3RhaXJfY2FsYyBPUFRJU1RBSVJfQ0FMQ19DNEwxICLQn9C+0LTQsdC+0YAg0L7Qv9GC0LjQvNCw0LvRjNC90L7QuSDQutC+0L3RhC4g0LvQtdGB0YLQvdC40YbRiyAtINCa0L7QvdGC0LXQutGB0YLQvdCw0Y8g0LTQuNCw0LPRgNCw0LzQvNCwIiB7CiAgICAgICAgICAgIGF1dG9MYXlvdXQKICAgICAgICAgICAgaW5jbHVkZSAtPnN5c3RlbV9vcHRpc3RhaXJfY2FsYy0+CiAgICAgICAgfQogICAgICAgIGNvbnRhaW5lciBzeXN0ZW1fb3B0aXN0YWlyX2NhbGMgT1BUSVNUQUlSX0NBTENfQzRMMiAi0J/QvtC00LHQvtGAINC+0L/RgtC40LzQsNC70YzQvdC+0Lkg0LrQvtC90YQuINC70LXRgdGC0L3QuNGG0YsiIHsKICAgICAgICAgICAgYXV0b0xheW91dAogICAgICAgICAgICBpbmNsdWRlICoKICAgICAgICAgICAgaW5jbHVkZSBleHRfcGVyc29uX3dlYgogICAgICAgICAgICBpbmNsdWRlIHN5c3RlbV93ZWJfc2l0ZQogICAgICAgICAgICBpbmNsdWRlIHN5c3RlbV9hcGlfZ2F0ZXdhaQogICAgICAgIH0KICAgICAgICBkZXBsb3ltZW50IHN5c3RlbV9vcHRpc3RhaXJfY2FsYyBEZXZlbG9wbWVudCBPUFRJU1RBSVJfQ0FMQ19ERVBMT1lfREVWICLQn9C+0LTQsdC+0YAg0L7Qv9GC0LjQvNCw0LvRjNC90L7QuSDQutC+0L3RhC4g0LvQtdGB0YLQvdC40YbRiyIgewogICAgICAgICAgICBhdXRvTGF5b3V0CiAgICAgICAgICAgIGluY2x1ZGUgKgogICAgICAgICAgICBleGNsdWRlICJlbGVtZW50LnRhZz09U29mdHdhcmUgU3lzdGVtIgogICAgICAgICAgICBleGNsdWRlICJlbGVtZW50LnRhZz09SW5mcmFzdHJ1Y3R1cmUgTm9kZSIKICAgICAgICB9CiAgICAgICAgZGVwbG95bWVudCBzeXN0ZW1fb3B0aXN0YWlyX2NhbGMgUHJvZHVjdGlvbiBPUFRJU1RBSVJfQ0FMQ19ERVBMT1lfUFJPRCAi0J/QvtC00LHQvtGAINC+0L/RgtC40LzQsNC70YzQvdC+0Lkg0LrQvtC90YQuINC70LXRgdGC0L3QuNGG0YsiIHsKICAgICAgICAgICAgYXV0b0xheW91dAogICAgICAgICAgICBpbmNsdWRlICoKICAgICAgICAgICAgZXhjbHVkZSAiZWxlbWVudC50YWc9PVNvZnR3YXJlIFN5c3RlbSIKICAgICAgICAgICAgZXhjbHVkZSAiZWxlbWVudC50YWc9PUluZnJhc3RydWN0dXJlIE5vZGUiCiAgICAgICAgfQogICAgfQp9"
   },
   "views" : {
     "configuration" : {
       "branding" : { },
-      "lastSavedView" : "OPTISTAIR_CALC_DEPLOY_PROD",
+      "lastSavedView" : "OPTISTAIR_CALC_C4L2",
       "metadataSymbols" : "SquareBrackets",
       "styles" : {
         "elements" : [ {
@@ -1850,187 +1982,238 @@
       },
       "description" : "Подбор оптимальной конф. лестницы",
       "dimensions" : {
-        "height" : 2643,
-        "width" : 4166
+        "height" : 3923,
+        "width" : 4640
       },
       "elements" : [ {
-        "id" : "82",
-        "x" : 2523,
-        "y" : 1372
+        "id" : "1",
+        "x" : 2081,
+        "y" : 152
       }, {
-        "id" : "83",
-        "x" : 219,
-        "y" : 1972
+        "id" : "4",
+        "x" : 2056,
+        "y" : 1452
       }, {
-        "id" : "84",
-        "x" : 1010,
-        "y" : 1972
-      }, {
-        "id" : "85",
-        "x" : 3273,
-        "y" : 1372
-      }, {
-        "id" : "86",
-        "x" : 1914,
-        "y" : 1972
+        "id" : "5",
+        "x" : 2056,
+        "y" : 852
       }, {
         "id" : "87",
-        "x" : 1464,
-        "y" : 172
+        "x" : 969,
+        "y" : 3252
       }, {
         "id" : "88",
-        "x" : 1464,
-        "y" : 772
+        "x" : 3969,
+        "y" : 3252
+      }, {
+        "id" : "89",
+        "x" : 2469,
+        "y" : 3252
+      }, {
+        "id" : "90",
+        "x" : 219,
+        "y" : 3252
+      }, {
+        "id" : "91",
+        "x" : 1719,
+        "y" : 3252
+      }, {
+        "id" : "92",
+        "x" : 3219,
+        "y" : 3252
+      }, {
+        "id" : "93",
+        "x" : 2056,
+        "y" : 2052
       }, {
         "id" : "94",
-        "x" : 406,
-        "y" : 1372
+        "x" : 2056,
+        "y" : 2652
       }, {
-        "id" : "99",
-        "x" : 1464,
-        "y" : 1372
+        "id" : "101",
+        "x" : 3556,
+        "y" : 2052
       }, {
-        "id" : "104",
-        "x" : 2214,
-        "y" : 172
+        "id" : "107",
+        "x" : 2806,
+        "y" : 2052
+      }, {
+        "id" : "113",
+        "x" : 1306,
+        "y" : 2052
       } ],
       "externalSoftwareSystemBoundariesVisible" : false,
       "key" : "OPTISTAIR_CALC_C4L2",
       "order" : 2,
       "relationships" : [ {
-        "id" : "100",
+        "id" : "100"
+      }, {
+        "id" : "102",
         "vertices" : [ {
-          "x" : 1689,
-          "y" : 1222
+          "x" : 3031,
+          "y" : 2502
         } ]
       }, {
-        "id" : "101",
+        "id" : "103",
         "vertices" : [ {
-          "x" : 1539,
-          "y" : 1222
+          "x" : 3086,
+          "y" : 2641
         } ]
       }, {
-        "id" : "102"
-      }, {
-        "id" : "103"
-      }, {
-        "id" : "105",
+        "id" : "104",
         "vertices" : [ {
-          "x" : 2064,
-          "y" : 622
+          "x" : 2975,
+          "y" : 2362
         } ]
       }, {
-        "id" : "106",
-        "vertices" : [ {
-          "x" : 2157,
-          "y" : 739
-        } ]
+        "id" : "105"
       }, {
-        "id" : "107"
+        "id" : "106"
       }, {
         "id" : "108",
         "vertices" : [ {
-          "x" : 3873,
-          "y" : 1372
-        }, {
-          "x" : 3873,
-          "y" : 1672
+          "x" : 2656,
+          "y" : 2502
         } ]
       }, {
         "id" : "109",
         "vertices" : [ {
-          "x" : 1689,
-          "y" : 622
+          "x" : 2749,
+          "y" : 2619
         } ]
+      }, {
+        "id" : "11"
       }, {
         "id" : "110",
         "vertices" : [ {
-          "x" : 1839,
-          "y" : 622
+          "x" : 2562,
+          "y" : 2384
         } ]
       }, {
-        "id" : "111",
-        "vertices" : [ {
-          "x" : 1539,
-          "y" : 622
-        } ]
+        "id" : "111"
       }, {
-        "id" : "112",
-        "vertices" : [ {
-          "x" : 1989,
-          "y" : 622
-        } ]
-      }, {
-        "id" : "113",
-        "vertices" : [ {
-          "x" : 1389,
-          "y" : 622
-        } ]
+        "id" : "112"
       }, {
         "id" : "114",
         "vertices" : [ {
-          "x" : 1160,
-          "y" : 1222
+          "x" : 1906,
+          "y" : 2502
         } ]
       }, {
         "id" : "115",
         "vertices" : [ {
-          "x" : 1839,
-          "y" : 1222
+          "x" : 1999,
+          "y" : 2384
         } ]
       }, {
         "id" : "116",
         "vertices" : [ {
-          "x" : 1970,
-          "y" : 504
+          "x" : 1812,
+          "y" : 2619
         } ]
       }, {
-        "id" : "89"
+        "id" : "117"
       }, {
-        "id" : "90",
+        "id" : "118",
         "vertices" : [ {
-          "x" : 256,
-          "y" : 1372
+          "x" : 1906,
+          "y" : 2952
         }, {
-          "x" : 256,
-          "y" : 1672
+          "x" : 3069,
+          "y" : 3252
         } ]
       }, {
-        "id" : "91",
+        "id" : "119",
         "vertices" : [ {
-          "x" : 1314,
-          "y" : 1372
+          "x" : 2131,
+          "y" : 2502
         } ]
       }, {
-        "id" : "92",
+        "id" : "120",
         "vertices" : [ {
-          "x" : 3123,
-          "y" : 1372
+          "x" : 2431,
+          "y" : 2502
         } ]
       }, {
-        "id" : "93",
+        "id" : "121",
         "vertices" : [ {
-          "x" : 2064,
-          "y" : 1372
+          "x" : 1981,
+          "y" : 2502
         } ]
       }, {
-        "id" : "95",
+        "id" : "122",
         "vertices" : [ {
-          "x" : 1233,
-          "y" : 1352
+          "x" : 2581,
+          "y" : 2502
         } ]
+      }, {
+        "id" : "123",
+        "vertices" : [ {
+          "x" : 1831,
+          "y" : 2502
+        } ]
+      }, {
+        "id" : "124",
+        "vertices" : [ {
+          "x" : 2731,
+          "y" : 2502
+        } ]
+      }, {
+        "id" : "125",
+        "vertices" : [ {
+          "x" : 2281,
+          "y" : 1902
+        } ]
+      }, {
+        "id" : "126",
+        "vertices" : [ {
+          "x" : 2431,
+          "y" : 1902
+        } ]
+      }, {
+        "id" : "127",
+        "vertices" : [ {
+          "x" : 2131,
+          "y" : 1902
+        } ]
+      }, {
+        "id" : "17",
+        "vertices" : [ {
+          "x" : 2281,
+          "y" : 1302
+        } ]
+      }, {
+        "id" : "18",
+        "vertices" : [ {
+          "x" : 2431,
+          "y" : 1302
+        } ]
+      }, {
+        "id" : "19",
+        "vertices" : [ {
+          "x" : 2131,
+          "y" : 1302
+        } ]
+      }, {
+        "id" : "95"
       }, {
         "id" : "96",
         "vertices" : [ {
-          "x" : 1086,
-          "y" : 1091
+          "x" : 3819,
+          "y" : 3252
         } ]
       }, {
         "id" : "97"
       }, {
-        "id" : "98"
+        "id" : "98",
+        "vertices" : [ {
+          "x" : 819,
+          "y" : 3252
+        } ]
+      }, {
+        "id" : "99"
       } ],
-      "softwareSystemId" : "8"
+      "softwareSystemId" : "9"
     } ],
     "deploymentViews" : [ {
       "automaticLayout" : {
@@ -2044,35 +2227,23 @@
       },
       "description" : "Подбор оптимальной конф. лестницы",
       "dimensions" : {
-        "height" : 3055,
-        "width" : 4450
+        "height" : 2455,
+        "width" : 4876
       },
       "elements" : [ {
-        "id" : "25",
+        "id" : "30",
         "x" : 175,
         "y" : 175
       }, {
-        "id" : "26",
+        "id" : "31",
         "x" : 175,
         "y" : 175
       }, {
-        "id" : "27",
+        "id" : "32",
         "x" : 175,
         "y" : 175
       }, {
-        "id" : "28",
-        "x" : 175,
-        "y" : 175
-      }, {
-        "id" : "34",
-        "x" : 175,
-        "y" : 175
-      }, {
-        "id" : "36",
-        "x" : 175,
-        "y" : 175
-      }, {
-        "id" : "37",
+        "id" : "33",
         "x" : 175,
         "y" : 175
       }, {
@@ -2080,187 +2251,200 @@
         "x" : 175,
         "y" : 175
       }, {
-        "id" : "117",
-        "x" : 1571,
+        "id" : "41",
+        "x" : 175,
+        "y" : 175
+      }, {
+        "id" : "42",
+        "x" : 175,
+        "y" : 175
+      }, {
+        "id" : "44",
+        "x" : 175,
+        "y" : 175
+      }, {
+        "id" : "128",
+        "x" : 4063,
         "y" : 252
       }, {
-        "id" : "118",
-        "x" : 3700,
-        "y" : 1452
-      }, {
-        "id" : "119",
-        "x" : 1571,
-        "y" : 852
-      }, {
-        "id" : "126",
-        "x" : 513,
+        "id" : "129",
+        "x" : 4063,
         "y" : 1452
       }, {
         "id" : "130",
-        "x" : 1571,
-        "y" : 1452
-      }, {
-        "id" : "134",
-        "x" : 2321,
-        "y" : 1452
+        "x" : 2684,
+        "y" : 852
       }, {
         "id" : "138",
+        "x" : 2684,
+        "y" : 252
+      }, {
+        "id" : "142",
+        "x" : 1934,
+        "y" : 252
+      }, {
+        "id" : "146",
+        "x" : 1184,
+        "y" : 252
+      }, {
+        "id" : "150",
+        "x" : 3300,
+        "y" : 1452
+      }, {
+        "id" : "153",
+        "x" : 1800,
+        "y" : 1452
+      }, {
+        "id" : "156",
         "x" : 300,
-        "y" : 2052
+        "y" : 1452
       }, {
-        "id" : "141",
-        "x" : 2038,
-        "y" : 2052
+        "id" : "159",
+        "x" : 2550,
+        "y" : 1452
       }, {
-        "id" : "144",
-        "x" : 2888,
-        "y" : 2052
-      }, {
-        "id" : "147",
-        "x" : 1092,
-        "y" : 2052
+        "id" : "161",
+        "x" : 1050,
+        "y" : 1452
       } ],
       "environment" : "Development",
       "key" : "OPTISTAIR_CALC_DEPLOY_DEV",
       "order" : 3,
       "relationships" : [ {
-        "id" : "120",
-        "vertices" : [ {
-          "x" : 1796,
-          "y" : 702
-        } ]
-      }, {
-        "id" : "121",
-        "vertices" : [ {
-          "x" : 1946,
-          "y" : 702
-        } ]
-      }, {
-        "id" : "122",
-        "vertices" : [ {
-          "x" : 1646,
-          "y" : 702
-        } ]
-      }, {
-        "id" : "123",
-        "vertices" : [ {
-          "x" : 2096,
-          "y" : 702
-        } ]
-      }, {
-        "id" : "124",
-        "vertices" : [ {
-          "x" : 1496,
-          "y" : 702
-        } ]
-      }, {
-        "id" : "125",
-        "vertices" : [ {
-          "x" : 3567,
-          "y" : 1348
-        } ]
-      }, {
-        "id" : "127",
-        "vertices" : [ {
-          "x" : 1267,
-          "y" : 1302
-        } ]
-      }, {
-        "id" : "128",
-        "vertices" : [ {
-          "x" : 1193,
-          "y" : 1171
-        } ]
-      }, {
-        "id" : "129",
-        "vertices" : [ {
-          "x" : 1340,
-          "y" : 1432
-        } ]
-      }, {
         "id" : "131",
         "vertices" : [ {
-          "x" : 1796,
-          "y" : 1302
+          "x" : 3180,
+          "y" : 657
         } ]
       }, {
         "id" : "132",
         "vertices" : [ {
-          "x" : 1646,
-          "y" : 1302
+          "x" : 3480,
+          "y" : 657
         } ]
       }, {
         "id" : "133",
         "vertices" : [ {
-          "x" : 1946,
-          "y" : 1302
+          "x" : 3780,
+          "y" : 657
+        } ]
+      }, {
+        "id" : "134",
+        "vertices" : [ {
+          "x" : 4080,
+          "y" : 657
         } ]
       }, {
         "id" : "135",
         "vertices" : [ {
-          "x" : 2171,
-          "y" : 1302
+          "x" : 4380,
+          "y" : 657
         } ]
       }, {
         "id" : "136",
         "vertices" : [ {
-          "x" : 2077,
-          "y" : 1419
+          "x" : 4680,
+          "y" : 657
         } ]
       }, {
         "id" : "137",
         "vertices" : [ {
-          "x" : 2264,
-          "y" : 1184
+          "x" : 3930,
+          "y" : 1348
         } ]
       }, {
         "id" : "139",
         "vertices" : [ {
-          "x" : 363,
-          "y" : 1348
-        }, {
-          "x" : 363,
-          "y" : 1857
+          "x" : 2909,
+          "y" : 702
         } ]
       }, {
-        "id" : "140"
-      }, {
-        "id" : "142",
+        "id" : "140",
         "vertices" : [ {
-          "x" : 2921,
-          "y" : 1348
-        }, {
-          "x" : 2921,
-          "y" : 1857
+          "x" : 3059,
+          "y" : 702
         } ]
       }, {
-        "id" : "143"
-      }, {
-        "id" : "145"
-      }, {
-        "id" : "146",
+        "id" : "141",
         "vertices" : [ {
-          "x" : 3000,
-          "y" : 1348
+          "x" : 2759,
+          "y" : 702
+        } ]
+      }, {
+        "id" : "143",
+        "vertices" : [ {
+          "x" : 2534,
+          "y" : 702
+        } ]
+      }, {
+        "id" : "144",
+        "vertices" : [ {
+          "x" : 2627,
+          "y" : 584
+        } ]
+      }, {
+        "id" : "145",
+        "vertices" : [ {
+          "x" : 2440,
+          "y" : 819
+        } ]
+      }, {
+        "id" : "147",
+        "vertices" : [ {
+          "x" : 1484,
+          "y" : 657
         } ]
       }, {
         "id" : "148",
         "vertices" : [ {
-          "x" : 2171,
-          "y" : 1857
+          "x" : 1784,
+          "y" : 657
         } ]
       }, {
         "id" : "149",
         "vertices" : [ {
-          "x" : 1421,
+          "x" : 2084,
+          "y" : 657
+        } ]
+      }, {
+        "id" : "151"
+      }, {
+        "id" : "152",
+        "vertices" : [ {
+          "x" : 3284,
+          "y" : 852
+        } ]
+      }, {
+        "id" : "154"
+      }, {
+        "id" : "155"
+      }, {
+        "id" : "157",
+        "vertices" : [ {
+          "x" : 900,
           "y" : 1348
         } ]
       }, {
-        "id" : "150"
+        "id" : "158"
       }, {
-        "id" : "151"
+        "id" : "160"
+      }, {
+        "id" : "162",
+        "vertices" : [ {
+          "x" : 2455,
+          "y" : 1152
+        }, {
+          "x" : 1650,
+          "y" : 1348
+        } ]
+      }, {
+        "id" : "163"
+      }, {
+        "id" : "164"
+      }, {
+        "id" : "165"
       } ],
-      "softwareSystemId" : "8"
+      "softwareSystemId" : "9"
     }, {
       "automaticLayout" : {
         "applied" : true,
@@ -2273,26 +2457,10 @@
       },
       "description" : "Подбор оптимальной конф. лестницы",
       "dimensions" : {
-        "height" : 2481,
-        "width" : 4909
+        "height" : 1835,
+        "width" : 7922
       },
       "elements" : [ {
-        "id" : "67",
-        "x" : 175,
-        "y" : 175
-      }, {
-        "id" : "68",
-        "x" : 175,
-        "y" : 175
-      }, {
-        "id" : "69",
-        "x" : 175,
-        "y" : 175
-      }, {
-        "id" : "70",
-        "x" : 175,
-        "y" : 175
-      }, {
         "id" : "72",
         "x" : 175,
         "y" : 175
@@ -2309,223 +2477,351 @@
         "x" : 175,
         "y" : 175
       }, {
-        "id" : "76",
+        "id" : "77",
         "x" : 175,
         "y" : 175
       }, {
-        "id" : "152",
-        "x" : 3396,
-        "y" : 1477
+        "id" : "78",
+        "x" : 175,
+        "y" : 175
       }, {
-        "id" : "153",
-        "x" : 4158,
-        "y" : 1477
+        "id" : "79",
+        "x" : 175,
+        "y" : 175
       }, {
-        "id" : "154",
-        "x" : 1883,
-        "y" : 1477
+        "id" : "80",
+        "x" : 175,
+        "y" : 175
       }, {
-        "id" : "155",
-        "x" : 2633,
-        "y" : 1477
+        "id" : "81",
+        "x" : 175,
+        "y" : 175
       }, {
-        "id" : "156",
-        "x" : 383,
-        "y" : 1477
+        "id" : "166",
+        "x" : 7171,
+        "y" : 832
       }, {
-        "id" : "157",
-        "x" : 1133,
-        "y" : 1477
+        "id" : "167",
+        "x" : 6408,
+        "y" : 832
       }, {
-        "id" : "158",
-        "x" : 1779,
-        "y" : 231
+        "id" : "168",
+        "x" : 5646,
+        "y" : 832
       }, {
         "id" : "169",
-        "x" : 1029,
-        "y" : 831
+        "x" : 3396,
+        "y" : 832
       }, {
-        "id" : "175",
+        "id" : "170",
+        "x" : 2646,
+        "y" : 832
+      }, {
+        "id" : "171",
+        "x" : 4896,
+        "y" : 832
+      }, {
+        "id" : "172",
+        "x" : 4146,
+        "y" : 832
+      }, {
+        "id" : "173",
         "x" : 1779,
-        "y" : 831
+        "y" : 832
       }, {
-        "id" : "181",
+        "id" : "186",
+        "x" : 1779,
+        "y" : 232
+      }, {
+        "id" : "192",
+        "x" : 1029,
+        "y" : 232
+      }, {
+        "id" : "198",
         "x" : 279,
-        "y" : 831
+        "y" : 232
       } ],
       "environment" : "Production",
       "key" : "OPTISTAIR_CALC_DEPLOY_PROD",
       "order" : 4,
       "relationships" : [ {
-        "id" : "159",
+        "id" : "174",
         "vertices" : [ {
-          "x" : 3000,
-          "y" : 831
+          "x" : 7038,
+          "y" : 624
         }, {
-          "x" : 3000,
-          "y" : 1235
-        } ]
-      }, {
-        "id" : "160",
-        "vertices" : [ {
-          "x" : 2921,
-          "y" : 831
+          "x" : 6995,
+          "y" : 611
         }, {
-          "x" : 2921,
-          "y" : 1235
+          "x" : 2510,
+          "y" : 611
         }, {
-          "x" : 2483,
-          "y" : 1269
+          "x" : 2467,
+          "y" : 624
         } ]
       }, {
-        "id" : "161",
+        "id" : "175",
         "vertices" : [ {
-          "x" : 2613,
-          "y" : 831
+          "x" : 7038,
+          "y" : 624
         }, {
-          "x" : 2613,
-          "y" : 1235
+          "x" : 6952,
+          "y" : 598
         }, {
-          "x" : 1733,
-          "y" : 1269
-        } ]
-      }, {
-        "id" : "162",
-        "vertices" : [ {
-          "x" : 3296,
-          "y" : 831
+          "x" : 2552,
+          "y" : 598
         }, {
-          "x" : 4025,
-          "y" : 1269
+          "x" : 2467,
+          "y" : 624
         } ]
-      }, {
-        "id" : "163",
-        "vertices" : [ {
-          "x" : 2379,
-          "y" : 831
-        }, {
-          "x" : 2379,
-          "y" : 1235
-        }, {
-          "x" : 983,
-          "y" : 1269
-        } ]
-      }, {
-        "id" : "164",
-        "vertices" : [ {
-          "x" : 2479,
-          "y" : 831
-        } ]
-      }, {
-        "id" : "165",
-        "vertices" : [ {
-          "x" : 2779,
-          "y" : 831
-        } ]
-      }, {
-        "id" : "166",
-        "vertices" : [ {
-          "x" : 3079,
-          "y" : 831
-        } ]
-      }, {
-        "id" : "167",
-        "vertices" : [ {
-          "x" : 3379,
-          "y" : 831
-        } ]
-      }, {
-        "id" : "168",
-        "vertices" : [ {
-          "x" : 3679,
-          "y" : 831
-        } ]
-      }, {
-        "id" : "170",
-        "vertices" : [ {
-          "x" : 1629,
-          "y" : 1235
-        }, {
-          "x" : 1733,
-          "y" : 1269
-        } ]
-      }, {
-        "id" : "171",
-        "vertices" : [ {
-          "x" : 1629,
-          "y" : 681
-        } ]
-      }, {
-        "id" : "172",
-        "vertices" : [ {
-          "x" : 1535,
-          "y" : 563
-        } ]
-      }, {
-        "id" : "173",
-        "vertices" : [ {
-          "x" : 1722,
-          "y" : 798
-        } ]
-      }, {
-        "id" : "174"
       }, {
         "id" : "176",
         "vertices" : [ {
-          "x" : 2483,
-          "y" : 1269
+          "x" : 7038,
+          "y" : 624
+        }, {
+          "x" : 6909,
+          "y" : 585
+        }, {
+          "x" : 2595,
+          "y" : 585
+        }, {
+          "x" : 2467,
+          "y" : 624
         } ]
       }, {
         "id" : "177",
         "vertices" : [ {
-          "x" : 2004,
-          "y" : 681
+          "x" : 7038,
+          "y" : 624
+        }, {
+          "x" : 6866,
+          "y" : 571
+        }, {
+          "x" : 2638,
+          "y" : 571
+        }, {
+          "x" : 2467,
+          "y" : 624
         } ]
       }, {
         "id" : "178",
         "vertices" : [ {
-          "x" : 1854,
-          "y" : 681
+          "x" : 7038,
+          "y" : 624
+        }, {
+          "x" : 6823,
+          "y" : 558
+        }, {
+          "x" : 2681,
+          "y" : 558
+        }, {
+          "x" : 2467,
+          "y" : 624
         } ]
       }, {
         "id" : "179",
         "vertices" : [ {
-          "x" : 2154,
-          "y" : 681
+          "x" : 7038,
+          "y" : 624
+        }, {
+          "x" : 6780,
+          "y" : 545
+        }, {
+          "x" : 2724,
+          "y" : 545
+        }, {
+          "x" : 2467,
+          "y" : 624
         } ]
       }, {
-        "id" : "180"
+        "id" : "180",
+        "vertices" : [ {
+          "x" : 2467,
+          "y" : 624
+        }, {
+          "x" : 2617,
+          "y" : 578
+        }, {
+          "x" : 3846,
+          "y" : 578
+        }, {
+          "x" : 3996,
+          "y" : 624
+        } ]
+      }, {
+        "id" : "181",
+        "vertices" : [ {
+          "x" : 2467,
+          "y" : 624
+        }, {
+          "x" : 2617,
+          "y" : 578
+        }, {
+          "x" : 6125,
+          "y" : 578
+        }, {
+          "x" : 6275,
+          "y" : 624
+        } ]
       }, {
         "id" : "182",
         "vertices" : [ {
-          "x" : 1254,
-          "y" : 681
+          "x" : 2293,
+          "y" : 982
+        }, {
+          "x" : 2582,
+          "y" : 982
         } ]
       }, {
         "id" : "183",
         "vertices" : [ {
-          "x" : 1198,
-          "y" : 541
+          "x" : 2467,
+          "y" : 624
+        }, {
+          "x" : 2617,
+          "y" : 578
+        }, {
+          "x" : 3096,
+          "y" : 578
+        }, {
+          "x" : 3246,
+          "y" : 624
         } ]
       }, {
         "id" : "184",
         "vertices" : [ {
-          "x" : 1309,
-          "y" : 820
+          "x" : 2467,
+          "y" : 624
+        }, {
+          "x" : 2617,
+          "y" : 578
+        }, {
+          "x" : 4596,
+          "y" : 578
+        }, {
+          "x" : 4746,
+          "y" : 624
         } ]
       }, {
         "id" : "185",
         "vertices" : [ {
-          "x" : 879,
-          "y" : 1235
+          "x" : 2467,
+          "y" : 624
         }, {
-          "x" : 983,
-          "y" : 1269
+          "x" : 2617,
+          "y" : 578
+        }, {
+          "x" : 5346,
+          "y" : 578
+        }, {
+          "x" : 5496,
+          "y" : 624
         } ]
       }, {
-        "id" : "186"
+        "id" : "187",
+        "vertices" : [ {
+          "x" : 3996,
+          "y" : 624
+        } ]
+      }, {
+        "id" : "188",
+        "vertices" : [ {
+          "x" : 2004,
+          "y" : 682
+        } ]
+      }, {
+        "id" : "189",
+        "vertices" : [ {
+          "x" : 2154,
+          "y" : 682
+        } ]
+      }, {
+        "id" : "190",
+        "vertices" : [ {
+          "x" : 1854,
+          "y" : 682
+        } ]
+      }, {
+        "id" : "191",
+        "vertices" : [ {
+          "x" : 5496,
+          "y" : 624
+        } ]
+      }, {
+        "id" : "193",
+        "vertices" : [ {
+          "x" : 1629,
+          "y" : 532
+        }, {
+          "x" : 3996,
+          "y" : 624
+        } ]
+      }, {
+        "id" : "194",
+        "vertices" : [ {
+          "x" : 1629,
+          "y" : 532
+        }, {
+          "x" : 3246,
+          "y" : 624
+        } ]
+      }, {
+        "id" : "195",
+        "vertices" : [ {
+          "x" : 1629,
+          "y" : 682
+        } ]
+      }, {
+        "id" : "196",
+        "vertices" : [ {
+          "x" : 1722,
+          "y" : 564
+        } ]
+      }, {
+        "id" : "197",
+        "vertices" : [ {
+          "x" : 1535,
+          "y" : 799
+        } ]
+      }, {
+        "id" : "199",
+        "vertices" : [ {
+          "x" : 879,
+          "y" : 532
+        }, {
+          "x" : 3996,
+          "y" : 624
+        } ]
+      }, {
+        "id" : "200",
+        "vertices" : [ {
+          "x" : 879,
+          "y" : 532
+        }, {
+          "x" : 2408,
+          "y" : 624
+        } ]
+      }, {
+        "id" : "201",
+        "vertices" : [ {
+          "x" : 1254,
+          "y" : 682
+        } ]
+      }, {
+        "id" : "202",
+        "vertices" : [ {
+          "x" : 1309,
+          "y" : 542
+        } ]
+      }, {
+        "id" : "203",
+        "vertices" : [ {
+          "x" : 1198,
+          "y" : 821
+        } ]
       } ],
-      "softwareSystemId" : "8"
+      "softwareSystemId" : "9"
     } ],
     "systemContextViews" : [ {
       "automaticLayout" : {
@@ -2544,30 +2840,36 @@
       },
       "elements" : [ {
         "id" : "4",
-        "x" : 470,
-        "y" : 151
+        "x" : 474,
+        "y" : 152
       }, {
-        "id" : "8",
-        "x" : 470,
-        "y" : 751
+        "id" : "9",
+        "x" : 474,
+        "y" : 752
       } ],
       "enterpriseBoundaryVisible" : true,
       "key" : "OPTISTAIR_CALC_C4L1",
       "order" : 1,
       "relationships" : [ {
-        "id" : "16",
+        "id" : "20",
         "vertices" : [ {
-          "x" : 545,
-          "y" : 601
+          "x" : 699,
+          "y" : 602
         } ]
       }, {
-        "id" : "17",
+        "id" : "21",
         "vertices" : [ {
-          "x" : 845,
-          "y" : 601
+          "x" : 849,
+          "y" : 602
+        } ]
+      }, {
+        "id" : "22",
+        "vertices" : [ {
+          "x" : 549,
+          "y" : 602
         } ]
       } ],
-      "softwareSystemId" : "8"
+      "softwareSystemId" : "9"
     } ]
   }
 }

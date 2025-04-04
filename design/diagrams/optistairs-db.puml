@@ -3,9 +3,8 @@
 entity "requests" as requests {
     *id : SERIAL PRIMARY KEY
     --
-    *user_email : VARCHAR(128) NOT NULL
-    *calculation_id : VARCHAR(36) NOT NULL
-    *status : ENUM ('new', 'processing', 'ready', 'send') NOT NULL
+    *user_id : INTEGER NOT NULL
+    *status : ENUM VARCHAR ('new', 'processing', 'ready', 'send') NOT NULL
     *request_data : JSON NOT NULL
     *progress_percent : DECIMAL
     *create_time : TIMESTAMP DEFAULT CURRENT_TIMESTAMP
@@ -17,14 +16,16 @@ entity "optimal_configurations" as optimal_configurations {
     --
     *configurations : JSON NOT NULL
 }
-optimal_configurations }--|{ requests : request_ids
+optimal_configurations }--|{ requests : request_id
 
-entity "user_acl" as user_acl {
-    *user_email : VARCHAR(128) NOT NULL PRIMARY KEY
+entity "users" as users {
+    *id : INTEGER SERIAL PRIMARY KEY
     --
+    *email : VARCHAR(128) NOT NULL PRIMARY KEY
     *update_time : TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-    *max_simultaneous_requests : INTEGER
-    *available_calculations_count : INTEGER
+    *acl_max_simultaneous_requests : INTEGER
+    *acl_available_calculations_count : INTEGER
 }
+users }--|{ requests : request_id
 
 @enduml

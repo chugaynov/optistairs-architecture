@@ -27,13 +27,19 @@ workspace extends ../system-landscape.dsl {
                 tags queue,tagToBe
             }
 
-            topic_response = container "Топик response" {
+            topic_calculation_progress = container "Топик прогресс расчёта" {
+                technology "Kafka"
+                description "Прогресс калькуляцыы"
+                tags queue,tagToBe
+            }
+
+            topic_calculation_result = container "Топик результат расчёта" {
                 technology "Kafka"
                 description "Результаты расчётов оптимальных конфигураций"
                 tags queue,tagToBe
             }
 
-            app_balancer = container "Балансировщик" {
+            app_balancer = container "IngressNginx" {
                 url "https://optistair.kalk.pro"
                 technology "Ingress nginx"
             }
@@ -42,48 +48,57 @@ workspace extends ../system-landscape.dsl {
                 technology "Python"
                 description ""
                 -> db_optistairs "Создание запросов на расчет. Получение статуса запроса. Запись и чтение результатов расчета." "pgsql" "tagRead, tagWrite"
+
                 -> topic_request_straight_stair "W: Размещение запроса на расчёт Прямой лестницы" "Kafka" "queue,tagWrite,tagToBe"
                 -> topic_request_l_shape_stair "W: Размещение запроса на расчёт Г-образной лестницы" "Kafka" "queue,tagWrite,tagToBe"
                 -> topic_request_u_shape_stair "W: Размещение запроса на расчёт П-образной лестницы" "Kafka" "queue,tagWrite,tagToBe"
-                -> topic_response "R: Получение результатов расчёта" "Kafka" "queue,tagRead,tagToBe"
+                -> topic_calculation_progress "R: Получение прогресса расчёта" "Kafka" "queue,tagRead,tagToBe"
+                -> topic_calculation_result "R: Получение результатов расчёта" "Kafka" "queue,tagRead,tagToBe"
             }
 
             app_straight_stair_calc = container "Калькулятор: Прямая лестница" {
                 technology "Python"
-                description "Подбор оптимальной конфигурации лестницы по заданным параметрам проема"
-                -> app_request_manager "Передать результат расчёта. POST: /result" "REST API" ""
-                -> app_request_manager "Уведомить о прогрессе расчета. POST: /progress" "REST API" ""
+                description "Подбор оптимальной конфигурации Прямой лестницы по заданным параметрам проема"
+                -> app_request_manager "Получить список запросов на расчёт при первичной инициализации сервиса. GET: /straight-stair/actual-requests" "REST API" ""
+                -> app_request_manager "Уведомить о прогрессе расчета и статусе. PATCH: /request-status" "REST API" ""
+                -> app_request_manager "Передать результат расчёта. POST: /save-result" "REST API" ""
+
                 -> topic_request_straight_stair "R: Получение запроса на расчёт Прямой лестницы" "Kafka" "queue,tagRead,tagToBe"
-                -> topic_response "W: Размещение результата расчёта" "Kafka" "queue,tagWrite,tagToBe"
+                -> topic_calculation_result "W: Размещение результата расчёта" "Kafka" "queue,tagWrite,tagToBe"
             }
 
             app_l_shape_stair_calc = container "Калькулятор: Г-образная лестница" {
                 technology "Python"
-                description "Подбор оптимальной конфигурации лестницы по заданным параметрам проема"
-                -> app_request_manager "Передать результат расчёта. POST: /result" "REST API" ""
-                -> app_request_manager "Уведомить о прогрессе расчета. POST: /progress" "REST API" ""
+                description "Подбор оптимальной конфигурации Г-образная лестницы по заданным параметрам проема"
+                -> app_request_manager "Получить список запросов на расчёт при первичной инициализации сервиса. GET: /l-shape-stair/actual-requests" "REST API" ""
+                -> app_request_manager "Уведомить о прогрессе расчета и статусе. PATCH: /request-status" "REST API" ""
+                -> app_request_manager "Передать результат расчёта. POST: /save-result" "REST API" ""
+
                 -> topic_request_l_shape_stair "R: Получение запроса на расчёт Г-образной лестницы" "Kafka" "queue,tagRead,tagToBe"
-                -> topic_response "W: Размещение результата расчёта" "Kafka" "queue,tagWrite,tagToBe"
+                -> topic_calculation_result "W: Размещение результата расчёта" "Kafka" "queue,tagWrite,tagToBe"
             }
 
             app_u_shape_stair_calc = container "Калькулятор: П-образная лестница" {
                 technology "Python"
-                description "Подбор оптимальной конфигурации лестницы по заданным параметрам проема"
-                -> app_request_manager "Передать результат расчёта. POST: /result" "REST API" ""
-                -> app_request_manager "Уведомить о прогрессе расчета. POST: /progress" "REST API" ""
+                description "Подбор оптимальной конфигурации П-образная лестницы по заданным параметрам проема"
+                -> app_request_manager "Получить список запросов на расчёт при первичной инициализации сервиса. GET: /u-shape-stair/actual-requests" "REST API" ""
+                -> app_request_manager "Уведомить о прогрессе расчета и статусе. PATCH: /request-status" "REST API" ""
+                -> app_request_manager "Передать результат расчёта. POST: /save-result" "REST API" ""
+
                 -> topic_request_u_shape_stair "R: Получение запроса на расчёт П-образной лестницы" "Kafka" "queue,tagRead,tagToBe"
-                -> topic_response "W: Размещение результата расчёта" "Kafka" "queue,tagWrite,tagToBe"
+                -> topic_calculation_result "W: Размещение результата расчёта" "Kafka" "queue,tagWrite,tagToBe"
             }
 
-            app_balancer -> app_request_manager "Получить статус запроса на расчёт. GET (public): /api/request-status" "REST API" ""
-            app_balancer -> app_request_manager "Разместить запрос на расчёт Прямой лестницы. POST (public): /api/straight-stair" "REST API" ""
-            app_balancer -> app_request_manager "Разместить запрос на расчёт Г-образной лестницы. POST (public): /api/l-shape-stair" "REST API" ""
-            app_balancer -> app_request_manager "Разместить запрос на расчёт П-образной лестницы. POST (public): /api/u-shape-stair" "REST API" ""
+            app_balancer -> app_request_manager "Получить статус запроса на расчёт. GET (public): /api/requests-statuses" "REST API" ""
+            app_balancer -> app_request_manager "Подтвердить получение расчёта со стороны frontend. PATCH (public): /api/request-status/send" "REST API" ""
+            app_balancer -> app_request_manager "Разместить запрос на расчёт Прямой лестницы. POST (public): /api/straight-stair/request" "REST API" ""
+            app_balancer -> app_request_manager "Разместить запрос на расчёт Г-образной лестницы. POST (public): /api/l-shape-stair/request" "REST API" ""
+            app_balancer -> app_request_manager "Разместить запрос на расчёт П-образной лестницы. POST (public): /api/u-shape-stair/request" "REST API" ""
             app_balancer -> app_request_manager "Установить ограничения пользователя. POST (public secured): /api/user-acl" "REST API" ""
 
-            app_request_manager -> app_straight_stair_calc "Запросить выполнить расчет Прямой лестницы. POST: /straight-stair/calculation" "REST API" "tagArchDebt"
-            app_request_manager -> app_l_shape_stair_calc "Запросить выполнить расчет Г-образной лестницы. POST: /l-shape-stair/calculation" "REST API" "tagArchDebt"
-            app_request_manager -> app_u_shape_stair_calc "Запросить выполнить расчет П-образной лестницы. POST: /u-shape-stair/calculation" "REST API" "tagArchDebt"
+            system_api_gatewai -> app_balancer "Размещение запроса на расчёт. POST: /optis-stairs/api/{stair-type}/request" "REST API" ""
+            system_api_gatewai -> app_balancer "Получение статуса и результата расчёта. GET: /optis-stairs/api/requests-statuses" "REST API" ""
+            system_api_gatewai -> app_balancer "Установить параметры доступа пользователя к расчётам. POST: /optis-stairs/api/user-acl" "REST API" ""
         }
 
         // Dev
@@ -136,7 +151,8 @@ workspace extends ../system-landscape.dsl {
             containerInstance topic_request_straight_stair
             containerInstance topic_request_l_shape_stair
             containerInstance topic_request_u_shape_stair
-            containerInstance topic_response
+            containerInstance topic_calculation_progress
+            containerInstance topic_calculation_result
         }
 
         // Production
@@ -163,7 +179,8 @@ workspace extends ../system-landscape.dsl {
             containerInstance topic_request_straight_stair
             containerInstance topic_request_l_shape_stair
             containerInstance topic_request_u_shape_stair
-            containerInstance topic_response
+            containerInstance topic_calculation_progress
+            containerInstance topic_calculation_result
         }
 
         !ref "DeploymentNode://Production/CloRu/kalkpro_project/Кластер kalkpro-k8s/optistair-calc" {
@@ -202,6 +219,9 @@ workspace extends ../system-landscape.dsl {
         container system_optistair_calc OPTISTAIR_CALC_C4L2 "Подбор оптимальной конф. лестницы" {
             autoLayout
             include *
+            include ext_person_web
+            include system_web_site
+            include system_api_gatewai
         }
         deployment system_optistair_calc Development OPTISTAIR_CALC_DEPLOY_DEV "Подбор оптимальной конф. лестницы" {
             autoLayout
